@@ -19,21 +19,21 @@ public class Interaction : MonoBehaviour
             Collider[] colliderArray = Physics.OverlapSphere(transform.position,interactionRange);
             foreach(Collider collider in colliderArray)
             {
-                if(collider.TryGetComponent(out PnjInteract pnjInteract))
+                if(collider.TryGetComponent(out IInteract interact))
                 {
-                    pnjInteract.Interact();
+                    interact.Interact();
                 }  
             }
 
         }
-        if(Input.GetKeyDown(KeyCode.Y)|| Input.GetKeyDown(KeyCode.N))
+        if(Input.GetKeyDown(KeyCode.Y)|| Input.GetKeyDown(KeyCode.N)|| Input.GetKeyDown(KeyCode.B))
         {
             Collider[] colliderArray = Physics.OverlapSphere(transform.position,interactionRange);
             foreach(Collider collider in colliderArray)
             {
-                if(collider.TryGetComponent(out PnjInteract pnjInteract))
+                if(collider.TryGetComponent(out IInteract interact))
                 {
-                    pnjInteract.Reponse();
+                    interact.Reponse();
                 }  
             }
 
@@ -43,9 +43,9 @@ public class Interaction : MonoBehaviour
             Collider[] colliderArray = Physics.OverlapSphere(transform.position,interactionRange);
             foreach(Collider collider in colliderArray)
             {
-                if(collider.TryGetComponent(out PnjInteract pnjInteract))
+                if(collider.TryGetComponent(out IInteract interact))
                 {
-                    pnjInteract.Solution();
+                    interact.Solution();
                 }  
             }
 

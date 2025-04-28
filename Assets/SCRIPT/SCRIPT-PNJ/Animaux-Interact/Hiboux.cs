@@ -1,14 +1,12 @@
-using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
+/*using UnityEngine;
 
-// Interaction du PNJ vers le Joueur
-public class PnjInteract : MonoBehaviour
+public class Hiboux : MonoBehaviour , IInteract
 {
-    [SerializeField] private GameObject bulleDeText;
-    [SerializeField] private GameObject YESbulleDeText;
-    [SerializeField] private GameObject NObulleDeText;
-    [SerializeField] private GameObject SolutionText;
+ [SerializeField] private GameObject bulleDeText;
+    [SerializeField] private GameObject choix1Text;
+    [SerializeField] private GameObject choix2Text;
+    [SerializeField] private GameObject choix3Text;
+    [SerializeField] private GameObject bulleTextEND;
 
 
     private bool isActive = false;
@@ -19,9 +17,10 @@ public class PnjInteract : MonoBehaviour
     private void Start()
     {
         bulleDeText.SetActive(false);
-        NObulleDeText.SetActive(false);
-        YESbulleDeText.SetActive(false);
-        SolutionText.SetActive(false);
+        choix1Text.SetActive(false);
+        choix2Text.SetActive(false);
+        choix3Text.SetActive(false);
+        bulleTextEND.SetActive(false);
 
     }
 
@@ -32,10 +31,11 @@ public class PnjInteract : MonoBehaviour
 
     public void Interact()
     {
-        NObulleDeText.SetActive(false);
-        YESbulleDeText.SetActive(false);
-        SolutionText.SetActive(false);
+        choix1Text.SetActive(false);
+        choix2Text.SetActive(false);
+        choix3Text.SetActive(false);
         bulleDeText.SetActive(false);
+        bulleTextEND.SetActive(false);
         isTalking = true;
         isSolve = false;
 
@@ -56,7 +56,7 @@ public class PnjInteract : MonoBehaviour
         {
             
             isActive = !isActive;
-            YESbulleDeText.SetActive(isActive);
+            choix1Text.SetActive(isActive);
             if (CompareTag("Cochon"))
             {
                 TableauMemoire.cochonSolved = true;
@@ -67,7 +67,12 @@ public class PnjInteract : MonoBehaviour
          if (Input.GetKeyDown(KeyCode.N))
         {
             isActive = !isActive;
-            NObulleDeText.SetActive(isActive);
+            choix2Text.SetActive(isActive);
+        }
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            isActive = !isActive;
+            choix3Text.SetActive(isActive);
         }
     }
 
@@ -79,10 +84,8 @@ public class PnjInteract : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I))
         {
             isActive = !isActive;
-            SolutionText.SetActive(isActive);
+            bulleTextEND.SetActive(isActive);
         }
 
     }
-
-
-}
+}*/

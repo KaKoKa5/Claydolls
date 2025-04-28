@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Cochon
   - Brebis
+  - Chat
+  - Chien
+  - Cerf
+  - Corbeau
+  - Serpent
+  - Hiboux
   layers:
   - Default
   - TransparentFX
