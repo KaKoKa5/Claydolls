@@ -3,6 +3,7 @@ using UnityEngine;
 public interface IInteract
 {
     void Interact();
-    void Reponse();
-    void Solution();
+    void Choix1();
+    void Choix2();
+    void Choix3();
 }

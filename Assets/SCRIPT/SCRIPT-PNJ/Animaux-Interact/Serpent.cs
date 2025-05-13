@@ -2,92 +2,196 @@ using UnityEngine;
 
 public class Serpent : MonoBehaviour, IInteract
 {
+
+    [SerializeField] private AutoHideVideo autoHideVideo;
  [SerializeField] private GameObject bulleDeText;
-    /*[SerializeField] private GameObject choix1Text;
-    [SerializeField] private GameObject choix2Text;
-    [SerializeField] private GameObject choix3Text;
-    [SerializeField] private GameObject bulleTextEND;*/
+ [SerializeField] private GameObject TextPartie2;
+
+ [SerializeField] private GameObject TextPartie3;
+ 
+ [SerializeField] private GameObject TextPartie3d;
+ [SerializeField] private GameObject TextPartie4;
+ [SerializeField] private GameObject TextPartie41;
+ [SerializeField] private GameObject TextPartie42;
+ [SerializeField] private GameObject TextPartie43;
+ [SerializeField] private GameObject AmiDuChien;
+
+ //Mission6:
+    [SerializeField] private GameObject TextPartie6;
+
+ 
 
 
     private bool isActive = false;
     private bool isTalking = false;
-    private bool isSolve = false;
+    private bool passTalking = false;
+    private int stepTalk=0;
+    private int stepTalke=0;
+    private int stepTalkPartie6=0;
+
 
 
     private void Start()
     {
         bulleDeText.SetActive(false);
-        /*choix1Text.SetActive(false);
-        choix2Text.SetActive(false);
-        choix3Text.SetActive(false);
-        bulleTextEND.SetActive(false);*/
+        TextPartie2.SetActive(false);
+
+        TextPartie3.SetActive(false);
+        TextPartie3d.SetActive(false);
+        stepTalk=0;
+
+        TextPartie4.SetActive(false);
+        TextPartie41.SetActive(false);
+        TextPartie42.SetActive(false);
+        TextPartie43.SetActive(false);
+
+        AmiDuChien.SetActive(false);
+
+        //Mission6
+        TextPartie6.SetActive(false);
+        stepTalke=0;
 
     }
-
-    void Update()
-    {
-    
-    }
-
     public void Interact()
     {
-        /*choix1Text.SetActive(false);
-        choix2Text.SetActive(false);
-        choix3Text.SetActive(false);*/
+  
         bulleDeText.SetActive(false);
-        //bulleTextEND.SetActive(false);
+        TextPartie2.SetActive(false);
+
+        TextPartie3.SetActive(false);
+        TextPartie3d.SetActive(false);
+
+        TextPartie4.SetActive(false);
+        TextPartie41.SetActive(false);
+        TextPartie42.SetActive(false);
+        TextPartie43.SetActive(false);
+
+        AmiDuChien.SetActive(false);
+
+        //Mission6
+        TextPartie6.SetActive(false);
+
+
         isTalking = true;
-        isSolve = false;
-
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            //mission1
-            TableauMemoire.talkSerpent = true;
-            isActive = !isActive;
-            bulleDeText.SetActive(isActive);
-        }
-    }
-
-    public void Reponse()
-    {
-        /*if (!isTalking)return;
-    
-        bulleDeText.SetActive(false);
-
-        if (Input.GetKeyDown(KeyCode.Y))
+        isActive = !isActive;
+        
+        //mission1-----------------------------------------
+        TableauMemoire.talkSerpent = true;
+        if (TableauMemoire.masque==0 && TableauMemoire.SecretSurCerf==false)
         {
             
-            isActive = !isActive;
-            choix1Text.SetActive(isActive);
-            if (CompareTag("Cochon"))
-            {
-                TableauMemoire.cochonSolved = true;
-                isSolve = true;
-                return;
-            }
+            bulleDeText.SetActive(isActive);
         }
-         if (Input.GetKeyDown(KeyCode.N))
+        
+        if (TableauMemoire.masque==0 &&TableauMemoire.confidenceCerf==true)
+        {
+            bulleDeText.SetActive(false);
+            TextPartie2.SetActive(isActive);
+        }
+        
+        //Mission 3 ------------------------------------------------------------
+        if(TableauMemoire.masque==1 && stepTalk==0)
         {
             isActive = !isActive;
-            choix2Text.SetActive(isActive);
+            TextPartie3.SetActive(true);
+            stepTalk = 1;
+            
         }
-        if (Input.GetKeyDown(KeyCode.B))
+        else if(stepTalk==1 && TableauMemoire.masque==1)
         {
-            isActive = !isActive;
-            choix3Text.SetActive(isActive);
-        }*/
-    }
+            TextPartie3.SetActive(false);
+            
+            TextPartie3d.SetActive(isActive);
+            passTalking=true;
+        }
+        
 
-    public void Solution()
+        if (TableauMemoire.AmiChien==true && TableauMemoire.SecretSurCerf==false && TableauMemoire.masque==0)
+        {
+            bulleDeText.SetActive(false);
+            TextPartie2.SetActive(false);
+            TextPartie3d.SetActive(false);
+            AmiDuChien.SetActive(isActive);
+        }
+
+        //Mission 4-----------------------------------------------------------
+
+        if (TableauMemoire.masque==0 && TableauMemoire.SecretSurCerf==true && stepTalke == 0 && passTalking == true)
+        {
+            isActive = true;
+            TextPartie4.SetActive(true);
+            TextPartie41.SetActive(false);
+            TextPartie42.SetActive(false);
+            TextPartie43.SetActive(false);
+            stepTalke = 3;
+        }
+        else if (TableauMemoire.masque==0 && TableauMemoire.SecretSurCerf==true && stepTalke == 3 && passTalking == true)
+        {
+            TextPartie4.SetActive(false);
+            TextPartie41.SetActive(true);
+            TextPartie42.SetActive(false);
+            TextPartie43.SetActive(false);
+            stepTalke = 4;
+        }
+        else if (TableauMemoire.masque==0 && TableauMemoire.SecretSurCerf==true && stepTalke == 4 && passTalking == true)
+        {
+            TextPartie4.SetActive(false);
+            TextPartie41.SetActive(false);
+            TextPartie42.SetActive(true);
+            TextPartie43.SetActive(false);
+            autoHideVideo.Video();
+            stepTalke = 5;
+        }
+        else if (TableauMemoire.masque==0 && TableauMemoire.SecretSurCerf==true && stepTalke == 5 && passTalking == true)
+        {
+            TextPartie4.SetActive(false);
+            TextPartie41.SetActive(false);
+            TextPartie42.SetActive(false);
+            TextPartie43.SetActive(true);
+            stepTalke = 6;
+
+        }else if (TableauMemoire.masque==0 && TableauMemoire.SecretSurCerf==true && stepTalke == 6 && passTalking == true)
+        {
+            TextPartie4.SetActive(false);
+            TextPartie41.SetActive(false);
+            TextPartie42.SetActive(false);
+            TextPartie43.SetActive(false);
+            stepTalke = 0; // On boucle
+        }
+
+
+        //Mission5----------------------------------------------------------------------
+
+        if(TableauMemoire.masque==2)
+        {
+            TableauMemoire.MLionFound=true;
+            TextPartie6.SetActive(false);
+            isActive=!isActive;
+            TextPartie6.SetActive(isActive);
+        }
+        
+    }
+    public void Choix1()
     {
-        /*if (!CompareTag("Brebis")) return;
-        if(!TableauMemoire.cochonSolved)return;
+        if (!isTalking)return;
+    
+        
 
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            isActive = !isActive;
-            bulleTextEND.SetActive(isActive);
-        }
-*/
+
     }
+    public void Choix2()
+    {
+        if (!isTalking)return;
+    
+        
+
+    }
+    public void Choix3()
+    {
+        if (!isTalking)return;
+    
+        
+        
+    }
+
 }

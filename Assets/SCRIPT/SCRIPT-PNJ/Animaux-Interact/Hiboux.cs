@@ -11,7 +11,6 @@ public class Hiboux : MonoBehaviour , IInteract
 
     private bool isActive = false;
     private bool isTalking = false;
-    private bool isSolve = false;
 
 
     private void Start()
@@ -46,46 +45,31 @@ public class Hiboux : MonoBehaviour , IInteract
         }
     }
 
-    public void Reponse()
+    public void Choix1()
     {
         if (!isTalking)return;
     
         bulleDeText.SetActive(false);
+        isActive = !isActive;
+        choix1Text.SetActive(isActive);
 
-        if (Input.GetKeyDown(KeyCode.Y))
-        {
-            
-            isActive = !isActive;
-            choix1Text.SetActive(isActive);
-            if (CompareTag("Cochon"))
-            {
-                TableauMemoire.cochonSolved = true;
-                isSolve = true;
-                return;
-            }
-        }
-         if (Input.GetKeyDown(KeyCode.N))
-        {
-            isActive = !isActive;
-            choix2Text.SetActive(isActive);
-        }
-        if (Input.GetKeyDown(KeyCode.B))
-        {
-            isActive = !isActive;
-            choix3Text.SetActive(isActive);
-        }
     }
-
-    public void Solution()
+    public void Choix2()
     {
-        if (!CompareTag("Brebis")) return;
-        if(!TableauMemoire.cochonSolved)return;
-
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            isActive = !isActive;
-            bulleTextEND.SetActive(isActive);
-        }
-
+        if (!isTalking)return;
+    
+        bulleDeText.SetActive(false);
+        isActive = !isActive;
+        choix2Text.SetActive(isActive);
     }
+    public void Choix3()
+    {
+        if (!isTalking)return;
+    
+        bulleDeText.SetActive(false);
+        isActive = !isActive;
+        choix3Text.SetActive(isActive);
+        
+    }
+
 }*/

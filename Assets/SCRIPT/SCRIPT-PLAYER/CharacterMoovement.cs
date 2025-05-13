@@ -4,14 +4,12 @@ public class PlayerController : MonoBehaviour
 {
     [Header("References")]
     private CharacterController controller;
-    [SerializeField] private Transform camera;
+    [SerializeField] private Transform ecamera;
 
     [Header("Movement Settings")]
     [SerializeField] private float walkSpeed = 5f;
     [SerializeField] private float turningSpeed = 2f;
     [SerializeField] private float gravity = 9.81f;
-
-    [SerializeField] private float waittime= 0.2f;
 
     private float verticalVelocity;
 
@@ -22,8 +20,6 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         controller = GetComponent<CharacterController>();
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
     }
 
     private void Update()
@@ -51,22 +47,14 @@ public class PlayerController : MonoBehaviour
         move.y=VerticalForceCalculation();
 
         move*= walkSpeed;
-        if (waittime >= Time.deltaTime)
-        {
-            controller.Move(move * waittime);
 
-        }
-        else
-        {    
-            controller.Move(move * Time.deltaTime);
-        }
-        
+        controller.Move(move * Time.deltaTime);
     }
     private void Turn()
     {
         if ( Mathf.Abs(turnInput)> 0 || Mathf.Abs(moveInput)>0)
         {
-            Vector3 currentLookDirection = camera.forward;
+            Vector3 currentLookDirection = ecamera.forward;
             currentLookDirection.y=0;
 
             Quaternion targetRotation = Quaternion.LookRotation(currentLookDirection);

@@ -7,8 +7,7 @@ using System.Collections.Generic;
 public class Interaction : MonoBehaviour
 {
     private float interactionRange=2f;
-    private bool isActive = false;
-    void Start()
+   void Start()
     {
     
     }
@@ -26,26 +25,39 @@ public class Interaction : MonoBehaviour
             }
 
         }
-        if(Input.GetKeyDown(KeyCode.Y)|| Input.GetKeyDown(KeyCode.N)|| Input.GetKeyDown(KeyCode.B))
+        if(Input.GetKeyDown(KeyCode.V))
         {
             Collider[] colliderArray = Physics.OverlapSphere(transform.position,interactionRange);
             foreach(Collider collider in colliderArray)
             {
                 if(collider.TryGetComponent(out IInteract interact))
                 {
-                    interact.Reponse();
+                    interact.Choix1();
                 }  
             }
 
         }
-        if(Input.GetKeyDown(KeyCode.I))
+        if(Input.GetKeyDown(KeyCode.B))
         {
             Collider[] colliderArray = Physics.OverlapSphere(transform.position,interactionRange);
             foreach(Collider collider in colliderArray)
             {
                 if(collider.TryGetComponent(out IInteract interact))
                 {
-                    interact.Solution();
+                    interact.Choix2();
+                }  
+            }
+
+        }
+
+        if(Input.GetKeyDown(KeyCode.N))
+        {
+            Collider[] colliderArray = Physics.OverlapSphere(transform.position,interactionRange);
+            foreach(Collider collider in colliderArray)
+            {
+                if(collider.TryGetComponent(out IInteract interact))
+                {
+                    interact.Choix3();
                 }  
             }
 
