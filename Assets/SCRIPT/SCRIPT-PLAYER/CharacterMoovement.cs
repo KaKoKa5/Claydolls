@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float turningSpeed = 2f;
     [SerializeField] private float gravity = 9.81f;
 
+    [SerializeField] private float waittime= 0.2f;
+
     private float verticalVelocity;
 
     [Header("Input")]
@@ -20,6 +22,8 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         controller = GetComponent<CharacterController>();
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     private void Update()
@@ -47,8 +51,16 @@ public class PlayerController : MonoBehaviour
         move.y=VerticalForceCalculation();
 
         move*= walkSpeed;
+        if (waittime >= Time.deltaTime)
+        {
+            controller.Move(move * waittime);
 
-        controller.Move(move * Time.deltaTime);
+        }
+        else
+        {    
+            controller.Move(move * Time.deltaTime);
+        }
+        
     }
     private void Turn()
     {
