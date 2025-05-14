@@ -27,7 +27,7 @@ public class InteractIcon : MonoBehaviour
     {
         if (currentPickup != null)
         {
-            Vector3 worldPos = currentPickup.transform.position + Vector3.up * 1.0f;
+            Vector3 worldPos = currentPickup.transform.position + Vector3.up * 0.5f;
             Vector3 screenPos = mainCamera.WorldToScreenPoint(worldPos);
 
             if (screenPos.z > 0)
