@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class InteractIcon : MonoBehaviour
 {
     public static InteractIcon Instance;
+    [SerializeField] private float Position =0.3f; 
 
     [Header("Image UI de l'icône")]
     public Image leftClickIcon;    
@@ -27,7 +28,7 @@ public class InteractIcon : MonoBehaviour
     {
         if (currentPickup != null)
         {
-            Vector3 worldPos = currentPickup.transform.position + Vector3.up * 1.0f;
+            Vector3 worldPos = currentPickup.transform.position + Vector3.up * Position;
             Vector3 screenPos = mainCamera.WorldToScreenPoint(worldPos);
 
             if (screenPos.z > 0)
