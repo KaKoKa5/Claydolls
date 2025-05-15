@@ -1,92 +1,67 @@
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+[RequireComponent(typeof(CharacterController))]
+public class CharaterMoovement : MonoBehaviour
 {
-    [Header("References")]
-    private CharacterController controller;
-    [SerializeField] private Transform ecamera;
+    #region Références
+    [Header("Composants")]
+    [SerializeField] private CharacterController controller;  // contrôleur de personnage
+    [SerializeField] private Transform cameraTransform;       // orientation de la caméra principale
+    #endregion
 
-    [Header("Movement Settings")]
-    [SerializeField] private float walkSpeed = 5f;
-    [SerializeField] private float runSpeed = 5f;
-    [SerializeField] private float TransitrunSpeed = 3f;
-    [SerializeField] private float turningSpeed = 2f;
-    [SerializeField] private float gravity = 9.81f;
+    #region Paramètres de mouvement
+    [Header("Vitesse et gravité")]
+    [SerializeField] private float walkSpeed = 5f;            // vitesse de marche
+    [SerializeField] private float sprintMultiplier = 2f;     // multiplicateur de vitesse pour la course
+    [SerializeField] private float gravity = -9.81f;          // force de gravité
 
-    private float verticalVelocity;
-    private float speed;
+    private Vector3 velocity;                                 // composante de vitesse verticale (gravité)
+    #endregion
 
-
-    [Header("Input")]
-    private float moveInput;
-    private float turnInput;
-    private float runInput;
-
-    private void Start()
+    private void Reset()
     {
+        // Initialisation automatique des références
         controller = GetComponent<CharacterController>();
+        cameraTransform = Camera.main ? Camera.main.transform : null;
     }
 
     private void Update()
     {
-        InputManagement();
-        Movement();
-    }
+        // Récupération des axes de déplacement (WASD / flèches)
+        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");
 
-    private void InputManagement()
-    {
-        turnInput = Input.GetAxis("Horizontal");
-        moveInput = Input.GetAxis("Vertical");
-
-    }
-
-    private void Movement()
-    {
-        GroundMovement();
-        Turn();
+        // Calcul des directions avant et droite basées sur la caméra
+        Vector3 camForward = cameraTransform.forward;
+        camForward.y = 0;
+        camForward.Normalize();
         
-    }
-    private void GroundMovement()
-    {
-        Vector3 move = new Vector3(turnInput,0,moveInput);
-        move = transform.TransformDirection(move);
-        move.y=VerticalForceCalculation();
+        Vector3 camRight = cameraTransform.right;
+        camRight.y = 0;
+        camRight.Normalize();
 
-        if (Input.GetKey(KeyCode.LeftShift))
+        // Direction de déplacement relative à la caméra
+        Vector3 moveDir = camForward * z + camRight * x;
+
+        // Détection de la touche Shift pour la course
+        bool isSprinting = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
+        float currentSpeed = isSprinting ? walkSpeed * sprintMultiplier : walkSpeed;
+
+        if (moveDir.magnitude >= 0.1f)
         {
-            speed = Mathf.Lerp(speed,runSpeed,TransitrunSpeed*Time.deltaTime);
-        }
-        else{
-            speed = Mathf.Lerp(speed,walkSpeed,TransitrunSpeed*Time.deltaTime);
+            // Rotation douce vers la direction de déplacement
+            transform.rotation = Quaternion.Slerp(
+                transform.rotation,
+                Quaternion.LookRotation(moveDir),
+                Time.deltaTime * 10f
+            );
+
+            // Déplacement en fonction de la vitesse courante
+            controller.Move(moveDir.normalized * currentSpeed * Time.deltaTime);
         }
 
-        move*= speed;
-
-            controller.Move(move * Time.deltaTime);
-        
+        // Application de la gravité
+        velocity.y += gravity * Time.deltaTime;
+        controller.Move(velocity * Time.deltaTime);
     }
-    private void Turn()
-    {
-        if ( Mathf.Abs(turnInput)> 0 || Mathf.Abs(moveInput)>0)
-        {
-            Vector3 currentLookDirection = ecamera.forward;
-            currentLookDirection.y=0;
-
-            Quaternion targetRotation = Quaternion.LookRotation(currentLookDirection);
-            transform.rotation = Quaternion.Slerp(transform.rotation,targetRotation,Time.deltaTime*turningSpeed);
-        }
-    }
-    private float VerticalForceCalculation()
-    {
-        if (controller.isGrounded)
-        {
-            verticalVelocity= -1f;
-        }
-        else
-        {
-            verticalVelocity -=gravity * Time.deltaTime;
-        }
-        return verticalVelocity;
-    }
-    
 }
