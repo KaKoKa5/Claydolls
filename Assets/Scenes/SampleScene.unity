@@ -26637,8 +26637,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1175157795}
   cameraTransform: {fileID: 330585546}
-  walkSpeed: 5
-  sprintMultiplier: 2
+  walkSpeed: 2
+  sprintMultiplier: 3
   gravity: -9.81
 --- !u!33 &1175157801
 MeshFilter:

@@ -84,31 +84,36 @@ public class Chien : MonoBehaviour , IInteract
         isTalking = true;
 
         //mission1
-        if (!START)
-        {
-            if (CountText == 0)
-            {
-                STARTText.SetActive(true);
-                CountText = 1;
-            }
-            if (CountText == 1)
-            {
-                STARTText.SetActive(false);
-                STARTText2.SetActive(true);
-                CountText = 2;
-                START = true;
-            }
+if (!START)
+{
+    if (CountText == 0)
+    {
+        isActive = !isActive;
+        STARTText.SetActive(isActive);
+        CountText = 1;
+        return; // Empêche la suite du code de s'exécuter
+    }
+    else if (CountText == 1)
+    {
+        STARTText.SetActive(false);
+        STARTText2.SetActive(isActive);
+        CountText = 2;
+        START = true;
+        return; // Empêche aussi ici
+    }
 }
 
+// À partir d’ici, les STARTText sont terminés
 
-        TableauMemoire.talkChien = true;
-        isActive = !isActive;
-        if (TableauMemoire.masque==0 && textCount==0 && START == true)
-        {
-            STARTText2.SetActive(false);
-            bulleDeText.SetActive(isActive);
-        }
-        
+TableauMemoire.talkChien = true;
+
+if (TableauMemoire.masque == 0 && textCount == 0 && START)
+{
+    isActive = !isActive;
+    STARTText2.SetActive(false);
+    bulleDeText.SetActive(isActive);
+}
+
 
         //Mission2:--------------------------------------------------------------------
 
