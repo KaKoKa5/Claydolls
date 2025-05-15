@@ -3,6 +3,9 @@ using UnityEngine;
 public class Corbeaux : MonoBehaviour , IInteract
 {
     [SerializeField] private AutoHideVideo autoHideVideo;
+
+    [SerializeField] private GameObject STARTText;
+[SerializeField] private GameObject STARTText2;
  [SerializeField] private GameObject bulleDeText;
     [SerializeField] private GameObject choix1Text;
     [SerializeField] private GameObject choix2Text;
@@ -23,6 +26,7 @@ public class Corbeaux : MonoBehaviour , IInteract
 
     private bool isActive = false;
     private bool isTalking = false;
+    private int CountText=0;
 
     private int stepTalk = 3;
 
@@ -30,6 +34,9 @@ public class Corbeaux : MonoBehaviour , IInteract
 
     private void Start()
     {
+
+        STARTText.SetActive(false);
+        STARTText2.SetActive(false);
         bulleDeText.SetActive(false);
         choix1Text.SetActive(false);
         choix2Text.SetActive(false);

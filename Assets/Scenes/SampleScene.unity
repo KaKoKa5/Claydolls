@@ -6640,6 +6640,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoHideVideo: {fileID: 247798135}
+  STARTText: {fileID: 886415415}
+  STARTText2: {fileID: 1382178791}
   bulleDeText: {fileID: 626003874}
   choix1Text: {fileID: 1181467814}
   choix2Text: {fileID: 729362601}
@@ -8995,6 +8997,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoHideVideo: {fileID: 247798135}
+  STARTText: {fileID: 811251174}
+  STARTText2: {fileID: 407394535}
   bulleDeText: {fileID: 834914652}
   choix1Text: {fileID: 2090530338}
   choix2Text: {fileID: 1017628286}
@@ -20717,7 +20721,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930246409}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.031000754, y: -0.39591265, z: 0.013374772, w: 0.9176673}
+  m_LocalRotation: {x: 0.031000732, y: -0.39591262, z: 0.013374761, w: 0.9176673}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -24392,6 +24396,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoHideVideo: {fileID: 247798135}
+  STARTText: {fileID: 1702088861}
+  STARTText2: {fileID: 180272616}
   bulleDeText: {fileID: 257447898}
   TextPartie2: {fileID: 1104485298}
   TextPartie3: {fileID: 23273952}
@@ -26006,7 +26012,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1152384894}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.07400621, y: -0.3948497, z: 0.031928774, w: 0.9152035}
+  m_LocalRotation: {x: 0.07400617, y: -0.39484963, z: 0.031928755, w: 0.9152036}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -27062,6 +27068,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoHideVideo: {fileID: 247798135}
+  STARTText: {fileID: 660530446}
+  STARTText2: {fileID: 981073513}
   bulleDeText: {fileID: 903794715}
   choix1Text: {fileID: 1565721971}
   choix2Text: {fileID: 1792818651}
@@ -27186,6 +27194,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoHideVideo: {fileID: 247798135}
+  STARTText: {fileID: 1023137540}
+  STARTText2: {fileID: 99340873}
   bulleDeText: {fileID: 1054902827}
   bulleText: {fileID: 444204475}
   bulleChoix1DeText: {fileID: 1761941378}
@@ -28543,6 +28553,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoHideVideo: {fileID: 247798135}
+  STARTText: {fileID: 1187674394}
+  STARTText2: {fileID: 1605713473}
   bulleDeText: {fileID: 1497717778}
   bulleTextPartie2: {fileID: 1158115289}
   choix1TextPartie2: {fileID: 1423531906}
@@ -35577,7 +35589,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626278947}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0524705, y: -0.39549115, z: 0.022637544, w: 0.91669035}
+  m_LocalRotation: {x: 0.052470505, y: -0.39549118, z: 0.022637539, w: 0.91669035}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

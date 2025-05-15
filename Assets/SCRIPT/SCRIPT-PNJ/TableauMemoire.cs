@@ -4,7 +4,7 @@ public class TableauMemoire : MonoBehaviour
 {
     //Identification de qu'elle masque on a. Relier à MaskCyclerUI.cs
     public static int masque = 0;
-    
+
     //Premiere mission : Parler à tout le monde. 
     //Pour continuer il faut que le bool de chaque animal est "true"
     public static bool talkCochon = false;

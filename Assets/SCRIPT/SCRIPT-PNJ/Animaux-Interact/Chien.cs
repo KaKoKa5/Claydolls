@@ -3,6 +3,9 @@ using UnityEngine;
 public class Chien : MonoBehaviour , IInteract
 {
     [SerializeField] private AutoHideVideo autoHideVideo;
+
+    [SerializeField] private GameObject STARTText;
+    [SerializeField] private GameObject STARTText2;
      [SerializeField] private GameObject bulleDeText;
     
     [SerializeField] private GameObject bulleTextPartie2;
@@ -24,14 +27,18 @@ public class Chien : MonoBehaviour , IInteract
 
     private int textCount=0;
 
-
+    private bool START = false;
 
     private bool isActive = false;
     private bool isTalking = false;
+    private int CountText=0;
 
 
     private void Start()
     {
+        CountText=0;
+        STARTText.SetActive(false);
+        STARTText2.SetActive(false);
         bulleDeText.SetActive(false);
 
         //Mission2:
@@ -54,6 +61,7 @@ public class Chien : MonoBehaviour , IInteract
     }
     public void Interact()
     {
+        
         bulleDeText.SetActive(false);
 
         //Mission2:
@@ -76,10 +84,28 @@ public class Chien : MonoBehaviour , IInteract
         isTalking = true;
 
         //mission1
+        if (!START)
+        {
+            if (CountText == 0)
+            {
+                STARTText.SetActive(true);
+                CountText = 1;
+            }
+            if (CountText == 1)
+            {
+                STARTText.SetActive(false);
+                STARTText2.SetActive(true);
+                CountText = 2;
+                START = true;
+            }
+}
+
+
         TableauMemoire.talkChien = true;
         isActive = !isActive;
-        if (TableauMemoire.masque==0 && textCount==0)
+        if (TableauMemoire.masque==0 && textCount==0 && START == true)
         {
+            STARTText2.SetActive(false);
             bulleDeText.SetActive(isActive);
         }
         

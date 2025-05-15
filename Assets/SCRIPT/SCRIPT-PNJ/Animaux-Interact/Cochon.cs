@@ -3,6 +3,9 @@ using UnityEngine;
 public class Cochon : MonoBehaviour , IInteract
 {
     [SerializeField] private AutoHideVideo autoHideVideo;
+
+    [SerializeField] private GameObject STARTText;
+[SerializeField] private GameObject STARTText2;
   [SerializeField] private GameObject bulleDeText;
     [SerializeField] private GameObject choix1Text;
     [SerializeField] private GameObject choix2Text;
@@ -22,10 +25,14 @@ public class Cochon : MonoBehaviour , IInteract
 
     private bool isActive = false;
     private bool isTalking = false;
+    private int CountText=0;
 
 
     private void Start()
     {
+        STARTText.SetActive(false);
+        STARTText2.SetActive(false);
+
         bulleDeText.SetActive(false);
         choix1Text.SetActive(false);
         choix2Text.SetActive(false);

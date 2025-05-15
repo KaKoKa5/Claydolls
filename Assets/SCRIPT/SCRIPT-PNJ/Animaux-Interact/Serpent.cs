@@ -4,6 +4,9 @@ public class Serpent : MonoBehaviour, IInteract
 {
 
     [SerializeField] private AutoHideVideo autoHideVideo;
+
+    [SerializeField] private GameObject STARTText;
+[SerializeField] private GameObject STARTText2;
  [SerializeField] private GameObject bulleDeText;
  [SerializeField] private GameObject TextPartie2;
 
@@ -28,11 +31,16 @@ public class Serpent : MonoBehaviour, IInteract
     private int stepTalk=0;
     private int stepTalke=0;
     private int stepTalkPartie6=0;
+    private int CountText=0;
 
 
 
     private void Start()
     {
+
+        STARTText.SetActive(false);
+        STARTText2.SetActive(false);
+
         bulleDeText.SetActive(false);
         TextPartie2.SetActive(false);
 

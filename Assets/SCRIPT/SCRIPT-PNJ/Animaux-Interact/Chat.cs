@@ -2,7 +2,11 @@ using UnityEngine;
 
 public class Chat : MonoBehaviour, IInteract
 {
-    [SerializeField] private AutoHideVideo autoHideVideo;
+[SerializeField] private AutoHideVideo autoHideVideo;
+
+[SerializeField] private GameObject STARTText;
+[SerializeField] private GameObject STARTText2;
+
 [SerializeField] private GameObject bulleDeText;
 
 [SerializeField] private GameObject bulleText;
@@ -14,11 +18,14 @@ public class Chat : MonoBehaviour, IInteract
 
     private bool isActive = false;
     private bool isTalking = false;
+    private int CountText=0;
 
 
 
     private void Start()
     {
+        STARTText.SetActive(false);
+        STARTText2.SetActive(false);
         bulleDeText.SetActive(false);
         
         bulleText.SetActive(false);
