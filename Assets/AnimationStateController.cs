@@ -9,45 +9,60 @@ int isBackWalkingHash;
 int isWalkingHash;
 int isRunningHash;
 int isBackRunningHash;
-int isSideRunningHash;
-int isSideWalkHash;
-int isSideRunningHashR;
-int isSideWalkHashR;
+int isWalkRightHash;
+int isRunRightHash;
+int isWalkLeftHash;
+int isRunLeftHash;
+
+
+
 
     void Start()
     {
+        //DEVANT
         animator = GetComponent<Animator>();
         isWalkingHash = Animator.StringToHash("isWalking");
         isRunningHash = Animator.StringToHash("isRunning");
 
+        // ARRIERE
         isBackWalkingHash = Animator.StringToHash("isBackWalking");
         isBackRunningHash = Animator.StringToHash("isBackRunning");
 
-        isSideWalkHash = Animator.StringToHash("SideCACA");
-        isSideRunningHash = Animator.StringToHash("SideRunning");
-        isSideWalkHashR = Animator.StringToHash("SSideWalk");
-        isSideRunningHashR = Animator.StringToHash("SSideRUN");
-      
+        //DROIT
+        isWalkRightHash = Animator.StringToHash("isWalkRight");
+        isRunRightHash = Animator.StringToHash("isRunRight");
+
+        //GAUCHE
+        isWalkLeftHash = Animator.StringToHash("isWalkLeft");
+        isRunLeftHash = Animator.StringToHash("isRunLeft");
+
+
     }
 
     void Update()
     {
-
+        //DEVANT
         bool isWalking = animator.GetBool(isWalkingHash);
         bool isRunning = animator.GetBool(isRunningHash);
-        bool forwardPressed = Input.GetKey("w");
-        bool runPressed = Input.GetKey("left shift");
 
+        //ARRIERE
         bool isBackRunning = animator.GetBool(isBackRunningHash);
         bool isBackWalking = animator.GetBool(isBackWalkingHash);
-        bool BackPressed = Input.GetKey("s");
 
-        bool isSideWalkR = animator.GetBool(isSideWalkHashR);
-        bool isSideRunningR = animator.GetBool(isSideRunningHashR);
-        bool isSideWalk = animator.GetBool(isSideWalkHash);
-        bool isSideRunning = animator.GetBool(isSideRunningHash);
-        bool SidePressed = Input.GetKey("q");
-        bool SideRPressed = Input.GetKey("d");
+        //DROIT
+        bool isWalkingRight = animator.GetBool(isWalkRightHash);
+        bool isRunRight = animator.GetBool(isRunRightHash);
+
+        //GAUCHE
+        bool isWalkingLeft = animator.GetBool(isWalkLeftHash);
+        bool isRunLeft = animator.GetBool(isRunLeftHash);
+
+        //TOUCHE
+        bool runPressed = Input.GetKey("left shift");
+        bool forwardPressed = Input.GetKey("w");
+        bool BackPressed = Input.GetKey("s");
+        bool LEFTPressed = Input.GetKey("q");
+        bool RIGHTPressed = Input.GetKey("d");
 
         //Animation de marche---------------------------------------------
         if (!isWalking && forwardPressed)
@@ -94,50 +109,44 @@ int isSideWalkHashR;
             animator.SetBool("isBackRunning", false);
         }
 
-        //AnimationRUNSideR
-        if (!isSideRunningR && (SideRPressed && runPressed))
+        //DROIT
+        if (!isWalkingRight && RIGHTPressed)
         {
-            animator.SetBool(isSideRunningHashR, true);
+            animator.SetBool(isWalkRightHash, true);
+        }
+        if (isWalkingRight && !RIGHTPressed)
+        {
+            animator.SetBool(isWalkRightHash, false);
+        }
+        //DROIT RUN
+        if (!isRunRight && (RIGHTPressed && runPressed))
+        {
+            animator.SetBool(isRunRightHash, true);
+        }
+        if (isRunRight && (!RIGHTPressed || !runPressed))
+        {
+            animator.SetBool(isRunRightHash, false);
         }
 
-        if (isSideRunningR && (!SideRPressed || !runPressed))
+        //GAUCHE
+        if (!isWalkingLeft && LEFTPressed)
         {
-            animator.SetBool(isSideRunningHashR, false);
+            animator.SetBool(isWalkLeftHash, true);
+        }
+        if (isWalkingLeft && !LEFTPressed)
+        {
+            animator.SetBool(isWalkLeftHash, false);
+        }
+        //GAUCHE RUN
+        if (!isRunLeft && (LEFTPressed && runPressed))
+        {
+            animator.SetBool(isRunLeftHash, true);
+        }
+        if (isRunLeft && (!LEFTPressed || !runPressed))
+        {
+            animator.SetBool(isRunLeftHash, false);
         }
 
-        //animation côté R
-        if (!isSideWalk && SideRPressed)
-        {
-            animator.SetBool("SideCACA", true);
-        }
-
-        if (isSideWalk && !SideRPressed)
-        {
-            animator.SetBool("SideCACA", false);
-        }
-
-        //animation côté L
-        if (!isSideWalkR && SidePressed)
-        {
-            animator.SetBool("SSideWalk", true);
-        }
-
-        if (isSideWalkR && !SidePressed)
-        {
-            animator.SetBool("SSideWalk", false);
-        }
-
-        //AnimationRUNSideL
-        if (!isSideRunning && (SidePressed && runPressed))
-        {
-            animator.SetBool("SSideRUN", true);
-        }
-
-        if (isSideRunning && (!SidePressed || !runPressed))
-        {
-            animator.SetBool("SSideRUN", false);
-        }
-        
        
     }
 }
