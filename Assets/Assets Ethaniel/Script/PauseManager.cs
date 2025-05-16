@@ -107,6 +107,7 @@ public class PauseManager : MonoBehaviour
             optionsPanel.gameObject.SetActive(false);
             controlsPanel.gameObject.SetActive(false);
             audioPanel.gameObject.SetActive(false);
+            
         }
 
         // Gestion du curseur

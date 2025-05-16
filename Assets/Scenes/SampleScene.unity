@@ -5103,14 +5103,14 @@ RectTransform:
   m_GameObject: {fileID: 247798131}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3169773, y: 1.3169773, z: 1.3169773}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.49, y: 1.5212041, z: 1.4383322}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1770750880}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 82, y: -88}
+  m_AnchoredPosition: {x: 75.599976, y: -78}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &247798133
@@ -8161,7 +8161,7 @@ VideoPlayer:
   m_RenderMode: 2
   m_AspectRatio: 2
   m_DataSource: 0
-  m_TimeUpdateMode: 2
+  m_TimeUpdateMode: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
   m_TargetAudioSources: []
