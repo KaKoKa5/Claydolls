@@ -68,6 +68,30 @@ public class Corbeaux : MonoBehaviour , IInteract
         TextPartie4.SetActive(false);
         TextPartie41.SetActive(false);
         TextPartie42.SetActive(false);
+
+        if (TableauMemoire.talkFirst == false)
+        {
+            if (CountText == 0)
+            {
+                isActive = !isActive;
+                STARTText.SetActive(isActive);
+                CountText = 1;
+                return; 
+            }
+            else if (CountText == 1)
+            {
+                STARTText.SetActive(false);
+                STARTText2.SetActive(isActive);
+                CountText = 2;
+                return; 
+            }
+            else if (CountText == 2)
+            {
+                STARTText2.SetActive(false);
+                CountText = 1;
+            }
+
+        }
         
         //Mission6
         TextPartie5.SetActive(false);
@@ -76,7 +100,7 @@ public class Corbeaux : MonoBehaviour , IInteract
 
             //mission1
             TableauMemoire.talkCorbeau = true;
-            if(TableauMemoire.AmiChien==false && TableauMemoire.masque==0)
+            if(TableauMemoire.AmiChien==false && TableauMemoire.masque==0 && TableauMemoire.talkFirst==true)
             {
             isActive = !isActive;
             bulleDeText.SetActive(isActive);

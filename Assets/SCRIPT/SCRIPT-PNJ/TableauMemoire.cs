@@ -7,6 +7,8 @@ public class TableauMemoire : MonoBehaviour
 
     //Premiere mission : Parler à tout le monde. 
     //Pour continuer il faut que le bool de chaque animal est "true"
+    public static bool talkFirst = false;
+
     public static bool talkCochon = false;
     public static bool talkCorbeau = false; 
     public static bool talkSerpent = false; 

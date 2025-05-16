@@ -85,6 +85,7 @@ public class Cerf : MonoBehaviour ,IInteract
         !TableauMemoire.talkCorbeau || 
         !TableauMemoire.talkSerpent )
         {
+            TableauMemoire.talkFirst =true;
             isActive = !isActive;
             bulleDeText.SetActive(isActive);
             return;
