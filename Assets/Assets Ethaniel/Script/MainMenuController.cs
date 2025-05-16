@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class MainMenuController : MonoBehaviour
 {
@@ -12,33 +13,104 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] private GameObject optionsPanel;
     [SerializeField] private GameObject audioPanel;
     [SerializeField] private GameObject controlsPanel;
+
+    [Header("Fondu de l'écran (overlay)")]
+    [Tooltip("CanvasGroup couvrant l'écran en noir pour le fondu à l'ouverture")]
+    [SerializeField] private CanvasGroup fadeCoverCanvasGroup;
+    [Tooltip("Durée du fondu hors du noir (secondes)")]
+    [SerializeField] private float fadeDuration = 1f;
+
+    [Header("Révélation des boutons")]
+    [Tooltip("Liste des CanvasGroup attachés à chaque bouton, dans l'ordre vertical du menu")]
+    [SerializeField] private CanvasGroup[] mainMenuButtonGroups;
+    [Tooltip("Délai entre chaque bouton (secondes)")]
+    [SerializeField] private float buttonRevealDelay = 0.3f;
+    [Tooltip("Durée du fondu d'un bouton (secondes)")]
+    [SerializeField] private float buttonFadeDuration = 0.5f;
     #endregion
 
-    // Tableau de tous les panels pour faciliter l'affichage exclusif
     private GameObject[] allPanels;
 
     #region Unity Callbacks
     private void Awake()
     {
-        // Initialisation de tous les panels
         allPanels = new[] { creditsPanel, optionsPanel, audioPanel, controlsPanel };
-
-        // Vérification des références assignées dans l'Inspector
         ValidateReferences();
 
-        // Cache tous les panels (montre le menu principal)
+        // Cache les panel secondaires et prépare le menu principal
         ShowOnly(null);
+
+        // Prépare et affiche l'overlay noir
+        if (fadeCoverCanvasGroup != null)
+        {
+            fadeCoverCanvasGroup.alpha = 1f;
+            fadeCoverCanvasGroup.gameObject.SetActive(true);
+        }
+
+        // Prépare les boutons cachés et non-interactifs
+        foreach (var cg in mainMenuButtonGroups)
+        {
+            if (cg != null)
+            {
+                cg.alpha = 0f;
+                cg.interactable = false;
+                cg.blocksRaycasts = false;
+                cg.gameObject.SetActive(true);
+            }
+        }
+    }
+
+    private void Start()
+    {
+        // Lance la transition
+        if (fadeCoverCanvasGroup != null)
+            StartCoroutine(FadeOutOverlayAndShowButtons());
+        else
+            StartCoroutine(ShowButtonsSequentially());
+    }
+    #endregion
+
+    #region Coroutines de transition
+    private IEnumerator FadeOutOverlayAndShowButtons()
+    {
+        float elapsed = 0f;
+        while (elapsed < fadeDuration)
+        {
+            fadeCoverCanvasGroup.alpha = Mathf.Lerp(1f, 0f, elapsed / fadeDuration);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        fadeCoverCanvasGroup.alpha = 0f;
+        fadeCoverCanvasGroup.gameObject.SetActive(false);
+
+        yield return StartCoroutine(ShowButtonsSequentially());
+    }
+
+    private IEnumerator ShowButtonsSequentially()
+    {
+        foreach (var cg in mainMenuButtonGroups)
+        {
+            if (cg == null) continue;
+
+            float t = 0f;
+            while (t < buttonFadeDuration)
+            {
+                cg.alpha = Mathf.Lerp(0f, 1f, t / buttonFadeDuration);
+                t += Time.deltaTime;
+                yield return null;
+            }
+            cg.alpha = 1f;
+            cg.interactable = true;
+            cg.blocksRaycasts = true;
+
+            yield return new WaitForSeconds(buttonRevealDelay);
+        }
     }
     #endregion
 
     #region UI Actions
-    // Charge la scène de jeu
-    public void StartNewGame()
-    {
-        SceneManager.LoadScene(gameSceneName);
-    }
+    public void StartNewGame() => SceneManager.LoadScene(gameSceneName);
 
-    // Quitte l'application ou arrête le Play Mode en éditeur
     public void QuitGame()
     {
 #if UNITY_EDITOR
@@ -48,55 +120,36 @@ public class MainMenuController : MonoBehaviour
 #endif
     }
 
-    // Affiche uniquement le panel Crédits
     public void ShowCredits() => ShowOnly(creditsPanel);
-    // Retour au menu principal
     public void HideCredits() => ShowOnly(null);
 
-    // Affiche uniquement le panel Options
     public void ShowOptions() => ShowOnly(optionsPanel);
-    // Retour au menu principal
     public void HideOptions() => ShowOnly(null);
 
-    // Affiche uniquement le panel Audio
     public void ShowAudioSettings() => ShowOnly(audioPanel);
-    // Retour au panel Options
     public void HideAudioSettings() => ShowOnly(optionsPanel);
 
-    // Affiche uniquement le panel Contrôles
     public void ShowControls() => ShowOnly(controlsPanel);
-    // Retour au panel Options
     public void HideControls() => ShowOnly(optionsPanel);
 
-    // Ajuste le volume global (0 à 1)
-    public void SetMasterVolume(float volume)
-    {
-        AudioListener.volume = Mathf.Clamp01(volume);
-    }
+    public void SetMasterVolume(float volume) => AudioListener.volume = Mathf.Clamp01(volume);
     #endregion
 
     #region Helper Methods
-    // Active un seul panel et désactive les autres
     private void ShowOnly(GameObject panelToShow)
     {
-        foreach (var panel in allPanels)
-            if (panel != null)
-                panel.SetActive(panel == panelToShow);
+        foreach (var p in allPanels)
+            if (p != null)
+                p.SetActive(p == panelToShow);
     }
 
-    // Vérifie que tous les champs essentiels sont bien assignés
     private void ValidateReferences()
     {
-        if (string.IsNullOrEmpty(gameSceneName))
-            Debug.LogWarning($"{nameof(gameSceneName)} n'est pas défini.", this);
-        if (creditsPanel == null)
-            Debug.LogError($"{nameof(creditsPanel)} n'est pas assigné.", this);
-        if (optionsPanel == null)
-            Debug.LogError($"{nameof(optionsPanel)} n'est pas assigné.", this);
-        if (audioPanel == null)
-            Debug.LogError($"{nameof(audioPanel)} n'est pas assigné.", this);
-        if (controlsPanel == null)
-            Debug.LogError($"{nameof(controlsPanel)} n'est pas assigné.", this);
+        if (creditsPanel == null) Debug.LogError("creditsPanel n'est pas assigné.", this);
+        if (optionsPanel == null) Debug.LogError("optionsPanel n'est pas assigné.", this);
+        if (audioPanel == null) Debug.LogError("audioPanel n'est pas assigné.", this);
+        if (controlsPanel == null) Debug.LogError("controlsPanel n'est pas assigné.", this);
+        // fadeCoverCanvasGroup et mainMenuButtonGroups peuvent rester vides
     }
     #endregion
 }
