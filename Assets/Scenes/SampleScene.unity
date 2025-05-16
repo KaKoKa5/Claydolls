@@ -5103,14 +5103,14 @@ RectTransform:
   m_GameObject: {fileID: 247798131}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.49, y: 1.5212041, z: 1.4383322}
+  m_LocalScale: {x: 11.92, y: 12.169633, z: 11.506658}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1770750880}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 75.599976, y: -78}
+  m_AnchoredPosition: {x: 590, y: -518}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &247798133
@@ -8150,7 +8150,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 378302794}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: bc044a84be6a8f14db467d8a01d839e4, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 5727fad917a662449a4bc0c98ff13590, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -8164,12 +8164,14 @@ VideoPlayer:
   m_TimeUpdateMode: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
-  m_TargetAudioSources: []
-  m_DirectAudioVolumes: []
-  m_Url: 
-  m_EnabledAudioTracks: 
-  m_DirectAudioMutes: 
-  m_ControlledAudioTrackCount: 0
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: "file://C:/Users/saver/Downloads/S\xE9quence 01.mov"
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
   m_Looping: 1
@@ -31918,7 +31920,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fac288f5f9376d042944df682f18a3e5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 99.9124
+      value: 98.05
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fac288f5f9376d042944df682f18a3e5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -31926,7 +31928,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fac288f5f9376d042944df682f18a3e5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 90.81395
+      value: 93.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fac288f5f9376d042944df682f18a3e5, type: 3}
       propertyPath: m_LocalRotation.w
