@@ -104,25 +104,27 @@ public class Brebis : MonoBehaviour ,IInteract
                 isActive = !isActive;
                 STARTText.SetActive(isActive);
                 CountText = 1;
-                return; 
+                return;
             }
             else if (CountText == 1)
             {
                 STARTText.SetActive(false);
                 STARTText2.SetActive(isActive);
                 CountText = 2;
-                return; 
+                return;
             }
             else if (CountText == 2)
             {
                 STARTText2.SetActive(false);
                 CountText = 1;
+                return;
             }
 
         }
         TableauMemoire.talkBrebis = true;
         if (TableauMemoire.masque==0 && TableauMemoire.AmiChien==false && TableauMemoire.talkFirst==true)
         {
+            CountText = 3;
         isActive = !isActive;
         bulleDeText.SetActive(isActive);
         }

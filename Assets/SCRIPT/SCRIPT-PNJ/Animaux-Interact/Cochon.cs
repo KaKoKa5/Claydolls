@@ -75,19 +75,20 @@ public class Cochon : MonoBehaviour , IInteract
                 isActive = !isActive;
                 STARTText.SetActive(isActive);
                 CountText = 1;
-                return; 
+                return;
             }
             else if (CountText == 1)
             {
                 STARTText.SetActive(false);
                 STARTText2.SetActive(isActive);
                 CountText = 2;
-                return; 
+                return;
             }
             else if (CountText == 2)
             {
                 STARTText2.SetActive(false);
                 CountText = 1;
+                return;
             }
 
         }
@@ -98,6 +99,7 @@ public class Cochon : MonoBehaviour , IInteract
             TableauMemoire.talkCochon = true;
         if (TableauMemoire.masque==0 && TableauMemoire.talkFirst==true)
         {
+            CountText = 3;
             isActive = !isActive;
             bulleDeText.SetActive(isActive);
         }

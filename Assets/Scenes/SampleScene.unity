@@ -17102,6 +17102,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e03e7b78a027e1644a2af3eea551856d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 29b151b0ce317484e9972ddd4c426125, type: 2}
+    - target: {fileID: -7511558181221131132, guid: e03e7b78a027e1644a2af3eea551856d, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 29b151b0ce317484e9972ddd4c426125, type: 2}
     - target: {fileID: 919132149155446097, guid: e03e7b78a027e1644a2af3eea551856d, type: 3}
       propertyPath: m_Name
       value: statueCorbeau
@@ -17668,6 +17676,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e03e7b78a027e1644a2af3eea551856d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 43bbc8ae92b3a614daf5aff8a3afa803, type: 2}
+    - target: {fileID: -7511558181221131132, guid: e03e7b78a027e1644a2af3eea551856d, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 43bbc8ae92b3a614daf5aff8a3afa803, type: 2}
     - target: {fileID: 919132149155446097, guid: e03e7b78a027e1644a2af3eea551856d, type: 3}
       propertyPath: m_Name
       value: statueBrebis
@@ -21949,6 +21965,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e03e7b78a027e1644a2af3eea551856d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 920eada8531991047afbb20aac7266e4, type: 2}
+    - target: {fileID: -7511558181221131132, guid: e03e7b78a027e1644a2af3eea551856d, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 920eada8531991047afbb20aac7266e4, type: 2}
     - target: {fileID: 919132149155446097, guid: e03e7b78a027e1644a2af3eea551856d, type: 3}
       propertyPath: m_Name
       value: statueChat
@@ -40312,6 +40336,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e03e7b78a027e1644a2af3eea551856d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4cd2449e9af15b0478903566fd9f0d97, type: 2}
+    - target: {fileID: -7511558181221131132, guid: e03e7b78a027e1644a2af3eea551856d, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4cd2449e9af15b0478903566fd9f0d97, type: 2}
     - target: {fileID: 919132149155446097, guid: e03e7b78a027e1644a2af3eea551856d, type: 3}
       propertyPath: m_Name
       value: statueChien
@@ -41598,6 +41630,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e03e7b78a027e1644a2af3eea551856d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 20cb0b6d6eccce847b800030faff5a41, type: 2}
+    - target: {fileID: -7511558181221131132, guid: e03e7b78a027e1644a2af3eea551856d, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 20cb0b6d6eccce847b800030faff5a41, type: 2}
     - target: {fileID: 919132149155446097, guid: e03e7b78a027e1644a2af3eea551856d, type: 3}
       propertyPath: m_Name
       value: statueSerpent
@@ -42281,7 +42321,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 49c9e9f6a854f344893c2de766ad53c5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ee01d513d67fdbc489a7f7d0d333f0f9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -43808,6 +43848,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e03e7b78a027e1644a2af3eea551856d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f4a3662ce48b2db46aa8b5e890713623, type: 2}
+    - target: {fileID: -7511558181221131132, guid: e03e7b78a027e1644a2af3eea551856d, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f4a3662ce48b2db46aa8b5e890713623, type: 2}
     - target: {fileID: 919132149155446097, guid: e03e7b78a027e1644a2af3eea551856d, type: 3}
       propertyPath: m_Name
       value: statueCerf
@@ -45646,6 +45694,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e03e7b78a027e1644a2af3eea551856d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4bfc86e8f3ce93545a2b6b4d5b192727, type: 2}
+    - target: {fileID: -7511558181221131132, guid: e03e7b78a027e1644a2af3eea551856d, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4bfc86e8f3ce93545a2b6b4d5b192727, type: 2}
     - target: {fileID: 919132149155446097, guid: e03e7b78a027e1644a2af3eea551856d, type: 3}
       propertyPath: m_Name
       value: statueCochon

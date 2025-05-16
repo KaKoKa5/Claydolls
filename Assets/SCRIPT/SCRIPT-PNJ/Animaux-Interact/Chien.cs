@@ -103,6 +103,7 @@ public class Chien : MonoBehaviour , IInteract
             {
                 STARTText2.SetActive(false);
                 CountText = 1;
+                return;
             }
 
         }
@@ -113,6 +114,7 @@ TableauMemoire.talkChien = true;
 
 if (TableauMemoire.masque == 0 && textCount == 0 && TableauMemoire.talkFirst==true)
 {
+    CountText = 3;
     isActive = !isActive;
     STARTText2.SetActive(false);
     bulleDeText.SetActive(isActive);
@@ -144,6 +146,7 @@ if (TableauMemoire.masque == 0 && textCount == 0 && TableauMemoire.talkFirst==tr
         
         if (TableauMemoire.AmiChien==true && !(TableauMemoire.masque==2))
         {
+            isActive = !isActive;
             TextPartie3.SetActive(false);
             RespectText.SetActive(isActive);
         }

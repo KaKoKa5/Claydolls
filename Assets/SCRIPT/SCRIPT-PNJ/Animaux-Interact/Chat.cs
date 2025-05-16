@@ -67,6 +67,7 @@ public class Chat : MonoBehaviour, IInteract
             {
                 STARTText2.SetActive(false);
                 CountText = 1;
+                return;
             }
 
         }
@@ -74,6 +75,7 @@ public class Chat : MonoBehaviour, IInteract
 
         if ((TableauMemoire.masque==1 || TableauMemoire.masque==0)&&TableauMemoire.talkFirst==true)
         {
+            CountText = 3;
             isActive = !isActive;
             bulleDeText.SetActive(isActive);    
         }
