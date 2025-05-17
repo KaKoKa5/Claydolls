@@ -82,6 +82,7 @@ public class Chat : MonoBehaviour, IInteract
 
         if (TableauMemoire.masque==2)
         {
+            isActive = !isActive;
             bulleText.SetActive(isActive);    
         }
     }

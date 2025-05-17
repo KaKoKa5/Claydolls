@@ -125,13 +125,14 @@ if (TableauMemoire.masque == 0 && textCount == 0 && TableauMemoire.talkFirst==tr
 
         if (TableauMemoire.masque==0 && TableauMemoire.confidenceCerf==true && textCount==0)
         {
+            
             bulleDeText.SetActive(false);
             bulleTextPartie2.SetActive(isActive);
             textCount = 1;
         } //Mission3--------------------------------------------
         else if (TableauMemoire.masque==0 && TableauMemoire.confidenceCerf==true && textCount==1)
         {
-            
+            isActive = !isActive;
             bulleDeText.SetActive(false);
             TextMA.SetActive(isActive);
             
