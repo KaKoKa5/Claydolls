@@ -22,6 +22,11 @@ public class Cochon : MonoBehaviour , IInteract
     //Mission5:
     [SerializeField] private GameObject TextPartie5;  
 
+    //PARTIE2
+    [SerializeField] private GameObject TextPartie2A;
+    [SerializeField] private GameObject TextPartie2L;
+    [SerializeField] private GameObject TextPartie2LL;
+
 
     private bool isActive = false;
     private bool isTalking = false;
@@ -37,7 +42,7 @@ public class Cochon : MonoBehaviour , IInteract
         choix1Text.SetActive(false);
         choix2Text.SetActive(false);
         choix3Text.SetActive(false);
-        
+
         TextPartie2.SetActive(false);
 
         //Mission3
@@ -47,6 +52,11 @@ public class Cochon : MonoBehaviour , IInteract
 
         //Mission6
         TextPartie5.SetActive(false);
+        
+        //PARTIE2
+        TextPartie2A.SetActive(false);
+        TextPartie2L.SetActive(false);
+        TextPartie2LL.SetActive(false);
 
 
     }
@@ -67,6 +77,11 @@ public class Cochon : MonoBehaviour , IInteract
 
         //Mission6
         TextPartie5.SetActive(false);
+
+        //PARTIE2
+        TextPartie2A.SetActive(false);
+        TextPartie2L.SetActive(false);
+        TextPartie2LL.SetActive(false);
 
         if (TableauMemoire.talkFirst == false)
         {
@@ -95,9 +110,9 @@ public class Cochon : MonoBehaviour , IInteract
 
         isTalking = true;
 
-            //mission1
-            TableauMemoire.talkCochon = true;
-        if (TableauMemoire.masque==0 && TableauMemoire.talkFirst==true)
+        //mission1
+        TableauMemoire.talkCochon = true;
+        if (TableauMemoire.masque == 0 && TableauMemoire.talkFirst == true && TableauMemoire.Partie2 == false)
         {
             CountText = 3;
             isActive = !isActive;
@@ -106,7 +121,7 @@ public class Cochon : MonoBehaviour , IInteract
         //Mission2:--------------------------------------------------------------------
 
         TextPartie2.SetActive(false);
-        if (TableauMemoire.confidenceCerf==true && TableauMemoire.masque==0)
+        if (TableauMemoire.confidenceCerf == true && TableauMemoire.masque == 0)
         {
             bulleDeText.SetActive(false);
             TextPartie2.SetActive(isActive);
@@ -114,7 +129,7 @@ public class Cochon : MonoBehaviour , IInteract
         }
 
         //Mission3:----------------------------------------------------------
-        if (TableauMemoire.masque==1)
+        if (TableauMemoire.masque == 1  && TableauMemoire.Partie2 == false)
         {
             isActive = !isActive;
             TextPartie3.SetActive(isActive);
@@ -122,14 +137,29 @@ public class Cochon : MonoBehaviour , IInteract
 
         //Mission5----------------------------------------------------------------------
 
-        if(TableauMemoire.masque==2)
+        if (TableauMemoire.masque == 2  && TableauMemoire.Partie2 == false)
         {
-            TableauMemoire.MLionFound=true;
+            TableauMemoire.MLionFound = true;
             TextPartie5.SetActive(false);
-            isActive=!isActive;
+            isActive = !isActive;
             TextPartie5.SetActive(isActive);
         }
-
+        
+        if (TableauMemoire.masque == 0 && TableauMemoire.Partie2 == true)
+        {
+            isActive = !isActive;
+            TextPartie2A.SetActive(isActive);
+        }
+        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true)
+        {
+            isActive = !isActive;
+            TextPartie2L.SetActive(isActive);
+        }
+        if(TableauMemoire.masque== 2&& TableauMemoire.Partie2==true)
+        {
+            isActive=!isActive;
+            TextPartie2LL.SetActive(isActive);
+        }
 
     }
 

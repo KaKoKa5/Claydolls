@@ -23,9 +23,14 @@ public class Chien : MonoBehaviour , IInteract
 
     //Mission5:
     [SerializeField] private GameObject TextPartie5;
+    
+    //PARTIE2
+    [SerializeField] private GameObject TextPartie2A;
+    [SerializeField] private GameObject TextPartie2L;
+    [SerializeField] private GameObject TextPartie2LL;
 
 
-    private int textCount=0;
+    private int textCount = 0;
 
 
     private bool isActive = false;
@@ -35,7 +40,7 @@ public class Chien : MonoBehaviour , IInteract
 
     private void Start()
     {
-        CountText=0;
+        CountText = 0;
         STARTText.SetActive(false);
         STARTText2.SetActive(false);
         bulleDeText.SetActive(false);
@@ -57,10 +62,15 @@ public class Chien : MonoBehaviour , IInteract
 
         //Mission5
         TextPartie5.SetActive(false);
+        
+        //PARTIE2
+        TextPartie2A.SetActive(false);
+        TextPartie2L.SetActive(false);
+        TextPartie2LL.SetActive(false);
     }
     public void Interact()
     {
-        
+
         bulleDeText.SetActive(false);
 
         //Mission2:
@@ -81,6 +91,11 @@ public class Chien : MonoBehaviour , IInteract
         //Mission5
         TextPartie5.SetActive(false);
         isTalking = true;
+
+        //PARTIE2
+        TextPartie2A.SetActive(false);
+        TextPartie2L.SetActive(false);
+        TextPartie2LL.SetActive(false);
 
         //mission1
         if (TableauMemoire.talkFirst == false)
@@ -108,44 +123,44 @@ public class Chien : MonoBehaviour , IInteract
 
         }
 
-// À partir d’ici, les STARTText sont terminés
+        // À partir d’ici, les STARTText sont terminés
 
-TableauMemoire.talkChien = true;
+        TableauMemoire.talkChien = true;
 
-if (TableauMemoire.masque == 0 && textCount == 0 && TableauMemoire.talkFirst==true)
-{
-    CountText = 3;
-    isActive = !isActive;
-    STARTText2.SetActive(false);
-    bulleDeText.SetActive(isActive);
-}
+        if (TableauMemoire.masque == 0 && textCount == 0 && TableauMemoire.talkFirst == true)
+        {
+            CountText = 3;
+            isActive = !isActive;
+            STARTText2.SetActive(false);
+            bulleDeText.SetActive(isActive);
+        }
 
 
         //Mission2:--------------------------------------------------------------------
 
-        if (TableauMemoire.masque==0 && TableauMemoire.confidenceCerf==true && textCount==0)
+        if (TableauMemoire.masque == 0 && TableauMemoire.confidenceCerf == true && textCount == 0)
         {
-            
+
             bulleDeText.SetActive(false);
             bulleTextPartie2.SetActive(isActive);
             textCount = 1;
         } //Mission3--------------------------------------------
-        else if (TableauMemoire.masque==0 && TableauMemoire.confidenceCerf==true && textCount==1)
+        else if (TableauMemoire.masque == 0 && TableauMemoire.confidenceCerf == true && textCount == 1)
         {
             isActive = !isActive;
             bulleDeText.SetActive(false);
             TextMA.SetActive(isActive);
-            
+
         }
 
-        if (TableauMemoire.masque==1 && TableauMemoire.AmiChien==false)
+        if (TableauMemoire.masque == 1 && TableauMemoire.AmiChien == false  && TableauMemoire.Partie2 == false)
         {
             TextPartie3.SetActive(true);
-            TableauMemoire.MLoupFound=true;
-            TableauMemoire.confidenceCerf=false;
+            TableauMemoire.MLoupFound = true;
+            TableauMemoire.confidenceCerf = false;
         }
-        
-        if (TableauMemoire.AmiChien==true && !(TableauMemoire.masque==2))
+
+        if (TableauMemoire.AmiChien == true && !(TableauMemoire.masque == 2))
         {
             isActive = !isActive;
             TextPartie3.SetActive(false);
@@ -154,11 +169,26 @@ if (TableauMemoire.masque == 0 && textCount == 0 && TableauMemoire.talkFirst==tr
 
         //Mission5----------------------------------------------------------------------
 
-        if(TableauMemoire.masque==2)
+        if (TableauMemoire.masque == 2  && TableauMemoire.Partie2 == false)
         {
-            TableauMemoire.MLionFound=true;
-            
+            TableauMemoire.MLionFound = true;
+
             TextPartie5.SetActive(isActive);
+        }
+        if (TableauMemoire.masque == 0 && TableauMemoire.Partie2 == true)
+        {
+            isActive = !isActive;
+            TextPartie2A.SetActive(isActive);
+        }
+        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true)
+        {
+            isActive = !isActive;
+            TextPartie2L.SetActive(isActive);
+        }
+        if(TableauMemoire.masque== 2&& TableauMemoire.Partie2==true)
+        {
+            isActive=!isActive;
+            TextPartie2LL.SetActive(isActive);
         }
     }  
 

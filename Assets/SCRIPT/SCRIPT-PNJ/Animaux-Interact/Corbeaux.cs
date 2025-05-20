@@ -23,6 +23,11 @@ public class Corbeaux : MonoBehaviour , IInteract
     //Mission5:
     [SerializeField] private GameObject TextPartie5; 
 
+    //PARTIE2
+    [SerializeField] private GameObject TextPartie2A;
+    [SerializeField] private GameObject TextPartie2L;
+    [SerializeField] private GameObject TextPartie2LL;
+
 
     private bool isActive = false;
     private bool isTalking = false;
@@ -43,7 +48,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         choix3Text.SetActive(false);
 
         TextPartie2.SetActive(false);
-        
+
         TextPartie3.SetActive(false);
 
         TextPartie4.SetActive(false);
@@ -52,6 +57,11 @@ public class Corbeaux : MonoBehaviour , IInteract
 
         //Mission6
         TextPartie5.SetActive(false);
+        
+        //PARTIE2
+        TextPartie2A.SetActive(false);
+        TextPartie2L.SetActive(false);
+        TextPartie2LL.SetActive(false);
 
     }
 
@@ -93,35 +103,35 @@ public class Corbeaux : MonoBehaviour , IInteract
             }
 
         }
-        
+
         //Mission6
         TextPartie5.SetActive(false);
 
         isTalking = true;
 
-            //mission1
-            TableauMemoire.talkCorbeau = true;
-            if(TableauMemoire.AmiChien==false && TableauMemoire.masque==0 && TableauMemoire.talkFirst==true)
-            {
-                CountText = 3;
+        //mission1
+        TableauMemoire.talkCorbeau = true;
+        if (TableauMemoire.AmiChien == false && TableauMemoire.masque == 0 && TableauMemoire.talkFirst == true && TableauMemoire.Partie2 == false)
+        {
+            CountText = 3;
             isActive = !isActive;
             bulleDeText.SetActive(isActive);
-            }
+        }
 
-            //Mission2:----------------------------------------------
-        if (TableauMemoire.confidenceCerf==true && TableauMemoire.masque==0)
+        //Mission2:----------------------------------------------
+        if (TableauMemoire.confidenceCerf == true && TableauMemoire.masque == 0 && TableauMemoire.Partie2 == false)
         {
             bulleDeText.SetActive(false);
             TextPartie2.SetActive(isActive);
         }
-        if(TableauMemoire.masque==1)
+        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == false)
         {
             isActive = !isActive;
             TextPartie3.SetActive(isActive);
         }
 
         //Mission 4-------------------------------------------------
-        if(TableauMemoire.masque==0 && TableauMemoire.AmiChien==true && stepTalk==3)
+        if (TableauMemoire.masque == 0 && TableauMemoire.AmiChien == true && stepTalk == 3 && TableauMemoire.Partie2 == false)
         {
             isActive = !isActive;
 
@@ -131,7 +141,7 @@ public class Corbeaux : MonoBehaviour , IInteract
             TextPartie4.SetActive(isActive);
             stepTalk = 1;
         }
-        else if(TableauMemoire.masque==0 && TableauMemoire.AmiChien==true && stepTalk==1)
+        else if (TableauMemoire.masque == 0 && TableauMemoire.AmiChien == true && stepTalk == 1)
         {
             isActive = !isActive;
             TextPartie4.SetActive(false);
@@ -140,25 +150,41 @@ public class Corbeaux : MonoBehaviour , IInteract
             TextPartie42.SetActive(isActive);
             stepTalk = 2;
         }
-        else if(TableauMemoire.masque==0 && TableauMemoire.AmiChien==true && stepTalk==2)
+        else if (TableauMemoire.masque == 0 && TableauMemoire.AmiChien == true && stepTalk == 2)
         {
             isActive = !isActive;
             TextPartie4.SetActive(false);
             TextPartie41.SetActive(false);
-        
+
             TextPartie41.SetActive(isActive);
             autoHideVideo.Video();
-            TableauMemoire.SecretSurCerf=true;
+            TableauMemoire.SecretSurCerf = true;
             stepTalk = 3;
         }
         //Mission5----------------------------------------------------------------------
 
-        if(TableauMemoire.masque==2)
+        if (TableauMemoire.masque == 2  && TableauMemoire.Partie2 == false)
         {
-            TableauMemoire.MLionFound=true;
+            TableauMemoire.MLionFound = true;
             TextPartie5.SetActive(false);
-            isActive=!isActive;
+            isActive = !isActive;
             TextPartie5.SetActive(isActive);
+        }
+        
+        if (TableauMemoire.masque == 0 && TableauMemoire.Partie2 == true)
+        {
+            isActive = !isActive;
+            TextPartie2A.SetActive(isActive);
+        }
+        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true)
+        {
+            isActive = !isActive;
+            TextPartie2L.SetActive(isActive);
+        }
+        if(TableauMemoire.masque== 2&& TableauMemoire.Partie2==true)
+        {
+            isActive=!isActive;
+            TextPartie2LL.SetActive(isActive);
         }
 
     }

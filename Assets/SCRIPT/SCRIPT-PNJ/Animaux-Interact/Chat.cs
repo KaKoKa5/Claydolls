@@ -80,10 +80,19 @@ public class Chat : MonoBehaviour, IInteract
             bulleDeText.SetActive(isActive);    
         }
 
-        if (TableauMemoire.masque==2)
+        if (TableauMemoire.masque == 2)
         {
             isActive = !isActive;
-            bulleText.SetActive(isActive);    
+            bulleText.SetActive(isActive);
+
+            TableauMemoire.CochonHagrad = true;
+            TableauMemoire.Partie2 = true;
+            
+            TableauMemoire.confidenceCerf = false;
+            TableauMemoire.AmiChien = false;
+            TableauMemoire.SecretSurCerf = false;
+            TableauMemoire.MLionFound = false;
+            TableauMemoire.MLoupFound = false;
         }
     }
 

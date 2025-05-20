@@ -19,10 +19,15 @@ public class Serpent : MonoBehaviour, IInteract
  [SerializeField] private GameObject TextPartie43;
  [SerializeField] private GameObject AmiDuChien;
 
- //Mission6:
-    [SerializeField] private GameObject TextPartie6;
+//Mission6:
+[SerializeField] private GameObject TextPartie6;
 
- 
+    //Mission JSP mais Partie2----------------------------------------------
+[SerializeField] private GameObject TextRevelCochon;
+[SerializeField] private GameObject TextRevelCochon2;
+    [SerializeField] private GameObject TextRevelCochon3;
+
+
 
 
     private bool isActive = false;
@@ -32,6 +37,7 @@ public class Serpent : MonoBehaviour, IInteract
     private int stepTalke=0;
     private int stepTalkPartie6=0;
     private int CountText=0;
+    private int CountPartie2=0;
 
 
 
@@ -46,7 +52,7 @@ public class Serpent : MonoBehaviour, IInteract
 
         TextPartie3.SetActive(false);
         TextPartie3d.SetActive(false);
-        stepTalk=0;
+        stepTalk = 0;
 
         TextPartie4.SetActive(false);
         TextPartie41.SetActive(false);
@@ -57,12 +63,11 @@ public class Serpent : MonoBehaviour, IInteract
 
         //Mission6
         TextPartie6.SetActive(false);
-        stepTalke=0;
-
+        stepTalke = 0;
     }
     public void Interact()
     {
-  
+
         bulleDeText.SetActive(false);
         TextPartie2.SetActive(false);
 
@@ -107,39 +112,39 @@ public class Serpent : MonoBehaviour, IInteract
 
         isTalking = true;
         isActive = !isActive;
-        
+
         //mission1-----------------------------------------
         TableauMemoire.talkSerpent = true;
-        if (TableauMemoire.masque==0 && TableauMemoire.SecretSurCerf==false && TableauMemoire.talkFirst==true)
+        if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == false && TableauMemoire.talkFirst == true && TableauMemoire.Partie2==false)
         {
             CountText = 3;
             bulleDeText.SetActive(isActive);
         }
-        
-        if (TableauMemoire.masque==0 &&TableauMemoire.confidenceCerf==true)
+
+        if (TableauMemoire.masque == 0 && TableauMemoire.confidenceCerf == true)
         {
             bulleDeText.SetActive(false);
             TextPartie2.SetActive(isActive);
         }
-        
+
         //Mission 3 ------------------------------------------------------------
-        if(TableauMemoire.masque==1 && stepTalk==0)
+        if (TableauMemoire.masque == 1 && stepTalk == 0)
         {
             isActive = !isActive;
             TextPartie3.SetActive(true);
             stepTalk = 1;
-            
+
         }
-        else if(stepTalk==1 && TableauMemoire.masque==1)
+        else if (stepTalk == 1 && TableauMemoire.masque == 1)
         {
             TextPartie3.SetActive(false);
-            
-            TextPartie3d.SetActive(isActive);
-            passTalking=true;
-        }
-        
 
-        if (TableauMemoire.AmiChien==true && TableauMemoire.SecretSurCerf==false && TableauMemoire.masque==0)
+            TextPartie3d.SetActive(isActive);
+            passTalking = true;
+        }
+
+
+        if (TableauMemoire.AmiChien == true && TableauMemoire.SecretSurCerf == false && TableauMemoire.masque == 0)
         {
             bulleDeText.SetActive(false);
             TextPartie2.SetActive(false);
@@ -149,7 +154,7 @@ public class Serpent : MonoBehaviour, IInteract
 
         //Mission 4-----------------------------------------------------------
 
-        if (TableauMemoire.masque==0 && TableauMemoire.SecretSurCerf==true && stepTalke == 0 && passTalking == true)
+        if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 0 && passTalking == true)
         {
             isActive = true;
             TextPartie4.SetActive(true);
@@ -158,7 +163,7 @@ public class Serpent : MonoBehaviour, IInteract
             TextPartie43.SetActive(false);
             stepTalke = 3;
         }
-        else if (TableauMemoire.masque==0 && TableauMemoire.SecretSurCerf==true && stepTalke == 3 && passTalking == true)
+        else if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 3 && passTalking == true)
         {
             TextPartie4.SetActive(false);
             TextPartie41.SetActive(true);
@@ -166,7 +171,7 @@ public class Serpent : MonoBehaviour, IInteract
             TextPartie43.SetActive(false);
             stepTalke = 4;
         }
-        else if (TableauMemoire.masque==0 && TableauMemoire.SecretSurCerf==true && stepTalke == 4 && passTalking == true)
+        else if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 4 && passTalking == true)
         {
             TextPartie4.SetActive(false);
             TextPartie41.SetActive(false);
@@ -175,7 +180,7 @@ public class Serpent : MonoBehaviour, IInteract
             autoHideVideo.Video();
             stepTalke = 5;
         }
-        else if (TableauMemoire.masque==0 && TableauMemoire.SecretSurCerf==true && stepTalke == 5 && passTalking == true)
+        else if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 5 && passTalking == true)
         {
             TextPartie4.SetActive(false);
             TextPartie41.SetActive(false);
@@ -183,7 +188,8 @@ public class Serpent : MonoBehaviour, IInteract
             TextPartie43.SetActive(true);
             stepTalke = 6;
 
-        }else if (TableauMemoire.masque==0 && TableauMemoire.SecretSurCerf==true && stepTalke == 6 && passTalking == true)
+        }
+        else if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 6 && passTalking == true)
         {
             TextPartie4.SetActive(false);
             TextPartie41.SetActive(false);
@@ -195,12 +201,37 @@ public class Serpent : MonoBehaviour, IInteract
 
         //Mission5----------------------------------------------------------------------
 
-        if(TableauMemoire.masque==2)
+        if (TableauMemoire.Partie2 == true && TableauMemoire.CochonHagrad == true && CountPartie2 == 0)
         {
-            TableauMemoire.MLionFound=true;
-            TextPartie6.SetActive(false);
-            isActive=!isActive;
-            TextPartie6.SetActive(isActive);
+
+            TextRevelCochon.SetActive(true);
+            TextRevelCochon2.SetActive(false);
+            TextRevelCochon3.SetActive(false);
+            CountPartie2 = 1;
+        }
+        else if (TableauMemoire.Partie2 == true && TableauMemoire.CochonHagrad == true && CountPartie2 == 1)
+        {
+            TextRevelCochon.SetActive(false);
+            TextRevelCochon2.SetActive(true);
+            TextRevelCochon3.SetActive(false);
+            CountPartie2 = 2;
+        }
+        else if (TableauMemoire.Partie2 == true && TableauMemoire.CochonHagrad == true && CountPartie2 == 2)
+        {
+            TextRevelCochon.SetActive(false);
+            TextRevelCochon2.SetActive(false);
+            TextRevelCochon3.SetActive(true);
+            autoHideVideo.Video();
+            
+            CountPartie2 = 3;
+        }
+        else if (TableauMemoire.Partie2 == true && TableauMemoire.CochonHagrad == true && CountPartie2 == 3)
+        {
+            TextRevelCochon.SetActive(false);
+            TextRevelCochon2.SetActive(false);
+            TextRevelCochon3.SetActive(false);
+            TableauMemoire.RevelSNAKE = true;
+            CountPartie2 = 0;
         }
         
     }
