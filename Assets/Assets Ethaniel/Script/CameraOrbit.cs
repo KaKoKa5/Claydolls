@@ -1,6 +1,8 @@
 using UnityEngine;
 
+/// <summary>
 /// Gère l'orbite de la caméra autour d'une cible (généralement le joueur).
+/// </summary>
 public class CameraOrbit : MonoBehaviour
 {
     [Header("Référence Player")]
@@ -22,7 +24,7 @@ public class CameraOrbit : MonoBehaviour
 
     void Start()
     {
-        // Initialise yaw/pitch à la rotation actuelle de la caméra
+        // Initialise yaw et pitch à la rotation actuelle de la caméra
         Vector3 angles = transform.eulerAngles;
         yaw   = angles.y;
         pitch = angles.x;
@@ -34,6 +36,10 @@ public class CameraOrbit : MonoBehaviour
 
     void LateUpdate()
     {
+        // Arrêt de l'orbite si le jeu est en pause (Time.timeScale == 0)
+        if (Time.timeScale == 0f)
+            return;
+
         // Ne pas exécuter si aucune cible n'est assignée
         if (target == null)
             return;
@@ -42,11 +48,12 @@ public class CameraOrbit : MonoBehaviour
         yaw   += Input.GetAxis("Mouse X") * sensitivityX;
         pitch -= Input.GetAxis("Mouse Y") * sensitivityY;
 
-        // Limite l'inclinaison pour éviter de passer sous le sol ou de trop monter
+        // Limite l'inclinaison entre les angles min et max
         pitch = Mathf.Clamp(pitch, minYAngle, maxYAngle);
 
         // Calcule la rotation désirée de la caméra
-        Quaternion rotation = Quaternion.Euler(pitch, yaw, 0);
+        Quaternion rotation = Quaternion.Euler(pitch, yaw, 0f);
+
         // Calcule la position désirée : position cible + offset tourné
         Vector3 desiredPos = target.position + rotation * offset;
 
