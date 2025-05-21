@@ -31,7 +31,9 @@ public class TableauMemoire : MonoBehaviour
     //Mission que fait le cochon ?
     public static bool Partie2 = false;
     public static bool CochonHagrad = false;
-    public static bool RevelSNAKE=false;
+    public static bool RevelSNAKE = false;
+    public static bool HibouxFound = false;
+
     
 
 }

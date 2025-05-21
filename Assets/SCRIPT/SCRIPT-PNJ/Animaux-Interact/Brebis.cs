@@ -395,18 +395,19 @@ public class Brebis : MonoBehaviour ,IInteract
             Counte = 2;
             return;
         }
-        
-        if (TableauMemoire.masque == 1 && TableauMemoire.RevelSNAKE == true && Counte == 2 && secret==true)
+
+        if (TableauMemoire.masque == 1 && TableauMemoire.RevelSNAKE == true && Counte == 2 && secret == true)
         {
             RevelSNAKEchoix3m.SetActive(false);
             RevelSNAKEDevil.SetActive(true);
             Counte = 3;
         }
-        else if (TableauMemoire.masque == 1 && TableauMemoire.RevelSNAKE == true && Counte == 3 && secret==true)
+        else if (TableauMemoire.masque == 1 && TableauMemoire.RevelSNAKE == true && Counte == 3 && secret == true)
         {
             isActive = !isActive;
             RevelSNAKEDevil.SetActive(false);
             RevelSNAKEDevil2.SetActive(isActive);
+            TableauMemoire.HibouxFound = true;
             
         }
 
