@@ -64,6 +64,11 @@ public class Serpent : MonoBehaviour, IInteract
         //Mission6
         TextPartie6.SetActive(false);
         stepTalke = 0;
+
+        TextRevelCochon.SetActive(false);
+        TextRevelCochon2.SetActive(false);
+        TextRevelCochon3.SetActive(false);
+
     }
     public void Interact()
     {
