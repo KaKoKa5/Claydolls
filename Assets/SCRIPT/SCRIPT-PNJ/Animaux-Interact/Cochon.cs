@@ -26,6 +26,26 @@ public class Cochon : MonoBehaviour , IInteract
     [SerializeField] private GameObject TextPartie2A;
     [SerializeField] private GameObject TextPartie2L;
     [SerializeField] private GameObject TextPartie2LL;
+    //17
+    //La plus grande conversation avec le porc
+    [SerializeField] private GameObject BigDiscution1;
+    [SerializeField] private GameObject BigDiscutionChoix1;
+    [SerializeField] private GameObject BigDiscutionChoix2;
+    [SerializeField] private GameObject BigDiscutionChoix3;
+    [SerializeField] private GameObject BigDiscutionChoix1s1;
+    [SerializeField] private GameObject BigDiscution1Choix1s2;
+    [SerializeField] private GameObject BigDiscution1Choix1s3;
+    [SerializeField] private GameObject BigDiscution1Choix2s1;
+    [SerializeField] private GameObject BigDiscution1Choix2s2;
+    [SerializeField] private GameObject BigDiscution1Choix2s3;
+    [SerializeField] private GameObject BigDiscution1Choix3s1;
+    [SerializeField] private GameObject BigDiscution1Choix3s2;
+    [SerializeField] private GameObject BigDiscution1Choix3s3;
+    [SerializeField] private GameObject BigDiscution1Choix4s1;
+    [SerializeField] private GameObject BigDiscution1Choix4s2;
+    [SerializeField] private GameObject BigDiscution1Choix4s3;
+    [SerializeField] private GameObject BigDiscution1Choix4s3bis;
+
 
 
     private bool isActive = false;

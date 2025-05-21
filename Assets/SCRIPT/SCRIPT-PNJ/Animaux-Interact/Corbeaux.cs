@@ -69,12 +69,13 @@ public class Corbeaux : MonoBehaviour , IInteract
         TextPartie2A.SetActive(false);
         TextPartie2L.SetActive(false);
         TextPartie2LL.SetActive(false);
-        
+
         // Partie2Hiboux
         TextPartieHiboux.SetActive(false);
         TextPartieHiboux0.SetActive(false);
         TextPartieHiboux1.SetActive(false);
         TextPartieHiboux2.SetActive(false);
+        
 
     }
 
