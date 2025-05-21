@@ -92,6 +92,11 @@ public class Corbeaux : MonoBehaviour , IInteract
         TextPartie41.SetActive(false);
         TextPartie42.SetActive(false);
 
+        TextPartieHiboux.SetActive(false);
+        TextPartieHiboux0.SetActive(false);
+        TextPartieHiboux1.SetActive(false);
+        TextPartieHiboux2.SetActive(false);
+
         if (TableauMemoire.talkFirst == false)
         {
             if (CountText == 0)
@@ -184,32 +189,29 @@ public class Corbeaux : MonoBehaviour , IInteract
             TextPartie5.SetActive(isActive);
         }
 
-        if (TableauMemoire.masque == 0 && TableauMemoire.Partie2 == true)
+        if (TableauMemoire.masque == 0 && TableauMemoire.Partie2 == true && TableauMemoire.HibouxFound == false)
         {
             isActive = !isActive;
             TextPartie2A.SetActive(isActive);
         }
-        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true)
+        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true )
         {
             isActive = !isActive;
             TextPartie2L.SetActive(isActive);
         }
-        if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == true)
+        if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == true )
         {
             isActive = !isActive;
             TextPartie2LL.SetActive(isActive);
         }
-
         // Partie2Hiboux
         if (TableauMemoire.masque == 0 && TableauMemoire.HibouxFound == true && Count == 0)
         {
             TextPartieHiboux.SetActive(true);
-            TextPartieHiboux0.SetActive(false);
-            TextPartieHiboux1.SetActive(false);
-            TextPartieHiboux2.SetActive(false);
+            
             Count = 1;
         }
-        if (TableauMemoire.masque == 0 && TableauMemoire.HibouxFound == true && Count == 1)
+        else if (TableauMemoire.masque == 0 && TableauMemoire.HibouxFound == true && Count == 1)
         {
             TextPartieHiboux.SetActive(false);
             TextPartieHiboux0.SetActive(true);
@@ -217,7 +219,7 @@ public class Corbeaux : MonoBehaviour , IInteract
             TextPartieHiboux2.SetActive(false);
             Count = 2;
         }
-        if (TableauMemoire.masque == 0 && TableauMemoire.HibouxFound == true && Count == 2)
+        else if (TableauMemoire.masque == 0 && TableauMemoire.HibouxFound == true && Count == 2)
         {
             TextPartieHiboux.SetActive(false);
             TextPartieHiboux0.SetActive(false);
@@ -225,7 +227,7 @@ public class Corbeaux : MonoBehaviour , IInteract
             TextPartieHiboux2.SetActive(false);
             Count = 3;
         }
-        if (TableauMemoire.masque == 0 && TableauMemoire.HibouxFound == true && Count == 3)
+        else if (TableauMemoire.masque == 0 && TableauMemoire.HibouxFound == true && Count == 3)
         {
             TextPartieHiboux.SetActive(false);
             TextPartieHiboux0.SetActive(false);
@@ -233,7 +235,7 @@ public class Corbeaux : MonoBehaviour , IInteract
             TextPartieHiboux2.SetActive(true);
             Count = 4;
         }
-        if (TableauMemoire.masque == 0 && TableauMemoire.HibouxFound == true && Count == 4)
+        else if (TableauMemoire.masque == 0 && TableauMemoire.HibouxFound == true && Count == 4)
         {
             TextPartieHiboux.SetActive(false);
             TextPartieHiboux0.SetActive(false);
