@@ -61,7 +61,7 @@ int isRunLeftHash;
         bool runPressed = Input.GetKey("left shift");
         bool forwardPressed = Input.GetKey("w");
         bool BackPressed = Input.GetKey("s");
-        bool LEFTPressed = Input.GetKey("q");
+        bool LEFTPressed = Input.GetKey("a");
         bool RIGHTPressed = Input.GetKey("d");
 
         //Animation de marche---------------------------------------------
@@ -113,6 +113,7 @@ int isRunLeftHash;
         if (!isWalkingRight && RIGHTPressed)
         {
             animator.SetBool(isWalkRightHash, true);
+            Debug.Log("Droite");
         }
         if (isWalkingRight && !RIGHTPressed)
         {
@@ -127,11 +128,12 @@ int isRunLeftHash;
         {
             animator.SetBool(isRunRightHash, false);
         }
-
+        
         //GAUCHE
         if (!isWalkingLeft && LEFTPressed)
         {
-            animator.SetBool(isWalkLeftHash, true);
+            animator.SetBool("isWalkLeft", true);
+            Debug.Log("GAUCHE");
         }
         if (isWalkingLeft && !LEFTPressed)
         {
@@ -141,6 +143,7 @@ int isRunLeftHash;
         if (!isRunLeft && (LEFTPressed && runPressed))
         {
             animator.SetBool(isRunLeftHash, true);
+            Debug.Log("RUNGAUCHE");
         }
         if (isRunLeft && (!LEFTPressed || !runPressed))
         {
