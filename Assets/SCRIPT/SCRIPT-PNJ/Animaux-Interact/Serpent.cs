@@ -124,20 +124,20 @@ public class Serpent : MonoBehaviour, IInteract
 
         //mission1-----------------------------------------
         TableauMemoire.talkSerpent = true;
-        if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == false && TableauMemoire.talkFirst == true && TableauMemoire.Partie2 == false)
+        if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == false && TableauMemoire.talkFirst == true && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
             CountText = 3;
             bulleDeText.SetActive(isActive);
         }
 
-        if (TableauMemoire.masque == 0 && TableauMemoire.confidenceCerf == true)
+        if (TableauMemoire.masque == 0 && TableauMemoire.confidenceCerf == true && TableauMemoire.UnVUnCochon == false)
         {
             bulleDeText.SetActive(false);
             TextPartie2.SetActive(isActive);
         }
 
         //Mission 3 ------------------------------------------------------------
-        if (TableauMemoire.masque == 1 && stepTalk == 0)
+        if (TableauMemoire.masque == 1 && stepTalk == 0 && TableauMemoire.UnVUnCochon == false)
         {
             isActive = !isActive;
             TextPartie3.SetActive(true);
@@ -163,7 +163,7 @@ public class Serpent : MonoBehaviour, IInteract
 
         //Mission 4-----------------------------------------------------------
 
-        if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 0 && passTalking == true)
+        if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 0 && passTalking == true && TableauMemoire.UnVUnCochon == false)
         {
             isActive = true;
             TextPartie4.SetActive(true);
@@ -210,7 +210,7 @@ public class Serpent : MonoBehaviour, IInteract
 
         //Mission5----------------------------------------------------------------------
 
-        if (TableauMemoire.Partie2 == true && TableauMemoire.CochonHagrad == true && CountPartie2 == 0)
+        if (TableauMemoire.Partie2 == true && TableauMemoire.CochonHagrad == true && CountPartie2 == 0 && TableauMemoire.UnVUnCochon == false)
         {
 
             TextRevelCochon.SetActive(true);
@@ -218,14 +218,14 @@ public class Serpent : MonoBehaviour, IInteract
             TextRevelCochon3.SetActive(false);
             CountPartie2 = 1;
         }
-        else if (TableauMemoire.Partie2 == true && TableauMemoire.CochonHagrad == true && CountPartie2 == 1)
+        else if (TableauMemoire.Partie2 == true && TableauMemoire.CochonHagrad == true && CountPartie2 == 1 && TableauMemoire.UnVUnCochon == false)
         {
             TextRevelCochon.SetActive(false);
             TextRevelCochon2.SetActive(true);
             TextRevelCochon3.SetActive(false);
             CountPartie2 = 2;
         }
-        else if (TableauMemoire.Partie2 == true && TableauMemoire.CochonHagrad == true && CountPartie2 == 2)
+        else if (TableauMemoire.Partie2 == true && TableauMemoire.CochonHagrad == true && CountPartie2 == 2 && TableauMemoire.UnVUnCochon == false)
         {
             TextRevelCochon.SetActive(false);
             TextRevelCochon2.SetActive(false);
@@ -234,7 +234,7 @@ public class Serpent : MonoBehaviour, IInteract
 
             CountPartie2 = 3;
         }
-        else if (TableauMemoire.Partie2 == true && TableauMemoire.CochonHagrad == true && CountPartie2 == 3)
+        else if (TableauMemoire.Partie2 == true && TableauMemoire.CochonHagrad == true && CountPartie2 == 3 && TableauMemoire.UnVUnCochon == false)
         {
             TextRevelCochon.SetActive(false);
             TextRevelCochon2.SetActive(false);

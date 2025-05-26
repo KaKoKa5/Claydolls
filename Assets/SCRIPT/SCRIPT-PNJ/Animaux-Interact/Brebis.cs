@@ -169,7 +169,7 @@ public class Brebis : MonoBehaviour ,IInteract
 
         }
         TableauMemoire.talkBrebis = true;
-        if (TableauMemoire.masque == 0 && TableauMemoire.AmiChien == false && TableauMemoire.talkFirst == true && TableauMemoire.Partie2 == false)
+        if (TableauMemoire.masque == 0 && TableauMemoire.AmiChien == false && TableauMemoire.talkFirst == true && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
             CountText = 3;
             isActive = !isActive;

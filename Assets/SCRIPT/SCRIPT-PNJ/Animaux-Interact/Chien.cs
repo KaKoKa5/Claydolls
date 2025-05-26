@@ -131,7 +131,7 @@ public class Chien : MonoBehaviour , IInteract
 
         TableauMemoire.talkChien = true;
 
-        if (TableauMemoire.masque == 0 && textCount == 0 && TableauMemoire.talkFirst == true)
+        if (TableauMemoire.masque == 0 && textCount == 0 && TableauMemoire.talkFirst == true && TableauMemoire.UnVUnCochon == false)
         {
             CountText = 3;
             isActive = !isActive;
@@ -157,7 +157,7 @@ public class Chien : MonoBehaviour , IInteract
 
         }
 
-        if (TableauMemoire.masque == 1 && TableauMemoire.AmiChien == false && TableauMemoire.Partie2 == false)
+        if (TableauMemoire.masque == 1 && TableauMemoire.AmiChien == false && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
             TextPartie3.SetActive(true);
             TableauMemoire.MLoupFound = true;
@@ -173,7 +173,7 @@ public class Chien : MonoBehaviour , IInteract
 
         //Mission5----------------------------------------------------------------------
 
-        if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == false)
+        if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
             TableauMemoire.MLionFound = true;
 

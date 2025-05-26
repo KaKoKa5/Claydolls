@@ -129,7 +129,7 @@ public class Cochon : MonoBehaviour , IInteract
         TextPartie2L.SetActive(false);
         TextPartie2LL.SetActive(false);
 
-        if (TableauMemoire.talkFirst == false && TableauMemoire.Partie2 == false)
+        if (TableauMemoire.talkFirst == false && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
             if (CountText == 0)
             {
@@ -158,7 +158,7 @@ public class Cochon : MonoBehaviour , IInteract
 
         //mission1
         TableauMemoire.talkCochon = true;
-        if (TableauMemoire.masque == 0 && TableauMemoire.talkFirst == true && TableauMemoire.Partie2 == false)
+        if (TableauMemoire.masque == 0 && TableauMemoire.talkFirst == true && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
             CountText = 3;
             isActive = !isActive;
@@ -174,7 +174,7 @@ public class Cochon : MonoBehaviour , IInteract
         }
 
         //Mission3:----------------------------------------------------------
-        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == false)
+        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
             isActive = !isActive;
             TextPartie3.SetActive(isActive);
@@ -182,7 +182,7 @@ public class Cochon : MonoBehaviour , IInteract
 
         //Mission5----------------------------------------------------------------------
 
-        if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == false)
+        if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
             TableauMemoire.MLionFound = true;
             TextPartie5.SetActive(false);
@@ -190,17 +190,17 @@ public class Cochon : MonoBehaviour , IInteract
             TextPartie5.SetActive(isActive);
         }
 
-        if (TableauMemoire.masque == 0 && TableauMemoire.Partie2 == true)
+        if (TableauMemoire.masque == 0 && TableauMemoire.Partie2 == true && TableauMemoire.UnVUnCochon == false)
         {
             isActive = !isActive;
             TextPartie2A.SetActive(isActive);
         }
-        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == false)
+        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == false && TableauMemoire.UnVUnCochon == false)
         {
             isActive = !isActive;
             TextPartie2L.SetActive(isActive);
         }
-        if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == true)
+        if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == true && TableauMemoire.UnVUnCochon == false)
         {
             isActive = !isActive;
             TextPartie2LL.SetActive(isActive);
@@ -426,6 +426,7 @@ public class Cochon : MonoBehaviour , IInteract
             TableauMemoire.RevelSNAKE = false;
             TableauMemoire.HibouxFound = false;
             TableauMemoire.StoryCorbeau = false;
+            TableauMemoire.AmiChien = false;
             TableauMemoire.Partie2 = false;
             return;
         }

@@ -77,14 +77,14 @@ public class Chat : MonoBehaviour, IInteract
         }
 
 
-        if ((TableauMemoire.masque == 1 || TableauMemoire.masque == 0) && TableauMemoire.talkFirst == true)
+        if ((TableauMemoire.masque == 1 || TableauMemoire.masque == 0) && TableauMemoire.talkFirst == true && TableauMemoire.UnVUnCochon == false)
         {
             CountText = 3;
             isActive = !isActive;
             bulleDeText.SetActive(isActive);
         }
 
-        if (TableauMemoire.masque == 2)
+        if (TableauMemoire.masque == 2 && TableauMemoire.UnVUnCochon == false)
         {
             isActive = !isActive;
             bulleText.SetActive(isActive);
