@@ -153,7 +153,7 @@ public class Serpent : MonoBehaviour, IInteract
         }
 
 
-        if (TableauMemoire.AmiChien == true && TableauMemoire.SecretSurCerf == false && TableauMemoire.masque == 0)
+        if (TableauMemoire.AmiChien == true && TableauMemoire.SecretSurCerf == false && TableauMemoire.masque == 0 && TableauMemoire.UnVUnCochon == false)
         {
             bulleDeText.SetActive(false);
             TextPartie2.SetActive(false);
@@ -245,7 +245,7 @@ public class Serpent : MonoBehaviour, IInteract
         
         if (TableauMemoire.UnVUnCochon == true)
         {
-            isActive = !isActive;
+           
             HibouxCave.SetActive(isActive);
         }
         
