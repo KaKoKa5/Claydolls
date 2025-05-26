@@ -36,13 +36,29 @@ public class Corbeaux : MonoBehaviour , IInteract
 
     [SerializeField] private GameObject HibouxCave;
 
+    // FINAL
+    [SerializeField] private GameObject TextFinal;
+    [SerializeField] private GameObject TextFinal1;
+    [SerializeField] private GameObject TextEND;
+    [SerializeField] private GameObject TextEND1;
+    [SerializeField] private GameObject TextEND2;
+    [SerializeField] private GameObject TextEND3;
+    [SerializeField] private GameObject TextEND4;
+    [SerializeField] private GameObject TextEND5;
+    [SerializeField] private GameObject TextEND6;
+
+
+
+
 
     private bool isActive = false;
     private bool isTalking = false;
     private int CountText=0;
     private int Count = 0;
-
     private int stepTalk = 3;
+    private int num = 0;
+    private int Fin = 0; 
+
 
 
 
@@ -79,7 +95,18 @@ public class Corbeaux : MonoBehaviour , IInteract
         TextPartieHiboux2.SetActive(false);
 
         HibouxCave.SetActive(false);
-        
+
+
+        //FINAL
+        TextFinal.SetActive(false);
+        TextFinal1.SetActive(false);
+        TextEND.SetActive(false);
+        TextEND1.SetActive(false);
+        TextEND2.SetActive(false);
+        TextEND3.SetActive(false);
+        TextEND4.SetActive(false);
+        TextEND5.SetActive(false);
+        TextEND6.SetActive(false);
 
     }
 
@@ -250,11 +277,61 @@ public class Corbeaux : MonoBehaviour , IInteract
             autoHideVideo.Video();
             Count = 0;
         }
-        
+
         if (TableauMemoire.UnVUnCochon == true)
         {
             isActive = !isActive;
             HibouxCave.SetActive(isActive);
+        }
+
+        if (TableauMemoire.HibouxDEAD == true && TableauMemoire.UnVUnCochon == true && num == 0)
+        {
+            TextFinal.SetActive(isActive);
+            num = 1;
+            return;
+        }
+        if (TableauMemoire.HibouxDEAD == true && TableauMemoire.UnVUnCochon == true && num == 1)
+        {
+            TextFinal.SetActive(isActive);
+            num = 0;
+            return;
+        }
+
+
+        if (TableauMemoire.masque == 3 && Fin == 0)
+        {
+            TextEND.SetActive(isActive);
+            Fin++;
+        }
+        if (TableauMemoire.masque == 3 && Fin == 1)
+        {
+            TextEND1.SetActive(isActive);
+            Fin++;
+        }
+        if (TableauMemoire.masque == 3 && Fin == 2)
+        {
+            TextEND2.SetActive(isActive);
+            Fin++;
+        }
+        if (TableauMemoire.masque == 3 && Fin == 3)
+        {
+            TextEND3.SetActive(isActive);
+            Fin++;
+        }
+        if (TableauMemoire.masque == 3 && Fin == 4)
+        {
+            TextEND4.SetActive(isActive);
+            Fin++;
+        }
+        if (TableauMemoire.masque == 3 && Fin == 5)
+        {
+            TextEND5.SetActive(isActive);
+            Fin++;
+        }
+        if (TableauMemoire.masque == 3 && Fin == 6)
+        {
+            TextEND6.SetActive(isActive);
+            //Bouton pour finir ou pas le jeu
         }
 
     }

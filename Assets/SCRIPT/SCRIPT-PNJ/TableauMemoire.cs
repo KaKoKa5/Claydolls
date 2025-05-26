@@ -34,7 +34,11 @@ public class TableauMemoire : MonoBehaviour
   public static bool RevelSNAKE = false;
   public static bool HibouxFound = false;
   public static bool StoryCorbeau = false;
-  public static bool UnVUnCochon = false;
+  public static bool UnVUnCochon = true;
+
+  // FIN
+
+  public static bool HibouxDEAD = false;
   
     
 
