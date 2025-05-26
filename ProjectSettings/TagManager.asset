@@ -12,6 +12,7 @@ TagManager:
   - Corbeau
   - Serpent
   - Hiboux
+  - StoneZone
   layers:
   - Default
   - TransparentFX
