@@ -28,6 +28,8 @@ public class Cerf : MonoBehaviour ,IInteract
     [SerializeField] private GameObject TextPartie2L;
     [SerializeField] private GameObject TextPartie2LL;
 
+    [SerializeField] private GameObject HibouxCave;
+
     private int dialogueStep = 0;
     private bool isActive = false;
     private bool isTalking = false;
@@ -56,6 +58,8 @@ public class Cerf : MonoBehaviour ,IInteract
         TextPartie2A.SetActive(false);
         TextPartie2L.SetActive(false);
         TextPartie2LL.SetActive(false);
+
+        HibouxCave.SetActive(false);
 
     }
 
@@ -101,14 +105,14 @@ public class Cerf : MonoBehaviour ,IInteract
             return;
         }
 
-        if (dialogueStep == 0 && TableauMemoire.masque == 0 && TableauMemoire.AmiChien == false && TableauMemoire.Partie2 == false)
+        if (dialogueStep == 0 && TableauMemoire.masque == 0 && TableauMemoire.AmiChien == false && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
             autoHideVideo.Video();
             bulleTextPartie1.SetActive(true);
             dialogueStep = 1;
 
         }  //Début Mission:2
-        else if (dialogueStep == 1 && TableauMemoire.masque == 0 && TableauMemoire.AmiChien == false && TableauMemoire.Partie2 == false)
+        else if (dialogueStep == 1 && TableauMemoire.masque == 0 && TableauMemoire.AmiChien == false && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
             bulleTextPartie1.SetActive(false);
             TableauMemoire.confidenceCerf = true;
@@ -116,14 +120,14 @@ public class Cerf : MonoBehaviour ,IInteract
             bulleTextDebutPartie1.SetActive(isActive);
         }
 
-        if (TableauMemoire.AmiChien == true && TableauMemoire.masque == 0 && TableauMemoire.MLionFound == false && TableauMemoire.Partie2 == false)
+        if (TableauMemoire.AmiChien == true && TableauMemoire.masque == 0 && TableauMemoire.MLionFound == false && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
             isActive = !isActive;
             AmiDuChien.SetActive(isActive);
         }
 
 
-        if (TableauMemoire.masque == 1 && TableauMemoire.MLionFound == false && TableauMemoire.Partie2 == false)
+        if (TableauMemoire.masque == 1 && TableauMemoire.MLionFound == false && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
             isActive = !isActive;
             textPartie3.SetActive(isActive);
@@ -131,7 +135,7 @@ public class Cerf : MonoBehaviour ,IInteract
         }
         //Mission5----------------------------------------------------------------------
 
-        if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == false)
+        if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
             TableauMemoire.MLionFound = true;
             TextPartie5.SetActive(false);
@@ -139,32 +143,38 @@ public class Cerf : MonoBehaviour ,IInteract
             TextPartie5.SetActive(isActive);
         }
 
-        if (TableauMemoire.MLionFound == true && TableauMemoire.masque == 1 && TableauMemoire.Partie2 == false)
+        if (TableauMemoire.MLionFound == true && TableauMemoire.masque == 1 && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
             isActive = !isActive;
             TextPartie51.SetActive(isActive);
         }
-        if (TableauMemoire.MLionFound == true && TableauMemoire.masque == 0 && TableauMemoire.AmiChien == true)
+        if (TableauMemoire.MLionFound == true && TableauMemoire.masque == 0 && TableauMemoire.AmiChien == true && TableauMemoire.UnVUnCochon == false)
         {
             isActive = !isActive;
             TextPartie52.SetActive(isActive);
         }
-        
+
         //PARTIE2----------------------------------------------------------------------------
-        if (TableauMemoire.masque == 0 && TableauMemoire.Partie2 == true)
+        if (TableauMemoire.masque == 0 && TableauMemoire.Partie2 == true && TableauMemoire.UnVUnCochon == false)
         {
             isActive = !isActive;
             TextPartie2A.SetActive(isActive);
         }
-        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true)
+        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.UnVUnCochon == false)
         {
             isActive = !isActive;
             TextPartie2L.SetActive(isActive);
         }
-        if(TableauMemoire.masque== 2&& TableauMemoire.Partie2==true)
+        if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == true && TableauMemoire.UnVUnCochon == false)
         {
-            isActive=!isActive;
+            isActive = !isActive;
             TextPartie2LL.SetActive(isActive);
+        }
+        
+        if (TableauMemoire.UnVUnCochon == true)
+        {
+            isActive = !isActive;
+            HibouxCave.SetActive(isActive);
         }
     }
     

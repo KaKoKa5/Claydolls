@@ -27,6 +27,8 @@ public class Serpent : MonoBehaviour, IInteract
 [SerializeField] private GameObject TextRevelCochon2;
     [SerializeField] private GameObject TextRevelCochon3;
 
+    [SerializeField] private GameObject HibouxCave;
+
 
 
 
@@ -68,6 +70,8 @@ public class Serpent : MonoBehaviour, IInteract
         TextRevelCochon.SetActive(false);
         TextRevelCochon2.SetActive(false);
         TextRevelCochon3.SetActive(false);
+
+        HibouxCave.SetActive(false);
 
     }
     public void Interact()
@@ -120,7 +124,7 @@ public class Serpent : MonoBehaviour, IInteract
 
         //mission1-----------------------------------------
         TableauMemoire.talkSerpent = true;
-        if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == false && TableauMemoire.talkFirst == true && TableauMemoire.Partie2==false)
+        if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == false && TableauMemoire.talkFirst == true && TableauMemoire.Partie2 == false)
         {
             CountText = 3;
             bulleDeText.SetActive(isActive);
@@ -227,7 +231,7 @@ public class Serpent : MonoBehaviour, IInteract
             TextRevelCochon2.SetActive(false);
             TextRevelCochon3.SetActive(true);
             autoHideVideo.Video();
-            
+
             CountPartie2 = 3;
         }
         else if (TableauMemoire.Partie2 == true && TableauMemoire.CochonHagrad == true && CountPartie2 == 3)
@@ -237,6 +241,12 @@ public class Serpent : MonoBehaviour, IInteract
             TextRevelCochon3.SetActive(false);
             TableauMemoire.RevelSNAKE = true;
             CountPartie2 = 0;
+        }
+        
+        if (TableauMemoire.UnVUnCochon == true)
+        {
+            isActive = !isActive;
+            HibouxCave.SetActive(isActive);
         }
         
     }

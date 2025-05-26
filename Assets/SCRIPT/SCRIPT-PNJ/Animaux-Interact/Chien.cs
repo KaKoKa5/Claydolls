@@ -29,6 +29,8 @@ public class Chien : MonoBehaviour , IInteract
     [SerializeField] private GameObject TextPartie2L;
     [SerializeField] private GameObject TextPartie2LL;
 
+    [SerializeField] private GameObject HibouxCave;
+
 
     private int textCount = 0;
 
@@ -62,11 +64,13 @@ public class Chien : MonoBehaviour , IInteract
 
         //Mission5
         TextPartie5.SetActive(false);
-        
+
         //PARTIE2
         TextPartie2A.SetActive(false);
         TextPartie2L.SetActive(false);
         TextPartie2LL.SetActive(false);
+        
+        HibouxCave.SetActive(false);
     }
     public void Interact()
     {
@@ -153,7 +157,7 @@ public class Chien : MonoBehaviour , IInteract
 
         }
 
-        if (TableauMemoire.masque == 1 && TableauMemoire.AmiChien == false  && TableauMemoire.Partie2 == false)
+        if (TableauMemoire.masque == 1 && TableauMemoire.AmiChien == false && TableauMemoire.Partie2 == false)
         {
             TextPartie3.SetActive(true);
             TableauMemoire.MLoupFound = true;
@@ -169,7 +173,7 @@ public class Chien : MonoBehaviour , IInteract
 
         //Mission5----------------------------------------------------------------------
 
-        if (TableauMemoire.masque == 2  && TableauMemoire.Partie2 == false)
+        if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == false)
         {
             TableauMemoire.MLionFound = true;
 
@@ -185,10 +189,16 @@ public class Chien : MonoBehaviour , IInteract
             isActive = !isActive;
             TextPartie2L.SetActive(isActive);
         }
-        if(TableauMemoire.masque== 2&& TableauMemoire.Partie2==true)
+        if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == true)
         {
-            isActive=!isActive;
+            isActive = !isActive;
             TextPartie2LL.SetActive(isActive);
+        }
+        
+        if (TableauMemoire.UnVUnCochon == true)
+        {
+            isActive = !isActive;
+            HibouxCave.SetActive(isActive);
         }
     }  
 

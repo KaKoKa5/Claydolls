@@ -34,6 +34,8 @@ public class Corbeaux : MonoBehaviour , IInteract
     [SerializeField] private GameObject TextPartieHiboux1;
     [SerializeField] private GameObject TextPartieHiboux2;
 
+    [SerializeField] private GameObject HibouxCave;
+
 
     private bool isActive = false;
     private bool isTalking = false;
@@ -75,6 +77,8 @@ public class Corbeaux : MonoBehaviour , IInteract
         TextPartieHiboux0.SetActive(false);
         TextPartieHiboux1.SetActive(false);
         TextPartieHiboux2.SetActive(false);
+
+        HibouxCave.SetActive(false);
         
 
     }
@@ -130,7 +134,7 @@ public class Corbeaux : MonoBehaviour , IInteract
 
         //mission1
         TableauMemoire.talkCorbeau = true;
-        if (TableauMemoire.AmiChien == false && TableauMemoire.masque == 0 && TableauMemoire.talkFirst == true && TableauMemoire.Partie2 == false)
+        if (TableauMemoire.AmiChien == false && TableauMemoire.masque == 0 && TableauMemoire.talkFirst == true && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
             CountText = 3;
             isActive = !isActive;
@@ -138,19 +142,19 @@ public class Corbeaux : MonoBehaviour , IInteract
         }
 
         //Mission2:----------------------------------------------
-        if (TableauMemoire.confidenceCerf == true && TableauMemoire.masque == 0 && TableauMemoire.Partie2 == false)
+        if (TableauMemoire.confidenceCerf == true && TableauMemoire.masque == 0 && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
             bulleDeText.SetActive(false);
             TextPartie2.SetActive(isActive);
         }
-        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == false)
+        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
             isActive = !isActive;
             TextPartie3.SetActive(isActive);
         }
 
         //Mission 4-------------------------------------------------
-        if (TableauMemoire.masque == 0 && TableauMemoire.AmiChien == true && stepTalk == 3 && TableauMemoire.Partie2 == false)
+        if (TableauMemoire.masque == 0 && TableauMemoire.AmiChien == true && stepTalk == 3 && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
             isActive = !isActive;
 
@@ -182,7 +186,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         }
         //Mission5----------------------------------------------------------------------
 
-        if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == false)
+        if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
             TableauMemoire.MLionFound = true;
             TextPartie5.SetActive(false);
@@ -190,26 +194,26 @@ public class Corbeaux : MonoBehaviour , IInteract
             TextPartie5.SetActive(isActive);
         }
 
-        if (TableauMemoire.masque == 0 && TableauMemoire.Partie2 == true && TableauMemoire.HibouxFound == false)
+        if (TableauMemoire.masque == 0 && TableauMemoire.Partie2 == true && TableauMemoire.HibouxFound == false && TableauMemoire.UnVUnCochon == false)
         {
             isActive = !isActive;
             TextPartie2A.SetActive(isActive);
         }
-        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true )
+        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.UnVUnCochon == false)
         {
             isActive = !isActive;
             TextPartie2L.SetActive(isActive);
         }
-        if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == true )
+        if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == true && TableauMemoire.UnVUnCochon == false)
         {
             isActive = !isActive;
             TextPartie2LL.SetActive(isActive);
         }
         // Partie2Hiboux
-        if (TableauMemoire.masque == 0 && TableauMemoire.HibouxFound == true && Count == 0)
+        if (TableauMemoire.masque == 0 && TableauMemoire.HibouxFound == true && Count == 0 && TableauMemoire.UnVUnCochon == false)
         {
             TextPartieHiboux.SetActive(true);
-            
+
             Count = 1;
         }
         else if (TableauMemoire.masque == 0 && TableauMemoire.HibouxFound == true && Count == 1)
@@ -245,6 +249,12 @@ public class Corbeaux : MonoBehaviour , IInteract
             TableauMemoire.StoryCorbeau = true;
             autoHideVideo.Video();
             Count = 0;
+        }
+        
+        if (TableauMemoire.UnVUnCochon == true)
+        {
+            isActive = !isActive;
+            HibouxCave.SetActive(isActive);
         }
 
     }
