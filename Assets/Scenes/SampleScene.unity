@@ -47289,8 +47289,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 199554f471bbdad49a5d9a493f17be34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grassLoopClip: {fileID: 8300000, guid: da35625f9d58a554280a193cbdfdb606, type: 3}
-  stoneLoopClip: {fileID: 8300000, guid: caa8baa3c433d3c41b6c7f0a945a2c2b, type: 3}
+  grassLoop: {fileID: 8300000, guid: da35625f9d58a554280a193cbdfdb606, type: 3}
+  stoneLoop: {fileID: 8300000, guid: caa8baa3c433d3c41b6c7f0a945a2c2b, type: 3}
+  runPitchMultiplier: 1.5
   stoneZoneTag: StoneZone
 --- !u!82 &1175157802
 AudioSource:

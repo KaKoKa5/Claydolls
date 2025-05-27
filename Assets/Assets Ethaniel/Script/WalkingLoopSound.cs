@@ -1,41 +1,44 @@
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
-public class WalkingLoopSound : MonoBehaviour
+public class WalkingLoopHandler : MonoBehaviour
 {
     [Header("Clips de marche")]
-    public AudioClip grassLoopClip;
-    public AudioClip stoneLoopClip;
+    public AudioClip grassLoop;
+    public AudioClip stoneLoop;
 
-    [Header("Détection")]
-    public string stoneZoneTag = "StoneZone"; 
+    [Header("Réglages")]
+    public float runPitchMultiplier = 2f;
+    public string stoneZoneTag = "StoneZone";
 
-    private AudioSource _audioSource;
-    private bool _isMoving = false;
+    private AudioSource _audio;
     private bool _isOnStone = false;
 
     void Awake()
     {
-        _audioSource = GetComponent<AudioSource>();
-        _audioSource.loop = true;
-        _audioSource.playOnAwake = false;
-        _audioSource.spatialBlend = 0f;
-        _audioSource.clip = grassLoopClip; // clip par défaut
+        _audio = GetComponent<AudioSource>();
+        _audio.loop = true;
+        _audio.playOnAwake = false;
+        _audio.spatialBlend = 0f;
+        _audio.clip = grassLoop;
     }
 
     void Update()
     {
-        _isMoving = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D);
+        bool isMoving = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D);
+        bool isRunning = Input.GetKey(KeyCode.LeftShift);
 
-        if (_isMoving)
+        if (isMoving)
         {
-            if (!_audioSource.isPlaying)
-                _audioSource.Play();
+            if (!_audio.isPlaying)
+                _audio.Play();
+
+            _audio.pitch = isRunning ? runPitchMultiplier : 1f;
         }
         else
         {
-            if (_audioSource.isPlaying)
-                _audioSource.Pause();
+            if (_audio.isPlaying)
+                _audio.Pause();
         }
     }
 
@@ -44,7 +47,7 @@ public class WalkingLoopSound : MonoBehaviour
         if (other.CompareTag(stoneZoneTag))
         {
             _isOnStone = true;
-            ChangeFootstepClip(stoneLoopClip);
+            ChangeClip(stoneLoop);
         }
     }
 
@@ -53,17 +56,18 @@ public class WalkingLoopSound : MonoBehaviour
         if (other.CompareTag(stoneZoneTag))
         {
             _isOnStone = false;
-            ChangeFootstepClip(grassLoopClip);
+            ChangeClip(grassLoop);
         }
     }
 
-    private void ChangeFootstepClip(AudioClip newClip)
+    private void ChangeClip(AudioClip newClip)
     {
-        if (_audioSource.clip == newClip) return;
+        if (_audio.clip == newClip) return;
 
-        bool wasPlaying = _audioSource.isPlaying;
-        _audioSource.Stop();
-        _audioSource.clip = newClip;
-        if (wasPlaying) _audioSource.Play();
+        bool wasPlaying = _audio.isPlaying;
+        _audio.Stop();
+        _audio.clip = newClip;
+        if (wasPlaying)
+            _audio.Play();
     }
 }

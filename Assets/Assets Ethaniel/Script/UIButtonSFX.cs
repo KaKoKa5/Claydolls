@@ -11,19 +11,18 @@ public class UIButtonSFX : MonoBehaviour,
     [Range(0f,1f)] public float hoverVolume = 0.2f;
     [Range(0f,1f)] public float clickVolume = 0.5f;
 
-    // AudioSource partagé par tous les boutons
     private static AudioSource _globalSource;
 
     void Awake()
     {
-        // Crée l'AudioSource global la première fois
         if (_globalSource == null)
         {
             var go = new GameObject("UI_SFX_Source");
             DontDestroyOnLoad(go);
             _globalSource = go.AddComponent<AudioSource>();
             _globalSource.playOnAwake = false;
-            _globalSource.spatialBlend = 0f; // son 2D
+            _globalSource.spatialBlend = 0f;             
+            _globalSource.ignoreListenerPause = true;     
         }
     }
 
