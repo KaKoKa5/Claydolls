@@ -113,7 +113,6 @@ int isRunLeftHash;
         if (!isWalkingRight && RIGHTPressed)
         {
             animator.SetBool(isWalkRightHash, true);
-            Debug.Log("Droite");
         }
         if (isWalkingRight && !RIGHTPressed)
         {
@@ -133,7 +132,7 @@ int isRunLeftHash;
         if (!isWalkingLeft && LEFTPressed)
         {
             animator.SetBool("isWalkLeft", true);
-            Debug.Log("GAUCHE");
+
         }
         if (isWalkingLeft && !LEFTPressed)
         {
@@ -143,7 +142,7 @@ int isRunLeftHash;
         if (!isRunLeft && (LEFTPressed && runPressed))
         {
             animator.SetBool(isRunLeftHash, true);
-            Debug.Log("RUNGAUCHE");
+
         }
         if (isRunLeft && (!LEFTPressed || !runPressed))
         {
