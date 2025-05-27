@@ -48,6 +48,9 @@ public class Cochon : MonoBehaviour , IInteract
 
     [SerializeField] private GameObject HibouxCave;
 
+    //END
+    [SerializeField] private GameObject END;
+
 
 
     private bool isActive = false;
@@ -103,6 +106,8 @@ public class Cochon : MonoBehaviour , IInteract
         BigDiscution1Choix4s3bis.SetActive(false);
 
         HibouxCave.SetActive(false);
+
+        END.SetActive(false);
 
 
     }
@@ -214,11 +219,15 @@ public class Cochon : MonoBehaviour , IInteract
             BigDiscution1.SetActive(isActive);
         }
 
-        if (TableauMemoire.UnVUnCochon == true)
+        if (TableauMemoire.UnVUnCochon == true &&TableauMemoire.END == false)
         {
             isActive = !isActive;
             HibouxCave.SetActive(isActive);
-            
+        }
+        if (TableauMemoire.END == true)
+        {
+            isActive = !isActive;
+            END.SetActive(isActive);
         }
         
 

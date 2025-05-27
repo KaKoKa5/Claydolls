@@ -31,7 +31,8 @@ public class Chien : MonoBehaviour , IInteract
 
     [SerializeField] private GameObject HibouxCave;
 
-
+//END
+    [SerializeField] private GameObject END;
     private int textCount = 0;
 
 
@@ -69,8 +70,10 @@ public class Chien : MonoBehaviour , IInteract
         TextPartie2A.SetActive(false);
         TextPartie2L.SetActive(false);
         TextPartie2LL.SetActive(false);
-        
+
         HibouxCave.SetActive(false);
+        
+        END.SetActive(false);
     }
     public void Interact()
     {
@@ -195,10 +198,15 @@ public class Chien : MonoBehaviour , IInteract
             TextPartie2LL.SetActive(isActive);
         }
         
-        if (TableauMemoire.UnVUnCochon == true)
+        if (TableauMemoire.UnVUnCochon == true &&TableauMemoire.END == false)
         {
             isActive = !isActive;
             HibouxCave.SetActive(isActive);
+        }
+        if (TableauMemoire.END == true)
+        {
+            isActive = !isActive;
+            END.SetActive(isActive);
         }
     }  
 

@@ -38,7 +38,9 @@ public class TableauMemoire : MonoBehaviour
 
   // FIN
 
-  public static bool HibouxDEAD = false;
+  public static bool HibouxDEAD = true;
+
+  public static bool END = false;
   
     
 

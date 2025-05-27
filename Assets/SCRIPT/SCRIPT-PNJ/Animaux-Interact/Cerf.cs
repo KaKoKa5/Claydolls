@@ -30,6 +30,9 @@ public class Cerf : MonoBehaviour ,IInteract
 
     [SerializeField] private GameObject HibouxCave;
 
+    //END
+    [SerializeField] private GameObject END;
+
     private int dialogueStep = 0;
     private bool isActive = false;
     private bool isTalking = false;
@@ -60,6 +63,8 @@ public class Cerf : MonoBehaviour ,IInteract
         TextPartie2LL.SetActive(false);
 
         HibouxCave.SetActive(false);
+
+        END.SetActive(false);
 
     }
 
@@ -170,11 +175,16 @@ public class Cerf : MonoBehaviour ,IInteract
             isActive = !isActive;
             TextPartie2LL.SetActive(isActive);
         }
-        
-        if (TableauMemoire.UnVUnCochon == true)
+
+        if (TableauMemoire.UnVUnCochon == true &&TableauMemoire.END == false)
         {
             isActive = !isActive;
             HibouxCave.SetActive(isActive);
+        }
+        if (TableauMemoire.END == true)
+        {
+            isActive = !isActive;
+            END.SetActive(isActive);
         }
     }
     

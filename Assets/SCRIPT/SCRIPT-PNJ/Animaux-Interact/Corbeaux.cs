@@ -278,60 +278,79 @@ public class Corbeaux : MonoBehaviour , IInteract
             Count = 0;
         }
 
-        if (TableauMemoire.UnVUnCochon == true)
+        if (TableauMemoire.HibouxDEAD == false && TableauMemoire.UnVUnCochon == true)
         {
             isActive = !isActive;
             HibouxCave.SetActive(isActive);
         }
 
-        if (TableauMemoire.HibouxDEAD == true && TableauMemoire.UnVUnCochon == true && num == 0)
+
+        if (TableauMemoire.masque == 0 && TableauMemoire.HibouxDEAD == true && TableauMemoire.UnVUnCochon == true && num == 0)
         {
+            isActive = !isActive;
+            TextFinal1.SetActive(false);
             TextFinal.SetActive(isActive);
-            num = 1;
+            num++;
             return;
         }
-        if (TableauMemoire.HibouxDEAD == true && TableauMemoire.UnVUnCochon == true && num == 1)
+        if (TableauMemoire.masque == 0 && TableauMemoire.HibouxDEAD == true && TableauMemoire.UnVUnCochon == true && num == 1)
         {
-            TextFinal.SetActive(isActive);
+            TextFinal.SetActive(false);
+            TextFinal1.SetActive(isActive);
             num = 0;
-            return;
         }
 
 
         if (TableauMemoire.masque == 3 && Fin == 0)
         {
-            TextEND.SetActive(isActive);
+            TextEND.SetActive(true);
             Fin++;
+            return;
         }
         if (TableauMemoire.masque == 3 && Fin == 1)
         {
-            TextEND1.SetActive(isActive);
+            TextEND.SetActive(false);
+            TextEND1.SetActive(true);
             Fin++;
+            return;
         }
         if (TableauMemoire.masque == 3 && Fin == 2)
         {
-            TextEND2.SetActive(isActive);
+            TextEND1.SetActive(false);
+            TextEND2.SetActive(true);
             Fin++;
+            return;
         }
         if (TableauMemoire.masque == 3 && Fin == 3)
         {
-            TextEND3.SetActive(isActive);
+            TextEND2.SetActive(false);
+            TextEND3.SetActive(true);
             Fin++;
+            return;
         }
         if (TableauMemoire.masque == 3 && Fin == 4)
         {
-            TextEND4.SetActive(isActive);
+            TextEND3.SetActive(false);
+            TextEND4.SetActive(true);
             Fin++;
+            return;
         }
         if (TableauMemoire.masque == 3 && Fin == 5)
         {
-            TextEND5.SetActive(isActive);
+            
+            TextEND4.SetActive(false);
+            TextEND5.SetActive(true);
             Fin++;
+            return;
         }
         if (TableauMemoire.masque == 3 && Fin == 6)
         {
+            TextEND5.SetActive(false);
+            isActive = !isActive;
             TextEND6.SetActive(isActive);
+            TableauMemoire.END = true;
             //Bouton pour finir ou pas le jeu
+            return;
         }
 
     }

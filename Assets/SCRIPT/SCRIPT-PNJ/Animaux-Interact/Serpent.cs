@@ -29,6 +29,8 @@ public class Serpent : MonoBehaviour, IInteract
 
     [SerializeField] private GameObject HibouxCave;
 
+    //END
+    [SerializeField] private GameObject END;
 
 
 
@@ -72,6 +74,8 @@ public class Serpent : MonoBehaviour, IInteract
         TextRevelCochon3.SetActive(false);
 
         HibouxCave.SetActive(false);
+
+        END.SetActive(false);
 
     }
     public void Interact()
@@ -243,10 +247,16 @@ public class Serpent : MonoBehaviour, IInteract
             CountPartie2 = 0;
         }
         
-        if (TableauMemoire.UnVUnCochon == true)
+        if (TableauMemoire.UnVUnCochon == true &&TableauMemoire.END == false)
         {
-           
+            isActive = !isActive;
             HibouxCave.SetActive(isActive);
+        }
+        if (TableauMemoire.END == true)
+        {
+            isActive = !isActive;
+            END.SetActive(isActive);
+            
         }
         
     }

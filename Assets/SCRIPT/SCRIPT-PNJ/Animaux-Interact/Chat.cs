@@ -15,7 +15,8 @@ public class Chat : MonoBehaviour, IInteract
     [SerializeField] private GameObject bulleChoix3DeText;
 
 [SerializeField] private GameObject HibouxCave;
-
+//END
+    [SerializeField] private GameObject END;
 
 
     private bool isActive = false;
@@ -34,8 +35,10 @@ public class Chat : MonoBehaviour, IInteract
         bulleChoix1DeText.SetActive(false);
         bulleChoix2DeText.SetActive(false);
         bulleChoix3DeText.SetActive(false);
-        
+
         HibouxCave.SetActive(false);
+        
+        END.SetActive(false);
 
     }
 
@@ -99,10 +102,15 @@ public class Chat : MonoBehaviour, IInteract
             TableauMemoire.MLoupFound = false;
         }
         
-        if (TableauMemoire.UnVUnCochon == true)
+        if (TableauMemoire.UnVUnCochon == true &&TableauMemoire.END == false)
         {
             isActive = !isActive;
             HibouxCave.SetActive(isActive);
+        }
+        if (TableauMemoire.END == true)
+        {
+            isActive = !isActive;
+            END.SetActive(isActive);
         }
     }
 
