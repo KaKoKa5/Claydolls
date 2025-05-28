@@ -13,6 +13,7 @@ TagManager:
   - Serpent
   - Hiboux
   - StoneZone
+  - PNJ
   layers:
   - Default
   - TransparentFX

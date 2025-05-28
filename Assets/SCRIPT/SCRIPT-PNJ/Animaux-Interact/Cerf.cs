@@ -36,6 +36,7 @@ public class Cerf : MonoBehaviour ,IInteract
     private int dialogueStep = 0;
     private bool isActive = false;
     private bool isTalking = false;
+    private IInteract currentInteract;
 
 
     private void Start()
@@ -93,6 +94,44 @@ public class Cerf : MonoBehaviour ,IInteract
         TextPartie52.SetActive(false);
 
         isTalking = true;
+        if (isTalking && currentInteract != null)
+{
+    GameObject npcObject = ((MonoBehaviour)currentInteract).gameObject;
+    float distance = Vector3.Distance(transform.position, npcObject.transform.position);
+
+    if (distance > 2f)
+    {
+        bulleDeText.SetActive(false);
+        choix1Text.SetActive(false);
+        choix2Text.SetActive(false);
+        choix3Text.SetActive(false);
+        bulleTextEND.SetActive(false);
+        bulleTextENDPatie1.SetActive(false);
+        bulleTextPartie1.SetActive(false);
+        bulleTextDebutPartie1.SetActive(false);
+
+        textPartie3.SetActive(false);
+        AmiDuChien.SetActive(false);
+
+        //Mission5
+        TextPartie5.SetActive(false);
+        TextPartie51.SetActive(false);
+        TextPartie52.SetActive(false);
+
+        //PARTIE2
+        TextPartie2A.SetActive(false);
+        TextPartie2L.SetActive(false);
+        TextPartie2LL.SetActive(false);
+
+        HibouxCave.SetActive(false);
+
+        END.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        isTalking = false;
+        currentInteract = null;
+    }
+}
 
         //mission1
         TableauMemoire.talkCerf = true;
