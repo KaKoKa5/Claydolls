@@ -71,22 +71,17 @@ public class Cerf : MonoBehaviour ,IInteract
 
     void Update()
     {
-        if (isTalking==true)
+        if (isActive == true)
         {
             Cursor.lockState = CursorLockMode.None; // Débloque la souris
             Cursor.visible = true;                  // Affiche la souris
         }
-        if (isTalking==false)
-        {
-            Cursor.lockState = CursorLockMode.Locked; // Verrouille la souris
-            Cursor.visible = false;                   // Cache la souris
-        }
+        
     
     }
 
     public void Interact()
     {
-        
         choix1Text.SetActive(false);
         choix2Text.SetActive(false);
         choix3Text.SetActive(false);
