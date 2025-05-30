@@ -8,6 +8,7 @@ public class Interaction : MonoBehaviour
 {
     private bool isPlayerNear = false;
     private float interactionRange = 2f;
+    private int count = 0;
     void Start()
     {
 
@@ -21,16 +22,30 @@ public class Interaction : MonoBehaviour
                 Collider[] colliderArray = Physics.OverlapSphere(transform.position, interactionRange);
                 foreach (Collider collider in colliderArray)
                 {
-                    if (collider.TryGetComponent(out IInteract interact))
-                    {
-                        interact.Interact();
-                        InteractIcon.Instance.ClearCurrent();
-                    }
+                if (collider.TryGetComponent(out IInteract interact) && count == 0)
+                {
+                    interact.Interact();
+                    InteractIcon.Instance.ClearCurrent();
+                    Cursor.lockState = CursorLockMode.None; // Débloque la souris
+                    Cursor.visible = true;
+                    count++;
+                    Debug.Log("Count: " + count);
+                    return;
+
+                }
                 }
 
             }
+        if (Input.GetKeyDown(KeyCode.E) && count == 1)
+        {
+            Debug.Log("Interaction started");
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = true;
+            count = 0;
+            return;
+        }
         
-        if (Input.GetKeyDown(KeyCode.V))
+        /*if (Input.GetKeyDown(KeyCode.V))
         {
             Collider[] colliderArray = Physics.OverlapSphere(transform.position, interactionRange);
             foreach (Collider collider in colliderArray)
@@ -66,7 +81,7 @@ public class Interaction : MonoBehaviour
                 }
             }
 
-        }
+        }*/
 
 
     }
