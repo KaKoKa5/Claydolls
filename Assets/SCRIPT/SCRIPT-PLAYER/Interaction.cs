@@ -15,7 +15,13 @@ public class Interaction : MonoBehaviour
     }
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.E) && Cursor.visible == true)
+        {
+            Debug.Log("Interaction started");
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            //count = 0;
+        }
             
             if (Input.GetKeyDown(KeyCode.E))
             {
@@ -28,7 +34,7 @@ public class Interaction : MonoBehaviour
                     InteractIcon.Instance.ClearCurrent();
                     Cursor.lockState = CursorLockMode.None; // Débloque la souris
                     Cursor.visible = true;
-                    count++;
+                    //count++;
                     Debug.Log("Count: " + count);
                     return;
 
@@ -36,14 +42,7 @@ public class Interaction : MonoBehaviour
                 }
 
             }
-        if (Input.GetKeyDown(KeyCode.E) && count == 1)
-        {
-            Debug.Log("Interaction started");
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = true;
-            count = 0;
-            return;
-        }
+        
         
         /*if (Input.GetKeyDown(KeyCode.V))
         {
