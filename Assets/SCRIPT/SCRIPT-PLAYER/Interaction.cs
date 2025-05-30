@@ -15,14 +15,7 @@ public class Interaction : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && Cursor.visible == true)
-        {
-            Debug.Log("Interaction started");
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-            //count = 0;
-        }
-            
+          
             if (Input.GetKeyDown(KeyCode.E))
             {
                 Collider[] colliderArray = Physics.OverlapSphere(transform.position, interactionRange);
@@ -32,11 +25,23 @@ public class Interaction : MonoBehaviour
                 {
                     interact.Interact();
                     InteractIcon.Instance.ClearCurrent();
-                    Cursor.lockState = CursorLockMode.None; // Débloque la souris
-                    Cursor.visible = true;
-                    //count++;
-                    Debug.Log("Count: " + count);
-                    return;
+                    if (Cursor.visible == true)
+                    {
+                        // Si la souris est visible, on la cache et on verrouille le curseur
+                        Debug.Log("Interaction started");
+                        Cursor.lockState = CursorLockMode.Locked;
+                        Cursor.visible = false;
+                        //count = 0;
+                    }
+                    else
+                    {
+                        Cursor.lockState = CursorLockMode.None; // Débloque la souris
+                        Cursor.visible = true;
+                    }
+                        //count++;
+                        Debug.Log("Count: " + count);
+                        return;
+                    
 
                 }
                 }

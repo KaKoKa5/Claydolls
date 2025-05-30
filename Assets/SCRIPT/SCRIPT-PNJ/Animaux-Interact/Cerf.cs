@@ -78,31 +78,6 @@ public class Cerf : MonoBehaviour ,IInteract
 
     public void Interact()
     {
-        choix1Text.SetActive(false);
-        choix2Text.SetActive(false);
-        choix3Text.SetActive(false);
-        bulleDeText.SetActive(false);
-        bulleTextEND.SetActive(false);
-        bulleTextENDPatie1.SetActive(false);
-        bulleTextPartie1.SetActive(false);
-        bulleTextDebutPartie1.SetActive(false);
-
-        textPartie3.SetActive(false);
-        AmiDuChien.SetActive(false);
-
-        //Mission5
-        TextPartie5.SetActive(false);
-        TextPartie51.SetActive(false);
-        TextPartie52.SetActive(false);
-
-        isTalking = true;
-        if (isTalking && currentInteract != null)
-{
-    GameObject npcObject = ((MonoBehaviour)currentInteract).gameObject;
-    float distance = Vector3.Distance(transform.position, npcObject.transform.position);
-
-    if (distance > 2f)
-    {
         bulleDeText.SetActive(false);
         choix1Text.SetActive(false);
         choix2Text.SetActive(false);
@@ -128,12 +103,9 @@ public class Cerf : MonoBehaviour ,IInteract
         HibouxCave.SetActive(false);
 
         END.SetActive(false);
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-        isTalking = false;
-        currentInteract = null;
-    }
-}
+        
+
+        isTalking = true;
 
         //mission1
         TableauMemoire.talkCerf = true;
@@ -145,11 +117,12 @@ public class Cerf : MonoBehaviour ,IInteract
         !TableauMemoire.talkCorbeau ||
         !TableauMemoire.talkSerpent)
         {
-            TableauMemoire.talkFirst = true;
             isActive = !isActive;
+            TableauMemoire.talkFirst = true;
             bulleDeText.SetActive(isActive);
             return;
         }
+
 
         if (dialogueStep == 0 && TableauMemoire.masque == 0 && TableauMemoire.AmiChien == false && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
@@ -164,6 +137,12 @@ public class Cerf : MonoBehaviour ,IInteract
             TableauMemoire.confidenceCerf = true;
             isActive = !isActive;
             bulleTextDebutPartie1.SetActive(isActive);
+            dialogueStep = 2;
+        }
+        else if (dialogueStep == 2 && TableauMemoire.masque == 0 && TableauMemoire.AmiChien == false && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
+        {
+            bulleTextPartie1.SetActive(false);
+            TableauMemoire.confidenceCerf = true;
         }
 
         if (TableauMemoire.AmiChien == true && TableauMemoire.masque == 0 && TableauMemoire.MLionFound == false && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
@@ -235,11 +214,11 @@ public class Cerf : MonoBehaviour ,IInteract
         //mission1
         if (TableauMemoire.masque==0)
         {
+        choix1Text.SetActive(true);
         bulleDeText.SetActive(false);
         choix2Text.SetActive(false);
         choix3Text.SetActive(false);
-        isActive = !isActive;
-        choix1Text.SetActive(true);
+        
         }
         //Mission:2
 
@@ -250,11 +229,11 @@ public class Cerf : MonoBehaviour ,IInteract
         //mission1
         if(TableauMemoire.masque==0)
         {
+        choix2Text.SetActive(true);
         bulleDeText.SetActive(false);
         choix1Text.SetActive(false);
         choix3Text.SetActive(false);
-        isActive = !isActive;
-        choix2Text.SetActive(true);
+        
         }
         //Mission:2
     }
@@ -264,11 +243,11 @@ public class Cerf : MonoBehaviour ,IInteract
         //mission1
         if(TableauMemoire.masque==0)
         {
+        choix3Text.SetActive(true);
         bulleDeText.SetActive(false);
         choix1Text.SetActive(false);
         choix2Text.SetActive(false);
-        isActive = !isActive;
-        choix3Text.SetActive(true);
+        
         }
         //Mission:2
         

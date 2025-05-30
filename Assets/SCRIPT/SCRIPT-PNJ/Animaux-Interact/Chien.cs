@@ -162,7 +162,8 @@ public class Chien : MonoBehaviour , IInteract
 
         if (TableauMemoire.masque == 1 && TableauMemoire.AmiChien == false && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
-            TextPartie3.SetActive(true);
+            isActive = !isActive;
+            TextPartie3.SetActive(isActive);
             TableauMemoire.MLoupFound = true;
             TableauMemoire.confidenceCerf = false;
         }
