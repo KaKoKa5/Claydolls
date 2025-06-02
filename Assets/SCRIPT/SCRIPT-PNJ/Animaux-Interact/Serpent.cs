@@ -16,7 +16,6 @@ public class Serpent : MonoBehaviour, IInteract
  [SerializeField] private GameObject TextPartie4;
  [SerializeField] private GameObject TextPartie41;
  [SerializeField] private GameObject TextPartie42;
- [SerializeField] private GameObject TextPartie43;
  [SerializeField] private GameObject AmiDuChien;
 
 //Mission6:
@@ -61,7 +60,6 @@ public class Serpent : MonoBehaviour, IInteract
         TextPartie4.SetActive(false);
         TextPartie41.SetActive(false);
         TextPartie42.SetActive(false);
-        TextPartie43.SetActive(false);
 
         AmiDuChien.SetActive(false);
 
@@ -90,7 +88,6 @@ public class Serpent : MonoBehaviour, IInteract
         TextPartie4.SetActive(false);
         TextPartie41.SetActive(false);
         TextPartie42.SetActive(false);
-        TextPartie43.SetActive(false);
 
         AmiDuChien.SetActive(false);
 
@@ -173,7 +170,6 @@ public class Serpent : MonoBehaviour, IInteract
             TextPartie4.SetActive(true);
             TextPartie41.SetActive(false);
             TextPartie42.SetActive(false);
-            TextPartie43.SetActive(false);
             stepTalke = 3;
         }
         else if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 3 && passTalking == true)
@@ -181,7 +177,6 @@ public class Serpent : MonoBehaviour, IInteract
             TextPartie4.SetActive(false);
             TextPartie41.SetActive(true);
             TextPartie42.SetActive(false);
-            TextPartie43.SetActive(false);
             stepTalke = 4;
         }
         else if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 4 && passTalking == true)
@@ -189,7 +184,6 @@ public class Serpent : MonoBehaviour, IInteract
             TextPartie4.SetActive(false);
             TextPartie41.SetActive(false);
             TextPartie42.SetActive(true);
-            TextPartie43.SetActive(false);
             autoHideVideo.Video();
             stepTalke = 5;
         }
@@ -198,7 +192,6 @@ public class Serpent : MonoBehaviour, IInteract
             TextPartie4.SetActive(false);
             TextPartie41.SetActive(false);
             TextPartie42.SetActive(false);
-            TextPartie43.SetActive(true);
             stepTalke = 6;
 
         }
@@ -207,7 +200,6 @@ public class Serpent : MonoBehaviour, IInteract
             TextPartie4.SetActive(false);
             TextPartie41.SetActive(false);
             TextPartie42.SetActive(false);
-            TextPartie43.SetActive(false);
             stepTalke = 0; // On boucle
         }
 

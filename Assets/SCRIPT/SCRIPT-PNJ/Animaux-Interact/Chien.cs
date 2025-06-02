@@ -180,7 +180,7 @@ public class Chien : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
             TableauMemoire.MLionFound = true;
-
+            isActive = !isActive;
             TextPartie5.SetActive(isActive);
         }
         if (TableauMemoire.masque == 0 && TableauMemoire.Partie2 == true)

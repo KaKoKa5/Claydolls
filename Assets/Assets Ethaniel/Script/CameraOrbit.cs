@@ -33,7 +33,7 @@ public class CameraOrbit : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible   = false;
     }
-
+  
     void LateUpdate()
     {
         // Arrêt de l'orbite si le jeu est en pause (Time.timeScale == 0)

@@ -126,6 +126,7 @@ public class Cerf : MonoBehaviour ,IInteract
 
         if (dialogueStep == 0 && TableauMemoire.masque == 0 && TableauMemoire.AmiChien == false && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
+            isActive = !isActive;
             autoHideVideo.Video();
             bulleTextPartie1.SetActive(true);
             dialogueStep = 1;
@@ -137,13 +138,8 @@ public class Cerf : MonoBehaviour ,IInteract
             TableauMemoire.confidenceCerf = true;
             isActive = !isActive;
             bulleTextDebutPartie1.SetActive(isActive);
-            dialogueStep = 2;
         }
-        else if (dialogueStep == 2 && TableauMemoire.masque == 0 && TableauMemoire.AmiChien == false && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
-        {
-            bulleTextPartie1.SetActive(false);
-            TableauMemoire.confidenceCerf = true;
-        }
+       
 
         if (TableauMemoire.AmiChien == true && TableauMemoire.masque == 0 && TableauMemoire.MLionFound == false && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {

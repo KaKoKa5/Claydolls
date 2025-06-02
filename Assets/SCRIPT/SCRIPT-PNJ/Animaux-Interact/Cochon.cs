@@ -252,50 +252,47 @@ public class Cochon : MonoBehaviour , IInteract
             choix1TextPartie3.SetActive(true);
             choix2TextPartie3.SetActive(false);
         }
+
+
         //BIG DISCUTION
 
         if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 0)
         {
-            isActive = !isActive;
-            BigDiscutionChoix1.SetActive(isActive);
-        }
-        
-        //BIG DISCUTION
-
-        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 0)
-        {
-            isActive = !isActive;
             BigDiscution1.SetActive(false);
             BigDiscutionChoix3.SetActive(false);
-            BigDiscutionChoix1.SetActive(isActive);
+            BigDiscutionChoix1.SetActive(true);
+            BigDiscutionChoix2.SetActive(false);
         }
-        
+
         if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 1)
         {
-            isActive = !isActive;
             BigDiscutionChoix3.SetActive(false);
-            BigDiscutionChoix1s1.SetActive(isActive);
+            BigDiscutionChoix1s1.SetActive(true);
+            BigDiscution1Choix1s2.SetActive(false);
             
         }
         if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 2)
         {
-            isActive = !isActive;
             BigDiscution1Choix1s3.SetActive(false);
-            BigDiscution1Choix2s1.SetActive(isActive);
+            BigDiscution1Choix2s1.SetActive(true);
+            BigDiscutionChoix2.SetActive(false);
+            BigDiscution1Choix2s2.SetActive(false);
+            
+
             
         }
         if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 3)
         {
-            isActive = !isActive;
             BigDiscution1Choix2s3.SetActive(false);
-            BigDiscution1Choix3s1.SetActive(isActive);
+            BigDiscution1Choix3s1.SetActive(true);
             
         }
         if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 4)
         {
-            isActive = !isActive;
             BigDiscution1Choix3s3.SetActive(false);
-            BigDiscution1Choix4s1.SetActive(isActive);
+            BigDiscution1Choix4s1.SetActive(true);
+            BigDiscution1Choix4s2.SetActive(false);
+            
             
         }
     }
@@ -324,37 +321,41 @@ public class Cochon : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 0)
         {
             BigDiscution1.SetActive(false);
-            isActive = !isActive;
             BigDiscutionChoix3.SetActive(false);
-            BigDiscutionChoix2.SetActive(isActive);
+            BigDiscutionChoix2.SetActive(true);
+            BigDiscutionChoix1.SetActive(false);
         }
         
         if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 1)
         {
             isActive = !isActive;
             BigDiscutionChoix3.SetActive(false);
-            BigDiscution1Choix1s2.SetActive(isActive);
+            BigDiscutionChoix1s1.SetActive(false);
+            BigDiscution1Choix1s2.SetActive(true);
             
         }
         if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 2)
         {
             isActive = !isActive;
             BigDiscution1Choix1s3.SetActive(false);
-            BigDiscution1Choix2s2.SetActive(isActive);
+            BigDiscution1Choix2s2.SetActive(true);
+            BigDiscution1Choix2s1.SetActive(false);
             
         }
         if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 3)
         {
             isActive = !isActive;
             BigDiscution1Choix2s3.SetActive(false);
-            BigDiscution1Choix3s2.SetActive(isActive);
+            BigDiscution1Choix3s2.SetActive(true);
+            BigDiscution1Choix3s1.SetActive(false);
             
         }
         if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 4)
         {
             isActive = !isActive;
             BigDiscution1Choix3s3.SetActive(false);
-            BigDiscution1Choix4s2.SetActive(isActive);
+            BigDiscution1Choix4s2.SetActive(true);
+            BigDiscution1Choix4s1.SetActive(false);
             
         }
         
@@ -376,16 +377,19 @@ public class Cochon : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 0)
         {
             BigDiscution1.SetActive(false);
-            isActive = !isActive;
             BigDiscutionChoix3.SetActive(true);
+            BigDiscutionChoix1.SetActive(false);
+            BigDiscutionChoix2.SetActive(false);
             SuiteBig = 1;
             return;
         }
         if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 1)
         {
-            isActive = !isActive;
             BigDiscutionChoix3.SetActive(false);
             BigDiscution1Choix1s3.SetActive(true);
+            BigDiscutionChoix1s1.SetActive(false);
+            BigDiscution1Choix1s2.SetActive(false);
+
             SuiteBig = 2;
             return;
         }
@@ -393,7 +397,10 @@ public class Cochon : MonoBehaviour , IInteract
         {
             isActive = !isActive;
             BigDiscution1Choix1s3.SetActive(false);
+            BigDiscutionChoix1s1.SetActive(false);
             BigDiscution1Choix2s3.SetActive(true);
+            BigDiscution1Choix2s1.SetActive(false);
+            BigDiscution1Choix2s2.SetActive(false);
             SuiteBig = 3;
             return;
         }
@@ -402,6 +409,9 @@ public class Cochon : MonoBehaviour , IInteract
             isActive = !isActive;
             BigDiscution1Choix2s3.SetActive(false);
             BigDiscution1Choix3s3.SetActive(true);
+            BigDiscution1Choix2s2.SetActive(false);
+            BigDiscution1Choix3s1.SetActive(false);
+
             SuiteBig = 4;
             return;
         }
@@ -410,12 +420,16 @@ public class Cochon : MonoBehaviour , IInteract
             isActive = !isActive;
             BigDiscution1Choix3s3.SetActive(false);
             BigDiscution1Choix4s3.SetActive(true);
+            BigDiscution1Choix3s2.SetActive(false);
+            BigDiscution1Choix4s1.SetActive(false);
+            
             SuiteBig = 5;
             return;
         }
         if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 5)
         {
             isActive = !isActive;
+            BigDiscution1Choix4s2.SetActive(false);
             BigDiscution1Choix4s3.SetActive(false);
             BigDiscution1Choix4s3bis.SetActive(true);
             SuiteBig = 6;
