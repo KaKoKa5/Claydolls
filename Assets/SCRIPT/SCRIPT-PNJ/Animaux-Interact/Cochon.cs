@@ -285,6 +285,7 @@ public class Cochon : MonoBehaviour , IInteract
         {
             BigDiscution1Choix2s3.SetActive(false);
             BigDiscution1Choix3s1.SetActive(true);
+            BigDiscution1Choix3s2.SetActive(false);
             
         }
         if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 4)
@@ -409,8 +410,8 @@ public class Cochon : MonoBehaviour , IInteract
             isActive = !isActive;
             BigDiscution1Choix2s3.SetActive(false);
             BigDiscution1Choix3s3.SetActive(true);
-            BigDiscution1Choix2s2.SetActive(false);
             BigDiscution1Choix3s1.SetActive(false);
+            BigDiscution1Choix3s2.SetActive(false);
 
             SuiteBig = 4;
             return;
@@ -422,6 +423,7 @@ public class Cochon : MonoBehaviour , IInteract
             BigDiscution1Choix4s3.SetActive(true);
             BigDiscution1Choix3s2.SetActive(false);
             BigDiscution1Choix4s1.SetActive(false);
+            BigDiscution1Choix4s2.SetActive(false);
             
             SuiteBig = 5;
             return;
