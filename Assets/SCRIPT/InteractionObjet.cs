@@ -11,7 +11,7 @@ public class DoorController : MonoBehaviour
 
     void Update()
     {
-        if (playerInRange && Input.GetKeyDown(KeyCode.Q))
+        if (playerInRange && Input.GetKeyDown(KeyCode.E))
         {
             isOpen = !isOpen;
         }
