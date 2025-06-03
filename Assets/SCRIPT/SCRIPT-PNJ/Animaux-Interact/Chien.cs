@@ -259,6 +259,7 @@ public class Chien : MonoBehaviour , IInteract
             choix1TextPartie2.SetActive(false);
             choix2TextPartie2.SetActive(true);
             choix3TextPartie2.SetActive(false);
+            TableauMemoire.PlancheMaisonLoup = true;
             autoHideVideo.Video();
         }
          //Mission3--------------------------------------------
