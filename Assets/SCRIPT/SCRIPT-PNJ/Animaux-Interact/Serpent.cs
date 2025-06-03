@@ -185,6 +185,7 @@ public class Serpent : MonoBehaviour, IInteract
             TextPartie41.SetActive(false);
             TextPartie42.SetActive(true);
             autoHideVideo.Video();
+            TableauMemoire.Portail = true;
             stepTalke = 5;
         }
         else if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 5 && passTalking == true)

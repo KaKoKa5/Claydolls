@@ -15,7 +15,7 @@ public class PlancheMaisonLoup : MonoBehaviour
 
     void Update()
     {
-        if (playerInRange && Input.GetKeyDown(KeyCode.E))
+        if (playerInRange && Input.GetKeyDown(KeyCode.E)&& TableauMemoire.AmiChien==true)
         {
             rb.useGravity = true;
         }
@@ -23,7 +23,7 @@ public class PlancheMaisonLoup : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player")&& TableauMemoire.AmiChien==true)
         {
             playerInRange = true;
             Debug.Log("tombe");
@@ -31,7 +31,7 @@ public class PlancheMaisonLoup : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
 {
-    if (other.CompareTag("Player"))
+    if (other.CompareTag("Player")&& TableauMemoire.AmiChien==true)
     {
         playerInRange = false;
     }

@@ -88345,6 +88345,7 @@ GameObject:
   - component: {fileID: 1318830058}
   - component: {fileID: 1318830060}
   - component: {fileID: 1318830059}
+  - component: {fileID: 1318830061}
   m_Layer: 0
   m_Name: Pivot porte
   m_TagString: Untagged
@@ -88360,14 +88361,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1318830057}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.707107, y: 0.0000003874301, z: 0.00000014901158, w: 0.7071066}
-  m_LocalPosition: {x: -0.000059996797, y: 0.005860002, z: 0.010709998}
+  m_LocalRotation: {x: 0.49999982, y: 0.50000036, z: 0.5000005, w: 0.49999937}
+  m_LocalPosition: {x: -0.00012837608, y: 0.0059283646, z: 0.010709965}
   m_LocalScale: {x: -0.00045431007, y: -0.00045431, z: -0.00045431027}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8432311961086912191}
   m_Father: {fileID: 5919658573870568681}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 180, y: -90, z: -90}
 --- !u!114 &1318830059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88380,9 +88381,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7ce8816d245c174688f06196987c1d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closedRotation: {x: -0.28, y: 145.4, z: 90.3}
-  openRotation: {x: 0, y: -5, z: 0}
-  rotationSpeed: 2
+  closedRotation: {x: 0, y: 145, z: 90}
+  openRotation: {x: 0, y: 545, z: 90}
+  rotationSpeed: 1
 --- !u!65 &1318830060
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -88404,6 +88405,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &1318830061
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318830057}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 30.67, y: 25.5, z: 17.57}
+  m_Center: {x: 0, y: 10.23, z: 0}
 --- !u!4 &1319515871 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 87627c441c93a984e972e1cb4fb1eb30, type: 3}
@@ -156216,6 +156238,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5919658573870568681}
+  - component: {fileID: 6443818424770940500}
+  - component: {fileID: 6443818424770940501}
   m_Layer: 0
   m_Name: Final_Fence._Color
   m_TagString: Untagged
@@ -156223,6 +156247,33 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6443818424770940500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6443818424770940499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa048b9126a9884db83e406ed1c575d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftClickIcon: {fileID: 359582703}
+  mainCamera: {fileID: 330585545}
+--- !u!114 &6443818424770940501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6443818424770940499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77a299fb39130384a8b36f356ec72c73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceToInteract: 3
 --- !u!33 &7002468663669101447
 MeshFilter:
   m_ObjectHideFlags: 0
