@@ -39,6 +39,9 @@ public class MaskPicku : MonoBehaviour
     public void Collect()
     {
         cycler?.UnlockMask(maskIndex);
+
+        MaskPopupManager.Instance.ShowPopup(maskIndex);
+
         Destroy(gameObject);
     }
 }
