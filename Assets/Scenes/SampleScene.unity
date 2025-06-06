@@ -8414,9 +8414,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4d56ef366ee3c947a096ea18725a5d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: "Enchant\xE9e madame Brebis. Euh...vous pouvez m\u2019appeler Peau d\u2019\xC2ne
-    je suppose. Je viens juste d\u2019arriver\u2026 et j\u2019essaie de comprendre
-    ce qu\u2019est cet endroit."
+  text: "Je cherche \xE0 comprendre ce qu\u2019il se passe ici\u2026 Peut-\xEAtre
+    pourrais-tu m\u2019aider ?"
   TMPROui: {fileID: 0}
   Count: 0
 --- !u!114 &117141856
@@ -70119,8 +70118,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930246409}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.031000718, y: -0.39591205, z: 0.013374733, w: 0.91766757}
-  m_LocalPosition: {x: 0, y: -0.00000023841858, z: 0}
+  m_LocalRotation: {x: 0.031000718, y: -0.39591208, z: 0.013374735, w: 0.91766757}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -74474,8 +74473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4d56ef366ee3c947a096ea18725a5d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: "Tu dis \xEAtre ici depuis longtemps\u2026 Tu te souviens de comment tu es
-    arriv\xE9e dans ce village ? "
+  text: " Il faut que tu m\u2019aides. Si tu sais quelque chose, tu dois me le dire."
   TMPROui: {fileID: 0}
   Count: 0
 --- !u!114 &993255063
@@ -88204,7 +88202,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1152384894}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.07400618, y: -0.39484912, z: 0.03192871, w: 0.91520375}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -130322,7 +130320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 5
-  m_FollowOffset: {x: 0, y: -0.6591547, z: -3.447201}
+  m_FollowOffset: {x: 0, y: 0.49, z: -3.01}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -131600,7 +131598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 5
-  m_FollowOffset: {x: 0, y: -0.6591547, z: -3.447201}
+  m_FollowOffset: {x: 0, y: 0.49, z: -3.01}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -132016,8 +132014,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626278947}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.05247047, y: -0.39549056, z: 0.022637494, w: 0.9166906}
-  m_LocalPosition: {x: 0, y: -0.00000023841858, z: 0}
+  m_LocalRotation: {x: 0.052470475, y: -0.39549056, z: 0.02263749, w: 0.9166906}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -140281,7 +140279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 5
-  m_FollowOffset: {x: 0, y: -0.6591547, z: -3.447201}
+  m_FollowOffset: {x: 0, y: 0.49, z: -3.01}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1

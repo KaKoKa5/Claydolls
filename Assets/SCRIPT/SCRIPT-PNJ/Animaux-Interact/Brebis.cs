@@ -303,7 +303,7 @@ public class Brebis : MonoBehaviour ,IInteract
             choix2Text.SetActive(false);
             choix3Text.SetActive(false);
             choix1Text.SetActive(true);
-            CountC1 = 0;
+            CountC1 = 2;
         }
 
         //Mission2:----------------------------------------------
@@ -412,7 +412,7 @@ public class Brebis : MonoBehaviour ,IInteract
             AneChoix2.SetActive(false);
             AneChoix3.SetActive(false);
 
-            CountC2 = 0;
+            CountC2 = 2;
 
             bulleDeText.SetActive(false);
             choix2Text.SetActive(true);
