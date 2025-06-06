@@ -47,6 +47,16 @@ public class Corbeaux : MonoBehaviour , IInteract
     [SerializeField] private GameObject TextEND5;
     [SerializeField] private GameObject TextEND6;
 
+    //Dialogue Peau D'Ane
+    [SerializeField] private GameObject AneChoix1;
+    [SerializeField] private GameObject AneChoix2;
+    [SerializeField] private GameObject AneChoix3;
+
+
+    private int CountC1 = 0;
+    private int CountC2 = 0;
+    private int CountC3 = 0;
+
 
 
 
@@ -57,7 +67,7 @@ public class Corbeaux : MonoBehaviour , IInteract
     private int Count = 0;
     private int stepTalk = 3;
     private int num = 0;
-    private int Fin = 0; 
+    private int Fin = 0;
 
 
 
@@ -107,6 +117,10 @@ public class Corbeaux : MonoBehaviour , IInteract
         TextEND4.SetActive(false);
         TextEND5.SetActive(false);
         TextEND6.SetActive(false);
+        // Peau D'Ane
+        AneChoix1.SetActive(false);
+        AneChoix2.SetActive(false);
+        AneChoix3.SetActive(false);
 
     }
 
@@ -128,6 +142,11 @@ public class Corbeaux : MonoBehaviour , IInteract
         TextPartieHiboux0.SetActive(false);
         TextPartieHiboux1.SetActive(false);
         TextPartieHiboux2.SetActive(false);
+
+        // Peau D'Ane
+        AneChoix1.SetActive(false);
+        AneChoix2.SetActive(false);
+        AneChoix3.SetActive(false);
 
         if (TableauMemoire.talkFirst == false)
         {
@@ -358,13 +377,35 @@ public class Corbeaux : MonoBehaviour , IInteract
     {
         if (!isTalking)return;
         if(TableauMemoire.confidenceCerf==true)return;
-
-        if(TableauMemoire.AmiChien==false)
+        
+        if (TableauMemoire.AmiChien == false && CountC1==0)
         {
-        bulleDeText.SetActive(false);
-        choix1Text.SetActive(true);
-        choix2Text.SetActive(false);
-        choix3Text.SetActive(false);
+            // Peau D'Ane
+            AneChoix1.SetActive(true);
+            AneChoix2.SetActive(false);
+            AneChoix3.SetActive(false);
+
+            bulleDeText.SetActive(false);
+            choix1Text.SetActive(false);
+            choix2Text.SetActive(false);
+            choix3Text.SetActive(false);
+            CountC1 = 1;
+            return;
+        }
+
+        if (TableauMemoire.AmiChien == false && CountC1 == 1)
+        {
+            // Peau D'Ane
+            AneChoix1.SetActive(false);
+            AneChoix2.SetActive(false);
+            AneChoix3.SetActive(false);
+
+            bulleDeText.SetActive(false);
+            choix1Text.SetActive(true);
+            choix2Text.SetActive(false);
+            choix3Text.SetActive(false);
+            CountC1 = 0;
+            return;
         }
 
     }
@@ -372,26 +413,70 @@ public class Corbeaux : MonoBehaviour , IInteract
     {
         if (!isTalking)return;
         if(TableauMemoire.confidenceCerf==true)return;
-
-        if(TableauMemoire.AmiChien==false)
+        
+        if (TableauMemoire.AmiChien == false && CountC2==0)
         {
-        bulleDeText.SetActive(false);
-        choix1Text.SetActive(false);
-        choix2Text.SetActive(true);
-        choix3Text.SetActive(false);
+            // Peau D'Ane
+            AneChoix1.SetActive(false);
+            AneChoix2.SetActive(true);
+            AneChoix3.SetActive(false);
+
+            bulleDeText.SetActive(false);
+            choix1Text.SetActive(false);
+            choix2Text.SetActive(false);
+            choix3Text.SetActive(false);
+            CountC2 = 1;
+            return;
+        }
+
+        if (TableauMemoire.AmiChien == false && CountC2 == 1)
+        {
+            // Peau D'Ane
+            AneChoix1.SetActive(false);
+            AneChoix2.SetActive(false);
+            AneChoix3.SetActive(false);
+
+            bulleDeText.SetActive(false);
+            choix1Text.SetActive(false);
+            choix2Text.SetActive(true);
+            choix3Text.SetActive(false);
+            CountC2 = 0;
+            return;
         }
     }
     public void Choix3()
     {
         if (!isTalking)return;
         if(TableauMemoire.confidenceCerf==true)return;
-
-        if(TableauMemoire.AmiChien==false)
+        
+        if (TableauMemoire.AmiChien == false && CountC3==0)
         {
-        bulleDeText.SetActive(false);
-        choix1Text.SetActive(false);
-        choix2Text.SetActive(false);
-        choix3Text.SetActive(true);
+            // Peau D'Ane
+            AneChoix1.SetActive(false);
+            AneChoix2.SetActive(false);
+            AneChoix3.SetActive(true);
+
+            bulleDeText.SetActive(false);
+            choix1Text.SetActive(false);
+            choix2Text.SetActive(false);
+            choix3Text.SetActive(false);
+            CountC3 = 1;
+            return;
+        }
+
+        if (TableauMemoire.AmiChien == false && CountC3 == 1)
+        {
+            // Peau D'Ane
+            AneChoix1.SetActive(false);
+            AneChoix2.SetActive(false);
+            AneChoix3.SetActive(false);
+
+            bulleDeText.SetActive(false);
+            choix1Text.SetActive(false);
+            choix2Text.SetActive(false);
+            choix3Text.SetActive(true);
+            CountC3 = 0;
+            return;
         }
     }
 

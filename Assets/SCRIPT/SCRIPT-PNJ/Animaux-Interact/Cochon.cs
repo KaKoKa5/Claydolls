@@ -51,12 +51,20 @@ public class Cochon : MonoBehaviour , IInteract
     //END
     [SerializeField] private GameObject END;
 
+    //Dialogue Peau D'Ane
+    [SerializeField] private GameObject AneChoix1;
+    [SerializeField] private GameObject AneChoix2;
+    [SerializeField] private GameObject AneChoix3;
 
 
+    private int CountC1 = 0;
+    private int CountC2 = 0;
+    private int CountC3 = 0;
     private bool isActive = false;
     private bool isTalking = false;
     private int CountText=0;
     private int SuiteBig = 0;
+    
 
 
     private void Start()
@@ -108,6 +116,11 @@ public class Cochon : MonoBehaviour , IInteract
         HibouxCave.SetActive(false);
 
         END.SetActive(false);
+
+        // Peau D'Ane
+        AneChoix1.SetActive(false);
+        AneChoix2.SetActive(false);
+        AneChoix3.SetActive(false);
 
 
     }
@@ -236,13 +249,35 @@ public class Cochon : MonoBehaviour , IInteract
     public void Choix1()
     {
         if (!isTalking) return;
-
-        if (TableauMemoire.masque == 0 && TableauMemoire.confidenceCerf == false)
+        
+        if (TableauMemoire.masque == 0 && TableauMemoire.confidenceCerf == false&& CountC1==0)
         {
+
+            AneChoix1.SetActive(true);
+            AneChoix2.SetActive(false);
+            AneChoix3.SetActive(false);
+
+            choix1Text.SetActive(false);
+            choix2Text.SetActive(false);
+            choix3Text.SetActive(false);
+            bulleDeText.SetActive(false);
+            CountC1 = 1;
+            return;
+        }
+
+        if (TableauMemoire.masque == 0 && TableauMemoire.confidenceCerf == false && CountC1 == 1)
+        {
+
+            AneChoix1.SetActive(false);
+            AneChoix2.SetActive(false);
+            AneChoix3.SetActive(false);
+
             choix1Text.SetActive(true);
             choix2Text.SetActive(false);
             choix3Text.SetActive(false);
             bulleDeText.SetActive(false);
+            CountC1 = 0;
+            return;
         }
 
         //Mission3:----------------------------------------------------------
@@ -301,12 +336,32 @@ public class Cochon : MonoBehaviour , IInteract
     {
         if (!isTalking) return;
 
-        if (TableauMemoire.masque == 0 && TableauMemoire.confidenceCerf == false)
+        if (TableauMemoire.masque == 0 && TableauMemoire.confidenceCerf == false && CountC2 == 0)
         {
+            AneChoix1.SetActive(false);
+            AneChoix2.SetActive(true);
+            AneChoix3.SetActive(false);
+
+            choix1Text.SetActive(false);
+            choix2Text.SetActive(false);
+            choix3Text.SetActive(false);
+            bulleDeText.SetActive(false);
+            CountC2 = 1;
+            return;
+        }
+
+        if (TableauMemoire.masque == 0 && TableauMemoire.confidenceCerf == false && CountC2 == 1)
+        {
+            AneChoix1.SetActive(false);
+            AneChoix2.SetActive(false);
+            AneChoix3.SetActive(false);
+
             choix1Text.SetActive(false);
             choix2Text.SetActive(true);
             choix3Text.SetActive(false);
             bulleDeText.SetActive(false);
+            CountC2 = 0;
+            return;
         }
 
         //Mission3:----------------------------------------------------------
@@ -365,12 +420,32 @@ public class Cochon : MonoBehaviour , IInteract
     {
         if (!isTalking) return;
 
-        if (TableauMemoire.masque == 0 && TableauMemoire.confidenceCerf == false)
+        if (TableauMemoire.masque == 0 && TableauMemoire.confidenceCerf == false && CountC3 == 0)
         {
+            AneChoix1.SetActive(false);
+            AneChoix2.SetActive(false);
+            AneChoix3.SetActive(true);
+
+            choix1Text.SetActive(false);
+            choix2Text.SetActive(false);
+            choix3Text.SetActive(false);
+            bulleDeText.SetActive(false);
+            CountC3 = 1;
+            return;
+        }
+
+        if (TableauMemoire.masque == 0 && TableauMemoire.confidenceCerf == false && CountC3 == 1)
+        {
+            AneChoix1.SetActive(false);
+            AneChoix2.SetActive(false);
+            AneChoix3.SetActive(false);
+
             choix1Text.SetActive(false);
             choix2Text.SetActive(false);
             choix3Text.SetActive(true);
             bulleDeText.SetActive(false);
+            CountC3 = 0;
+            return;
         }
 
         //BIG DISCUTION
