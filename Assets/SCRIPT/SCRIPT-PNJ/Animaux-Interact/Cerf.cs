@@ -33,7 +33,17 @@ public class Cerf : MonoBehaviour ,IInteract
     //END
     [SerializeField] private GameObject END;
 
+
+    //Dialogue Peau D'Ane
+    [SerializeField] private GameObject AneChoix1;
+    [SerializeField] private GameObject AneChoix2;
+    [SerializeField] private GameObject AneChoix3;
+
+
     private int dialogueStep = 0;
+    private int CountC1 = 0;
+    private int CountC2 = 0;
+    private int CountC3 = 0;
     private bool isActive = false;
     private bool isTalking = false;
     private IInteract currentInteract;
@@ -66,6 +76,12 @@ public class Cerf : MonoBehaviour ,IInteract
         HibouxCave.SetActive(false);
 
         END.SetActive(false);
+
+        // Peau D'Ane
+        AneChoix1.SetActive(false);
+        AneChoix2.SetActive(false);
+        AneChoix3.SetActive(false);
+
 
     }
 
@@ -120,6 +136,9 @@ public class Cerf : MonoBehaviour ,IInteract
             isActive = !isActive;
             TableauMemoire.talkFirst = true;
             bulleDeText.SetActive(isActive);
+            AneChoix1.SetActive(false);
+            AneChoix2.SetActive(false);
+            AneChoix3.SetActive(false);
             return;
         }
 
@@ -206,44 +225,91 @@ public class Cerf : MonoBehaviour ,IInteract
     
     public void Choix1()
     {
-        if (!isTalking)return;
         //mission1
-        if (TableauMemoire.masque==0)
+        if (TableauMemoire.masque == 0 && CountC1 == 0)
         {
-        choix1Text.SetActive(true);
-        bulleDeText.SetActive(false);
-        choix2Text.SetActive(false);
-        choix3Text.SetActive(false);
-        
+            choix2Text.SetActive(false);
+            choix3Text.SetActive(false);
+            AneChoix3.SetActive(false);
+            AneChoix2.SetActive(false);
+            bulleDeText.SetActive(false);
+            choix1Text.SetActive(false);
+            AneChoix1.SetActive(true);
+            CountC1 = 1;
+            return;
+        }
+        if (TableauMemoire.masque == 0 && CountC1 == 1)
+        {
+            choix1Text.SetActive(true);
+            choix2Text.SetActive(false);
+            choix3Text.SetActive(false);
+            AneChoix1.SetActive(false);
+            AneChoix2.SetActive(false);
+            AneChoix3.SetActive(false);
+            bulleDeText.SetActive(false);
+            CountC1 = 0;
+            return;
         }
         //Mission:2
 
     }
     public void Choix2()
     {
-        if (!isTalking)return;
-        //mission1
-        if(TableauMemoire.masque==0)
+        if (TableauMemoire.masque == 0 && CountC2 == 0)
         {
-        choix2Text.SetActive(true);
-        bulleDeText.SetActive(false);
-        choix1Text.SetActive(false);
-        choix3Text.SetActive(false);
-        
+            choix3Text.SetActive(false);
+            choix2Text.SetActive(false);
+            AneChoix1.SetActive(false);
+            AneChoix3.SetActive(false);
+            choix1Text.SetActive(false);
+            bulleDeText.SetActive(false);
+            AneChoix2.SetActive(true);
+            CountC2 = 1;
+            return;
+        }
+        //mission1
+        if (TableauMemoire.masque == 0 && CountC2 == 1)
+        {
+            choix2Text.SetActive(true);
+            bulleDeText.SetActive(false);
+            choix1Text.SetActive(false);
+            choix3Text.SetActive(false);
+            AneChoix1.SetActive(false);
+            AneChoix2.SetActive(false);
+            AneChoix3.SetActive(false);
+            CountC2 = 0;
+            return;
+
         }
         //Mission:2
     }
     public void Choix3()
     {
-        if (!isTalking)return;
-        //mission1
-        if(TableauMemoire.masque==0)
+        if (TableauMemoire.masque == 0 && CountC3 == 0)
         {
-        choix3Text.SetActive(true);
-        bulleDeText.SetActive(false);
-        choix1Text.SetActive(false);
-        choix2Text.SetActive(false);
-        
+            choix2Text.SetActive(false);
+            AneChoix1.SetActive(false);
+            AneChoix2.SetActive(false);
+            choix1Text.SetActive(false);
+            bulleDeText.SetActive(false);
+            choix3Text.SetActive(false);
+            AneChoix3.SetActive(true);
+            CountC3 = 1;
+            return;
+        }
+        //mission1
+        if (TableauMemoire.masque == 0 && CountC3 == 1)
+        {
+            choix3Text.SetActive(true);
+            bulleDeText.SetActive(false);
+            choix1Text.SetActive(false);
+            choix2Text.SetActive(false);
+            AneChoix1.SetActive(false);
+            AneChoix2.SetActive(false);
+            AneChoix3.SetActive(false);
+            CountC3 = 0;
+            return;
+
         }
         //Mission:2
         
