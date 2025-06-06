@@ -58,6 +58,9 @@ public class Brebis : MonoBehaviour ,IInteract
     [SerializeField] private GameObject AneChoix2;
     [SerializeField] private GameObject AneChoix3;
 
+    [SerializeField] private GameObject AneChapitre4Choix1;
+    [SerializeField] private GameObject AneChapitre4Choix2;
+
     private bool isActive = false;
     private bool isTalking = false;
     private bool secret = false;
@@ -67,6 +70,9 @@ public class Brebis : MonoBehaviour ,IInteract
     private int CountC1 = 0;
     private int CountC2 = 0;
     private int CountC3 = 0;
+    private int CountC1Chap4 = 0;
+    private int CountC2Chap4 = 0;
+   
 
 
 
@@ -124,6 +130,8 @@ public class Brebis : MonoBehaviour ,IInteract
         AneChoix1.SetActive(false);
         AneChoix2.SetActive(false);
         AneChoix3.SetActive(false);
+        AneChapitre4Choix1.SetActive(false);
+        AneChapitre4Choix2.SetActive(false);
 
 
     }
@@ -162,6 +170,10 @@ public class Brebis : MonoBehaviour ,IInteract
         AneChoix1.SetActive(false);
         AneChoix2.SetActive(false);
         AneChoix3.SetActive(false);
+
+        AneChapitre4Choix1.SetActive(false);
+        AneChapitre4Choix2.SetActive(false);
+
         if (TableauMemoire.talkFirst == false)
         {
             if (CountText == 0)
@@ -267,7 +279,7 @@ public class Brebis : MonoBehaviour ,IInteract
         TextPartie5.SetActive(false);
 
 
-        if (TableauMemoire.masque == 0 && TableauMemoire.AmiChien == false && CountC1 == 0)
+        if (TableauMemoire.confidenceCerf == false && TableauMemoire.masque == 0 && TableauMemoire.AmiChien == false && CountC1 == 0)
         {
             AneChoix1.SetActive(true);
             AneChoix2.SetActive(false);
@@ -281,7 +293,7 @@ public class Brebis : MonoBehaviour ,IInteract
             return;
         }
 
-        if (TableauMemoire.masque == 0 && TableauMemoire.AmiChien == false && CountC1 == 1)
+        if (TableauMemoire.confidenceCerf == false && TableauMemoire.masque == 0 && TableauMemoire.AmiChien == false && CountC1 == 1)
         {
             AneChoix1.SetActive(false);
             AneChoix2.SetActive(false);
@@ -292,17 +304,30 @@ public class Brebis : MonoBehaviour ,IInteract
             choix3Text.SetActive(false);
             choix1Text.SetActive(true);
             CountC1 = 0;
-            return;
         }
 
         //Mission2:----------------------------------------------
-        if (TableauMemoire.confidenceCerf == true && TableauMemoire.masque == 0)
+        if (TableauMemoire.confidenceCerf == true && TableauMemoire.masque == 0 && CountC1Chap4 == 0)
+        {
+            choix1Text.SetActive(false);
+            TextPartie2.SetActive(false);
+            choix1TextPartie2.SetActive(false);
+            choix2TextPartie2.SetActive(false);
+            AneChapitre4Choix1.SetActive(true);
+            AneChapitre4Choix2.SetActive(false);
+            CountC1Chap4 = 1;
+            return;
+        }
+        if (TableauMemoire.confidenceCerf == true && TableauMemoire.masque == 0 && CountC1Chap4 == 1)
         {
             choix1Text.SetActive(false);
             TextPartie2.SetActive(false);
             choix1TextPartie2.SetActive(true);
             choix2TextPartie2.SetActive(false);
-
+            AneChapitre4Choix1.SetActive(false);
+            AneChapitre4Choix2.SetActive(false);
+            CountC1Chap4 = 0;
+            return;
         }
 
         //Mission3:----------------------------------------------------------
@@ -397,12 +422,28 @@ public class Brebis : MonoBehaviour ,IInteract
         }
 
         //Mission2:----------------------------------------------------------
-        if (TableauMemoire.confidenceCerf == true && TableauMemoire.masque == 0)
+        if (TableauMemoire.confidenceCerf == true && TableauMemoire.masque == 0 && CountC2Chap4==0)
+        {
+            TextPartie2.SetActive(false);
+            choix2Text.SetActive(false);
+            choix1TextPartie2.SetActive(false);
+            choix2TextPartie2.SetActive(false);
+            AneChapitre4Choix1.SetActive(false);
+            AneChapitre4Choix2.SetActive(true);
+            CountC2Chap4 = 1;
+            return;
+
+        }
+        if (TableauMemoire.confidenceCerf == true && TableauMemoire.masque == 0 && CountC2Chap4 == 1)
         {
             TextPartie2.SetActive(false);
             choix2Text.SetActive(false);
             choix1TextPartie2.SetActive(false);
             choix2TextPartie2.SetActive(true);
+            AneChapitre4Choix1.SetActive(false);
+            AneChapitre4Choix2.SetActive(false);
+            CountC2Chap4 = 0;
+            return;
 
         }
 

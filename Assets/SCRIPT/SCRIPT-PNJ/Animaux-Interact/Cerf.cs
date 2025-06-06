@@ -38,6 +38,7 @@ public class Cerf : MonoBehaviour ,IInteract
     [SerializeField] private GameObject AneChoix1;
     [SerializeField] private GameObject AneChoix2;
     [SerializeField] private GameObject AneChoix3;
+    [SerializeField] private GameObject AneChapitre3;
 
 
     private int dialogueStep = 0;
@@ -81,6 +82,7 @@ public class Cerf : MonoBehaviour ,IInteract
         AneChoix1.SetActive(false);
         AneChoix2.SetActive(false);
         AneChoix3.SetActive(false);
+        AneChapitre3.SetActive(false);
 
 
     }
@@ -147,16 +149,27 @@ public class Cerf : MonoBehaviour ,IInteract
         {
             isActive = !isActive;
             autoHideVideo.Video();
-            bulleTextPartie1.SetActive(true);
+            bulleTextPartie1.SetActive(isActive);
             dialogueStep = 1;
+            return;
 
         }  //Début Mission:2
-        else if (dialogueStep == 1 && TableauMemoire.masque == 0 && TableauMemoire.AmiChien == false && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
+        if (dialogueStep == 1 && TableauMemoire.masque == 0 && TableauMemoire.AmiChien == false && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
-            bulleTextPartie1.SetActive(false);
+            AneChapitre3.SetActive(true);
+            dialogueStep = 2;
+            return;
+        }
+        if (dialogueStep == 2 && TableauMemoire.masque == 0 && TableauMemoire.AmiChien == false && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
+        {
+
             TableauMemoire.confidenceCerf = true;
+            AneChapitre3.SetActive(false);
             isActive = !isActive;
             bulleTextDebutPartie1.SetActive(isActive);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = true;
+            return;
         }
        
 
