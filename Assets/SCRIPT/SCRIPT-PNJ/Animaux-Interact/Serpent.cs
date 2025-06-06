@@ -140,15 +140,15 @@ public class Serpent : MonoBehaviour, IInteract
         //Mission 3 ------------------------------------------------------------
         if (TableauMemoire.masque == 1 && stepTalk == 0 && TableauMemoire.UnVUnCochon == false)
         {
-            isActive = !isActive;
             TextPartie3.SetActive(true);
+            Debug.Log("Zeub");
             stepTalk = 1;
+            return;
 
         }
-        else if (stepTalk == 1 && TableauMemoire.masque == 1)
+        if (stepTalk == 1 && TableauMemoire.masque == 1 && TableauMemoire.UnVUnCochon == false)
         {
             TextPartie3.SetActive(false);
-
             TextPartie3d.SetActive(isActive);
             passTalking = true;
         }

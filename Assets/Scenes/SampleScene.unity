@@ -7027,6 +7027,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corbeau
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 80885da8b35d72c45b7bc78d0a4e8f2f, type: 3}
+      propertyPath: m_TagString
+      value: PNJ
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -43169,6 +43173,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chat@Bored
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d8e09176d19022141a2c968dab5554c9, type: 3}
+      propertyPath: m_TagString
+      value: PNJ
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -54593,7 +54601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 939e45a8fee9df2458cc7fa15c0e2b60, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.99
+      value: -1.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 939e45a8fee9df2458cc7fa15c0e2b60, type: 3}
       propertyPath: m_LocalPosition.z
@@ -62350,8 +62358,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930246409}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.031000718, y: -0.39591205, z: 0.013374733, w: 0.91766757}
-  m_LocalPosition: {x: 0, y: 0.00000023841858, z: 0}
+  m_LocalRotation: {x: 0.031001223, y: -0.39591202, z: 0.013374945, w: 0.91766757}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -64941,6 +64949,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: cf79782823412b74894d679b66c4ede8, type: 3}
       propertyPath: m_Name
       value: Cerf
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cf79782823412b74894d679b66c4ede8, type: 3}
+      propertyPath: m_TagString
+      value: PNJ
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -77812,6 +77824,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brebisfini@Old Man Idle
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5b476216922e8f14da2e08cba176d71d, type: 3}
+      propertyPath: m_TagString
+      value: PNJ
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -78021,7 +78037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a299fb39130384a8b36f356ec72c73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToInteract: 1
+  distanceToInteract: 3
 --- !u!114 &1140074560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78923,7 +78939,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1152384894}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.074006185, y: -0.3948491, z: 0.03192871, w: 0.91520375}
+  m_LocalRotation: {x: 0.07400663, y: -0.394849, z: 0.0319289, w: 0.91520375}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -79429,7 +79445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a299fb39130384a8b36f356ec72c73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToInteract: 1
+  distanceToInteract: 3
 --- !u!65 &1156723403
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -81843,7 +81859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a299fb39130384a8b36f356ec72c73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToInteract: 1
+  distanceToInteract: 3
 --- !u!114 &1194259372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86831,6 +86847,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chien
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 866e242566e02b0439de8f70637efc59, type: 3}
+      propertyPath: m_TagString
+      value: PNJ
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -86976,7 +86996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a299fb39130384a8b36f356ec72c73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToInteract: 1
+  distanceToInteract: 3
 --- !u!114 &1274289588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95779,7 +95799,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a299fb39130384a8b36f356ec72c73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToInteract: 1
+  distanceToInteract: 3
 --- !u!114 &1406820297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113520,6 +113540,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cochon@Orc Idle
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1eb486e0d0d03af43888ea6dce0480a3, type: 3}
+      propertyPath: m_TagString
+      value: PNJ
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -119383,7 +119407,7 @@ Transform:
   m_GameObject: {fileID: 1614553053}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 113.07966, y: 2.954, z: 68.96469}
+  m_LocalPosition: {x: 113.07966, y: 2.954, z: 68.9647}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -120404,8 +120428,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626278947}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.05247047, y: -0.39549056, z: 0.022637494, w: 0.9166906}
-  m_LocalPosition: {x: 0, y: 0.00000023841858, z: 0}
+  m_LocalRotation: {x: 0.05247095, y: -0.39549047, z: 0.022637684, w: 0.9166906}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -127062,6 +127086,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hiboux
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b35ca6ea431ac6643a7a746bcd5b63d1, type: 3}
+      propertyPath: m_TagString
+      value: PNJ
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -129390,7 +129418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a299fb39130384a8b36f356ec72c73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToInteract: 1
+  distanceToInteract: 3
 --- !u!114 &1753021471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150552,7 +150580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a299fb39130384a8b36f356ec72c73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToInteract: 1
+  distanceToInteract: 3
 --- !u!114 &2021841490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153854,6 +153882,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Serpent
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 866e242566e02b0439de8f70637efc59, type: 3}
+      propertyPath: m_TagString
+      value: PNJ
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -156518,7 +156550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a299fb39130384a8b36f356ec72c73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToInteract: 1
+  distanceToInteract: 3
 --- !u!114 &2108947684
 MonoBehaviour:
   m_ObjectHideFlags: 0
