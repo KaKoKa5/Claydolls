@@ -61,6 +61,9 @@ public class Brebis : MonoBehaviour ,IInteract
     [SerializeField] private GameObject AneChapitre4Choix1;
     [SerializeField] private GameObject AneChapitre4Choix2;
 
+    [SerializeField] private GameObject AneChapitre5Choix1;
+    [SerializeField] private GameObject AneChapitre5Choix2;
+
     private bool isActive = false;
     private bool isTalking = false;
     private bool secret = false;
@@ -72,7 +75,10 @@ public class Brebis : MonoBehaviour ,IInteract
     private int CountC3 = 0;
     private int CountC1Chap4 = 0;
     private int CountC2Chap4 = 0;
-   
+    
+    private int CountC1Chap5 = 0;
+    private int CountC2Chap5 = 0;
+
 
 
 
@@ -126,12 +132,17 @@ public class Brebis : MonoBehaviour ,IInteract
         HibouxCave.SetActive(false);
 
         END.SetActive(false);
+
         // Peau D'Ane
         AneChoix1.SetActive(false);
         AneChoix2.SetActive(false);
         AneChoix3.SetActive(false);
+
         AneChapitre4Choix1.SetActive(false);
         AneChapitre4Choix2.SetActive(false);
+
+        AneChapitre5Choix1.SetActive(false);
+        AneChapitre5Choix2.SetActive(false);
 
 
     }
@@ -331,15 +342,33 @@ public class Brebis : MonoBehaviour ,IInteract
         }
 
         //Mission3:----------------------------------------------------------
-        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == false)
+        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == false && CountC1Chap5==0)
         {
+            AneChapitre5Choix1.SetActive(true);
+            AneChapitre5Choix2.SetActive(false);
+
+            TextPartie3.SetActive(false);
+            choix1TextPartie3.SetActive(false);
+            choix2TextPartie3.SetActive(false);
+
+
+            CountC1Chap5 = 1;
+            return;
+        }
+
+        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == false && CountC1Chap5==1)
+        {
+            AneChapitre5Choix1.SetActive(false);
+            AneChapitre5Choix2.SetActive(false);
+
             TextPartie3.SetActive(false);
             choix1TextPartie3.SetActive(true);
             choix2TextPartie3.SetActive(false);
 
             autoHideVideo.Video();
 
-
+            CountC1Chap5 = 0;
+            return;
         }
         //Mission5----------------------------------------------------------------------
 
@@ -448,11 +477,32 @@ public class Brebis : MonoBehaviour ,IInteract
         }
 
         //Mission3:----------------------------------------------------------
-        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == false)
+        
+        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == false && CountC2Chap5==0)
         {
+
+            AneChapitre5Choix1.SetActive(false);
+            AneChapitre5Choix2.SetActive(true);
+
+            TextPartie3.SetActive(false);
+            choix1TextPartie3.SetActive(false);
+            choix2TextPartie3.SetActive(false);
+            CountC2Chap5 = 1;
+            return;
+
+        }
+
+        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == false && CountC2Chap5 == 1)
+        {
+
+            AneChapitre5Choix1.SetActive(false);
+            AneChapitre5Choix2.SetActive(false);
+
             TextPartie3.SetActive(false);
             choix1TextPartie3.SetActive(false);
             choix2TextPartie3.SetActive(true);
+            CountC2Chap5 = 0;
+            return;
 
         }
         //Mission5----------------------------------------------------------------------

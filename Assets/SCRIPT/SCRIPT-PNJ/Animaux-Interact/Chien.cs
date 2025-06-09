@@ -33,8 +33,25 @@ public class Chien : MonoBehaviour , IInteract
 
 //END
     [SerializeField] private GameObject END;
-    private int textCount = 0;
 
+    // Peau d'Ane
+    [SerializeField] private GameObject AneChapitre4Choix1;
+    [SerializeField] private GameObject AneChapitre4Choix2;
+    [SerializeField] private GameObject AneChapitre4Choix3;
+
+    [SerializeField] private GameObject AneChapitre5Choix1;
+    [SerializeField] private GameObject AneChapitre5Choix2;
+    [SerializeField] private GameObject AneChapitre5Choix3;
+
+
+    private int textCount = 0;
+    // Peau d'Ane
+    private int CountC1 = 0;
+    private int CountC2 = 0;
+    private int CountC3 = 0;
+    private int CountChap5C1 = 0;
+    private int CountChap5C2 = 0;
+    private int CountChap5C3 = 0;
 
     private bool isActive = false;
     private bool isTalking = false;
@@ -72,8 +89,17 @@ public class Chien : MonoBehaviour , IInteract
         TextPartie2LL.SetActive(false);
 
         HibouxCave.SetActive(false);
-        
+
         END.SetActive(false);
+        //Peau d'ane
+
+        AneChapitre4Choix1.SetActive(false);
+        AneChapitre4Choix2.SetActive(false);
+        AneChapitre4Choix3.SetActive(false);
+
+        AneChapitre5Choix1.SetActive(false);
+        AneChapitre5Choix2.SetActive(false);
+        AneChapitre5Choix3.SetActive(false);
     }
     public void Interact()
     {
@@ -219,7 +245,24 @@ public class Chien : MonoBehaviour , IInteract
             bulleDeText.SetActive(false);
         }
 
-        if (TableauMemoire.confidenceCerf==true&& TableauMemoire.masque==0)
+        if (TableauMemoire.confidenceCerf == true && TableauMemoire.masque == 0 && CountC1 == 0)
+        {
+            TextMA.SetActive(false);
+            bulleDeText.SetActive(false);
+            bulleTextPartie2.SetActive(false);
+            choix1TextPartie2.SetActive(false);
+            choix2TextPartie2.SetActive(false);
+            choix3TextPartie2.SetActive(false);
+
+            AneChapitre4Choix1.SetActive(true);
+            AneChapitre4Choix2.SetActive(false);
+            AneChapitre4Choix3.SetActive(false);
+            CountC1 = 1;
+            return;
+            
+        }
+
+        if (TableauMemoire.confidenceCerf == true && TableauMemoire.masque == 0 && CountC1 == 1)
         {
             TextMA.SetActive(false);
             bulleDeText.SetActive(false);
@@ -227,19 +270,46 @@ public class Chien : MonoBehaviour , IInteract
             choix1TextPartie2.SetActive(true);
             choix2TextPartie2.SetActive(false);
             choix3TextPartie2.SetActive(false);
-            
-        }
-         //Mission3--------------------------------------------
 
-        if (TableauMemoire.masque==1)
+            AneChapitre4Choix1.SetActive(false);
+            AneChapitre4Choix2.SetActive(false);
+            AneChapitre4Choix3.SetActive(false);
+            CountC1 = 0;
+            return;
+
+        }
+        //Mission3--------------------------------------------
+
+        if (TableauMemoire.masque == 1 && CountChap5C1 == 0)
         {
+            AneChapitre5Choix1.SetActive(true);
+            AneChapitre5Choix2.SetActive(false);
+            AneChapitre5Choix3.SetActive(false);
+
+            TextPartie3.SetActive(false);
+            choix1TextPartie3.SetActive(false);
+            choix2TextPartie3.SetActive(false);
+            choix3TextPartie3.SetActive(false);
+            RespectText.SetActive(false);
+            CountChap5C1 = 1;
+            return;
+        }
+
+        if (TableauMemoire.masque == 1 && CountChap5C1 == 1)
+        {
+            AneChapitre5Choix1.SetActive(false);
+            AneChapitre5Choix2.SetActive(false);
+            AneChapitre5Choix3.SetActive(false);
+
             autoHideVideo.Video();
             TextPartie3.SetActive(false);
             choix1TextPartie3.SetActive(true);
             choix2TextPartie3.SetActive(false);
             choix3TextPartie3.SetActive(false);
             RespectText.SetActive(false);
-            TableauMemoire.AmiChien=true;
+            TableauMemoire.AmiChien = true;
+            CountChap5C1 = 0;
+            return;
         }
 
     }
@@ -251,7 +321,23 @@ public class Chien : MonoBehaviour , IInteract
             bulleDeText.SetActive(false);
         }
 
-        if (TableauMemoire.confidenceCerf==true&& TableauMemoire.masque==0)
+        if (TableauMemoire.confidenceCerf == true && TableauMemoire.masque == 0 && CountC2 == 0)
+        {
+            bulleDeText.SetActive(false);
+            TextMA.SetActive(false);
+            bulleTextPartie2.SetActive(false);
+            choix1TextPartie2.SetActive(false);
+            choix2TextPartie2.SetActive(false);
+            choix3TextPartie2.SetActive(false);
+
+            AneChapitre4Choix1.SetActive(false);
+            AneChapitre4Choix2.SetActive(true);
+            AneChapitre4Choix3.SetActive(false);
+            CountC2 = 1;
+            return;
+        }
+
+        if (TableauMemoire.confidenceCerf == true && TableauMemoire.masque == 0 && CountC2 == 1)
         {
             bulleDeText.SetActive(false);
             TextMA.SetActive(false);
@@ -261,10 +347,38 @@ public class Chien : MonoBehaviour , IInteract
             choix3TextPartie2.SetActive(false);
             TableauMemoire.PlancheMaisonLoup = true;
             autoHideVideo.Video();
+
+            AneChapitre4Choix1.SetActive(false);
+            AneChapitre4Choix2.SetActive(false);
+            AneChapitre4Choix3.SetActive(false);
+            CountC2 = 0;
+            return;
         }
-         //Mission3--------------------------------------------
-        if (TableauMemoire.masque==1)
+        //Mission3--------------------------------------------
+
+        if (TableauMemoire.masque == 1 && CountChap5C2 == 0)
         {
+            AneChapitre5Choix1.SetActive(false);
+            AneChapitre5Choix2.SetActive(true);
+            AneChapitre5Choix3.SetActive(false);
+
+            choix2TextPartie2.SetActive(false);
+
+            TextPartie3.SetActive(false);
+            choix1TextPartie3.SetActive(false);
+            choix2TextPartie3.SetActive(false);
+            choix3TextPartie3.SetActive(false);
+            RespectText.SetActive(false);
+            CountChap5C2 = 1;
+            return;
+        }
+
+        if (TableauMemoire.masque == 1 && CountChap5C2 == 1)
+        {
+            AneChapitre5Choix1.SetActive(false);
+            AneChapitre5Choix2.SetActive(false);
+            AneChapitre5Choix3.SetActive(false);
+
             choix2TextPartie2.SetActive(false);
 
             TextPartie3.SetActive(false);
@@ -272,6 +386,8 @@ public class Chien : MonoBehaviour , IInteract
             choix2TextPartie3.SetActive(true);
             choix3TextPartie3.SetActive(false);
             RespectText.SetActive(false);
+            CountChap5C2 = 0;
+            return;
         }
     }
     public void Choix3()
@@ -283,7 +399,23 @@ public class Chien : MonoBehaviour , IInteract
             bulleDeText.SetActive(false);
         }
 
-        if (TableauMemoire.confidenceCerf==true&& TableauMemoire.masque==0)
+        if (TableauMemoire.confidenceCerf == true && TableauMemoire.masque == 0 && CountC3 == 0)
+        {
+            bulleDeText.SetActive(false);
+            TextMA.SetActive(false);
+            bulleTextPartie2.SetActive(false);
+            choix1TextPartie2.SetActive(false);
+            choix2TextPartie2.SetActive(false);
+            choix3TextPartie2.SetActive(false);
+
+            AneChapitre4Choix1.SetActive(false);
+            AneChapitre4Choix2.SetActive(false);
+            AneChapitre4Choix3.SetActive(true);
+            CountC3 = 1;
+            return;
+        }
+
+        if (TableauMemoire.confidenceCerf == true && TableauMemoire.masque == 0 && CountC3 == 1)
         {
             bulleDeText.SetActive(false);
             TextMA.SetActive(false);
@@ -291,15 +423,43 @@ public class Chien : MonoBehaviour , IInteract
             choix1TextPartie2.SetActive(false);
             choix2TextPartie2.SetActive(false);
             choix3TextPartie2.SetActive(true);
+
+            AneChapitre4Choix1.SetActive(false);
+            AneChapitre4Choix2.SetActive(false);
+            AneChapitre4Choix3.SetActive(false);
+            CountC3 = 0;
+            return;
         }
-         //Mission3--------------------------------------------
-        if (TableauMemoire.masque==1)
+        //Mission3--------------------------------------------
+
+        if (TableauMemoire.masque == 1 && CountChap5C3 == 0)
         {
+            AneChapitre5Choix1.SetActive(false);
+            AneChapitre5Choix2.SetActive(false);
+            AneChapitre5Choix3.SetActive(true);
+
+            TextPartie3.SetActive(false);
+            choix1TextPartie3.SetActive(false);
+            choix2TextPartie3.SetActive(false);
+            choix3TextPartie3.SetActive(false);
+            RespectText.SetActive(false);
+            CountChap5C3 = 1;
+            return;
+        }
+
+        if (TableauMemoire.masque == 1 && CountChap5C3 == 1)
+        {
+            AneChapitre5Choix1.SetActive(false);
+            AneChapitre5Choix2.SetActive(false);
+            AneChapitre5Choix3.SetActive(false);
+
             TextPartie3.SetActive(false);
             choix1TextPartie3.SetActive(false);
             choix2TextPartie3.SetActive(false);
             choix3TextPartie3.SetActive(true);
             RespectText.SetActive(false);
+            CountChap5C3 = 0;
+            return;
         }
     }
 

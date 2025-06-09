@@ -31,6 +31,9 @@ public class Serpent : MonoBehaviour, IInteract
     //END
     [SerializeField] private GameObject END;
 
+    //Peau D'Ane
+    [SerializeField] private GameObject AneChap5;
+
 
 
     private bool isActive = false;
@@ -74,6 +77,9 @@ public class Serpent : MonoBehaviour, IInteract
         HibouxCave.SetActive(false);
 
         END.SetActive(false);
+
+        //Peau D'ane
+        AneChap5.SetActive(false);
 
     }
     public void Interact()
@@ -141,7 +147,6 @@ public class Serpent : MonoBehaviour, IInteract
         if (TableauMemoire.masque == 1 && stepTalk == 0 && TableauMemoire.UnVUnCochon == false)
         {
             TextPartie3.SetActive(true);
-            Debug.Log("Zeub");
             stepTalk = 1;
             return;
 
@@ -149,8 +154,18 @@ public class Serpent : MonoBehaviour, IInteract
         if (stepTalk == 1 && TableauMemoire.masque == 1 && TableauMemoire.UnVUnCochon == false)
         {
             TextPartie3.SetActive(false);
+            AneChap5.SetActive(true);
+            stepTalk = 2;
+            return;
+        }
+
+        if (stepTalk == 2 && TableauMemoire.masque == 1 && TableauMemoire.UnVUnCochon == false)
+        {
+            AneChap5.SetActive(false);
+            TextPartie3.SetActive(false);
             TextPartie3d.SetActive(isActive);
             passTalking = true;
+            return;
         }
 
 
