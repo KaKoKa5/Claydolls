@@ -56,15 +56,21 @@ public class Cochon : MonoBehaviour , IInteract
     [SerializeField] private GameObject AneChoix2;
     [SerializeField] private GameObject AneChoix3;
 
+    [SerializeField] private GameObject AneChap5Choix1;
+    [SerializeField] private GameObject AneChap5Choix2;
+
 
     private int CountC1 = 0;
     private int CountC2 = 0;
     private int CountC3 = 0;
+
+    private int CountChap5C1 = 0;
+    private int CountChap5C2 = 0;
     private bool isActive = false;
     private bool isTalking = false;
     private int CountText=0;
     private int SuiteBig = 0;
-    
+
 
 
     private void Start()
@@ -121,6 +127,9 @@ public class Cochon : MonoBehaviour , IInteract
         AneChoix1.SetActive(false);
         AneChoix2.SetActive(false);
         AneChoix3.SetActive(false);
+        
+        AneChap5Choix1.SetActive(false);
+        AneChap5Choix2.SetActive(false);
 
 
     }
@@ -281,11 +290,29 @@ public class Cochon : MonoBehaviour , IInteract
         }
 
         //Mission3:----------------------------------------------------------
-        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == false)
+        
+        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == false && CountChap5C1==0)
         {
+            AneChap5Choix1.SetActive(true);
+            AneChap5Choix2.SetActive(false);
+
+            TextPartie3.SetActive(false);
+            choix1TextPartie3.SetActive(false);
+            choix2TextPartie3.SetActive(false);
+            CountChap5C1 = 1;
+            return;
+        }
+
+        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == false && CountChap5C1 == 1)
+        {
+            AneChap5Choix1.SetActive(false);
+            AneChap5Choix2.SetActive(false);
+
             TextPartie3.SetActive(false);
             choix1TextPartie3.SetActive(true);
             choix2TextPartie3.SetActive(false);
+            CountChap5C1 = 0;
+            return;
         }
 
 
@@ -365,11 +392,29 @@ public class Cochon : MonoBehaviour , IInteract
         }
 
         //Mission3:----------------------------------------------------------
-        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == false)
+        
+        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == false && CountChap5C2==0)
         {
+            AneChap5Choix1.SetActive(false);
+            AneChap5Choix2.SetActive(true);
+
+            TextPartie3.SetActive(false);
+            choix1TextPartie3.SetActive(false);
+            choix2TextPartie3.SetActive(false);
+            CountChap5C2 = 1;
+            return;
+        }
+
+        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == false && CountChap5C2 == 1)
+        {
+            AneChap5Choix1.SetActive(false);
+            AneChap5Choix2.SetActive(false);
+
             TextPartie3.SetActive(false);
             choix1TextPartie3.SetActive(false);
             choix2TextPartie3.SetActive(true);
+            CountChap5C2 = 0;
+            return;
         }
 
         //BIG DISCUTION

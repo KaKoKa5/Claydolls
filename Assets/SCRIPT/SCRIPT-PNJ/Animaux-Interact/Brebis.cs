@@ -64,6 +64,10 @@ public class Brebis : MonoBehaviour ,IInteract
     [SerializeField] private GameObject AneChapitre5Choix1;
     [SerializeField] private GameObject AneChapitre5Choix2;
 
+    [SerializeField] private GameObject AneChapitre8Choix1;
+    [SerializeField] private GameObject AneChapitre8Choix2;
+    [SerializeField] private GameObject AneChapitre8Choix3;
+
     private bool isActive = false;
     private bool isTalking = false;
     private bool secret = false;
@@ -78,6 +82,10 @@ public class Brebis : MonoBehaviour ,IInteract
     
     private int CountC1Chap5 = 0;
     private int CountC2Chap5 = 0;
+
+    private int CountC1Chap8 = 0;
+    private int CountC2Chap8 = 0;
+    private int CountC3Chap8 = 0;
 
 
 
@@ -143,6 +151,12 @@ public class Brebis : MonoBehaviour ,IInteract
 
         AneChapitre5Choix1.SetActive(false);
         AneChapitre5Choix2.SetActive(false);
+
+        AneChapitre8Choix1.SetActive(false);
+        AneChapitre8Choix2.SetActive(false);
+        AneChapitre8Choix3.SetActive(false); 
+        
+        
 
 
     }
@@ -371,8 +385,23 @@ public class Brebis : MonoBehaviour ,IInteract
             return;
         }
         //Mission5----------------------------------------------------------------------
+        
+        if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == false && CountC1Chap8==0)
+        {
+            RevelSNAKE.SetActive(false);
+            TextPartie5.SetActive(false);
+            choix1TextPartie5.SetActive(false);
+            choix2TextPartie5.SetActive(false);
+            choix3TextPartie5.SetActive(false);
 
-        if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == false)
+            AneChapitre8Choix1.SetActive(true);
+            AneChapitre8Choix2.SetActive(false);
+            AneChapitre8Choix3.SetActive(false);
+            CountC1Chap8 = 1;
+            return;
+        }
+
+        if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == false && CountC1Chap8 == 1)
         {
             RevelSNAKE.SetActive(false);
             TextPartie5.SetActive(false);
@@ -380,7 +409,15 @@ public class Brebis : MonoBehaviour ,IInteract
             choix2TextPartie5.SetActive(false);
             choix3TextPartie5.SetActive(false);
 
+            AneChapitre8Choix1.SetActive(false);
+            AneChapitre8Choix2.SetActive(false);
+            AneChapitre8Choix3.SetActive(false);
+            CountC1Chap8 = 0;
+            return;
         }
+
+        //------------------------------------------------------------------------------------------------
+
         if (TableauMemoire.masque == 1 && TableauMemoire.RevelSNAKE == true && Count == 0)
         {
             RevelSNAKE.SetActive(false);
@@ -506,22 +543,43 @@ public class Brebis : MonoBehaviour ,IInteract
 
         }
         //Mission5----------------------------------------------------------------------
+        
+        if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == false && CountC2Chap8==0)
+        {
+            TextPartie5.SetActive(false);
+            choix1TextPartie5.SetActive(false);
+            choix2TextPartie5.SetActive(false);
+            choix3TextPartie5.SetActive(false);
 
-        if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == false)
+            AneChapitre8Choix1.SetActive(false);
+            AneChapitre8Choix2.SetActive(true);
+            AneChapitre8Choix3.SetActive(false);
+            CountC2Chap8 = 1;
+            return;
+        }
+
+        if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == false && CountC2Chap8 == 1)
         {
             TextPartie5.SetActive(false);
             choix1TextPartie5.SetActive(false);
             choix2TextPartie5.SetActive(true);
             choix3TextPartie5.SetActive(false);
 
+            AneChapitre8Choix1.SetActive(false);
+            AneChapitre8Choix2.SetActive(false);
+            AneChapitre8Choix3.SetActive(false);
+            CountC2Chap8 = 0;
+            return;
         }
         
+        //--------------------------------------------------------------------------------------------------
+
         if (TableauMemoire.masque == 1 && TableauMemoire.RevelSNAKE == true && TableauMemoire.Partie2 == true)
         {
             RevelSNAKEchoix1.SetActive(false);
             RevelSNAKEchoix1p.SetActive(false);
             RevelSNAKE.SetActive(false);
-            RevelSNAKEchoix2.SetActive(isActive);   
+            RevelSNAKEchoix2.SetActive(isActive);
         }
     }
     public void Choix3()
@@ -569,20 +627,42 @@ public class Brebis : MonoBehaviour ,IInteract
 
         }
         //Mission5----------------------------------------------------------------------
+        
+        if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == false && CountC3Chap8==0)
+        {
+            TextPartie5.SetActive(false);
+            choix1TextPartie5.SetActive(false);
+            choix2TextPartie5.SetActive(false);
+            choix3TextPartie5.SetActive(false);
 
-        if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == false)
+            AneChapitre8Choix1.SetActive(false);
+            AneChapitre8Choix2.SetActive(false);
+            AneChapitre8Choix3.SetActive(true);
+            CountC3Chap8 = 1;
+            return;
+        }
+
+        if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == false && CountC3Chap8 == 1)
         {
             TextPartie5.SetActive(false);
             choix1TextPartie5.SetActive(false);
             choix2TextPartie5.SetActive(false);
             choix3TextPartie5.SetActive(true);
 
+            AneChapitre8Choix1.SetActive(false);
+            AneChapitre8Choix2.SetActive(false);
+            AneChapitre8Choix3.SetActive(false);
+            CountC3Chap8 = 0;
+            return;
         }
+
+        //-----------------------------------------------------------------------------
+
 
         if (TableauMemoire.masque == 1 && TableauMemoire.RevelSNAKE == true && Counte == 0)
         {
             RevelSNAKE.SetActive(false);
-            RevelSNAKEchoix2.SetActive(false); 
+            RevelSNAKEchoix2.SetActive(false);
             RevelSNAKEchoix3.SetActive(true);
             RevelSNAKEchoix1.SetActive(false);
             RevelSNAKEchoix1p.SetActive(false);
@@ -592,7 +672,7 @@ public class Brebis : MonoBehaviour ,IInteract
         {
             RevelSNAKEchoix3m.SetActive(true);
             RevelSNAKE.SetActive(false);
-            RevelSNAKEchoix2.SetActive(false); 
+            RevelSNAKEchoix2.SetActive(false);
             RevelSNAKEchoix3.SetActive(false);
             secret = true;
             Counte = 2;

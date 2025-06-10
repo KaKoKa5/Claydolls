@@ -14,9 +14,22 @@ public class Chat : MonoBehaviour, IInteract
 [SerializeField] private GameObject bulleChoix2DeText;
     [SerializeField] private GameObject bulleChoix3DeText;
 
-[SerializeField] private GameObject HibouxCave;
-//END
+    [SerializeField] private GameObject HibouxCave;
+
+    //END
     [SerializeField] private GameObject END;
+    
+    //Peau D'ane
+
+    [SerializeField] private GameObject AneChapitre8Choix1;
+    [SerializeField] private GameObject AneChapitre8Choix2;
+    [SerializeField] private GameObject AneChapitre8Choix3;
+
+
+    // Peau d'Ane
+    private int CountC1 = 0;
+    private int CountC2 = 0;
+    private int CountC3 = 0;
 
 
     private bool isActive = false;
@@ -37,8 +50,12 @@ public class Chat : MonoBehaviour, IInteract
         bulleChoix3DeText.SetActive(false);
 
         HibouxCave.SetActive(false);
-        
+
         END.SetActive(false);
+        
+        AneChapitre8Choix1.SetActive(false);
+        AneChapitre8Choix2.SetActive(false);
+        AneChapitre8Choix3.SetActive(false);
 
     }
 
@@ -118,39 +135,105 @@ public class Chat : MonoBehaviour, IInteract
     {
         if (!isTalking)return;
         
-        if(TableauMemoire.masque==2)
+        if (TableauMemoire.masque == 2 && CountC1 == 0)
         {
+            AneChapitre8Choix1.SetActive(true);
+            AneChapitre8Choix2.SetActive(false);
+            AneChapitre8Choix3.SetActive(false);
+
             bulleText.SetActive(false);
-        bulleChoix1DeText.SetActive(true);
-        bulleChoix2DeText.SetActive(false);
-        bulleChoix3DeText.SetActive(false);
-            TableauMemoire.CochonHagrad=true;
+            bulleChoix1DeText.SetActive(false);
+            bulleChoix2DeText.SetActive(false);
+            bulleChoix3DeText.SetActive(false);
+            
+            CountC1 = 1;
+            return;
+        }
+
+        if (TableauMemoire.masque == 2 && CountC1 == 1)
+        {
+            AneChapitre8Choix1.SetActive(false);
+            AneChapitre8Choix2.SetActive(false);
+            AneChapitre8Choix3.SetActive(false);
+
+            bulleText.SetActive(false);
+            bulleChoix1DeText.SetActive(true);
+            bulleChoix2DeText.SetActive(false);
+            bulleChoix3DeText.SetActive(false);
+            TableauMemoire.CochonHagrad = true;
             autoHideVideo.Video();
+
+            CountC1 = 0;
+            return;
         }
 
     }
     public void Choix2()
     {
         if (!isTalking)return;
-        
-        if(TableauMemoire.masque==2)
+
+        if (TableauMemoire.masque == 2 && CountC2 == 0)
         {
+            AneChapitre8Choix1.SetActive(false);
+            AneChapitre8Choix2.SetActive(true);
+            AneChapitre8Choix3.SetActive(false);
+
             bulleText.SetActive(false);
-        bulleChoix1DeText.SetActive(false);
-        bulleChoix2DeText.SetActive(true);
-        bulleChoix3DeText.SetActive(false);
+            bulleChoix1DeText.SetActive(false);
+            bulleChoix2DeText.SetActive(false);
+            bulleChoix3DeText.SetActive(false);
+
+            CountC2 = 1;
+            return;
+        }
+
+        if (TableauMemoire.masque == 2 && CountC2 == 1)
+        {
+            AneChapitre8Choix1.SetActive(false);
+            AneChapitre8Choix2.SetActive(false);
+            AneChapitre8Choix3.SetActive(false);
+
+            bulleText.SetActive(false);
+            bulleChoix1DeText.SetActive(false);
+            bulleChoix2DeText.SetActive(true);
+            bulleChoix3DeText.SetActive(false);
+
+            CountC2 = 0;
+            return;
         }
     }
     public void Choix3()
     {
         if (!isTalking)return;
 
-        if(TableauMemoire.masque==2)
+        if (TableauMemoire.masque == 2 && CountC3 == 0)
         {
+            AneChapitre8Choix1.SetActive(false);
+            AneChapitre8Choix2.SetActive(false);
+            AneChapitre8Choix3.SetActive(true);
+
             bulleText.SetActive(false);
-        bulleChoix1DeText.SetActive(false);
-        bulleChoix2DeText.SetActive(false);
-        bulleChoix3DeText.SetActive(true);
+            bulleChoix1DeText.SetActive(false);
+            bulleChoix2DeText.SetActive(false);
+            bulleChoix3DeText.SetActive(false);
+
+            CountC3 = 1;
+            return;
+        }
+
+        if (TableauMemoire.masque == 2 && CountC3 == 1)
+        {
+            AneChapitre8Choix1.SetActive(false);
+            AneChapitre8Choix2.SetActive(false);
+            AneChapitre8Choix3.SetActive(false);
+
+            bulleText.SetActive(false);
+            bulleChoix1DeText.SetActive(false);
+            bulleChoix2DeText.SetActive(false);
+            bulleChoix3DeText.SetActive(true);
+
+            CountC3 = 0;
+            return;
         }
         
     }
