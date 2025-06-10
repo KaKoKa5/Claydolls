@@ -339,8 +339,20 @@ public class Corbeaux : MonoBehaviour , IInteract
         {
             TextFinal.SetActive(false);
             AneEND2.SetActive(false);
-            isActive = !isActive;
-            TextFinal1.SetActive(isActive);
+            TextFinal1.SetActive(true);
+            num++;
+            return;
+            
+        }
+        if (TableauMemoire.masque == 0 && TableauMemoire.HibouxDEAD == true && TableauMemoire.UnVUnCochon == true && num == 4)
+        {
+            TextFinal.SetActive(false);
+            AneEND2.SetActive(false);
+            TextFinal1.SetActive(false);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = true;
+            num = 3;
+            return;
             
         }
 
