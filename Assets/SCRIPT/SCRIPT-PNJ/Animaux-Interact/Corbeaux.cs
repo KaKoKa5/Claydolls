@@ -52,6 +52,9 @@ public class Corbeaux : MonoBehaviour , IInteract
     [SerializeField] private GameObject AneChoix2;
     [SerializeField] private GameObject AneChoix3;
 
+    [SerializeField] private GameObject AneEND;
+    [SerializeField] private GameObject AneEND2;
+
 
     private int CountC1 = 0;
     private int CountC2 = 0;
@@ -122,6 +125,9 @@ public class Corbeaux : MonoBehaviour , IInteract
         AneChoix2.SetActive(false);
         AneChoix3.SetActive(false);
 
+        AneEND2.SetActive(false);
+        AneEND.SetActive(false);
+        
     }
 
     public void Interact()
@@ -147,6 +153,9 @@ public class Corbeaux : MonoBehaviour , IInteract
         AneChoix1.SetActive(false);
         AneChoix2.SetActive(false);
         AneChoix3.SetActive(false);
+
+        AneEND2.SetActive(false);
+        AneEND.SetActive(false);
 
         if (TableauMemoire.talkFirst == false)
         {
@@ -306,17 +315,33 @@ public class Corbeaux : MonoBehaviour , IInteract
 
         if (TableauMemoire.masque == 0 && TableauMemoire.HibouxDEAD == true && TableauMemoire.UnVUnCochon == true && num == 0)
         {
-            isActive = !isActive;
-            TextFinal1.SetActive(false);
-            TextFinal.SetActive(isActive);
+            AneEND.SetActive(true);
             num++;
             return;
         }
         if (TableauMemoire.masque == 0 && TableauMemoire.HibouxDEAD == true && TableauMemoire.UnVUnCochon == true && num == 1)
         {
+            AneEND.SetActive(false);
+            TextFinal1.SetActive(false);
+            TextFinal.SetActive(true);
+            num++;
+            return;
+        }
+
+        if (TableauMemoire.masque == 0 && TableauMemoire.HibouxDEAD == true && TableauMemoire.UnVUnCochon == true && num == 2)
+        {
+            AneEND2.SetActive(true);
             TextFinal.SetActive(false);
+            num++;
+            return;
+        }
+        if (TableauMemoire.masque == 0 && TableauMemoire.HibouxDEAD == true && TableauMemoire.UnVUnCochon == true && num == 3)
+        {
+            TextFinal.SetActive(false);
+            AneEND2.SetActive(false);
+            isActive = !isActive;
             TextFinal1.SetActive(isActive);
-            num = 0;
+            
         }
 
 
