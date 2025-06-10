@@ -33,6 +33,7 @@ public class Serpent : MonoBehaviour, IInteract
 
     //Peau D'Ane
     [SerializeField] private GameObject AneChap5;
+    [SerializeField] private GameObject AneChap8;
 
 
 
@@ -80,6 +81,8 @@ public class Serpent : MonoBehaviour, IInteract
 
         //Peau D'ane
         AneChap5.SetActive(false);
+
+        AneChap8.SetActive(false);
 
     }
     public void Interact()
@@ -178,75 +181,80 @@ public class Serpent : MonoBehaviour, IInteract
         }
 
         //Mission 4-----------------------------------------------------------
+        if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 2 && passTalking == true && TableauMemoire.UnVUnCochon == false)
+            {
+                isActive = true;
+                TextPartie4.SetActive(true);
+                TextPartie41.SetActive(false);
+                TextPartie42.SetActive(false);
+                stepTalke = 3;
+            }
+            else if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 3 && passTalking == true)
+            {
+                TextPartie4.SetActive(false);
+                TextPartie41.SetActive(true);
+                TextPartie42.SetActive(false);
+                stepTalke = 4;
+            }
+            else if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 4 && passTalking == true)
+            {
+                TextPartie4.SetActive(false);
+                TextPartie41.SetActive(false);
+                TextPartie42.SetActive(true);
+                autoHideVideo.Video();
+                TableauMemoire.Portail = true;
+                stepTalke = 5;
+            }
+            else if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 5 && passTalking == true)
+            {
+                TextPartie4.SetActive(false);
+                TextPartie41.SetActive(false);
+                TextPartie42.SetActive(false);
+                stepTalke = 6;
 
-        if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 0 && passTalking == true && TableauMemoire.UnVUnCochon == false)
-        {
-            isActive = true;
-            TextPartie4.SetActive(true);
-            TextPartie41.SetActive(false);
-            TextPartie42.SetActive(false);
-            stepTalke = 3;
-        }
-        else if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 3 && passTalking == true)
-        {
-            TextPartie4.SetActive(false);
-            TextPartie41.SetActive(true);
-            TextPartie42.SetActive(false);
-            stepTalke = 4;
-        }
-        else if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 4 && passTalking == true)
-        {
-            TextPartie4.SetActive(false);
-            TextPartie41.SetActive(false);
-            TextPartie42.SetActive(true);
-            autoHideVideo.Video();
-            TableauMemoire.Portail = true;
-            stepTalke = 5;
-        }
-        else if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 5 && passTalking == true)
-        {
-            TextPartie4.SetActive(false);
-            TextPartie41.SetActive(false);
-            TextPartie42.SetActive(false);
-            stepTalke = 6;
-
-        }
-        else if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 6 && passTalking == true)
-        {
-            TextPartie4.SetActive(false);
-            TextPartie41.SetActive(false);
-            TextPartie42.SetActive(false);
-            stepTalke = 0; // On boucle
-        }
+            }
+            else if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 6 && passTalking == true)
+            {
+                TextPartie4.SetActive(false);
+                TextPartie41.SetActive(false);
+                TextPartie42.SetActive(false);
+                stepTalke = 0; // On boucle
+            }
 
 
         //Mission5----------------------------------------------------------------------
-
         if (TableauMemoire.Partie2 == true && TableauMemoire.CochonHagrad == true && CountPartie2 == 0 && TableauMemoire.UnVUnCochon == false)
         {
+            AneChap8.SetActive(true);
+            CountPartie2 = 1;
+            return;
+        }
 
+        if (TableauMemoire.Partie2 == true && TableauMemoire.CochonHagrad == true && CountPartie2 == 1 && TableauMemoire.UnVUnCochon == false)
+        {
+            AneChap8.SetActive(false);
             TextRevelCochon.SetActive(true);
             TextRevelCochon2.SetActive(false);
-            TextRevelCochon3.SetActive(false);
-            CountPartie2 = 1;
-        }
-        else if (TableauMemoire.Partie2 == true && TableauMemoire.CochonHagrad == true && CountPartie2 == 1 && TableauMemoire.UnVUnCochon == false)
-        {
-            TextRevelCochon.SetActive(false);
-            TextRevelCochon2.SetActive(true);
             TextRevelCochon3.SetActive(false);
             CountPartie2 = 2;
         }
         else if (TableauMemoire.Partie2 == true && TableauMemoire.CochonHagrad == true && CountPartie2 == 2 && TableauMemoire.UnVUnCochon == false)
         {
             TextRevelCochon.SetActive(false);
+            TextRevelCochon2.SetActive(true);
+            TextRevelCochon3.SetActive(false);
+            CountPartie2 =3;
+        }
+        else if (TableauMemoire.Partie2 == true && TableauMemoire.CochonHagrad == true && CountPartie2 == 3 && TableauMemoire.UnVUnCochon == false)
+        {
+            TextRevelCochon.SetActive(false);
             TextRevelCochon2.SetActive(false);
             TextRevelCochon3.SetActive(true);
             autoHideVideo.Video();
 
-            CountPartie2 = 3;
+            CountPartie2 = 4;
         }
-        else if (TableauMemoire.Partie2 == true && TableauMemoire.CochonHagrad == true && CountPartie2 == 3 && TableauMemoire.UnVUnCochon == false)
+        else if (TableauMemoire.Partie2 == true && TableauMemoire.CochonHagrad == true && CountPartie2 == 4 && TableauMemoire.UnVUnCochon == false)
         {
             TextRevelCochon.SetActive(false);
             TextRevelCochon2.SetActive(false);
