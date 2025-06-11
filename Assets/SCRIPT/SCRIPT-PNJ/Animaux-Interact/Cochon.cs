@@ -411,13 +411,13 @@ public class Cochon : MonoBehaviour , IInteract
             BigDiscutionChoix3.SetActive(false);
             BigDiscutionChoix1s1.SetActive(true);
             BigDiscution1Choix1s2.SetActive(false);
-            CountENDC1 = 3;
+            CountENDC1 = 4;
             return;
 
         }
         //--------------------------------------------------------------------------------------------------------
 
-        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 2 && CountENDC1 == 3)
+        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 2 && CountENDC1 == 4)
         {
             AneBigDChoix1AA.SetActive(true);
             AneBigDChoix2BB.SetActive(false);
@@ -427,11 +427,11 @@ public class Cochon : MonoBehaviour , IInteract
             BigDiscution1Choix2s1.SetActive(false);
             BigDiscutionChoix2.SetActive(false);
             BigDiscution1Choix2s2.SetActive(false);
-            CountENDC1 = 4;
+            CountENDC1 = 5;
             return;
         }
 
-        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 2 && CountENDC1 == 4)
+        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 2 && CountENDC1 == 5)
         {
             AneBigDChoix1AA.SetActive(false);
             AneBigDChoix2BB.SetActive(false);
@@ -441,11 +441,11 @@ public class Cochon : MonoBehaviour , IInteract
             BigDiscution1Choix2s1.SetActive(true);
             BigDiscutionChoix2.SetActive(false);
             BigDiscution1Choix2s2.SetActive(false);
-            CountENDC1 = 5;
+            CountENDC1 = 6;
             return;
         }
         //--------------------------------------------------------------------------------------------------------------------------------
-        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 3 && CountENDC1 == 5)
+        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 3 && CountENDC1 == 6)
         {
             AneBigDChoix1AA1.SetActive(true);
             AneBigDChoix2BB2.SetActive(false);
@@ -454,10 +454,10 @@ public class Cochon : MonoBehaviour , IInteract
             BigDiscution1Choix2s3.SetActive(false);
             BigDiscution1Choix3s1.SetActive(false);
             BigDiscution1Choix3s2.SetActive(false);
-            CountENDC1 = 6;
+            CountENDC1 = 7;
             return;
         }
-        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 3 && CountENDC1 == 6)
+        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 3 && CountENDC1 == 7)
         {
             AneBigDChoix1AA1.SetActive(false);
             AneBigDChoix2BB2.SetActive(false);
@@ -466,12 +466,12 @@ public class Cochon : MonoBehaviour , IInteract
             BigDiscution1Choix2s3.SetActive(false);
             BigDiscution1Choix3s1.SetActive(true);
             BigDiscution1Choix3s2.SetActive(false);
-            CountENDC1 = 7;
+            CountENDC1 = 8;
             return;
         }
         //---------------------------------------------------------------------------------------------------------------------------------
 
-        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 4 && CountENDC1 == 7)
+        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 4 && CountENDC1 == 8)
         {
             AneBigDChoix1AA1A.SetActive(true);
             AneBigDChoix2BB2B.SetActive(false);
@@ -481,11 +481,11 @@ public class Cochon : MonoBehaviour , IInteract
             BigDiscution1Choix4s1.SetActive(false);
             BigDiscution1Choix4s2.SetActive(false);
 
-            CountENDC1 = 8;
+            CountENDC1 = 9;
             return;
         }
 
-        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 4 && CountENDC1 == 8)
+        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 4 && CountENDC1 == 9)
         {
             AneBigDChoix1AA1A.SetActive(false);
             AneBigDChoix2BB2B.SetActive(false);
@@ -495,7 +495,7 @@ public class Cochon : MonoBehaviour , IInteract
             BigDiscution1Choix4s1.SetActive(true);
             BigDiscution1Choix4s2.SetActive(false);
 
-            CountENDC1 = 7;
+            CountENDC1 = 9;
             return;
         }
     }
@@ -761,7 +761,7 @@ public class Cochon : MonoBehaviour , IInteract
             BigDiscutionChoix2.SetActive(false);
             CountENDC3 = 2;
             CountENDC2 = 2;
-            CountENDC1 = 1;
+            CountENDC1 = 2;
             SuiteBig = 1;
             return;
         }
@@ -779,7 +779,7 @@ public class Cochon : MonoBehaviour , IInteract
             BigDiscution1Choix1s2.SetActive(false);
             CountENDC3 = 3;
             CountENDC2 = 3;
-            CountENDC1 = 2;
+            CountENDC1 = 3;
             return;
         }
 
@@ -795,7 +795,7 @@ public class Cochon : MonoBehaviour , IInteract
             BigDiscution1Choix1s2.SetActive(false);
             CountENDC3 = 4;
             CountENDC2 = 4;
-            CountENDC1 = 3;
+            CountENDC1 = 4;
             SuiteBig = 2;
             return;
         }
@@ -813,7 +813,7 @@ public class Cochon : MonoBehaviour , IInteract
             BigDiscution1Choix2s2.SetActive(false);
             CountENDC3 = 5;
             CountENDC2 = 5;
-            CountENDC1 = 4;
+            CountENDC1 = 5;
             return;
         }
 
@@ -830,7 +830,7 @@ public class Cochon : MonoBehaviour , IInteract
             BigDiscution1Choix2s2.SetActive(false);
             CountENDC3 = 6;
             CountENDC2 = 6;
-            CountENDC1 = 5;
+            CountENDC1 = 6;
             SuiteBig = 3;
             return;
         }
@@ -847,7 +847,7 @@ public class Cochon : MonoBehaviour , IInteract
             BigDiscution1Choix3s2.SetActive(false);
             CountENDC3 = 7;
             CountENDC2 = 7;
-            CountENDC1 = 6;
+            CountENDC1 = 7;
             return;
         }
 
@@ -863,7 +863,7 @@ public class Cochon : MonoBehaviour , IInteract
             BigDiscution1Choix3s2.SetActive(false);
             CountENDC3 = 8;
             CountENDC2 = 8;
-            CountENDC1 = 7;
+            CountENDC1 = 8;
             SuiteBig = 4;
             return;
         }
@@ -882,7 +882,7 @@ public class Cochon : MonoBehaviour , IInteract
             BigDiscution1Choix4s2.SetActive(false);
             CountENDC3 = 9;
             CountENDC2 = 9;
-            CountENDC1 = 8;
+            CountENDC1 = 9;
             return;
         }
         if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 4 && CountENDC3 == 9)
@@ -898,7 +898,7 @@ public class Cochon : MonoBehaviour , IInteract
             BigDiscution1Choix4s2.SetActive(false);
             CountENDC3 = 10;
             CountENDC2 = 10;
-            CountENDC1 = 9;
+            CountENDC1 = 10;
             SuiteBig = 5;
             return;
         }
