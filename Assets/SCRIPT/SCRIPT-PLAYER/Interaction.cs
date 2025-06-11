@@ -24,6 +24,7 @@ public class Interaction : MonoBehaviour
                 if (collider.TryGetComponent(out IInteract interact) && count == 0)
                 {
                     interact.Interact();
+                    InteractIcon1.Instance.ClearCurrent();
                     InteractIcon.Instance.ClearCurrent();
                     if (Cursor.visible == true)
                     {
