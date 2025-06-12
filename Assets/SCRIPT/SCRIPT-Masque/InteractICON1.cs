@@ -3,7 +3,6 @@ using UnityEngine.UI;
 
 public class InteractIcon1 : MonoBehaviour
 {
-    private float Distance = 1f;
     public static InteractIcon1 Instance;
     private PNJ currentNPC;
 
@@ -32,7 +31,7 @@ public class InteractIcon1 : MonoBehaviour
 
         if (currentNPC != null)
         {
-            Vector3 worldPos = currentNPC.transform.position + Vector3.right* 0.35f+ Vector3.up * Distance; // plus haut que la tête
+            Vector3 worldPos = currentNPC.transform.position + Vector3.right* 0.35f+ Vector3.up * 2; // plus haut que la tête
             Vector3 screenPos = mainCamera.WorldToScreenPoint(worldPos);
             if (screenPos.z > 0)
             {

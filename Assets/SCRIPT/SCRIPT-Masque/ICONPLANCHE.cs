@@ -32,7 +32,7 @@ public class ICONPLANCHE : MonoBehaviour
 
         if (currentNPC != null)
         {
-            Vector3 worldPos = currentNPC.transform.position + Vector3.up *0; 
+            Vector3 worldPos = currentNPC.transform.position + Vector3.up * -100; 
             Vector3 screenPos = mainCamera.WorldToScreenPoint(worldPos);
 
             if (screenPos.z > 0)
