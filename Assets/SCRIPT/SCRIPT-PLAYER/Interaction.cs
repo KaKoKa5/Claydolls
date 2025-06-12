@@ -15,12 +15,11 @@ public class Interaction : MonoBehaviour
     }
     void Update()
     {
-          
-            if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Collider[] colliderArray = Physics.OverlapSphere(transform.position, interactionRange);
+            foreach (Collider collider in colliderArray)
             {
-                Collider[] colliderArray = Physics.OverlapSphere(transform.position, interactionRange);
-                foreach (Collider collider in colliderArray)
-                {
                 if (collider.TryGetComponent(out IInteract interact) && count == 0)
                 {
                     interact.Interact();
@@ -39,16 +38,18 @@ public class Interaction : MonoBehaviour
                         Cursor.lockState = CursorLockMode.None; // Débloque la souris
                         Cursor.visible = true;
                     }
-                        //count++;
-                        Debug.Log("Count: " + count);
-                        return;
-                    
+                    //count++;
+                    Debug.Log("Count: " + count);
+                    return;
+
 
                 }
-                }
-
             }
-        
+
+        }
+    }
+
+
         
         /*if (Input.GetKeyDown(KeyCode.V))
         {
@@ -90,4 +91,3 @@ public class Interaction : MonoBehaviour
 
 
     }
-}

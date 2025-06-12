@@ -19615,6 +19615,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 73c5f73f39dbbd4498ed6244adb26f06, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4bdf95e9d1761354db06e4a87407c066, type: 2}
     - target: {fileID: 919132149155446097, guid: 73c5f73f39dbbd4498ed6244adb26f06, type: 3}
       propertyPath: m_Name
       value: MASQUEANEWITHUV (1)
@@ -37856,6 +37860,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4e54cb14cadff764c94db7a4bb05fc3c, type: 3}
   m_PrefabInstance: {fileID: 1909824277}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &481402547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 481402549}
+  - component: {fileID: 481402548}
+  m_Layer: 0
+  m_Name: UiManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &481402548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481402547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f0c56454d7f0e0418da8b84d8d0c77d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiCanvases:
+  - {fileID: 1770750883}
+--- !u!4 &481402549
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481402547}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 108.155464, y: 4.278867, z: 75.14488}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &481632623 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2345831305504741678, guid: a1e3c61d2eeb2ea4faf811a7f7784d98, type: 3}
@@ -68062,6 +68112,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 55d4874fb6d3f6c47b4c258ab5720427, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 58d05b4ddd159dd439624575f6052012, type: 2}
     - target: {fileID: 919132149155446097, guid: 55d4874fb6d3f6c47b4c258ab5720427, type: 3}
       propertyPath: m_Name
       value: Lion_Good
@@ -79289,7 +79343,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930246409}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.031000748, y: -0.39590892, z: 0.013374618, w: 0.91766894}
+  m_LocalRotation: {x: 0.031000746, y: -0.39590892, z: 0.013374621, w: 0.91766894}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -85188,6 +85242,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 74f89337156c7574e82767f122ba7d03, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 69865611ced57f64cab066ce2855836d, type: 2}
     - target: {fileID: 919132149155446097, guid: 74f89337156c7574e82767f122ba7d03, type: 3}
       propertyPath: m_Name
       value: Masque_Loup (1)
@@ -98830,7 +98888,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1152384894}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.074006274, y: -0.39484596, z: 0.03192845, w: 0.9152051}
+  m_LocalRotation: {x: 0.07400627, y: -0.39484596, z: 0.031928446, w: 0.9152051}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -150603,7 +150661,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626278947}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.052470542, y: -0.39548746, z: 0.022637306, w: 0.91669196}
+  m_LocalRotation: {x: 0.052470554, y: -0.39548746, z: 0.022637311, w: 0.91669196}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -191762,6 +191820,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f2e4b306f26e39b4eb5f93a27191439b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fae1f7c637d3ac34d860800afd37321b, type: 2}
     - target: {fileID: 919132149155446097, guid: f2e4b306f26e39b4eb5f93a27191439b, type: 3}
       propertyPath: m_Name
       value: Masque_Phoenix
@@ -195646,3 +195708,4 @@ SceneRoots:
   - {fileID: 170850839}
   - {fileID: 1518181248}
   - {fileID: 935899713}
+  - {fileID: 481402549}

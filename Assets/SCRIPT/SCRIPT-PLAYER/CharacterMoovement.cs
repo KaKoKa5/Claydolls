@@ -3,6 +3,8 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class CharaterMoovement : MonoBehaviour
 {
+    private bool controlsEnabled = true;
+
     #region Références
     [Header("Composants")]
     [SerializeField] private CharacterController controller;  // contrôleur de personnage
@@ -27,6 +29,7 @@ public class CharaterMoovement : MonoBehaviour
 
     private void Update()
     {
+
         // Récupération des axes de déplacement (WASD / flèches)
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
@@ -35,7 +38,7 @@ public class CharaterMoovement : MonoBehaviour
         Vector3 camForward = cameraTransform.forward;
         camForward.y = 0;
         camForward.Normalize();
-        
+
         Vector3 camRight = cameraTransform.right;
         camRight.y = 0;
         camRight.Normalize();
@@ -63,5 +66,9 @@ public class CharaterMoovement : MonoBehaviour
         // Application de la gravité
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+    }
+    public void EnableControls(bool enabled)
+    {
+        controlsEnabled = enabled;
     }
 }
