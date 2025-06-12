@@ -7856,6 +7856,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.002
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ce0da0817b2a2b54fabfd5be6ecea515, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 55567c89810733c45b0377194ee09df5, type: 2}
     - target: {fileID: 919132149155446097, guid: ce0da0817b2a2b54fabfd5be6ecea515, type: 3}
       propertyPath: m_Name
       value: masque_cerf (2)
@@ -17269,6 +17273,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -103.624
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 091b36bec38d8984c978c3eac4926241, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 58d05b4ddd159dd439624575f6052012, type: 2}
     - target: {fileID: 919132149155446097, guid: 091b36bec38d8984c978c3eac4926241, type: 3}
       propertyPath: m_Name
       value: brebismasque
@@ -45828,6 +45836,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b237f9a897652444faf3dfd48c89429a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 69865611ced57f64cab066ce2855836d, type: 2}
     - target: {fileID: 919132149155446097, guid: b237f9a897652444faf3dfd48c89429a, type: 3}
       propertyPath: m_Name
       value: corbeaumasque
@@ -49684,6 +49696,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4bf1eea960b3f7e4eaa454d3c0d106f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 40c67a24c14e35e4e87958358237f03b, type: 2}
     - target: {fileID: 919132149155446097, guid: 4bf1eea960b3f7e4eaa454d3c0d106f5, type: 3}
       propertyPath: m_Name
       value: serpentmasque
@@ -56108,6 +56124,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0637cd313ec169041b7fd51dd8bf0441, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 897e975b5bca31d4483483c0ed7aa0b7, type: 2}
     - target: {fileID: 919132149155446097, guid: 0637cd313ec169041b7fd51dd8bf0441, type: 3}
       propertyPath: m_Name
       value: "cochoncorrig\xE9"
@@ -74598,7 +74618,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e01730ce9479c064785198ad44b8639b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -79343,8 +79363,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930246409}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.031000746, y: -0.39590892, z: 0.013374621, w: 0.91766894}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.031000765, y: -0.39590895, z: 0.013374628, w: 0.9176689}
+  m_LocalPosition: {x: 0, y: -0.00000023841858, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -98888,7 +98908,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1152384894}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.07400627, y: -0.39484596, z: 0.031928446, w: 0.9152051}
+  m_LocalRotation: {x: 0.07400629, y: -0.394846, z: 0.031928457, w: 0.91520506}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -150661,8 +150681,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626278947}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.052470554, y: -0.39548746, z: 0.022637311, w: 0.91669196}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.05247055, y: -0.39548746, z: 0.022637315, w: 0.91669196}
+  m_LocalPosition: {x: 0, y: -0.00000023841858, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -161386,6 +161406,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -305.855
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b88b6dc68133f8248865161e4ed6b22d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fae1f7c637d3ac34d860800afd37321b, type: 2}
     - target: {fileID: 919132149155446097, guid: b88b6dc68133f8248865161e4ed6b22d, type: 3}
       propertyPath: m_Name
       value: chatmasque
