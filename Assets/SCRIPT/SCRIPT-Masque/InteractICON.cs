@@ -17,7 +17,9 @@ public class InteractIcon : MonoBehaviour
     {
         Instance = this;
         if (mainCamera == null)
+         Debug.LogError("Probleme!");
             mainCamera = Camera.main;
+            
         if (leftClickIcon == null)
             Debug.LogError("LeftClickIcon UI non assignée dans l'Inspector !");
         leftClickIcon.enabled = false;

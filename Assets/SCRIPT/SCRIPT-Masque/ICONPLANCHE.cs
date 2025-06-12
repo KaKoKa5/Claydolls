@@ -44,7 +44,7 @@ public class ICONPLANCHE : MonoBehaviour
             
     }
 
-    leftClickIcon.enabled = false;
+    //leftClickIcon.enabled = false;
 }
 
     public void SetCurrentNPC(PNJ npc)

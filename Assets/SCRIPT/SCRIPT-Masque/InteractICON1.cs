@@ -24,7 +24,7 @@ public class InteractIcon1 : MonoBehaviour
             mainCamera = Camera.main;
         if (leftClickIcon == null)
             Debug.LogError("LeftClickIcon UI non assignée dans l'Inspector !");
-        leftClickIcon.enabled = false;
+        leftClickIcon.enabled = true;
     }
 
     void Update()
@@ -32,9 +32,8 @@ public class InteractIcon1 : MonoBehaviour
 
         if (currentNPC != null)
         {
-            Vector3 worldPos = currentNPC.transform.position + Vector3.right* 0.35f+ Vector3.up * 0.5f; // plus haut que la tête
+            Vector3 worldPos = currentNPC.transform.position + Vector3.right* 0.35f+ Vector3.up * Distance; // plus haut que la tête
             Vector3 screenPos = mainCamera.WorldToScreenPoint(worldPos);
-
             if (screenPos.z > 0)
             {
                 leftClickIcon.rectTransform.position = screenPos;
@@ -44,7 +43,7 @@ public class InteractIcon1 : MonoBehaviour
             
     }
 
-    leftClickIcon.enabled = false;
+    //leftClickIcon.enabled = false;
 }
 
     public void SetCurrentNPC(PNJ npc)
@@ -55,7 +54,6 @@ public class InteractIcon1 : MonoBehaviour
 
 public void ClearCurrent()  
 {
-    
     leftClickIcon.enabled = false;
     currentNPC = null;
 }

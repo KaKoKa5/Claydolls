@@ -69,7 +69,7 @@ public class Serpent : MonoBehaviour, IInteract
 
         //Mission6
         TextPartie6.SetActive(false);
-        stepTalke = 0;
+        stepTalke = 2;
 
         TextRevelCochon.SetActive(false);
         TextRevelCochon2.SetActive(false);
@@ -218,7 +218,7 @@ public class Serpent : MonoBehaviour, IInteract
                 TextPartie4.SetActive(false);
                 TextPartie41.SetActive(false);
                 TextPartie42.SetActive(false);
-                stepTalke = 0; // On boucle
+                stepTalke = 2; // On boucle
             }
 
 

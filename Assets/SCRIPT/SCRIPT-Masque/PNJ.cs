@@ -5,6 +5,7 @@ public class PNJ : MonoBehaviour
     
     [SerializeField] private float distanceToInteract = 3f; 
     private Transform player; 
+    
     private bool isInRange = false;
 
     void Start()
@@ -27,7 +28,6 @@ public class PNJ : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.E))
             {
-
                 InteractIcon1.Instance.ClearCurrent();
             }
         }
