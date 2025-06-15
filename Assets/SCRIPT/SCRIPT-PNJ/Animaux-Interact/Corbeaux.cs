@@ -54,6 +54,8 @@ public class Corbeaux : MonoBehaviour , IInteract
 
     [SerializeField] private GameObject AneEND;
     [SerializeField] private GameObject AneEND2;
+    [SerializeField] private GameObject boutonEXIT;
+    [SerializeField] private GameObject boutonStay;
 
 
     private int CountC1 = 0;
@@ -127,6 +129,9 @@ public class Corbeaux : MonoBehaviour , IInteract
 
         AneEND2.SetActive(false);
         AneEND.SetActive(false);
+
+        boutonEXIT.SetActive(false);
+        boutonStay.SetActive(false);
         
     }
 
@@ -156,6 +161,8 @@ public class Corbeaux : MonoBehaviour , IInteract
 
         AneEND2.SetActive(false);
         AneEND.SetActive(false);
+        boutonEXIT.SetActive(false);
+        boutonStay.SetActive(false);
 
         if (TableauMemoire.talkFirst == false)
         {
@@ -344,7 +351,7 @@ public class Corbeaux : MonoBehaviour , IInteract
             autoHideVideo.Video();
             TableauMemoire.MaisonHibou = true;
             return;
-            
+
         }
         if (TableauMemoire.masque == 0 && TableauMemoire.HibouxDEAD == true && TableauMemoire.UnVUnCochon == true && num == 4)
         {
@@ -355,7 +362,7 @@ public class Corbeaux : MonoBehaviour , IInteract
             Cursor.visible = true;
             num = 3;
             return;
-            
+
         }
 
 
@@ -395,7 +402,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         }
         if (TableauMemoire.masque == 3 && Fin == 5)
         {
-            
+
             TextEND4.SetActive(false);
             TextEND5.SetActive(true);
             Fin++;
@@ -404,10 +411,22 @@ public class Corbeaux : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 3 && Fin == 6)
         {
             TextEND5.SetActive(false);
-            isActive = !isActive;
-            TextEND6.SetActive(isActive);
+            TextEND6.SetActive(true);
             TableauMemoire.END = true;
-            //Bouton pour finir ou pas le jeu
+            boutonEXIT.SetActive(true);
+            boutonStay.SetActive(true);
+            Fin++;
+            Cursor.visible = false;
+            return;
+        }
+        if (TableauMemoire.masque == 3 && Fin == 7)
+        {
+            TextEND5.SetActive(false);
+            TextEND6.SetActive(false);
+            boutonEXIT.SetActive(false);
+            boutonStay.SetActive(false);
+            Fin = 6;
+            Cursor.visible = true;
             return;
         }
 

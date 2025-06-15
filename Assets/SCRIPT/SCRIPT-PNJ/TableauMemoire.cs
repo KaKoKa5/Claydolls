@@ -23,8 +23,8 @@ public class TableauMemoire : MonoBehaviour
   //Troisième,Quatrième Mission , avec le masque du loup il faudra sympathisé avec le chien. Grace à ça le Corbeau nous donnera un secret sur le cerf
   public static bool MLoupFound = false;
   public static bool Portail = false;
-  public static bool MaisonHibou = false;
-  public static bool PlancheMaisonLoup = true;
+  public static bool MaisonHibou = true;
+  public static bool PlancheMaisonLoup = false;
   public static bool AmiChien = false;
   public static bool SecretSurCerf = false;
 
