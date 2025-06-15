@@ -341,6 +341,8 @@ public class Corbeaux : MonoBehaviour , IInteract
             AneEND2.SetActive(false);
             TextFinal1.SetActive(true);
             num++;
+            autoHideVideo.Video();
+            TableauMemoire.MaisonHibou = true;
             return;
             
         }
