@@ -24,7 +24,7 @@ public class TableauMemoire : MonoBehaviour
   public static bool MLoupFound = false;
   public static bool Portail = false;
   public static bool MaisonHibou = false;
-  public static bool PlancheMaisonLoup = false;
+  public static bool PlancheMaisonLoup = true;
   public static bool AmiChien = false;
   public static bool SecretSurCerf = false;
 
@@ -35,9 +35,9 @@ public class TableauMemoire : MonoBehaviour
   public static bool Partie2 = false;
   public static bool CochonHagrad = false;
   public static bool RevelSNAKE = false;
-  public static bool HibouxFound = true;
+  public static bool HibouxFound = false;
   public static bool StoryCorbeau = false;
-  public static bool UnVUnCochon = true;
+  public static bool UnVUnCochon = false;
 
   // FIN
 
