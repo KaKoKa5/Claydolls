@@ -230,35 +230,53 @@ public class Corbeaux : MonoBehaviour , IInteract
         }
 
         //Mission 4-------------------------------------------------
-        if (TableauMemoire.masque == 0 && TableauMemoire.AmiChien == true && stepTalk == 3 && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
+        if (TableauMemoire.masque == 0 && TableauMemoire.AmiChien == true && stepTalk == 4 && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
             isActive = !isActive;
-
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
             TextPartie41.SetActive(false);
             TextPartie42.SetActive(false);
 
-            TextPartie4.SetActive(isActive);
+            TextPartie4.SetActive(true);
             stepTalk = 1;
+            return;
         }
-        else if (TableauMemoire.masque == 0 && TableauMemoire.AmiChien == true && stepTalk == 1)
+        if (TableauMemoire.masque == 0 && TableauMemoire.AmiChien == true && stepTalk == 1)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
             isActive = !isActive;
             TextPartie4.SetActive(false);
             TextPartie42.SetActive(false);
 
-            TextPartie42.SetActive(isActive);
+            TextPartie41.SetActive(true);
             stepTalk = 2;
+            return;
         }
-        else if (TableauMemoire.masque == 0 && TableauMemoire.AmiChien == true && stepTalk == 2)
+        if (TableauMemoire.masque == 0 && TableauMemoire.AmiChien == true && stepTalk == 2)
         {
             isActive = !isActive;
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
             TextPartie4.SetActive(false);
             TextPartie41.SetActive(false);
 
-            TextPartie41.SetActive(isActive);
+            TextPartie42.SetActive(true);
             autoHideVideo.Video();
             TableauMemoire.SecretSurCerf = true;
             stepTalk = 3;
+            return;
+        }
+        else if (TableauMemoire.masque == 0 && TableauMemoire.AmiChien == true && stepTalk == 3)
+        {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            TextPartie4.SetActive(false);
+            TextPartie41.SetActive(false);
+
+            TextPartie42.SetActive(false);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = true;
+            TableauMemoire.SecretSurCerf = true;
+            stepTalk = 4;
+            return;
         }
         //Mission5----------------------------------------------------------------------
 
@@ -294,6 +312,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         }
         else if (TableauMemoire.masque == 0 && TableauMemoire.HibouxFound == true && Count == 1)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
             TextPartieHiboux.SetActive(false);
             TextPartieHiboux0.SetActive(true);
             TextPartieHiboux1.SetActive(false);
@@ -302,6 +321,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         }
         else if (TableauMemoire.masque == 0 && TableauMemoire.HibouxFound == true && Count == 2)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
             TextPartieHiboux.SetActive(false);
             TextPartieHiboux0.SetActive(false);
             TextPartieHiboux1.SetActive(true);
@@ -310,6 +330,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         }
         else if (TableauMemoire.masque == 0 && TableauMemoire.HibouxFound == true && Count == 3)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
             TextPartieHiboux.SetActive(false);
             TextPartieHiboux0.SetActive(false);
             TextPartieHiboux1.SetActive(false);
@@ -318,6 +339,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         }
         else if (TableauMemoire.masque == 0 && TableauMemoire.HibouxFound == true && Count == 4)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
             TextPartieHiboux.SetActive(false);
             TextPartieHiboux0.SetActive(false);
             TextPartieHiboux1.SetActive(false);
@@ -336,12 +358,14 @@ public class Corbeaux : MonoBehaviour , IInteract
 
         if (TableauMemoire.masque == 0 && TableauMemoire.HibouxDEAD == true && TableauMemoire.UnVUnCochon == true && num == 0)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
             AneEND.SetActive(true);
             num++;
             return;
         }
         if (TableauMemoire.masque == 0 && TableauMemoire.HibouxDEAD == true && TableauMemoire.UnVUnCochon == true && num == 1)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
             AneEND.SetActive(false);
             TextFinal1.SetActive(false);
             TextFinal.SetActive(true);
@@ -351,6 +375,7 @@ public class Corbeaux : MonoBehaviour , IInteract
 
         if (TableauMemoire.masque == 0 && TableauMemoire.HibouxDEAD == true && TableauMemoire.UnVUnCochon == true && num == 2)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
             AneEND2.SetActive(true);
             TextFinal.SetActive(false);
             num++;
@@ -358,6 +383,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         }
         if (TableauMemoire.masque == 0 && TableauMemoire.HibouxDEAD == true && TableauMemoire.UnVUnCochon == true && num == 3)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
             TextFinal.SetActive(false);
             AneEND2.SetActive(false);
             TextFinal1.SetActive(true);
@@ -369,6 +395,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         }
         if (TableauMemoire.masque == 0 && TableauMemoire.HibouxDEAD == true && TableauMemoire.UnVUnCochon == true && num == 4)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
             TextFinal.SetActive(false);
             AneEND2.SetActive(false);
             TextFinal1.SetActive(false);
@@ -390,6 +417,8 @@ public class Corbeaux : MonoBehaviour , IInteract
         }
         if (TableauMemoire.masque == 3 && Fin == 1)
         {
+            
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
             TextEND.SetActive(false);
             TextEND1.SetActive(true);
             Fin++;
@@ -397,6 +426,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         }
         if (TableauMemoire.masque == 3 && Fin == 2)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
             TextEND1.SetActive(false);
             TextEND2.SetActive(true);
             Fin++;
@@ -404,6 +434,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         }
         if (TableauMemoire.masque == 3 && Fin == 3)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
             TextEND2.SetActive(false);
             TextEND3.SetActive(true);
             Fin++;
@@ -411,6 +442,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         }
         if (TableauMemoire.masque == 3 && Fin == 4)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
             TextEND3.SetActive(false);
             TextEND4.SetActive(true);
             Fin++;
@@ -418,14 +450,14 @@ public class Corbeaux : MonoBehaviour , IInteract
         }
         if (TableauMemoire.masque == 3 && Fin == 5)
         {
-
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
             TextEND4.SetActive(false);
             TextEND5.SetActive(true);
             Fin++;
             return;
         }
         if (TableauMemoire.masque == 3 && Fin == 6)
-        {
+        {FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
             TextEND5.SetActive(false);
             TextEND6.SetActive(true);
             TableauMemoire.END = true;
@@ -433,7 +465,7 @@ public class Corbeaux : MonoBehaviour , IInteract
             boutonStay.SetActive(true);
             Fin++;
             Cursor.visible = false;
-            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
             return;
         }
         if (TableauMemoire.masque == 3 && Fin == 7)
@@ -444,7 +476,7 @@ public class Corbeaux : MonoBehaviour , IInteract
             boutonStay.SetActive(false);
             Fin = 6;
             Cursor.visible = true;
-            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
             return;
         }
 
