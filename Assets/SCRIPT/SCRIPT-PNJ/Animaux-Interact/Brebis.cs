@@ -270,14 +270,12 @@ public class Brebis : MonoBehaviour ,IInteract
         if (TableauMemoire.masque == 0 && TableauMemoire.AmiChien == true && TableauMemoire.UnVUnCochon == false)
         {
             isActive = !isActive;
-            FindObjectOfType<CharaterMoovement>().controlsEnabled = isActive;
             bulleDeTextAmiChien.SetActive(isActive);
         }
 
         if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
             isActive = !isActive;
-            FindObjectOfType<CharaterMoovement>().controlsEnabled = isActive;
             TextPartie3.SetActive(isActive);
         }
 

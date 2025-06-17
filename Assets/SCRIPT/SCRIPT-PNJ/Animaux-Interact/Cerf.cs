@@ -178,8 +178,7 @@ public class Cerf : MonoBehaviour ,IInteract
             Cursor.visible = true;
             return;
         }
-       
-
+        NotMove();
         if (TableauMemoire.AmiChien == true && TableauMemoire.masque == 0 && TableauMemoire.MLionFound == false && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
             isActive = !isActive;
