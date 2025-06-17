@@ -162,6 +162,7 @@ public class Cerf : MonoBehaviour ,IInteract
         if (dialogueStep == 1 && TableauMemoire.masque == 0 && TableauMemoire.AmiChien == false && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
             AneChapitre3.SetActive(true);
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
             dialogueStep = 2;
             return;
         }
@@ -172,6 +173,7 @@ public class Cerf : MonoBehaviour ,IInteract
             AneChapitre3.SetActive(false);
             isActive = !isActive;
             bulleTextDebutPartie1.SetActive(isActive);
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = true;
             return;
@@ -336,16 +338,10 @@ public class Cerf : MonoBehaviour ,IInteract
     {
 
         Talk = !Talk;
-        if (Talk == true)
-        {
-            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = !Talk;
             
-        }
-        if (Talk == false)
-        {
-            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
-            
-        }
+
     }
 
     

@@ -103,16 +103,10 @@ public class Brebis : MonoBehaviour ,IInteract
     {
 
         Talk = !Talk;
-        if (Talk == true)
-        {
-            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = !Talk;
             
-        }
-        if (Talk == false)
-        {
-            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
-            
-        }
+
     }
 
 
@@ -245,14 +239,15 @@ public class Brebis : MonoBehaviour ,IInteract
                 return;
             }
             else if (CountText == 1)
-            {
+            {FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
                 STARTText.SetActive(false);
                 STARTText2.SetActive(isActive);
                 CountText = 2;
                 return;
             }
             else if (CountText == 2)
-            {
+            {FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            Cursor.visible = true;
                 STARTText2.SetActive(false);
                 CountText = 1;
                 return;
@@ -268,17 +263,20 @@ public class Brebis : MonoBehaviour ,IInteract
         }
         if (TableauMemoire.confidenceCerf == true && TableauMemoire.masque == 0)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
             bulleDeText.SetActive(false);
             TextPartie2.SetActive(isActive);
         }
         if (TableauMemoire.masque == 0 && TableauMemoire.AmiChien == true && TableauMemoire.UnVUnCochon == false)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
             isActive = !isActive;
             bulleDeTextAmiChien.SetActive(isActive);
         }
 
         if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
             isActive = !isActive;
             TextPartie3.SetActive(isActive);
         }

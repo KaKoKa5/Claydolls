@@ -51,18 +51,11 @@ public class Serpent : MonoBehaviour, IInteract
     {
 
         Talk = !Talk;
-        if (Talk == true)
-        {
-            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
-            
-        }
-        if (Talk == false)
-        {
-            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
-            
-        }
-    }
 
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = !Talk;
+            
+
+    }
 
 
     private void Start()
@@ -131,6 +124,7 @@ public class Serpent : MonoBehaviour, IInteract
             }
             else if (CountText == 1)
             {
+                FindObjectOfType<CharaterMoovement>().controlsEnabled = Talk;
                 STARTText.SetActive(false);
                 STARTText2.SetActive(isActive);
                 CountText = 2;
@@ -138,9 +132,12 @@ public class Serpent : MonoBehaviour, IInteract
             }
             else if (CountText == 2)
             {
+                FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+                Cursor.visible = true;
                 STARTText2.SetActive(false);
                 CountText = 1;
                 return;
+                
             }
 
         }

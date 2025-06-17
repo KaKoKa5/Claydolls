@@ -95033,6 +95033,7 @@ MonoBehaviour:
   TextLion: {fileID: 1134264993}
   AneAne: {fileID: 2133471496}
   AneLoup: {fileID: 1002724544}
+  playerController: {fileID: 1175157795}
 --- !u!65 &1140074561
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -97080,6 +97081,7 @@ MonoBehaviour:
   AneChapitre8Choix1: {fileID: 1335939417}
   AneChapitre8Choix2: {fileID: 178280174}
   AneChapitre8Choix3: {fileID: 1982086086}
+  playerController: {fileID: 1175157795}
 --- !u!95 &1156723400
 Animator:
   serializedVersion: 7
@@ -101726,7 +101728,6 @@ MonoBehaviour:
   AneChoix3: {fileID: 20290201}
   AneChapitre3: {fileID: 2077549328}
   playerController: {fileID: 1175157795}
-  cameraLook: {fileID: 330585545}
 --- !u!65 &1194259373
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -107907,6 +107908,7 @@ MonoBehaviour:
   AneBigDChoix1AA1A: {fileID: 594688850}
   AneBigDChoix2BB2B: {fileID: 1464427814}
   AneBigDChoix3CC3C: {fileID: 147840540}
+  playerController: {fileID: 1175157795}
 --- !u!65 &1274289589
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -119589,6 +119591,7 @@ MonoBehaviour:
   AneChapitre5Choix1: {fileID: 533415694}
   AneChapitre5Choix2: {fileID: 1059030042}
   AneChapitre5Choix3: {fileID: 466287674}
+  playerController: {fileID: 1175157795}
 --- !u!65 &1406820298
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -159325,6 +159328,7 @@ MonoBehaviour:
   AneEND2: {fileID: 1061404708}
   boutonEXIT: {fileID: 671507732}
   boutonStay: {fileID: 508696224}
+  playerController: {fileID: 1175157795}
 --- !u!65 &1753021472
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -183666,6 +183670,7 @@ MonoBehaviour:
   END: {fileID: 283184455}
   AneChap5: {fileID: 617770063}
   AneChap8: {fileID: 120399873}
+  playerController: {fileID: 1175157795}
 --- !u!65 &2021841492
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -190043,6 +190048,7 @@ MonoBehaviour:
   AneChapitre10Choix3A: {fileID: 434801783}
   AneChapitre10ChoixA: {fileID: 1618109770}
   AneChapitre10ChoixD: {fileID: 396602578}
+  playerController: {fileID: 1175157795}
 --- !u!65 &2108947685
 BoxCollider:
   m_ObjectHideFlags: 0

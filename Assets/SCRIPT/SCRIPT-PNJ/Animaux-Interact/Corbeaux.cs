@@ -79,16 +79,10 @@ public class Corbeaux : MonoBehaviour , IInteract
     {
 
         Talk = !Talk;
-        if (Talk == true)
-        {
-            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = !Talk;
             
-        }
-        if (Talk == false)
-        {
-            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
-            
-        }
+
     }
 
 
@@ -192,6 +186,7 @@ public class Corbeaux : MonoBehaviour , IInteract
             }
             else if (CountText == 1)
             {
+                FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
                 STARTText.SetActive(false);
                 STARTText2.SetActive(isActive);
                 CountText = 2;
@@ -199,6 +194,8 @@ public class Corbeaux : MonoBehaviour , IInteract
             }
             else if (CountText == 2)
             {
+                FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+                Cursor.visible = true;
                 STARTText2.SetActive(false);
                 CountText = 1;
                 return;
@@ -387,6 +384,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         {
             TextEND.SetActive(true);
             Fin++;
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
             return;
         }
         if (TableauMemoire.masque == 3 && Fin == 1)
@@ -434,6 +432,7 @@ public class Corbeaux : MonoBehaviour , IInteract
             boutonStay.SetActive(true);
             Fin++;
             Cursor.visible = false;
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
             return;
         }
         if (TableauMemoire.masque == 3 && Fin == 7)
@@ -444,6 +443,7 @@ public class Corbeaux : MonoBehaviour , IInteract
             boutonStay.SetActive(false);
             Fin = 6;
             Cursor.visible = true;
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
             return;
         }
 

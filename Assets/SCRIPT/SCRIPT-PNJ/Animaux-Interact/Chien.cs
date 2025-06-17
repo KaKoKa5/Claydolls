@@ -63,16 +63,10 @@ public class Chien : MonoBehaviour , IInteract
     {
 
         Talk = !Talk;
-        if (Talk == true)
-        {
-            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = !Talk;
             
-        }
-        if (Talk == false)
-        {
-            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
-            
-        }
+
     }
 
 
@@ -159,14 +153,15 @@ public class Chien : MonoBehaviour , IInteract
                 return; // Empêche la suite du code de s'exécuter
             }
             else if (CountText == 1)
-            {
+            {FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
                 STARTText.SetActive(false);
                 STARTText2.SetActive(isActive);
                 CountText = 2;
                 return; // Empêche aussi ici
             }
             else if (CountText == 2)
-            {
+            {FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            Cursor.visible = true;
                 STARTText2.SetActive(false);
                 CountText = 1;
                 return;

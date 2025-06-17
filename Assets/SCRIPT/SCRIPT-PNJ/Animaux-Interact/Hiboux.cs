@@ -23,16 +23,10 @@ public class Hiboux : MonoBehaviour , IInteract
     {
 
         Talk = !Talk;
-        if (Talk == true)
-        {
-            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = !Talk;
             
-        }
-        if (Talk == false)
-        {
-            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
-            
-        }
+
     }
 
 
