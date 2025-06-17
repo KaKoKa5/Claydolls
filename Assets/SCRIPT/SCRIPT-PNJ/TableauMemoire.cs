@@ -26,7 +26,7 @@ public class TableauMemoire : MonoBehaviour
   public static bool MaisonHibou = false;
   public static bool PlancheMaisonLoup = false;
   public static bool AmiChien = false;
-  public static bool SecretSurCerf = true;
+  public static bool SecretSurCerf = false;
 
   //Mission ??? Après avoir trouvé le masque du Lion:
   public static bool MLionFound = false;

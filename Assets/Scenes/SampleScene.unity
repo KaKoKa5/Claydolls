@@ -607,6 +607,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2051,6 +2055,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_3 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2637,75 +2645,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33228398}
   m_CullTransparentMesh: 1
---- !u!1001 &33953741
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: ce0da0817b2a2b54fabfd5be6ecea515, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.27145055
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ce0da0817b2a2b54fabfd5be6ecea515, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.27145055
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ce0da0817b2a2b54fabfd5be6ecea515, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.27145055
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ce0da0817b2a2b54fabfd5be6ecea515, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 48.6
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ce0da0817b2a2b54fabfd5be6ecea515, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.0699997
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ce0da0817b2a2b54fabfd5be6ecea515, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 54.14
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ce0da0817b2a2b54fabfd5be6ecea515, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.3239824
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ce0da0817b2a2b54fabfd5be6ecea515, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000007080859
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ce0da0817b2a2b54fabfd5be6ecea515, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.94606316
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ce0da0817b2a2b54fabfd5be6ecea515, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.000000020676866
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ce0da0817b2a2b54fabfd5be6ecea515, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ce0da0817b2a2b54fabfd5be6ecea515, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -142.192
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ce0da0817b2a2b54fabfd5be6ecea515, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: ce0da0817b2a2b54fabfd5be6ecea515, type: 3}
-      propertyPath: m_Name
-      value: masque_cerf
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ce0da0817b2a2b54fabfd5be6ecea515, type: 3}
 --- !u!1001 &34411190
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3567,6 +3506,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Champi_2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b476bde468e37464d96e3c0b9eb1f4d2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4419,6 +4362,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_3 (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4570,6 +4517,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
       propertyPath: m_Name
       value: Caillou_3 (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7527,6 +7478,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_3 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7909,6 +7864,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
       propertyPath: m_Name
       value: Caillou_3 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9962,6 +9921,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
       propertyPath: m_Name
       value: Caillou_3 (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12335,7 +12298,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 170850839}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Portail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16464,6 +16427,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Champi_1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3f782b589f57dcb48859c5960948fc84, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17361,6 +17328,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 72d0cd2f2027da24fa1493318c52db80, type: 3}
       propertyPath: m_Name
       value: Champi_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 72d0cd2f2027da24fa1493318c52db80, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18389,6 +18360,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_Opti3 1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2537538890381156748, guid: 7d9db193f4a099d49ac98837970ae04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2917477695733906230, guid: 7d9db193f4a099d49ac98837970ae04b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.043066736
@@ -18963,82 +18938,6 @@ MonoBehaviour:
   videoPlayer: {fileID: 378302795}
   videoObject: {fileID: 247798131}
   Time: 3
---- !u!1001 &247811552
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 944327411}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 7399898df34f0c841beb24e1798d1e14, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.78198004
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7399898df34f0c841beb24e1798d1e14, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.78198004
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7399898df34f0c841beb24e1798d1e14, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.78198004
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7399898df34f0c841beb24e1798d1e14, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -769.1596
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7399898df34f0c841beb24e1798d1e14, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -179.761
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7399898df34f0c841beb24e1798d1e14, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -3595.7004
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7399898df34f0c841beb24e1798d1e14, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.12218453
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7399898df34f0c841beb24e1798d1e14, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.12218453
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7399898df34f0c841beb24e1798d1e14, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.69647044
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7399898df34f0c841beb24e1798d1e14, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.6964703
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7399898df34f0c841beb24e1798d1e14, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7399898df34f0c841beb24e1798d1e14, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7399898df34f0c841beb24e1798d1e14, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 160.099
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 7399898df34f0c841beb24e1798d1e14, type: 3}
-      propertyPath: m_Name
-      value: Biblio
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 7399898df34f0c841beb24e1798d1e14, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7399898df34f0c841beb24e1798d1e14, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1608997389}
-  m_SourcePrefab: {fileID: 100100000, guid: 7399898df34f0c841beb24e1798d1e14, type: 3}
 --- !u!1 &250120600
 GameObject:
   m_ObjectHideFlags: 0
@@ -20543,6 +20442,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
       propertyPath: m_Name
       value: Caillou_3 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22637,6 +22540,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_3 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24099,6 +24006,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_3 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24965,6 +24876,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_2 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25113,6 +25028,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
       propertyPath: m_Name
       value: Caillou_3 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27652,6 +27571,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_3 (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27676,6 +27599,10 @@ PrefabInstance:
     - target: {fileID: 2537538890381156748, guid: 7d9db193f4a099d49ac98837970ae04b, type: 3}
       propertyPath: m_Name
       value: Tree_Opti3 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2537538890381156748, guid: 7d9db193f4a099d49ac98837970ae04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2917477695733906230, guid: 7d9db193f4a099d49ac98837970ae04b, type: 3}
       propertyPath: m_LocalScale.x
@@ -29259,6 +29186,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_3 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30098,6 +30029,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
       propertyPath: m_Name
       value: Caillou_3 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31282,6 +31217,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
       propertyPath: m_Name
       value: Caillou_3 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -36524,50 +36463,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4e54cb14cadff764c94db7a4bb05fc3c, type: 3}
   m_PrefabInstance: {fileID: 1909824277}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &481402547
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 481402549}
-  - component: {fileID: 481402548}
-  m_Layer: 0
-  m_Name: UiManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &481402548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 481402547}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f0c56454d7f0e0418da8b84d8d0c77d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &481402549
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 481402547}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 108.155464, y: 4.278867, z: 75.14488}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &482963860
 GameObject:
   m_ObjectHideFlags: 0
@@ -37412,6 +37307,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_3 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37835,6 +37734,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_3 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37881,7 +37784,7 @@ GameObject:
   - component: {fileID: 507352023}
   - component: {fileID: 507352022}
   - component: {fileID: 507352025}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39750,6 +39653,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_3 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40841,6 +40748,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
       propertyPath: m_Name
       value: Caillou_3 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -42433,6 +42344,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
       propertyPath: m_Name
       value: Caillou_3 (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -45336,6 +45251,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
       propertyPath: m_Name
       value: Caillou_2 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -48323,6 +48242,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_3 (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -48764,6 +48687,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
       propertyPath: m_Name
       value: Caillou_3 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -49546,82 +49473,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 631329531}
   m_CullTransparentMesh: 1
---- !u!1001 &631458711
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 944327411}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.016327092
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.016327092
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.02177035
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -767.1119
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -179.911
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -3596.5596
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.000000021855694
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_Name
-      value: Fut
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 898821431}
-  m_SourcePrefab: {fileID: 100100000, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
 --- !u!1001 &631724749
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51197,6 +51048,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_3 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -51304,6 +51159,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
       propertyPath: m_Name
       value: Caillou_3 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -53595,6 +53454,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4e54cb14cadff764c94db7a4bb05fc3c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -54869,6 +54732,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
       propertyPath: m_Name
       value: Caillou_3 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -60166,6 +60033,10 @@ PrefabInstance:
     - target: {fileID: 2537538890381156748, guid: 7d9db193f4a099d49ac98837970ae04b, type: 3}
       propertyPath: m_Name
       value: Tree_Opti3 1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2537538890381156748, guid: 7d9db193f4a099d49ac98837970ae04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2917477695733906230, guid: 7d9db193f4a099d49ac98837970ae04b, type: 3}
       propertyPath: m_LocalScale.x
@@ -65901,6 +65772,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -66581,6 +66456,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
       propertyPath: m_Name
       value: Caillou_2 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -67578,6 +67457,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 65f7bc1693b3b17468027f7fe5112fb4, type: 3}
       propertyPath: m_Name
       value: Pilliers (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 65f7bc1693b3b17468027f7fe5112fb4, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -69896,6 +69779,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_2 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -70284,6 +70171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_3 (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -70375,6 +70266,10 @@ PrefabInstance:
     - target: {fileID: 2537538890381156748, guid: 7d9db193f4a099d49ac98837970ae04b, type: 3}
       propertyPath: m_Name
       value: Tree_Opti3 1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2537538890381156748, guid: 7d9db193f4a099d49ac98837970ae04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2917477695733906230, guid: 7d9db193f4a099d49ac98837970ae04b, type: 3}
       propertyPath: m_LocalScale.x
@@ -72081,6 +71976,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_Opti3 1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2537538890381156748, guid: 7d9db193f4a099d49ac98837970ae04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2917477695733906230, guid: 7d9db193f4a099d49ac98837970ae04b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.039642405
@@ -72861,6 +72760,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
       propertyPath: m_Name
       value: Caillou_2 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -74451,38 +74354,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897143953}
   m_CullTransparentMesh: 1
---- !u!1 &898821427 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-  m_PrefabInstance: {fileID: 631458711}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &898821431
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 898821427}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4132353674345544153, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
---- !u!4 &898821434 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-  m_PrefabInstance: {fileID: 631458711}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &899506406
 GameObject:
   m_ObjectHideFlags: 0
@@ -76636,6 +76507,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_3 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -76925,6 +76800,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
       propertyPath: m_Name
       value: Caillou_2 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -77328,8 +77207,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930246409}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.031000827, y: -0.39590937, z: 0.013374671, w: 0.9176687}
-  m_LocalPosition: {x: 0, y: -0.00000023841858, z: 0}
+  m_LocalRotation: {x: 0.031000806, y: -0.39590934, z: 0.013374661, w: 0.9176687}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -78647,12 +78526,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 844513970}
-  - {fileID: 898821434}
-  - {fileID: 1876980940}
   - {fileID: 194814254}
   - {fileID: 1288668614}
   - {fileID: 828038124}
-  - {fileID: 1608997392}
   - {fileID: 484067562}
   - {fileID: 511951762}
   - {fileID: 1226083851}
@@ -78755,6 +78631,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
       propertyPath: m_Name
       value: Caillou_3 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -80149,6 +80029,10 @@ PrefabInstance:
     - target: {fileID: 2537538890381156748, guid: 7d9db193f4a099d49ac98837970ae04b, type: 3}
       propertyPath: m_Name
       value: Tree_Opti3 1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2537538890381156748, guid: 7d9db193f4a099d49ac98837970ae04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2917477695733906230, guid: 7d9db193f4a099d49ac98837970ae04b, type: 3}
       propertyPath: m_LocalScale.x
@@ -83410,6 +83294,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -83485,6 +83373,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
       propertyPath: m_Name
       value: Caillou_3 (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -86915,6 +86807,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -88684,6 +88580,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4e54cb14cadff764c94db7a4bb05fc3c, type: 3}
       propertyPath: m_Name
       value: Caillou_1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4e54cb14cadff764c94db7a4bb05fc3c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -91080,6 +90980,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
       propertyPath: m_Name
       value: Caillou_3 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -95332,6 +95236,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_3 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -96374,7 +96282,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1152384894}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.07400634, y: -0.3948464, z: 0.03192852, w: 0.9152049}
+  m_LocalRotation: {x: 0.07400632, y: -0.39484635, z: 0.031928502, w: 0.9152049}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -100701,6 +100609,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4e54cb14cadff764c94db7a4bb05fc3c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -103323,6 +103235,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
       propertyPath: m_Name
       value: Caillou_2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -106881,6 +106797,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
       propertyPath: m_Name
       value: Caillou_2 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -111320,7 +111240,7 @@ GameObject:
   - component: {fileID: 1318830060}
   - component: {fileID: 1318830059}
   - component: {fileID: 1318830061}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pivot porte
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112572,6 +112492,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
       propertyPath: m_Name
       value: Caillou_3 (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -115383,6 +115307,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -116047,6 +115975,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_3 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -116274,6 +116206,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
       propertyPath: m_Name
       value: Caillou_3 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -116842,6 +116778,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
       propertyPath: m_Name
       value: Caillou_3 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -119546,6 +119486,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_3
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -120083,6 +120027,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
       propertyPath: m_Name
       value: Caillou_2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -127214,6 +127162,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_3 (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -127763,6 +127715,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
       propertyPath: m_Name
       value: Caillou_2 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -130032,6 +129988,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_3 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -131047,6 +131007,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_3 (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -131672,6 +131636,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
       propertyPath: m_Name
       value: Caillou_2 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -141238,6 +141206,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_3 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -143217,6 +143189,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
       propertyPath: m_Name
       value: Caillou_2 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -145672,7 +145648,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1590228384}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Caillou
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147122,38 +147098,6 @@ CanvasRenderer:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
   m_PrefabInstance: {fileID: 594961810}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1608997385 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7399898df34f0c841beb24e1798d1e14, type: 3}
-  m_PrefabInstance: {fileID: 247811552}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &1608997389
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1608997385}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7347101761799419819, guid: 7399898df34f0c841beb24e1798d1e14, type: 3}
---- !u!4 &1608997392 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7399898df34f0c841beb24e1798d1e14, type: 3}
-  m_PrefabInstance: {fileID: 247811552}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1610387525
 GameObject:
@@ -149528,8 +149472,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626278947}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.052470602, y: -0.39548787, z: 0.022637367, w: 0.9166918}
-  m_LocalPosition: {x: 0, y: -0.00000023841858, z: 0}
+  m_LocalRotation: {x: 0.0524706, y: -0.39548787, z: 0.022637367, w: 0.9166918}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -150284,6 +150228,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4e54cb14cadff764c94db7a4bb05fc3c, type: 3}
       propertyPath: m_Name
       value: Caillou_1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4e54cb14cadff764c94db7a4bb05fc3c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -152614,6 +152562,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_2 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -152837,6 +152789,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
       propertyPath: m_Name
       value: Caillou_3 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -153485,6 +153441,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
       propertyPath: m_Name
       value: Caillou_3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -154910,6 +154870,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
       propertyPath: m_Name
       value: Caillou_3 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -156540,6 +156504,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
       propertyPath: m_Name
       value: Caillou_3 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -158695,82 +158663,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1745565345}
   m_CullTransparentMesh: 1
---- !u!1001 &1747542293
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 944327411}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.016327092
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.016327092
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.02177035
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -766.09186
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -179.911
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -3596.5596
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.000000021855694
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_Name
-      value: Fut (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1876980937}
-  m_SourcePrefab: {fileID: 100100000, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
 --- !u!1 &1750360319
 GameObject:
   m_ObjectHideFlags: 0
@@ -164659,6 +164551,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_3 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -167670,6 +167566,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_3 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -169764,38 +169664,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1875701167}
   m_CullTransparentMesh: 1
---- !u!1 &1876980933 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-  m_PrefabInstance: {fileID: 1747542293}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &1876980937
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1876980933}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4132353674345544153, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
---- !u!4 &1876980940 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 565d2136692ea5e4788709e62c22c6c1, type: 3}
-  m_PrefabInstance: {fileID: 1747542293}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1878539986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -169863,6 +169731,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
       propertyPath: m_Name
       value: Caillou_2 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -172265,7 +172137,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1899736852}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Forest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172801,6 +172673,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
       propertyPath: m_Name
       value: Caillou_2 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -173604,6 +173480,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_3 (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -173754,6 +173634,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4e54cb14cadff764c94db7a4bb05fc3c, type: 3}
       propertyPath: m_Name
       value: Caillou_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4e54cb14cadff764c94db7a4bb05fc3c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -175431,6 +175315,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
       propertyPath: m_Name
       value: Caillou_3 (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -181152,6 +181040,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pilliers
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 65f7bc1693b3b17468027f7fe5112fb4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -183114,6 +183006,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
       propertyPath: m_Name
       value: Caillou_2 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -185884,6 +185780,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4e54cb14cadff764c94db7a4bb05fc3c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -186730,6 +186630,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4e54cb14cadff764c94db7a4bb05fc3c, type: 3}
       propertyPath: m_Name
       value: Caillou_1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4e54cb14cadff764c94db7a4bb05fc3c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -189607,6 +189511,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
       propertyPath: m_Name
       value: Caillou_3 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -193161,6 +193069,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_3 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11ad0496ca036344fb75d896c0a03036, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -193895,6 +193807,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caillou_2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86413ea3f1844b646ba7cbc8499eef90, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -194325,7 +194241,7 @@ GameObject:
   - component: {fileID: 7002468663669101447}
   - component: {fileID: 4444297482845228719}
   - component: {fileID: 7002468663669101448}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Object008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194706,6 +194622,10 @@ PrefabInstance:
     - target: {fileID: 2537538890381156748, guid: 7d9db193f4a099d49ac98837970ae04b, type: 3}
       propertyPath: m_Name
       value: Tree_Opti3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2537538890381156748, guid: 7d9db193f4a099d49ac98837970ae04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2917477695733906230, guid: 7d9db193f4a099d49ac98837970ae04b, type: 3}
       propertyPath: m_LocalScale.y
@@ -195353,7 +195273,7 @@ GameObject:
   - component: {fileID: 4599090954745605189}
   - component: {fileID: 3183665003299866813}
   - component: {fileID: 8432311961086912192}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Object009.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -197710,7 +197630,7 @@ GameObject:
   - component: {fileID: 5919658573870568681}
   - component: {fileID: 6443818424770940500}
   - component: {fileID: 6443818424770940501}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Final_Fence._Color
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -199145,7 +199065,6 @@ SceneRoots:
   - {fileID: 1714359691}
   - {fileID: 1267645603}
   - {fileID: 1770750880}
-  - {fileID: 33953741}
   - {fileID: 911544416}
   - {fileID: 1295294782}
   - {fileID: 1479419640}
@@ -199168,7 +199087,6 @@ SceneRoots:
   - {fileID: 170850839}
   - {fileID: 1518181248}
   - {fileID: 935899713}
-  - {fileID: 481402549}
   - {fileID: 1520924953}
   - {fileID: 754993581}
   - {fileID: 955493883}
