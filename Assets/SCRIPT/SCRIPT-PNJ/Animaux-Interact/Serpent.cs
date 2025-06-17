@@ -150,6 +150,7 @@ public class Serpent : MonoBehaviour, IInteract
         TableauMemoire.talkSerpent = true;
         if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == false && TableauMemoire.talkFirst == true && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
+            
             CountText = 3;
             bulleDeText.SetActive(isActive);
         }

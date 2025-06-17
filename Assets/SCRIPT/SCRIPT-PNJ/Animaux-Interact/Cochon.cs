@@ -242,6 +242,7 @@ public class Cochon : MonoBehaviour , IInteract
         TableauMemoire.talkCochon = true;
         if (TableauMemoire.masque == 0 && TableauMemoire.talkFirst == true && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
+            
             CountText = 3;
             isActive = !isActive;
             bulleDeText.SetActive(isActive);

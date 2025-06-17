@@ -36553,9 +36553,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f0c56454d7f0e0418da8b84d8d0c77d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiCanvases:
-  - {fileID: 1770750883}
-  playerController: {fileID: 0}
 --- !u!4 &481402549
 Transform:
   m_ObjectHideFlags: 0
@@ -77167,7 +77164,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930246409}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.031000827, y: -0.39590937, z: 0.013374671, w: 0.9176687}
+  m_LocalRotation: {x: 0.031000812, y: -0.39590934, z: 0.013374677, w: 0.9176687}
   m_LocalPosition: {x: 0, y: -0.00000023841858, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -95088,7 +95085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a299fb39130384a8b36f356ec72c73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToInteract: 2
+  distanceToInteract: 1.5
 --- !u!114 &1140074566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96213,7 +96210,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1152384894}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.07400634, y: -0.3948464, z: 0.03192852, w: 0.9152049}
+  m_LocalRotation: {x: 0.07400632, y: -0.39484635, z: 0.03192851, w: 0.9152049}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -97158,7 +97155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a299fb39130384a8b36f356ec72c73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToInteract: 2
+  distanceToInteract: 1.5
 --- !u!114 &1156723408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101775,7 +101772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a299fb39130384a8b36f356ec72c73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToInteract: 2
+  distanceToInteract: 1.5
 --- !u!1 &1194822323
 GameObject:
   m_ObjectHideFlags: 0
@@ -107963,7 +107960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a299fb39130384a8b36f356ec72c73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToInteract: 2
+  distanceToInteract: 1.5
 --- !u!114 &1274289594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119646,7 +119643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a299fb39130384a8b36f356ec72c73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToInteract: 2
+  distanceToInteract: 1.5
 --- !u!114 &1406820303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149367,7 +149364,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626278947}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.052470602, y: -0.39548787, z: 0.022637367, w: 0.9166918}
+  m_LocalRotation: {x: 0.052470572, y: -0.39548787, z: 0.02263735, w: 0.9166918}
   m_LocalPosition: {x: 0, y: -0.00000023841858, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -159383,7 +159380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a299fb39130384a8b36f356ec72c73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToInteract: 2
+  distanceToInteract: 1.5
 --- !u!114 &1753021477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183704,7 +183701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a299fb39130384a8b36f356ec72c73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToInteract: 2
+  distanceToInteract: 1.5
 --- !u!114 &2021841495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190103,7 +190100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a299fb39130384a8b36f356ec72c73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToInteract: 2
+  distanceToInteract: 1.5
 --- !u!114 &2108947690
 MonoBehaviour:
   m_ObjectHideFlags: 0

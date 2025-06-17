@@ -263,21 +263,21 @@ public class Brebis : MonoBehaviour ,IInteract
         }
         if (TableauMemoire.confidenceCerf == true && TableauMemoire.masque == 0)
         {
-            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            
             bulleDeText.SetActive(false);
             TextPartie2.SetActive(isActive);
         }
         if (TableauMemoire.masque == 0 && TableauMemoire.AmiChien == true && TableauMemoire.UnVUnCochon == false)
         {
-            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
             isActive = !isActive;
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = isActive;
             bulleDeTextAmiChien.SetActive(isActive);
         }
 
         if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
-            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
             isActive = !isActive;
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = isActive;
             TextPartie3.SetActive(isActive);
         }
 

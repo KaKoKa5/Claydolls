@@ -382,6 +382,7 @@ public class Corbeaux : MonoBehaviour , IInteract
 
         if (TableauMemoire.masque == 3 && Fin == 0)
         {
+            
             TextEND.SetActive(true);
             Fin++;
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;

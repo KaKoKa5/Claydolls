@@ -175,6 +175,7 @@ public class Chien : MonoBehaviour , IInteract
 
         if (TableauMemoire.masque == 0 && textCount == 0 && TableauMemoire.talkFirst == true && TableauMemoire.UnVUnCochon == false)
         {
+            
             CountText = 3;
             isActive = !isActive;
             STARTText2.SetActive(false);
