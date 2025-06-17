@@ -94,6 +94,23 @@ public class Cochon : MonoBehaviour , IInteract
     private int CountENDC1 = 0;
     private int CountENDC2 = 0;
     private int CountENDC3 = 0;
+    private bool Talk = false; 
+    public CharacterController playerController;
+    public void NotMove()
+    {
+
+        Talk = !Talk;
+        if (Talk == true)
+        {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            
+        }
+        if (Talk == false)
+        {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            
+        }
+    }
 
 
 
@@ -178,6 +195,7 @@ public class Cochon : MonoBehaviour , IInteract
 
     public void Interact()
     {
+        NotMove();
         choix1Text.SetActive(false);
         choix2Text.SetActive(false);
         choix3Text.SetActive(false);

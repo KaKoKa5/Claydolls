@@ -73,7 +73,23 @@ public class Corbeaux : MonoBehaviour , IInteract
     private int stepTalk = 3;
     private int num = 0;
     private int Fin = 0;
+    private bool Talk = false; 
+    public CharacterController playerController;
+    public void NotMove()
+    {
 
+        Talk = !Talk;
+        if (Talk == true)
+        {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            
+        }
+        if (Talk == false)
+        {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            
+        }
+    }
 
 
 
@@ -137,6 +153,7 @@ public class Corbeaux : MonoBehaviour , IInteract
 
     public void Interact()
     {
+        NotMove();
         choix1Text.SetActive(false);
         choix2Text.SetActive(false);
         choix3Text.SetActive(false);

@@ -36474,6 +36474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiCanvases:
   - {fileID: 1770750883}
+  playerController: {fileID: 0}
 --- !u!4 &481402549
 Transform:
   m_ObjectHideFlags: 0
@@ -76374,7 +76375,7 @@ Transform:
   m_GameObject: {fileID: 930246409}
   serializedVersion: 2
   m_LocalRotation: {x: 0.031000827, y: -0.39590937, z: 0.013374671, w: 0.9176687}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.00000023841858, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -97914,6 +97915,7 @@ MonoBehaviour:
   walkSpeed: 1.7
   sprintMultiplier: 2.4
   gravity: -9.81
+  controlsEnabled: 1
 --- !u!114 &1175157801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100481,6 +100483,8 @@ MonoBehaviour:
   AneChoix2: {fileID: 1443947261}
   AneChoix3: {fileID: 20290201}
   AneChapitre3: {fileID: 2077549328}
+  playerController: {fileID: 1175157795}
+  cameraLook: {fileID: 330585545}
 --- !u!65 &1194259373
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -147809,7 +147813,7 @@ Transform:
   m_GameObject: {fileID: 1626278947}
   serializedVersion: 2
   m_LocalRotation: {x: 0.052470602, y: -0.39548787, z: 0.022637367, w: 0.9166918}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.00000023841858, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

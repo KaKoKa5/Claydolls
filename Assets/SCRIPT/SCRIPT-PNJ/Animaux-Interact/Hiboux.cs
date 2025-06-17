@@ -17,6 +17,23 @@ public class Hiboux : MonoBehaviour , IInteract
 
     private int countAne = 0;
     private int countLoup = 0;
+    private bool Talk = false; 
+    public CharacterController playerController;
+    public void NotMove()
+    {
+
+        Talk = !Talk;
+        if (Talk == true)
+        {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            
+        }
+        if (Talk == false)
+        {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            
+        }
+    }
 
 
     private void Start()
@@ -39,6 +56,7 @@ public class Hiboux : MonoBehaviour , IInteract
 
     public void Interact()
     {
+        NotMove();
         TextAne.SetActive(false);
         TextLoup.SetActive(false);
         TextLoup1.SetActive(false);

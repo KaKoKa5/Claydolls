@@ -57,6 +57,24 @@ public class Chien : MonoBehaviour , IInteract
     private bool isTalking = false;
     private int CountText=0;
 
+    private bool Talk = false; 
+    public CharacterController playerController;
+    public void NotMove()
+    {
+
+        Talk = !Talk;
+        if (Talk == true)
+        {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            
+        }
+        if (Talk == false)
+        {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            
+        }
+    }
+
 
     private void Start()
     {
@@ -103,7 +121,7 @@ public class Chien : MonoBehaviour , IInteract
     }
     public void Interact()
     {
-
+        NotMove();
         bulleDeText.SetActive(false);
 
         //Mission2:

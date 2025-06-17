@@ -35,6 +35,23 @@ public class Chat : MonoBehaviour, IInteract
     private bool isActive = false;
     private bool isTalking = false;
     private int CountText=0;
+    private bool Talk = false; 
+    public CharacterController playerController;
+    public void NotMove()
+    {
+
+        Talk = !Talk;
+        if (Talk == true)
+        {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            
+        }
+        if (Talk == false)
+        {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            
+        }
+    }
 
 
 
@@ -52,7 +69,7 @@ public class Chat : MonoBehaviour, IInteract
         HibouxCave.SetActive(false);
 
         END.SetActive(false);
-        
+
         AneChapitre8Choix1.SetActive(false);
         AneChapitre8Choix2.SetActive(false);
         AneChapitre8Choix3.SetActive(false);
@@ -63,6 +80,7 @@ public class Chat : MonoBehaviour, IInteract
 
     public void Interact()
     {
+        NotMove();
         bulleDeText.SetActive(false);
         bulleText.SetActive(false);
         bulleChoix1DeText.SetActive(false);

@@ -45,6 +45,23 @@ public class Serpent : MonoBehaviour, IInteract
     private int stepTalkPartie6=0;
     private int CountText=0;
     private int CountPartie2=0;
+    private bool Talk = false; 
+    public CharacterController playerController;
+    public void NotMove()
+    {
+
+        Talk = !Talk;
+        if (Talk == true)
+        {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            
+        }
+        if (Talk == false)
+        {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            
+        }
+    }
 
 
 
@@ -87,7 +104,7 @@ public class Serpent : MonoBehaviour, IInteract
     }
     public void Interact()
     {
-
+        NotMove();
         bulleDeText.SetActive(false);
         TextPartie2.SetActive(false);
 

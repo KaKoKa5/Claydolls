@@ -1,9 +1,10 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(CharacterController))]
 public class CharaterMoovement : MonoBehaviour
 {
-    private bool controlsEnabled = true;
+
 
     #region Références
     [Header("Composants")]
@@ -15,7 +16,10 @@ public class CharaterMoovement : MonoBehaviour
     [Header("Vitesse et gravité")]
     [SerializeField] private float walkSpeed = 5f;            // vitesse de marche
     [SerializeField] private float sprintMultiplier = 2f;     // multiplicateur de vitesse pour la course
-    [SerializeField] private float gravity = -9.81f;          // force de gravité
+    [SerializeField] private float gravity = -9.81f;
+    // force de gravité
+    public bool controlsEnabled = true;
+
 
     private Vector3 velocity;                                 // composante de vitesse verticale (gravité)
     #endregion
@@ -29,6 +33,8 @@ public class CharaterMoovement : MonoBehaviour
 
     private void Update()
     {
+        if (!controlsEnabled)
+        return;
 
         // Récupération des axes de déplacement (WASD / flèches)
         float x = Input.GetAxis("Horizontal");
@@ -66,9 +72,8 @@ public class CharaterMoovement : MonoBehaviour
         // Application de la gravité
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+
+        
     }
-    public void EnableControls(bool enabled)
-    {
-        controlsEnabled = enabled;
-    }
+    
 }

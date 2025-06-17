@@ -97,7 +97,23 @@ public class Brebis : MonoBehaviour ,IInteract
     private int CountC1Chap10 = 0;
     private int CountC2Chap10 = 0;
     private int CountC3Chap10 = 0;
-    
+    private bool Talk = false; 
+    public CharacterController playerController;
+    public void NotMove()
+    {
+
+        Talk = !Talk;
+        if (Talk == true)
+        {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            
+        }
+        if (Talk == false)
+        {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            
+        }
+    }
 
 
 
@@ -182,6 +198,7 @@ public class Brebis : MonoBehaviour ,IInteract
 
     public void Interact()
     {
+        NotMove();
         //mission1-------------------------------------------------------------------
         choix1Text.SetActive(false);
         choix2Text.SetActive(false);
