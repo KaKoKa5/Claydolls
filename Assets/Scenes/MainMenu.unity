@@ -3736,7 +3736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00215e847a7903240b8ac5b3e2763b6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameSceneName: SampleScene
+  gameSceneName: videodebut
   creditsPanel: {fileID: 615206256}
   optionsPanel: {fileID: 1844421065}
   audioPanel: {fileID: 1562568238}
