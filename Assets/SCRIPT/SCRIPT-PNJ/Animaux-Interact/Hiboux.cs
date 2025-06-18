@@ -60,6 +60,7 @@ public class Hiboux : MonoBehaviour , IInteract
         
         if (TableauMemoire.masque == 0 && TableauMemoire.UnVUnCochon == true && countAne==0)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
             AneAne.SetActive(true);
             AneLoup.SetActive(false);
 
@@ -72,6 +73,7 @@ public class Hiboux : MonoBehaviour , IInteract
 
         if (TableauMemoire.masque == 0 && TableauMemoire.UnVUnCochon == true && countAne == 1)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
             AneAne.SetActive(false);
             AneLoup.SetActive(false);
 
@@ -84,6 +86,7 @@ public class Hiboux : MonoBehaviour , IInteract
         
         if (TableauMemoire.masque == 1 && TableauMemoire.UnVUnCochon == true && count == 0 && countLoup==0)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
             AneAne.SetActive(false);
             AneLoup.SetActive(true);
 
@@ -96,6 +99,7 @@ public class Hiboux : MonoBehaviour , IInteract
 
         if (TableauMemoire.masque == 1 && TableauMemoire.UnVUnCochon == true && count == 0 && countLoup == 1)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
             AneAne.SetActive(false);
             AneLoup.SetActive(false);
 
@@ -108,6 +112,7 @@ public class Hiboux : MonoBehaviour , IInteract
         }
         if (TableauMemoire.masque == 1 && TableauMemoire.UnVUnCochon == true && count == 1)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
             AneAne.SetActive(false);
             AneLoup.SetActive(false);
 

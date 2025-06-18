@@ -164,7 +164,7 @@ public class Serpent : MonoBehaviour, IInteract
         //Mission 3 ------------------------------------------------------------
         if (TableauMemoire.masque == 1 && stepTalk == 0 && TableauMemoire.UnVUnCochon == false)
         {
-            
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
             TextPartie3.SetActive(true);
             stepTalk = 1;
             return;
@@ -240,7 +240,7 @@ public class Serpent : MonoBehaviour, IInteract
             {
                 FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
                 Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = true;
+                Cursor.visible = true;
                 TextPartie4.SetActive(false);
                 TextPartie41.SetActive(false);
                 TextPartie42.SetActive(false);
@@ -251,6 +251,7 @@ public class Serpent : MonoBehaviour, IInteract
         //Mission5----------------------------------------------------------------------
         if (TableauMemoire.Partie2 == true && TableauMemoire.CochonHagrad == true && CountPartie2 == 0 && TableauMemoire.UnVUnCochon == false)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
             AneChap8.SetActive(true);
             CountPartie2 = 1;
             return;
@@ -294,11 +295,12 @@ public class Serpent : MonoBehaviour, IInteract
             TableauMemoire.RevelSNAKE = true;
             CountPartie2 = 0;
         }
-        
-        if (TableauMemoire.UnVUnCochon == true &&TableauMemoire.END == false)
+
+        if (TableauMemoire.UnVUnCochon == true && TableauMemoire.END == false)
         {
             isActive = !isActive;
             HibouxCave.SetActive(isActive);
+            return;
         }
         if (TableauMemoire.END == true)
         {
