@@ -94,6 +94,17 @@ public class Cochon : MonoBehaviour , IInteract
     private int CountENDC1 = 0;
     private int CountENDC2 = 0;
     private int CountENDC3 = 0;
+    private bool Talk = false; 
+    public CharacterController playerController;
+    public void NotMove()
+    {
+
+        Talk = !Talk;
+
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = !Talk;
+            
+
+    }
 
 
 
@@ -178,6 +189,7 @@ public class Cochon : MonoBehaviour , IInteract
 
     public void Interact()
     {
+        NotMove();
         choix1Text.SetActive(false);
         choix2Text.SetActive(false);
         choix3Text.SetActive(false);
@@ -208,14 +220,15 @@ public class Cochon : MonoBehaviour , IInteract
                 return;
             }
             else if (CountText == 1)
-            {
+            {FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
                 STARTText.SetActive(false);
                 STARTText2.SetActive(isActive);
                 CountText = 2;
                 return;
             }
             else if (CountText == 2)
-            {
+            {FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            Cursor.visible = true;
                 STARTText2.SetActive(false);
                 CountText = 1;
                 return;
@@ -229,6 +242,7 @@ public class Cochon : MonoBehaviour , IInteract
         TableauMemoire.talkCochon = true;
         if (TableauMemoire.masque == 0 && TableauMemoire.talkFirst == true && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
+            
             CountText = 3;
             isActive = !isActive;
             bulleDeText.SetActive(isActive);

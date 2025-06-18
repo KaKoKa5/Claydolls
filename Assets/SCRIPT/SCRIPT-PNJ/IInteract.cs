@@ -6,4 +6,6 @@ public interface IInteract
     void Choix1();
     void Choix2();
     void Choix3();
+
+    
 }

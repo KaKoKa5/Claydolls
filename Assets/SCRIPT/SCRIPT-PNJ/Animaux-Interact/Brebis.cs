@@ -97,7 +97,17 @@ public class Brebis : MonoBehaviour ,IInteract
     private int CountC1Chap10 = 0;
     private int CountC2Chap10 = 0;
     private int CountC3Chap10 = 0;
-    
+    private bool Talk = false; 
+    public CharacterController playerController;
+    public void NotMove()
+    {
+
+        Talk = !Talk;
+
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = !Talk;
+            
+
+    }
 
 
 
@@ -182,6 +192,7 @@ public class Brebis : MonoBehaviour ,IInteract
 
     public void Interact()
     {
+        NotMove();
         //mission1-------------------------------------------------------------------
         choix1Text.SetActive(false);
         choix2Text.SetActive(false);
@@ -228,14 +239,15 @@ public class Brebis : MonoBehaviour ,IInteract
                 return;
             }
             else if (CountText == 1)
-            {
+            {FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
                 STARTText.SetActive(false);
                 STARTText2.SetActive(isActive);
                 CountText = 2;
                 return;
             }
             else if (CountText == 2)
-            {
+            {FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            Cursor.visible = true;
                 STARTText2.SetActive(false);
                 CountText = 1;
                 return;
@@ -251,6 +263,7 @@ public class Brebis : MonoBehaviour ,IInteract
         }
         if (TableauMemoire.confidenceCerf == true && TableauMemoire.masque == 0)
         {
+            
             bulleDeText.SetActive(false);
             TextPartie2.SetActive(isActive);
         }

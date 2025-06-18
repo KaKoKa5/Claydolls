@@ -57,6 +57,18 @@ public class Chien : MonoBehaviour , IInteract
     private bool isTalking = false;
     private int CountText=0;
 
+    private bool Talk = false; 
+    public CharacterController playerController;
+    public void NotMove()
+    {
+
+        Talk = !Talk;
+
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = !Talk;
+            
+
+    }
+
 
     private void Start()
     {
@@ -103,7 +115,7 @@ public class Chien : MonoBehaviour , IInteract
     }
     public void Interact()
     {
-
+        NotMove();
         bulleDeText.SetActive(false);
 
         //Mission2:
@@ -141,14 +153,15 @@ public class Chien : MonoBehaviour , IInteract
                 return; // Empêche la suite du code de s'exécuter
             }
             else if (CountText == 1)
-            {
+            {FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
                 STARTText.SetActive(false);
                 STARTText2.SetActive(isActive);
                 CountText = 2;
                 return; // Empêche aussi ici
             }
             else if (CountText == 2)
-            {
+            {FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            Cursor.visible = true;
                 STARTText2.SetActive(false);
                 CountText = 1;
                 return;
@@ -162,6 +175,7 @@ public class Chien : MonoBehaviour , IInteract
 
         if (TableauMemoire.masque == 0 && textCount == 0 && TableauMemoire.talkFirst == true && TableauMemoire.UnVUnCochon == false)
         {
+            
             CountText = 3;
             isActive = !isActive;
             STARTText2.SetActive(false);

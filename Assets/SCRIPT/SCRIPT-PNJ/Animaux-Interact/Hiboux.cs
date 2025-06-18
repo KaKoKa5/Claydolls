@@ -14,9 +14,21 @@ public class Hiboux : MonoBehaviour , IInteract
     private bool isActive = false;
     private bool isTalking = false;
     private int count = 0;
+    private int counte= 0;
 
     private int countAne = 0;
     private int countLoup = 0;
+    private bool Talk = false; 
+    public CharacterController playerController;
+    public void NotMove()
+    {
+
+        Talk = !Talk;
+
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = !Talk;
+            
+
+    }
 
 
     private void Start()
@@ -39,15 +51,17 @@ public class Hiboux : MonoBehaviour , IInteract
 
     public void Interact()
     {
+        NotMove();
         TextAne.SetActive(false);
         TextLoup.SetActive(false);
         TextLoup1.SetActive(false);
         TextLion.SetActive(false);
 
         isTalking = true;
-        
-        if (TableauMemoire.masque == 0 && TableauMemoire.UnVUnCochon == true && countAne==0)
+
+        if (TableauMemoire.masque == 0 && TableauMemoire.UnVUnCochon == true && countAne == 0)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
             AneAne.SetActive(true);
             AneLoup.SetActive(false);
 
@@ -60,6 +74,7 @@ public class Hiboux : MonoBehaviour , IInteract
 
         if (TableauMemoire.masque == 0 && TableauMemoire.UnVUnCochon == true && countAne == 1)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
             AneAne.SetActive(false);
             AneLoup.SetActive(false);
 
@@ -67,11 +82,25 @@ public class Hiboux : MonoBehaviour , IInteract
             TextAne.SetActive(isActive);
             TextLoup.SetActive(false);
             TextLion.SetActive(false);
+            countAne = 2;
             return;
         }
-        
-        if (TableauMemoire.masque == 1 && TableauMemoire.UnVUnCochon == true && count == 0 && countLoup==0)
+        if (TableauMemoire.masque == 0 && TableauMemoire.UnVUnCochon == true && countAne == 2)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            AneAne.SetActive(false);
+            AneLoup.SetActive(false);
+
+            isActive = !isActive;
+            TextAne.SetActive(false);
+            TextLoup.SetActive(false);
+            TextLion.SetActive(false);
+            return;
+        }
+
+        if (TableauMemoire.masque == 1 && TableauMemoire.UnVUnCochon == true && count == 0 && countLoup == 0)
+        {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
             AneAne.SetActive(false);
             AneLoup.SetActive(true);
 
@@ -82,37 +111,36 @@ public class Hiboux : MonoBehaviour , IInteract
             return;
         }
 
-        if (TableauMemoire.masque == 1 && TableauMemoire.UnVUnCochon == true && count == 0 && countLoup == 1)
+        if (TableauMemoire.masque == 1 && TableauMemoire.UnVUnCochon == true && countLoup == 1)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
             AneAne.SetActive(false);
             AneLoup.SetActive(false);
 
             TextAne.SetActive(false);
             TextLoup.SetActive(true);
             TextLion.SetActive(false);
-            count = 1;
+            countLoup = 2;
 
             return;
         }
-        if (TableauMemoire.masque == 1 && TableauMemoire.UnVUnCochon == true && count == 1)
+        if (TableauMemoire.masque == 1 && TableauMemoire.UnVUnCochon == true && countLoup == 2)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
             AneAne.SetActive(false);
             AneLoup.SetActive(false);
 
             isActive = !isActive;
             TextAne.SetActive(false);
             TextLoup.SetActive(false);
-            TextLoup1.SetActive(isActive);
+            TextLoup1.SetActive(true);
             TextLion.SetActive(false);
-            
+            countLoup = 3;
             return;
         }
-
-
-
-
-        if (TableauMemoire.masque == 2 && TableauMemoire.UnVUnCochon == true)
+        if (TableauMemoire.masque == 1 && TableauMemoire.UnVUnCochon == true && countLoup == 3)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
             AneAne.SetActive(false);
             AneLoup.SetActive(false);
 
@@ -120,11 +148,44 @@ public class Hiboux : MonoBehaviour , IInteract
             TextAne.SetActive(false);
             TextLoup.SetActive(false);
             TextLoup1.SetActive(false);
-            TextLion.SetActive(isActive);
-
-            TableauMemoire.HibouxDEAD = true;
+            TextLion.SetActive(false);
+            countLoup = 2;
             return;
         }
+
+
+
+        if (TableauMemoire.masque == 2 && TableauMemoire.UnVUnCochon == true && counte == 0)
+        {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            AneAne.SetActive(false);
+            AneLoup.SetActive(false);
+
+            TextAne.SetActive(false);
+            TextLoup.SetActive(false);
+            TextLoup1.SetActive(false);
+            TextLion.SetActive(true);
+
+            TableauMemoire.HibouxDEAD = true;
+            counte++;
+            return;
+        }
+        if (TableauMemoire.masque == 2 && TableauMemoire.UnVUnCochon == true && counte == 1)
+        {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            AneAne.SetActive(false);
+            AneLoup.SetActive(false);
+
+            TextAne.SetActive(false);
+            TextLoup.SetActive(false);
+            TextLoup1.SetActive(false);
+            TextLion.SetActive(false);
+
+            TableauMemoire.HibouxDEAD = true;
+            counte = 0;
+            return;
+        }
+       
 
     }
 

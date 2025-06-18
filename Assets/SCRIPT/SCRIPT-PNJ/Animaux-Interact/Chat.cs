@@ -35,6 +35,17 @@ public class Chat : MonoBehaviour, IInteract
     private bool isActive = false;
     private bool isTalking = false;
     private int CountText=0;
+    private bool Talk = false; 
+    public CharacterController playerController;
+    public void NotMove()
+    {
+
+        Talk = !Talk;
+
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = !Talk;
+            
+
+    }
 
 
 
@@ -52,7 +63,7 @@ public class Chat : MonoBehaviour, IInteract
         HibouxCave.SetActive(false);
 
         END.SetActive(false);
-        
+
         AneChapitre8Choix1.SetActive(false);
         AneChapitre8Choix2.SetActive(false);
         AneChapitre8Choix3.SetActive(false);
@@ -63,6 +74,7 @@ public class Chat : MonoBehaviour, IInteract
 
     public void Interact()
     {
+        NotMove();
         bulleDeText.SetActive(false);
         bulleText.SetActive(false);
         bulleChoix1DeText.SetActive(false);
@@ -81,14 +93,15 @@ public class Chat : MonoBehaviour, IInteract
                 return;
             }
             else if (CountText == 1)
-            {
+            {FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
                 STARTText.SetActive(false);
                 STARTText2.SetActive(isActive);
                 CountText = 2;
                 return;
             }
             else if (CountText == 2)
-            {
+            {FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            Cursor.visible = true;
                 STARTText2.SetActive(false);
                 CountText = 1;
                 return;
@@ -99,6 +112,7 @@ public class Chat : MonoBehaviour, IInteract
 
         if ((TableauMemoire.masque == 1 || TableauMemoire.masque == 0) && TableauMemoire.talkFirst == true && TableauMemoire.UnVUnCochon == false)
         {
+            
             CountText = 3;
             isActive = !isActive;
             bulleDeText.SetActive(isActive);
