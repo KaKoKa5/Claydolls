@@ -4,6 +4,9 @@ using UnityEngine.Video;
 // Interaction du PNJ vers le Joueur
 public class Cerf : MonoBehaviour ,IInteract
 {
+
+    [SerializeField] private CharaterMoovement playerMovement;
+    [SerializeField] private Animator playerAnimator;
     [SerializeField] private AutoHideVideo autoHideVideo;
     
     [SerializeField] private GameObject bulleDeText;
@@ -337,12 +340,10 @@ public class Cerf : MonoBehaviour ,IInteract
 
         Talk = !Talk;
 
-            FindObjectOfType<CharaterMoovement>().controlsEnabled = !Talk;
-            
+        FindObjectOfType<CharaterMoovement>().controlsEnabled = !Talk;
 
+        
+                
     }
-
-    
-
-
+            
 }
