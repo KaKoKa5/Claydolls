@@ -51,6 +51,7 @@ public class Chat : MonoBehaviour, IInteract
 
     private void Start()
     {
+        FindObjectOfType<CameraSwitcher>().SwitchToCam1();
         STARTText.SetActive(false);
         STARTText2.SetActive(false);
         bulleDeText.SetActive(false);
@@ -89,21 +90,27 @@ public class Chat : MonoBehaviour, IInteract
             {
                 isActive = !isActive;
                 STARTText.SetActive(isActive);
+                FindObjectOfType<CameraSwitcher>().SwitchToCam2();
                 CountText = 1;
                 return;
             }
             else if (CountText == 1)
-            {FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            {
+                FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+                
                 STARTText.SetActive(false);
                 STARTText2.SetActive(isActive);
                 CountText = 2;
                 return;
             }
             else if (CountText == 2)
-            {FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
-            Cursor.visible = true;
+            {
+                FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+                
+                Cursor.visible = true;
                 STARTText2.SetActive(false);
                 CountText = 1;
+                FindObjectOfType<CameraSwitcher>().SwitchToCam1();
                 return;
             }
 
