@@ -4,6 +4,10 @@ using UnityEngine.Video;
 // Interaction du PNJ vers le Joueur
 public class Cerf : MonoBehaviour ,IInteract
 {
+    public IconFader icon1;
+    public IconFader icon2;
+
+
     [SerializeField] private AutoHideVideo autoHideVideo;
     
     [SerializeField] private GameObject bulleDeText;
@@ -50,12 +54,20 @@ public class Cerf : MonoBehaviour ,IInteract
     private IInteract currentInteract;
     private bool Talk = false; 
     public CharacterController playerController;
-    
+
+    public void NotMove()
+    {
+        Talk = !Talk;
+        FindObjectOfType<CharaterMoovement>().controlsEnabled = !Talk;
+        
+    }
 
 
 
     private void Start()
     {
+        icon1.FadeOut();
+        icon2.FadeOut();
         bulleDeText.SetActive(false);
         choix1Text.SetActive(false);
         choix2Text.SetActive(false);
@@ -132,7 +144,6 @@ public class Cerf : MonoBehaviour ,IInteract
 
         //mission1
         TableauMemoire.talkCerf = true;
-
         if (!TableauMemoire.talkBrebis ||
         !TableauMemoire.talkCerf ||
         !TableauMemoire.talkChien ||
@@ -140,6 +151,8 @@ public class Cerf : MonoBehaviour ,IInteract
         !TableauMemoire.talkCorbeau ||
         !TableauMemoire.talkSerpent)
         {
+            icon1.FadeIn();
+            Debug.Log(icon1);
             isActive = !isActive;
             TableauMemoire.talkFirst = true;
             bulleDeText.SetActive(isActive);
@@ -147,11 +160,12 @@ public class Cerf : MonoBehaviour ,IInteract
             AneChoix2.SetActive(false);
             AneChoix3.SetActive(false);
             return;
-        }
+        }        
 
 
         if (dialogueStep == 0 && TableauMemoire.masque == 0 && TableauMemoire.AmiChien == false && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
+            icon1.FadeOut();
             isActive = !isActive;
             autoHideVideo.Video();
             bulleTextPartie1.SetActive(isActive);
@@ -331,18 +345,5 @@ public class Cerf : MonoBehaviour ,IInteract
         }
 
     }
-
-    public void NotMove()
-    {
-
-        Talk = !Talk;
-
-            FindObjectOfType<CharaterMoovement>().controlsEnabled = !Talk;
-            
-
-    }
-
     
-
-
 }

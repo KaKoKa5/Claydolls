@@ -4,19 +4,18 @@ using System.Collections;
 
 public class AnimationStateController : MonoBehaviour
 {
-Animator animator;
-int isBackWalkingHash;
-int isWalkingHash;
-int isRunningHash;
-int isBackRunningHash;
-int isWalkRightHash;
-int isRunRightHash;
-int isWalkLeftHash;
-int isRunLeftHash;
-
-
-
-
+    Animator animator;
+    int isBackWalkingHash;
+    int isWalkingHash;
+    int isRunningHash;
+    int isBackRunningHash;
+    int isWalkRightHash;
+    int isRunRightHash;
+    int isWalkLeftHash;
+    int isRunLeftHash;
+    bool Talk = false;
+    private float interactionRange = 2f;
+    private int count = 0;
     void Start()
     {
         //DEVANT
@@ -65,23 +64,23 @@ int isRunLeftHash;
         bool RIGHTPressed = Input.GetKey("d");
 
         //Animation de marche---------------------------------------------
-        if (!isWalking && forwardPressed)
+        if (!isWalking && forwardPressed && Talk == false)
         {
             animator.SetBool(isWalkingHash, true);
         }
 
-        if (isWalking && !forwardPressed)
+        if (isWalking && !forwardPressed && Talk == false)
         {
             animator.SetBool(isWalkingHash, false);
         }
 
         //Animation de marche arriere---------------------------------------------
-        if (!isBackWalking && BackPressed)
+        if (!isBackWalking && BackPressed && Talk == false)
         {
             animator.SetBool(isBackWalkingHash, true);
         }
 
-        if (isBackWalking && !BackPressed)
+        if (isBackWalking && !BackPressed && Talk == false)
         {
             animator.SetBool(isBackWalkingHash, false);
         }
@@ -127,7 +126,7 @@ int isRunLeftHash;
         {
             animator.SetBool(isRunRightHash, false);
         }
-        
+
         //GAUCHE
         if (!isWalkingLeft && LEFTPressed)
         {
@@ -149,6 +148,7 @@ int isRunLeftHash;
             animator.SetBool(isRunLeftHash, false);
         }
 
-       
+
     }
 }
+
