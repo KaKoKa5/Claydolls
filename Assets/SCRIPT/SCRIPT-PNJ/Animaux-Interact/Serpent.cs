@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class Serpent : MonoBehaviour, IInteract
 {
-
+    public IconFader icon1;
+    public IconFader icon2;
     [SerializeField] private AutoHideVideo autoHideVideo;
 
     [SerializeField] private GameObject STARTText;
@@ -56,7 +57,11 @@ public class Serpent : MonoBehaviour, IInteract
             
 
     }
-
+    private void Awake()
+    {
+        icon1.FadeOut();
+        icon2.FadeOut();
+    }
 
     private void Start()
     {
@@ -94,6 +99,26 @@ public class Serpent : MonoBehaviour, IInteract
 
         AneChap8.SetActive(false);
 
+    }
+    void Update()
+    {
+        if (TableauMemoire.ICONSerpent == true)
+        {
+            icon1.FadeIn();
+        }
+        else
+        {
+            icon1.FadeOut();
+        }
+        if (TableauMemoire.ICONLion == true)
+        {
+            icon2.FadeIn();
+        }
+        else
+        {
+            icon2.FadeOut();
+        }
+        
     }
     public void Interact()
     {
@@ -137,7 +162,7 @@ public class Serpent : MonoBehaviour, IInteract
                 STARTText2.SetActive(false);
                 CountText = 1;
                 return;
-                
+
             }
 
         }
@@ -150,7 +175,7 @@ public class Serpent : MonoBehaviour, IInteract
         TableauMemoire.talkSerpent = true;
         if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == false && TableauMemoire.talkFirst == true && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
-            
+
             CountText = 3;
             bulleDeText.SetActive(isActive);
         }
@@ -171,7 +196,8 @@ public class Serpent : MonoBehaviour, IInteract
 
         }
         if (stepTalk == 1 && TableauMemoire.masque == 1 && TableauMemoire.UnVUnCochon == false)
-        {FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+        {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
             TextPartie3.SetActive(false);
             AneChap5.SetActive(true);
             stepTalk = 2;
@@ -201,56 +227,60 @@ public class Serpent : MonoBehaviour, IInteract
 
         //Mission 4-----------------------------------------------------------
         if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 2 && passTalking == true && TableauMemoire.UnVUnCochon == false)
-            {
-                FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
-                isActive = true;
-                TextPartie4.SetActive(true);
-                TextPartie41.SetActive(false);
-                TextPartie42.SetActive(false);
-                stepTalke = 3;
-            }
-            else if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 3 && passTalking == true)
-            {
-                FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
-                TextPartie4.SetActive(false);
-                TextPartie41.SetActive(true);
-                TextPartie42.SetActive(false);
-                stepTalke = 4;
-            }
-            else if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 4 && passTalking == true)
-            {
-                FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
-                TextPartie4.SetActive(false);
-                TextPartie41.SetActive(false);
-                TextPartie42.SetActive(true);
-                autoHideVideo.Video();
-                TableauMemoire.Portail = true;
-                stepTalke = 5;
-            }
-            else if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 5 && passTalking == true)
-            {
-                FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
-                TextPartie4.SetActive(false);
-                TextPartie41.SetActive(false);
-                TextPartie42.SetActive(false);
-                stepTalke = 6;
+        {
+            TableauMemoire.ICONSerpent = false;
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            isActive = true;
+            TextPartie4.SetActive(true);
+            TextPartie41.SetActive(false);
+            TextPartie42.SetActive(false);
+            stepTalke = 3;
+        }
+        else if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 3 && passTalking == true)
+        {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            TextPartie4.SetActive(false);
+            TextPartie41.SetActive(true);
+            TextPartie42.SetActive(false);
+            stepTalke = 4;
+        }
+        else if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 4 && passTalking == true)
+        {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            TextPartie4.SetActive(false);
+            TextPartie41.SetActive(false);
+            TextPartie42.SetActive(true);
+            autoHideVideo.Video();
+            TableauMemoire.Portail = true;
+            TableauMemoire.ICONLion = true;
+            stepTalke = 5;
+        }
+        else if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 5 && passTalking == true)
+        {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            TextPartie4.SetActive(false);
+            TextPartie41.SetActive(false);
+            TextPartie42.SetActive(false);
+            stepTalke = 6;
 
-            }
-            else if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 6 && passTalking == true)
-            {
-                FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = true;
-                TextPartie4.SetActive(false);
-                TextPartie41.SetActive(false);
-                TextPartie42.SetActive(false);
-                stepTalke = 2; // On boucle
-            }
+        }
+        else if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 6 && passTalking == true)
+        {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = true;
+            TextPartie4.SetActive(false);
+            TextPartie41.SetActive(false);
+            TextPartie42.SetActive(false);
+            
+            stepTalke = 2; // On boucle
+        }
 
 
         //Mission5----------------------------------------------------------------------
         if (TableauMemoire.Partie2 == true && TableauMemoire.CochonHagrad == true && CountPartie2 == 0 && TableauMemoire.UnVUnCochon == false)
         {
+            TableauMemoire.ICONSerpent = false;
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
             AneChap8.SetActive(true);
             CountPartie2 = 1;
@@ -272,7 +302,7 @@ public class Serpent : MonoBehaviour, IInteract
             TextRevelCochon.SetActive(false);
             TextRevelCochon2.SetActive(true);
             TextRevelCochon3.SetActive(false);
-            CountPartie2 =3;
+            CountPartie2 = 3;
         }
         else if (TableauMemoire.Partie2 == true && TableauMemoire.CochonHagrad == true && CountPartie2 == 3 && TableauMemoire.UnVUnCochon == false)
         {
@@ -288,11 +318,12 @@ public class Serpent : MonoBehaviour, IInteract
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
             Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = true;  
+            Cursor.visible = true;
             TextRevelCochon.SetActive(false);
             TextRevelCochon2.SetActive(false);
             TextRevelCochon3.SetActive(false);
             TableauMemoire.RevelSNAKE = true;
+            TableauMemoire.ICONBrebis = true;
             CountPartie2 = 0;
         }
 
@@ -306,9 +337,9 @@ public class Serpent : MonoBehaviour, IInteract
         {
             isActive = !isActive;
             END.SetActive(isActive);
-            
+
         }
-        
+
     }
     public void Choix1()
     {

@@ -5,7 +5,7 @@ using UnityEngine.Video;
 public class Cerf : MonoBehaviour ,IInteract
 {
     public IconFader icon1;
-    public IconFader icon2;
+    
 
 
     [SerializeField] private AutoHideVideo autoHideVideo;
@@ -61,13 +61,15 @@ public class Cerf : MonoBehaviour ,IInteract
         FindObjectOfType<CharaterMoovement>().controlsEnabled = !Talk;
         
     }
-
+    private void Awake()
+    {
+        icon1.FadeOut();
+    }
 
 
     private void Start()
     {
         icon1.FadeOut();
-        icon2.FadeOut();
         bulleDeText.SetActive(false);
         choix1Text.SetActive(false);
         choix2Text.SetActive(false);
@@ -112,6 +114,7 @@ public class Cerf : MonoBehaviour ,IInteract
 
     public void Interact()
     {
+
         NotMove();
         bulleDeText.SetActive(false);
         choix1Text.SetActive(false);
@@ -183,7 +186,7 @@ public class Cerf : MonoBehaviour ,IInteract
         }
         if (dialogueStep == 2 && TableauMemoire.masque == 0 && TableauMemoire.AmiChien == false && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
-
+            TableauMemoire.MissionChien = true;
             TableauMemoire.confidenceCerf = true;
             AneChapitre3.SetActive(false);
             isActive = !isActive;

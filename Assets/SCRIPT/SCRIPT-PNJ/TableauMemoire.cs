@@ -44,6 +44,20 @@ public class TableauMemoire : MonoBehaviour
   public static bool HibouxDEAD = false;
 
   public static bool END = false;
+
+  // MISSION ICON
+  public static bool MissionChien = false;
+  public static bool ICONBrebis = false;
+  public static bool ICONCerf = false;
+  public static bool ICONChat = false;
+  public static bool ICONCochon = false;
+  public static bool ICONCorbeau = false;
+  public static bool ICONSerpent = false;
+  public static bool ICONLion = false;
+  public static bool ICONLoup = false;
+  public static bool ICONPhenix = false;
+  public static bool ICONHiboux = false;
+
   
     
 

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 public class Brebis : MonoBehaviour ,IInteract
 {
+    public IconFader icon1;
     [SerializeField] private AutoHideVideo autoHideVideo;
 
     [SerializeField] private GameObject STARTText;
@@ -108,7 +109,10 @@ public class Brebis : MonoBehaviour ,IInteract
             
 
     }
-
+    private void Awake()
+    {
+        icon1.FadeOut();
+    }
 
 
 
@@ -184,10 +188,18 @@ public class Brebis : MonoBehaviour ,IInteract
         AneChapitre10Choix3A.SetActive(false);
         AneChapitre10ChoixA.SetActive(false);
         AneChapitre10ChoixD.SetActive(false);
-
-
-
-
+    }
+    void Update()
+    {
+        if (TableauMemoire.ICONBrebis == true)
+        {
+            icon1.FadeIn();
+        }
+        else
+        {
+            icon1.FadeOut();
+        }
+        
     }
 
     public void Interact()
@@ -239,15 +251,17 @@ public class Brebis : MonoBehaviour ,IInteract
                 return;
             }
             else if (CountText == 1)
-            {FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            {
+                FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
                 STARTText.SetActive(false);
                 STARTText2.SetActive(isActive);
                 CountText = 2;
                 return;
             }
             else if (CountText == 2)
-            {FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
-            Cursor.visible = true;
+            {
+                FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+                Cursor.visible = true;
                 STARTText2.SetActive(false);
                 CountText = 1;
                 return;
@@ -263,7 +277,7 @@ public class Brebis : MonoBehaviour ,IInteract
         }
         if (TableauMemoire.confidenceCerf == true && TableauMemoire.masque == 0)
         {
-            
+
             bulleDeText.SetActive(false);
             TextPartie2.SetActive(isActive);
         }
@@ -307,6 +321,7 @@ public class Brebis : MonoBehaviour ,IInteract
 
         if (TableauMemoire.masque == 1 && TableauMemoire.RevelSNAKE == true && TableauMemoire.UnVUnCochon == false)
         {
+            TableauMemoire.ICONBrebis = false;
             isActive = !isActive;
             RevelSNAKE.SetActive(isActive);
             RevelSNAKEAnge.SetActive(false);
@@ -880,6 +895,7 @@ public class Brebis : MonoBehaviour ,IInteract
             RevelSNAKEDevil2.SetActive(isActive);
             autoHideVideo.Video();
             TableauMemoire.HibouxFound = true;
+            TableauMemoire.ICONCorbeau = true;
             return;
 
         }

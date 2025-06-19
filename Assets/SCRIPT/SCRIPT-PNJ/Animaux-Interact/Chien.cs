@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Chien : MonoBehaviour , IInteract
 {
+    public IconFader icon1;
+    public IconFader icon2;
     [SerializeField] private AutoHideVideo autoHideVideo;
 
     [SerializeField] private GameObject STARTText;
@@ -68,6 +70,11 @@ public class Chien : MonoBehaviour , IInteract
             
 
     }
+    private void Awake()
+    {
+        icon1.FadeOut();
+        icon2.FadeOut();
+    }
 
 
     private void Start()
@@ -113,6 +120,25 @@ public class Chien : MonoBehaviour , IInteract
         AneChapitre5Choix2.SetActive(false);
         AneChapitre5Choix3.SetActive(false);
     }
+    void Update()
+    {
+        if (TableauMemoire.MissionChien == true)
+        {
+            icon1.FadeIn();
+        }
+        else
+        {
+            icon1.FadeOut();
+        }
+        if (TableauMemoire.ICONLoup == true)
+        {
+            icon2.FadeIn();
+        }
+        else
+        {
+            icon2.FadeOut();
+        }
+    }
     public void Interact()
     {
         NotMove();
@@ -153,15 +179,17 @@ public class Chien : MonoBehaviour , IInteract
                 return; // Empêche la suite du code de s'exécuter
             }
             else if (CountText == 1)
-            {FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            {
+                FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
                 STARTText.SetActive(false);
                 STARTText2.SetActive(isActive);
                 CountText = 2;
                 return; // Empêche aussi ici
             }
             else if (CountText == 2)
-            {FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
-            Cursor.visible = true;
+            {
+                FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+                Cursor.visible = true;
                 STARTText2.SetActive(false);
                 CountText = 1;
                 return;
@@ -175,7 +203,7 @@ public class Chien : MonoBehaviour , IInteract
 
         if (TableauMemoire.masque == 0 && textCount == 0 && TableauMemoire.talkFirst == true && TableauMemoire.UnVUnCochon == false)
         {
-            
+
             CountText = 3;
             isActive = !isActive;
             STARTText2.SetActive(false);
@@ -187,10 +215,12 @@ public class Chien : MonoBehaviour , IInteract
 
         if (TableauMemoire.masque == 0 && TableauMemoire.confidenceCerf == true && textCount == 0)
         {
-
+            TableauMemoire.MissionChien = false;
             bulleDeText.SetActive(false);
             bulleTextPartie2.SetActive(isActive);
             textCount = 1;
+            TableauMemoire.ICONLoup = true;
+            
         } //Mission3--------------------------------------------
         else if (TableauMemoire.masque == 0 && TableauMemoire.confidenceCerf == true && textCount == 1)
         {
@@ -202,6 +232,7 @@ public class Chien : MonoBehaviour , IInteract
 
         if (TableauMemoire.masque == 1 && TableauMemoire.AmiChien == false && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
+            TableauMemoire.MissionChien = false;
             isActive = !isActive;
             TextPartie3.SetActive(isActive);
             TableauMemoire.MLoupFound = true;
@@ -238,8 +269,8 @@ public class Chien : MonoBehaviour , IInteract
             isActive = !isActive;
             TextPartie2LL.SetActive(isActive);
         }
-        
-        if (TableauMemoire.UnVUnCochon == true &&TableauMemoire.END == false)
+
+        if (TableauMemoire.UnVUnCochon == true && TableauMemoire.END == false)
         {
             isActive = !isActive;
             HibouxCave.SetActive(isActive);
@@ -322,6 +353,7 @@ public class Chien : MonoBehaviour , IInteract
             choix3TextPartie3.SetActive(false);
             RespectText.SetActive(false);
             TableauMemoire.AmiChien = true;
+            TableauMemoire.ICONCorbeau = true;
             CountChap5C1 = 0;
             return;
         }
@@ -401,6 +433,7 @@ public class Chien : MonoBehaviour , IInteract
             choix3TextPartie3.SetActive(false);
             RespectText.SetActive(false);
             CountChap5C2 = 0;
+            
             return;
         }
     }

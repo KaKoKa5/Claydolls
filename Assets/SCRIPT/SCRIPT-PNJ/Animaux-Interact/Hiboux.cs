@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Hiboux : MonoBehaviour , IInteract
 {
+    public IconFader icon1;
  [SerializeField] private GameObject TextAne;
 [SerializeField] private GameObject TextLoup;
 [SerializeField] private GameObject TextLoup1;
@@ -29,7 +30,10 @@ public class Hiboux : MonoBehaviour , IInteract
             
 
     }
-
+    private void Awake()
+    {
+        icon1.FadeOut();
+    }
 
     private void Start()
     {
@@ -46,9 +50,16 @@ public class Hiboux : MonoBehaviour , IInteract
 
     void Update()
     {
-    
+        if (TableauMemoire.ICONHiboux == true)
+        {
+            icon1.FadeIn();
+        }
+        else
+        {
+            icon1.FadeOut();
+        }
+        
     }
-
     public void Interact()
     {
         NotMove();
@@ -62,6 +73,7 @@ public class Hiboux : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 0 && TableauMemoire.UnVUnCochon == true && countAne == 0)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            TableauMemoire.ICONHiboux = false;
             AneAne.SetActive(true);
             AneLoup.SetActive(false);
 
@@ -101,6 +113,7 @@ public class Hiboux : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 1 && TableauMemoire.UnVUnCochon == true && count == 0 && countLoup == 0)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            TableauMemoire.ICONHiboux = false;
             AneAne.SetActive(false);
             AneLoup.SetActive(true);
 
@@ -158,6 +171,7 @@ public class Hiboux : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 2 && TableauMemoire.UnVUnCochon == true && counte == 0)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            TableauMemoire.ICONHiboux = false;
             AneAne.SetActive(false);
             AneLoup.SetActive(false);
 
@@ -182,6 +196,7 @@ public class Hiboux : MonoBehaviour , IInteract
             TextLion.SetActive(false);
 
             TableauMemoire.HibouxDEAD = true;
+            TableauMemoire.ICONCorbeau = true;
             counte = 0;
             return;
         }

@@ -25,6 +25,8 @@ public class Chat : MonoBehaviour, IInteract
     [SerializeField] private GameObject AneChapitre8Choix2;
     [SerializeField] private GameObject AneChapitre8Choix3;
 
+    public IconFader icon1;
+
 
     // Peau d'Ane
     private int CountC1 = 0;
@@ -47,7 +49,10 @@ public class Chat : MonoBehaviour, IInteract
 
     }
 
-
+    private void Awake()
+    {
+        icon1.FadeOut();
+    }
 
     private void Start()
     {
@@ -70,7 +75,18 @@ public class Chat : MonoBehaviour, IInteract
         AneChapitre8Choix3.SetActive(false);
 
     }
-
+    void Update()
+    {
+        if (TableauMemoire.ICONChat == true)
+        {
+            icon1.FadeIn();
+        }
+        else
+        {
+            icon1.FadeOut();
+        }
+        
+    }
 
 
     public void Interact()
@@ -127,6 +143,7 @@ public class Chat : MonoBehaviour, IInteract
 
         if (TableauMemoire.masque == 2 && TableauMemoire.UnVUnCochon == false)
         {
+            TableauMemoire.ICONChat = false;
             isActive = !isActive;
             bulleText.SetActive(isActive);
 
@@ -183,6 +200,7 @@ public class Chat : MonoBehaviour, IInteract
             bulleChoix3DeText.SetActive(false);
             TableauMemoire.CochonHagrad = true;
             autoHideVideo.Video();
+            TableauMemoire.ICONSerpent = true;
 
             CountC1 = 0;
             return;

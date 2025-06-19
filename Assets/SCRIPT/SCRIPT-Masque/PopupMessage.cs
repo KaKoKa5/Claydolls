@@ -27,8 +27,25 @@ public class MaskPopupManager : MonoBehaviour
             Debug.LogWarning("Index de masque invalide !");
             return;
         }
+        TableauMemoire.ICONLoup = false;
+        
+        TableauMemoire.ICONLion = false;
+        TableauMemoire.ICONPhenix = false;
 
         StartCoroutine(ShowTemporarily(maskPopups[maskIndex]));
+        if (TableauMemoire.Portail == false)
+        {
+            TableauMemoire.MissionChien = true;
+        }
+
+        if (TableauMemoire.SecretSurCerf == true)
+            {
+                TableauMemoire.ICONChat = true;
+            }
+        if (TableauMemoire.HibouxDEAD == true)
+        {
+            TableauMemoire.ICONCorbeau = true;
+        }
     }
 
     private IEnumerator ShowTemporarily(GameObject popup)
