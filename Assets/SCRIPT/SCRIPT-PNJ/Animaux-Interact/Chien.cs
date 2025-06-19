@@ -66,7 +66,8 @@ public class Chien : MonoBehaviour , IInteract
 
         Talk = !Talk;
 
-            FindObjectOfType<CharaterMoovement>().controlsEnabled = !Talk;
+        FindObjectOfType<CharaterMoovement>().controlsEnabled = !Talk;
+        FindObjectOfType<AnimationStateController>().controlsEnabled = !Talk;
             
 
     }
@@ -181,6 +182,7 @@ public class Chien : MonoBehaviour , IInteract
             else if (CountText == 1)
             {
                 FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+                FindObjectOfType<AnimationStateController>().controlsEnabled = false;
                 STARTText.SetActive(false);
                 STARTText2.SetActive(isActive);
                 CountText = 2;
@@ -189,6 +191,7 @@ public class Chien : MonoBehaviour , IInteract
             else if (CountText == 2)
             {
                 FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+                FindObjectOfType<AnimationStateController>().controlsEnabled = true;
                 Cursor.visible = true;
                 STARTText2.SetActive(false);
                 CountText = 1;

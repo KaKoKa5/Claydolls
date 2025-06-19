@@ -16,6 +16,7 @@ public class AnimationStateController : MonoBehaviour
     bool Talk = false;
     private float interactionRange = 2f;
     private int count = 0;
+    public bool controlsEnabled = true;
     void Start()
     {
         //DEVANT
@@ -40,6 +41,20 @@ public class AnimationStateController : MonoBehaviour
 
     void Update()
     {
+        if (!controlsEnabled)
+        {
+            animator.SetBool(isWalkingHash, false);
+            animator.SetBool(isBackWalkingHash, false);
+            animator.SetBool("isRunning", false);
+            animator.SetBool("isBackRunning", false);
+            animator.SetBool(isWalkRightHash, false);
+            animator.SetBool(isRunRightHash, false);
+            animator.SetBool(isRunLeftHash, false);
+            animator.SetBool(isWalkLeftHash, false);
+            
+            return;
+
+        }    
         //DEVANT
         bool isWalking = animator.GetBool(isWalkingHash);
         bool isRunning = animator.GetBool(isRunningHash);
@@ -72,6 +87,7 @@ public class AnimationStateController : MonoBehaviour
         if (isWalking && !forwardPressed && Talk == false)
         {
             animator.SetBool(isWalkingHash, false);
+            
         }
 
         //Animation de marche arriere---------------------------------------------
@@ -146,6 +162,7 @@ public class AnimationStateController : MonoBehaviour
         if (isRunLeft && (!LEFTPressed || !runPressed))
         {
             animator.SetBool(isRunLeftHash, false);
+            
         }
 
 

@@ -19,6 +19,7 @@ public class CharaterMoovement : MonoBehaviour
     [SerializeField] private float gravity = -9.81f;
     // force de gravité
     public bool controlsEnabled = true;
+    
 
 
     private Vector3 velocity;                                 // composante de vitesse verticale (gravité)

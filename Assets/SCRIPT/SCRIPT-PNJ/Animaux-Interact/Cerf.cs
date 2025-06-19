@@ -59,6 +59,7 @@ public class Cerf : MonoBehaviour ,IInteract
     {
         Talk = !Talk;
         FindObjectOfType<CharaterMoovement>().controlsEnabled = !Talk;
+        FindObjectOfType<AnimationStateController>().controlsEnabled = !Talk;
         
     }
     private void Awake()
@@ -181,6 +182,7 @@ public class Cerf : MonoBehaviour ,IInteract
             AneChapitre3.SetActive(true);
             Talk = !Talk;
             FindObjectOfType<CharaterMoovement>().controlsEnabled = Talk;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = Talk;
             dialogueStep = 2;
             return;
         }

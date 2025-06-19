@@ -53,7 +53,8 @@ public class Serpent : MonoBehaviour, IInteract
 
         Talk = !Talk;
 
-            FindObjectOfType<CharaterMoovement>().controlsEnabled = !Talk;
+        FindObjectOfType<CharaterMoovement>().controlsEnabled = !Talk;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = !Talk;
             
 
     }
@@ -150,6 +151,7 @@ public class Serpent : MonoBehaviour, IInteract
             else if (CountText == 1)
             {
                 FindObjectOfType<CharaterMoovement>().controlsEnabled = Talk;
+                FindObjectOfType<AnimationStateController>().controlsEnabled = Talk;
                 STARTText.SetActive(false);
                 STARTText2.SetActive(isActive);
                 CountText = 2;
@@ -158,6 +160,7 @@ public class Serpent : MonoBehaviour, IInteract
             else if (CountText == 2)
             {
                 FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+                FindObjectOfType<AnimationStateController>().controlsEnabled = true;
                 Cursor.visible = true;
                 STARTText2.SetActive(false);
                 CountText = 1;
@@ -190,6 +193,7 @@ public class Serpent : MonoBehaviour, IInteract
         if (TableauMemoire.masque == 1 && stepTalk == 0 && TableauMemoire.UnVUnCochon == false)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             TextPartie3.SetActive(true);
             stepTalk = 1;
             return;
@@ -198,6 +202,7 @@ public class Serpent : MonoBehaviour, IInteract
         if (stepTalk == 1 && TableauMemoire.masque == 1 && TableauMemoire.UnVUnCochon == false)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             TextPartie3.SetActive(false);
             AneChap5.SetActive(true);
             stepTalk = 2;
@@ -207,6 +212,7 @@ public class Serpent : MonoBehaviour, IInteract
         if (stepTalk == 2 && TableauMemoire.masque == 1 && TableauMemoire.UnVUnCochon == false)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = true;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = true;
             AneChap5.SetActive(false);
@@ -230,6 +236,7 @@ public class Serpent : MonoBehaviour, IInteract
         {
             TableauMemoire.ICONSerpent = false;
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             isActive = true;
             TextPartie4.SetActive(true);
             TextPartie41.SetActive(false);
@@ -239,6 +246,7 @@ public class Serpent : MonoBehaviour, IInteract
         else if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 3 && passTalking == true)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             TextPartie4.SetActive(false);
             TextPartie41.SetActive(true);
             TextPartie42.SetActive(false);
@@ -247,6 +255,7 @@ public class Serpent : MonoBehaviour, IInteract
         else if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 4 && passTalking == true)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             TextPartie4.SetActive(false);
             TextPartie41.SetActive(false);
             TextPartie42.SetActive(true);
@@ -258,6 +267,7 @@ public class Serpent : MonoBehaviour, IInteract
         else if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 5 && passTalking == true)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             TextPartie4.SetActive(false);
             TextPartie41.SetActive(false);
             TextPartie42.SetActive(false);
@@ -267,6 +277,7 @@ public class Serpent : MonoBehaviour, IInteract
         else if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 6 && passTalking == true)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = true;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = true;
             TextPartie4.SetActive(false);
@@ -282,6 +293,7 @@ public class Serpent : MonoBehaviour, IInteract
         {
             TableauMemoire.ICONSerpent = false;
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             AneChap8.SetActive(true);
             CountPartie2 = 1;
             return;
@@ -290,6 +302,7 @@ public class Serpent : MonoBehaviour, IInteract
         if (TableauMemoire.Partie2 == true && TableauMemoire.CochonHagrad == true && CountPartie2 == 1 && TableauMemoire.UnVUnCochon == false)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             AneChap8.SetActive(false);
             TextRevelCochon.SetActive(true);
             TextRevelCochon2.SetActive(false);
@@ -299,6 +312,7 @@ public class Serpent : MonoBehaviour, IInteract
         else if (TableauMemoire.Partie2 == true && TableauMemoire.CochonHagrad == true && CountPartie2 == 2 && TableauMemoire.UnVUnCochon == false)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             TextRevelCochon.SetActive(false);
             TextRevelCochon2.SetActive(true);
             TextRevelCochon3.SetActive(false);
@@ -307,6 +321,7 @@ public class Serpent : MonoBehaviour, IInteract
         else if (TableauMemoire.Partie2 == true && TableauMemoire.CochonHagrad == true && CountPartie2 == 3 && TableauMemoire.UnVUnCochon == false)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             TextRevelCochon.SetActive(false);
             TextRevelCochon2.SetActive(false);
             TextRevelCochon3.SetActive(true);
@@ -317,6 +332,7 @@ public class Serpent : MonoBehaviour, IInteract
         else if (TableauMemoire.Partie2 == true && TableauMemoire.CochonHagrad == true && CountPartie2 == 4 && TableauMemoire.UnVUnCochon == false)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = true;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = true;
             TextRevelCochon.SetActive(false);

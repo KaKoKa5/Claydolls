@@ -82,7 +82,8 @@ public class Corbeaux : MonoBehaviour , IInteract
 
         Talk = !Talk;
 
-            FindObjectOfType<CharaterMoovement>().controlsEnabled = !Talk;
+        FindObjectOfType<CharaterMoovement>().controlsEnabled = !Talk;
+        FindObjectOfType<AnimationStateController>().controlsEnabled = !Talk;
             
 
     }
@@ -213,6 +214,7 @@ public class Corbeaux : MonoBehaviour , IInteract
             else if (CountText == 1)
             {
                 FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+                FindObjectOfType<AnimationStateController>().controlsEnabled = false;
                 STARTText.SetActive(false);
                 STARTText2.SetActive(isActive);
                 CountText = 2;
@@ -221,6 +223,7 @@ public class Corbeaux : MonoBehaviour , IInteract
             else if (CountText == 2)
             {
                 FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+                FindObjectOfType<AnimationStateController>().controlsEnabled = true;
                 Cursor.visible = true;
                 STARTText2.SetActive(false);
                 CountText = 1;
@@ -260,6 +263,7 @@ public class Corbeaux : MonoBehaviour , IInteract
             isActive = !isActive;
             TableauMemoire.ICONCorbeau = false;
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             TextPartie41.SetActive(false);
             TextPartie42.SetActive(false);
 
@@ -270,6 +274,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 0 && TableauMemoire.AmiChien == true && stepTalk == 1)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             isActive = !isActive;
             TextPartie4.SetActive(false);
             TextPartie42.SetActive(false);
@@ -282,6 +287,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         {
             isActive = !isActive;
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             TextPartie4.SetActive(false);
             TextPartie41.SetActive(false);
 
@@ -294,6 +300,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         else if (TableauMemoire.masque == 0 && TableauMemoire.AmiChien == true && stepTalk == 3)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = true;
             TextPartie4.SetActive(false);
             TextPartie41.SetActive(false);
 
@@ -340,6 +347,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         else if (TableauMemoire.masque == 0 && TableauMemoire.HibouxFound == true && Count == 1)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             TextPartieHiboux.SetActive(false);
             TextPartieHiboux0.SetActive(true);
             TextPartieHiboux1.SetActive(false);
@@ -349,6 +357,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         else if (TableauMemoire.masque == 0 && TableauMemoire.HibouxFound == true && Count == 2)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             TextPartieHiboux.SetActive(false);
             TextPartieHiboux0.SetActive(false);
             TextPartieHiboux1.SetActive(true);
@@ -358,6 +367,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         else if (TableauMemoire.masque == 0 && TableauMemoire.HibouxFound == true && Count == 3)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             TextPartieHiboux.SetActive(false);
             TextPartieHiboux0.SetActive(false);
             TextPartieHiboux1.SetActive(false);
@@ -367,6 +377,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         else if (TableauMemoire.masque == 0 && TableauMemoire.HibouxFound == true && Count == 4)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = true;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = true;
             TextPartieHiboux.SetActive(false);
@@ -391,6 +402,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         {
             TableauMemoire.ICONCorbeau = false;
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             AneEND.SetActive(true);
             num++;
             return;
@@ -398,6 +410,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 0 && TableauMemoire.HibouxDEAD == true && TableauMemoire.UnVUnCochon == true && num == 1)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             AneEND.SetActive(false);
             TextFinal1.SetActive(false);
             TextFinal.SetActive(true);
@@ -408,6 +421,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 0 && TableauMemoire.HibouxDEAD == true && TableauMemoire.UnVUnCochon == true && num == 2)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             AneEND2.SetActive(true);
             TextFinal.SetActive(false);
             num++;
@@ -416,6 +430,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 0 && TableauMemoire.HibouxDEAD == true && TableauMemoire.UnVUnCochon == true && num == 3)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             TextFinal.SetActive(false);
             AneEND2.SetActive(false);
             TextFinal1.SetActive(true);
@@ -428,6 +443,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 0 && TableauMemoire.HibouxDEAD == true && TableauMemoire.UnVUnCochon == true && num == 4)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = true;
             TextFinal.SetActive(false);
             AneEND2.SetActive(false);
             TextFinal1.SetActive(false);
@@ -447,12 +463,14 @@ public class Corbeaux : MonoBehaviour , IInteract
             TextEND.SetActive(true);
             Fin++;
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             return;
         }
         if (TableauMemoire.masque == 3 && Fin == 1)
         {
 
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             TextEND.SetActive(false);
             TextEND1.SetActive(true);
             Fin++;
@@ -461,6 +479,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 3 && Fin == 2)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             TextEND1.SetActive(false);
             TextEND2.SetActive(true);
             Fin++;
@@ -469,6 +488,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 3 && Fin == 3)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             TextEND2.SetActive(false);
             TextEND3.SetActive(true);
             Fin++;
@@ -477,6 +497,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 3 && Fin == 4)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             TextEND3.SetActive(false);
             TextEND4.SetActive(true);
             Fin++;
@@ -485,6 +506,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 3 && Fin == 5)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             TextEND4.SetActive(false);
             TextEND5.SetActive(true);
             Fin++;
@@ -493,6 +515,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 3 && Fin == 6)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             TextEND5.SetActive(false);
             TextEND6.SetActive(true);
             TableauMemoire.END = true;
@@ -501,6 +524,7 @@ public class Corbeaux : MonoBehaviour , IInteract
             Fin++;
             Cursor.visible = false;
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             return;
         }
         if (TableauMemoire.masque == 3 && Fin == 7)
@@ -512,6 +536,7 @@ public class Corbeaux : MonoBehaviour , IInteract
             Fin = 6;
             Cursor.visible = true;
             FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = true;
             return;
         }
 

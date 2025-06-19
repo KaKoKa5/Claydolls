@@ -26,7 +26,8 @@ public class Hiboux : MonoBehaviour , IInteract
 
         Talk = !Talk;
 
-            FindObjectOfType<CharaterMoovement>().controlsEnabled = !Talk;
+        FindObjectOfType<CharaterMoovement>().controlsEnabled = !Talk;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = !Talk;
             
 
     }
@@ -73,6 +74,7 @@ public class Hiboux : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 0 && TableauMemoire.UnVUnCochon == true && countAne == 0)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             TableauMemoire.ICONHiboux = false;
             AneAne.SetActive(true);
             AneLoup.SetActive(false);
@@ -87,6 +89,7 @@ public class Hiboux : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 0 && TableauMemoire.UnVUnCochon == true && countAne == 1)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             AneAne.SetActive(false);
             AneLoup.SetActive(false);
 
@@ -100,6 +103,7 @@ public class Hiboux : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 0 && TableauMemoire.UnVUnCochon == true && countAne == 2)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = true;
             AneAne.SetActive(false);
             AneLoup.SetActive(false);
 
@@ -113,6 +117,7 @@ public class Hiboux : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 1 && TableauMemoire.UnVUnCochon == true && count == 0 && countLoup == 0)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             TableauMemoire.ICONHiboux = false;
             AneAne.SetActive(false);
             AneLoup.SetActive(true);
@@ -127,6 +132,7 @@ public class Hiboux : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 1 && TableauMemoire.UnVUnCochon == true && countLoup == 1)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             AneAne.SetActive(false);
             AneLoup.SetActive(false);
 
@@ -140,6 +146,7 @@ public class Hiboux : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 1 && TableauMemoire.UnVUnCochon == true && countLoup == 2)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             AneAne.SetActive(false);
             AneLoup.SetActive(false);
 
@@ -154,6 +161,7 @@ public class Hiboux : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 1 && TableauMemoire.UnVUnCochon == true && countLoup == 3)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = true;
             AneAne.SetActive(false);
             AneLoup.SetActive(false);
 
@@ -171,6 +179,7 @@ public class Hiboux : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 2 && TableauMemoire.UnVUnCochon == true && counte == 0)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             TableauMemoire.ICONHiboux = false;
             AneAne.SetActive(false);
             AneLoup.SetActive(false);
@@ -187,6 +196,7 @@ public class Hiboux : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 2 && TableauMemoire.UnVUnCochon == true && counte == 1)
         {
             FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = true;
             AneAne.SetActive(false);
             AneLoup.SetActive(false);
 
