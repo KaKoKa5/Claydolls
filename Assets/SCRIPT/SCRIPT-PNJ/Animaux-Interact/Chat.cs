@@ -93,11 +93,22 @@ public class Chat : MonoBehaviour, IInteract
     public void Interact()
     {
         NotMove();
+        STARTText.SetActive(false);
+        STARTText2.SetActive(false);
         bulleDeText.SetActive(false);
+
         bulleText.SetActive(false);
         bulleChoix1DeText.SetActive(false);
         bulleChoix2DeText.SetActive(false);
         bulleChoix3DeText.SetActive(false);
+
+        HibouxCave.SetActive(false);
+
+        END.SetActive(false);
+
+        AneChapitre8Choix1.SetActive(false);
+        AneChapitre8Choix2.SetActive(false);
+        AneChapitre8Choix3.SetActive(false);
 
         isTalking = true;
 

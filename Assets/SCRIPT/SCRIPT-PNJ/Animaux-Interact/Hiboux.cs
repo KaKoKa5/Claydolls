@@ -68,6 +68,8 @@ public class Hiboux : MonoBehaviour , IInteract
         TextLoup.SetActive(false);
         TextLoup1.SetActive(false);
         TextLion.SetActive(false);
+        AneAne.SetActive(false);
+        AneLoup.SetActive(false);
 
         isTalking = true;
 

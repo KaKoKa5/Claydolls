@@ -175,10 +175,13 @@ public class Corbeaux : MonoBehaviour , IInteract
     public void Interact()
     {
         NotMove();
+        STARTText.SetActive(false);
+        STARTText2.SetActive(false);
+        bulleDeText.SetActive(false);
         choix1Text.SetActive(false);
         choix2Text.SetActive(false);
         choix3Text.SetActive(false);
-        bulleDeText.SetActive(false);
+
         TextPartie2.SetActive(false);
 
         TextPartie3.SetActive(false);
@@ -187,11 +190,33 @@ public class Corbeaux : MonoBehaviour , IInteract
         TextPartie41.SetActive(false);
         TextPartie42.SetActive(false);
 
+        //Mission6
+        TextPartie5.SetActive(false);
+
+        //PARTIE2
+        TextPartie2A.SetActive(false);
+        TextPartie2L.SetActive(false);
+        TextPartie2LL.SetActive(false);
+
+        // Partie2Hiboux
         TextPartieHiboux.SetActive(false);
         TextPartieHiboux0.SetActive(false);
         TextPartieHiboux1.SetActive(false);
         TextPartieHiboux2.SetActive(false);
 
+        HibouxCave.SetActive(false);
+
+
+        //FINAL
+        TextFinal.SetActive(false);
+        TextFinal1.SetActive(false);
+        TextEND.SetActive(false);
+        TextEND1.SetActive(false);
+        TextEND2.SetActive(false);
+        TextEND3.SetActive(false);
+        TextEND4.SetActive(false);
+        TextEND5.SetActive(false);
+        TextEND6.SetActive(false);
         // Peau D'Ane
         AneChoix1.SetActive(false);
         AneChoix2.SetActive(false);
@@ -199,8 +224,10 @@ public class Corbeaux : MonoBehaviour , IInteract
 
         AneEND2.SetActive(false);
         AneEND.SetActive(false);
+
         boutonEXIT.SetActive(false);
         boutonStay.SetActive(false);
+        isTalking = true;
 
         if (TableauMemoire.talkFirst == false)
         {

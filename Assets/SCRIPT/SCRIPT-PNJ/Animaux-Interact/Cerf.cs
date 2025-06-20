@@ -142,6 +142,12 @@ public class Cerf : MonoBehaviour ,IInteract
         HibouxCave.SetActive(false);
 
         END.SetActive(false);
+
+        // Peau D'Ane
+        AneChoix1.SetActive(false);
+        AneChoix2.SetActive(false);
+        AneChoix3.SetActive(false);
+        AneChapitre3.SetActive(false);
         
 
         isTalking = true;
@@ -181,20 +187,33 @@ public class Cerf : MonoBehaviour ,IInteract
         {
             AneChapitre3.SetActive(true);
             Talk = !Talk;
-            FindObjectOfType<CharaterMoovement>().controlsEnabled = Talk;
-            FindObjectOfType<AnimationStateController>().controlsEnabled = Talk;
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             dialogueStep = 2;
             return;
         }
         if (dialogueStep == 2 && TableauMemoire.masque == 0 && TableauMemoire.AmiChien == false && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = false;
             TableauMemoire.MissionChien = true;
             TableauMemoire.confidenceCerf = true;
             AneChapitre3.SetActive(false);
-            isActive = !isActive;
-            bulleTextDebutPartie1.SetActive(isActive);
+            bulleTextDebutPartie1.SetActive(true);
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = true;
+            dialogueStep = 3;
+            return;
+        }
+        if (dialogueStep == 3 && TableauMemoire.masque == 0 && TableauMemoire.AmiChien == false && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
+        {
+            AneChapitre3.SetActive(false);
+            bulleTextDebutPartie1.SetActive(false);
+            FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
+            FindObjectOfType<AnimationStateController>().controlsEnabled = true;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = true;
+            dialogueStep = 2;
             return;
         }
         if (TableauMemoire.AmiChien == true && TableauMemoire.masque == 0 && TableauMemoire.MLionFound == false && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)

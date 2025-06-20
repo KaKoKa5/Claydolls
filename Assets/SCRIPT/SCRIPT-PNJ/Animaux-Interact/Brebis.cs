@@ -206,11 +206,14 @@ public class Brebis : MonoBehaviour ,IInteract
     public void Interact()
     {
         NotMove();
-        //mission1-------------------------------------------------------------------
+        STARTText.SetActive(false);
+        STARTText2.SetActive(false);
+        //Mission1
+        bulleDeText.SetActive(false);
         choix1Text.SetActive(false);
         choix2Text.SetActive(false);
         choix3Text.SetActive(false);
-        bulleDeText.SetActive(false);
+
         //Mission2
         TextPartie2.SetActive(false);
         choix1TextPartie2.SetActive(false);
@@ -228,12 +231,29 @@ public class Brebis : MonoBehaviour ,IInteract
         choix1TextPartie5.SetActive(false);
         choix2TextPartie5.SetActive(false);
         choix3TextPartie5.SetActive(false);
-        isTalking = true;
 
         //PARTIE2
         TextPartie2A.SetActive(false);
         TextPartie2L.SetActive(false);
         TextPartie2LL.SetActive(false);
+
+        //__________________________________________________________________________
+
+        RevelSNAKE.SetActive(false);
+        RevelSNAKEchoix1.SetActive(false);
+        RevelSNAKEchoix1p.SetActive(false);
+        RevelSNAKEchoix2.SetActive(false);
+        RevelSNAKEchoix3.SetActive(false);
+        RevelSNAKEchoix3m.SetActive(false);
+        RevelSNAKEAnge.SetActive(false);
+        RevelSNAKEDevil.SetActive(false);
+        RevelSNAKEDevil2.SetActive(false);
+
+
+        HibouxCave.SetActive(false);
+
+        END.SetActive(false);
+
         // Peau D'Ane
         AneChoix1.SetActive(false);
         AneChoix2.SetActive(false);
@@ -241,6 +261,21 @@ public class Brebis : MonoBehaviour ,IInteract
 
         AneChapitre4Choix1.SetActive(false);
         AneChapitre4Choix2.SetActive(false);
+
+        AneChapitre5Choix1.SetActive(false);
+        AneChapitre5Choix2.SetActive(false);
+
+        AneChapitre8Choix1.SetActive(false);
+        AneChapitre8Choix2.SetActive(false);
+        AneChapitre8Choix3.SetActive(false);
+
+        AneChapitre10Choix1.SetActive(false);
+        AneChapitre10Choix2.SetActive(false);
+        AneChapitre10Choix3.SetActive(false);
+        AneChapitre10Choix3A.SetActive(false);
+        AneChapitre10ChoixA.SetActive(false);
+        AneChapitre10ChoixD.SetActive(false);
+        isTalking = true;
 
         if (TableauMemoire.talkFirst == false)
         {
@@ -283,11 +318,13 @@ public class Brebis : MonoBehaviour ,IInteract
 
             bulleDeText.SetActive(false);
             TextPartie2.SetActive(isActive);
+            Debug.Log("ici");
         }
         if (TableauMemoire.masque == 0 && TableauMemoire.AmiChien == true && TableauMemoire.UnVUnCochon == false)
         {
             isActive = !isActive;
             bulleDeTextAmiChien.SetActive(isActive);
+            Debug.Log("la");
         }
 
         if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
@@ -378,7 +415,8 @@ public class Brebis : MonoBehaviour ,IInteract
             choix2Text.SetActive(false);
             choix3Text.SetActive(false);
             choix1Text.SetActive(true);
-            CountC1 = 2;
+            CountC1 = 0;
+            return;
         }
 
         //Mission2:----------------------------------------------
@@ -542,6 +580,8 @@ public class Brebis : MonoBehaviour ,IInteract
             RevelSNAKEchoix3m.SetActive(false);
             RevelSNAKEchoix1p.SetActive(false);
             RevelSNAKEAnge.SetActive(true);
+            Counte = 0;
+            CountC1Chap10 = 0;
         }
 
     }
@@ -552,7 +592,7 @@ public class Brebis : MonoBehaviour ,IInteract
         TextPartie3.SetActive(false);
         TextPartie5.SetActive(false);
         // Peau D'Ane
-        if (TableauMemoire.masque == 0 && TableauMemoire.AmiChien == false && CountC2 == 0)
+        if (TableauMemoire.confidenceCerf == false && TableauMemoire.masque == 0 && TableauMemoire.AmiChien == false && CountC2 == 0)
         {
             AneChoix1.SetActive(false);
             AneChoix2.SetActive(true);
@@ -567,13 +607,13 @@ public class Brebis : MonoBehaviour ,IInteract
             return;
         }
 
-        if (TableauMemoire.masque == 0 && TableauMemoire.AmiChien == false && CountC2 == 1)
+        if (TableauMemoire.confidenceCerf == false && TableauMemoire.masque == 0 && TableauMemoire.AmiChien == false && CountC2 == 1)
         {
             AneChoix1.SetActive(false);
             AneChoix2.SetActive(false);
             AneChoix3.SetActive(false);
 
-            CountC2 = 2;
+            CountC2 = 0;
 
             bulleDeText.SetActive(false);
             choix2Text.SetActive(true);
@@ -899,6 +939,7 @@ public class Brebis : MonoBehaviour ,IInteract
             autoHideVideo.Video();
             TableauMemoire.HibouxFound = true;
             TableauMemoire.ICONCorbeau = true;
+            CountC3Chap10 = 0;
             return;
 
         }

@@ -124,6 +124,9 @@ public class Serpent : MonoBehaviour, IInteract
     public void Interact()
     {
         NotMove();
+        STARTText.SetActive(false);
+        STARTText2.SetActive(false);
+
         bulleDeText.SetActive(false);
         TextPartie2.SetActive(false);
 
@@ -139,10 +142,25 @@ public class Serpent : MonoBehaviour, IInteract
         //Mission6
         TextPartie6.SetActive(false);
 
+        TextRevelCochon.SetActive(false);
+        TextRevelCochon2.SetActive(false);
+        TextRevelCochon3.SetActive(false);
+
+        HibouxCave.SetActive(false);
+
+        END.SetActive(false);
+
+        //Peau D'ane
+        AneChap5.SetActive(false);
+
+        AneChap8.SetActive(false);
+        isTalking = true;
+
         if (TableauMemoire.talkFirst == false)
         {
             if (CountText == 0)
             {
+                
                 isActive = !isActive;
                 STARTText.SetActive(isActive);
                 CountText = 1;
@@ -165,7 +183,6 @@ public class Serpent : MonoBehaviour, IInteract
                 STARTText2.SetActive(false);
                 CountText = 1;
                 return;
-
             }
 
         }
@@ -260,6 +277,7 @@ public class Serpent : MonoBehaviour, IInteract
             TextPartie41.SetActive(false);
             TextPartie42.SetActive(true);
             autoHideVideo.Video();
+            FindObjectOfType<CameraSwitcher>().SwitchToCam4();
             TableauMemoire.Portail = true;
             TableauMemoire.ICONLion = true;
             stepTalke = 5;
@@ -283,6 +301,7 @@ public class Serpent : MonoBehaviour, IInteract
             TextPartie4.SetActive(false);
             TextPartie41.SetActive(false);
             TextPartie42.SetActive(false);
+            FindObjectOfType<CameraSwitcher>().SwitchToCam1();
             
             stepTalke = 2; // On boucle
         }
@@ -326,6 +345,7 @@ public class Serpent : MonoBehaviour, IInteract
             TextRevelCochon2.SetActive(false);
             TextRevelCochon3.SetActive(true);
             autoHideVideo.Video();
+            
 
             CountPartie2 = 4;
         }

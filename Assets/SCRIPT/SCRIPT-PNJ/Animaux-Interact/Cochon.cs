@@ -206,10 +206,13 @@ public class Cochon : MonoBehaviour , IInteract
     public void Interact()
     {
         NotMove();
+        STARTText.SetActive(false);
+        STARTText2.SetActive(false);
+
+        bulleDeText.SetActive(false);
         choix1Text.SetActive(false);
         choix2Text.SetActive(false);
         choix3Text.SetActive(false);
-        bulleDeText.SetActive(false);
 
         TextPartie2.SetActive(false);
 
@@ -225,6 +228,59 @@ public class Cochon : MonoBehaviour , IInteract
         TextPartie2A.SetActive(false);
         TextPartie2L.SetActive(false);
         TextPartie2LL.SetActive(false);
+        //17
+        //La plus grande conversation avec le porc
+
+        BigDiscution1.SetActive(false);
+        BigDiscutionChoix1.SetActive(false);
+        BigDiscutionChoix2.SetActive(false);
+        BigDiscutionChoix3.SetActive(false);
+        BigDiscutionChoix1s1.SetActive(false);
+        BigDiscution1Choix1s2.SetActive(false);
+        BigDiscution1Choix1s3.SetActive(false);
+        BigDiscution1Choix2s1.SetActive(false);
+        BigDiscution1Choix2s2.SetActive(false);
+        BigDiscution1Choix2s3.SetActive(false);
+        BigDiscution1Choix3s1.SetActive(false);
+        BigDiscution1Choix3s2.SetActive(false);
+        BigDiscution1Choix3s3.SetActive(false);
+        BigDiscution1Choix4s1.SetActive(false);
+        BigDiscution1Choix4s2.SetActive(false);
+        BigDiscution1Choix4s3.SetActive(false);
+        BigDiscution1Choix4s3bis.SetActive(false);
+
+        HibouxCave.SetActive(false);
+
+        END.SetActive(false);
+
+        // Peau D'Ane
+        AneChoix1.SetActive(false);
+        AneChoix2.SetActive(false);
+        AneChoix3.SetActive(false);
+
+        AneChap5Choix1.SetActive(false);
+        AneChap5Choix2.SetActive(false);
+
+        AneBigDChoix1.SetActive(false);
+        AneBigDChoix2.SetActive(false);
+        AneBigDChoix3.SetActive(false);
+
+        AneBigDChoix1A.SetActive(false);
+        AneBigDChoix2B.SetActive(false);
+        AneBigDChoix3C.SetActive(false);
+
+        AneBigDChoix1AA.SetActive(false);
+        AneBigDChoix2BB.SetActive(false);
+        AneBigDChoix3CC.SetActive(false);
+
+        AneBigDChoix1AA1.SetActive(false);
+        AneBigDChoix2BB2.SetActive(false);
+        AneBigDChoix3CC3.SetActive(false);
+
+        AneBigDChoix1AA1A.SetActive(false);
+        AneBigDChoix2BB2B.SetActive(false);
+        AneBigDChoix3CC3C.SetActive(false);
+        isTalking = true;
 
         if (TableauMemoire.talkFirst == false && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Chien : MonoBehaviour , IInteract
@@ -76,6 +77,12 @@ public class Chien : MonoBehaviour , IInteract
         icon1.FadeOut();
         icon2.FadeOut();
     }
+    IEnumerator SwitchBackToCam1()
+    {
+        yield return new WaitForSeconds(3f);
+        FindObjectOfType<CameraSwitcher>().SwitchToCam1();
+    }
+
 
 
     private void Start()
@@ -143,6 +150,8 @@ public class Chien : MonoBehaviour , IInteract
     public void Interact()
     {
         NotMove();
+        STARTText.SetActive(false);
+        STARTText2.SetActive(false);
         bulleDeText.SetActive(false);
 
         //Mission2:
@@ -162,12 +171,25 @@ public class Chien : MonoBehaviour , IInteract
 
         //Mission5
         TextPartie5.SetActive(false);
-        isTalking = true;
 
         //PARTIE2
         TextPartie2A.SetActive(false);
         TextPartie2L.SetActive(false);
         TextPartie2LL.SetActive(false);
+
+        HibouxCave.SetActive(false);
+
+        END.SetActive(false);
+        //Peau d'ane
+
+        AneChapitre4Choix1.SetActive(false);
+        AneChapitre4Choix2.SetActive(false);
+        AneChapitre4Choix3.SetActive(false);
+
+        AneChapitre5Choix1.SetActive(false);
+        AneChapitre5Choix2.SetActive(false);
+        AneChapitre5Choix3.SetActive(false);
+        isTalking = true;
 
         //mission1
         if (TableauMemoire.talkFirst == false)
@@ -306,12 +328,14 @@ public class Chien : MonoBehaviour , IInteract
             AneChapitre4Choix2.SetActive(false);
             AneChapitre4Choix3.SetActive(false);
             CountC1 = 1;
+            
             return;
             
         }
-
+        
         if (TableauMemoire.confidenceCerf == true && TableauMemoire.masque == 0 && CountC1 == 1)
         {
+            
             TextMA.SetActive(false);
             bulleDeText.SetActive(false);
             bulleTextPartie2.SetActive(false);
@@ -323,9 +347,11 @@ public class Chien : MonoBehaviour , IInteract
             AneChapitre4Choix2.SetActive(false);
             AneChapitre4Choix3.SetActive(false);
             CountC1 = 0;
+            
             return;
 
         }
+
         //Mission3--------------------------------------------
 
         if (TableauMemoire.masque == 1 && CountChap5C1 == 0)
@@ -382,6 +408,8 @@ public class Chien : MonoBehaviour , IInteract
             AneChapitre4Choix1.SetActive(false);
             AneChapitre4Choix2.SetActive(true);
             AneChapitre4Choix3.SetActive(false);
+            
+            
             CountC2 = 1;
             return;
         }
@@ -400,9 +428,14 @@ public class Chien : MonoBehaviour , IInteract
             AneChapitre4Choix1.SetActive(false);
             AneChapitre4Choix2.SetActive(false);
             AneChapitre4Choix3.SetActive(false);
-            CountC2 = 0;
+            CountC2 = 2;
+            FindObjectOfType<CameraSwitcher>().SwitchToCam3();
+
+            StartCoroutine(SwitchBackToCam1());
+            
             return;
         }
+        
         //Mission3--------------------------------------------
 
         if (TableauMemoire.masque == 1 && CountChap5C2 == 0)
@@ -442,9 +475,9 @@ public class Chien : MonoBehaviour , IInteract
     }
     public void Choix3()
     {
-        if (!isTalking)return;
-    
-        if (TableauMemoire.confidenceCerf==false && TableauMemoire.masque==0)
+        if (!isTalking) return;
+
+        if (TableauMemoire.confidenceCerf == false && TableauMemoire.masque == 0)
         {
             bulleDeText.SetActive(false);
         }
@@ -511,6 +544,7 @@ public class Chien : MonoBehaviour , IInteract
             CountChap5C3 = 0;
             return;
         }
+        
     }
 
     }
