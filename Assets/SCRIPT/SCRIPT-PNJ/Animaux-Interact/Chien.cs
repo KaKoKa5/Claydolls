@@ -243,11 +243,12 @@ public class Chien : MonoBehaviour , IInteract
             TableauMemoire.MissionChien = false;
             bulleDeText.SetActive(false);
             bulleTextPartie2.SetActive(isActive);
-            textCount = 1;
             TableauMemoire.ICONLoup = true;
+            return;
             
-        } //Mission3--------------------------------------------
-        else if (TableauMemoire.masque == 0 && TableauMemoire.confidenceCerf == true && textCount == 1)
+        }
+        //Mission3--------------------------------------------
+        if (TableauMemoire.masque == 0 && TableauMemoire.confidenceCerf == true && textCount == 1)
         {
             isActive = !isActive;
             bulleDeText.SetActive(false);
@@ -381,6 +382,7 @@ public class Chien : MonoBehaviour , IInteract
             choix2TextPartie3.SetActive(false);
             choix3TextPartie3.SetActive(false);
             RespectText.SetActive(false);
+            
             TableauMemoire.AmiChien = true;
             TableauMemoire.ICONCorbeau = true;
             CountChap5C1 = 0;
@@ -432,6 +434,7 @@ public class Chien : MonoBehaviour , IInteract
             FindObjectOfType<CameraSwitcher>().SwitchToCam3();
 
             StartCoroutine(SwitchBackToCam1());
+            textCount = 1;
             
             return;
         }
