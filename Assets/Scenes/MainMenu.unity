@@ -873,7 +873,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2d2baae6d22f823418548c7456ca1c7a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 74b5d8980e13c3144bde148eb0e44562, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2331,10 +2331,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd850147d6fc24ab3c89a3931e873b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mixer: {fileID: 24100000, guid: 4ce1b70c963bdf04296f297a27ef02bf, type: 2}
-  paramName: MasterVolumeDB
-  slider: {fileID: 1754554243547923940, guid: 62743eed30c7fab4e945b107581bf5b8, type: 3}
-  prefsKey: MasterVolume
 --- !u!4 &1405676085
 Transform:
   m_ObjectHideFlags: 0
