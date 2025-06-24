@@ -172,6 +172,8 @@ public class Cerf : MonoBehaviour ,IInteract
             return;
         }        
 
+        
+
 
         if (dialogueStep == 0 && TableauMemoire.masque == 0 && TableauMemoire.AmiChien == false && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {

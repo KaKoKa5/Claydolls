@@ -252,8 +252,9 @@ public class Corbeaux : MonoBehaviour , IInteract
                 FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
                 FindObjectOfType<AnimationStateController>().controlsEnabled = true;
                 Cursor.visible = true;
-                STARTText2.SetActive(false);
+                STARTText2.SetActive(!isActive);
                 CountText = 1;
+
                 return;
             }
 
@@ -261,14 +262,16 @@ public class Corbeaux : MonoBehaviour , IInteract
 
         //Mission6
         TextPartie5.SetActive(false);
-
+        isActive = !isActive;
         isTalking = true;
         //mission1
         TableauMemoire.talkCorbeau = true;
         if (TableauMemoire.AmiChien == false && TableauMemoire.masque == 0 && TableauMemoire.talkFirst == true && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
+    
             CountText = 3;
-            isActive = !isActive;
+            Cursor.visible = !isActive;
+        
             bulleDeText.SetActive(isActive);
         }
 
@@ -281,7 +284,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
             isActive = !isActive;
-            TextPartie3.SetActive(isActive);
+            TextPartie3.SetActive(!isActive);
         }
 
         //Mission 4-------------------------------------------------
@@ -344,7 +347,7 @@ public class Corbeaux : MonoBehaviour , IInteract
         {
             TableauMemoire.MLionFound = true;
             isActive = !isActive;
-            TextPartie5.SetActive(isActive);
+            TextPartie5.SetActive(!isActive);
         }
 
 

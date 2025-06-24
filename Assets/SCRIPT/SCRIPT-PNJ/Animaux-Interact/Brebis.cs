@@ -311,6 +311,7 @@ public class Brebis : MonoBehaviour ,IInteract
         {
             CountText = 3;
             isActive = !isActive;
+            Cursor.visible = !isActive;
             bulleDeText.SetActive(isActive);
         }
         if (TableauMemoire.confidenceCerf == true && TableauMemoire.masque == 0)

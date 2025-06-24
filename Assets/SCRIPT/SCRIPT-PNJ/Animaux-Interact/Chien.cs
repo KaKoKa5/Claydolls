@@ -231,6 +231,7 @@ public class Chien : MonoBehaviour , IInteract
 
             CountText = 3;
             isActive = !isActive;
+            Cursor.visible = !isActive;
             STARTText2.SetActive(false);
             bulleDeText.SetActive(isActive);
         }

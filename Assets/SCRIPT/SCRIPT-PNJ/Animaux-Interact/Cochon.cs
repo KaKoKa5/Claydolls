@@ -306,7 +306,7 @@ public class Cochon : MonoBehaviour, IInteract
                 FindObjectOfType<CharaterMoovement>().controlsEnabled = true;
                 FindObjectOfType<AnimationStateController>().controlsEnabled = true;
                 Cursor.visible = true;
-                STARTText2.SetActive(false);
+                STARTText2.SetActive(!isActive);
                 CountText = 1;
                 return;
             }
@@ -319,9 +319,10 @@ public class Cochon : MonoBehaviour, IInteract
         TableauMemoire.talkCochon = true;
         if (TableauMemoire.masque == 0 && TableauMemoire.talkFirst == true && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
-
+            
             CountText = 3;
             isActive = !isActive;
+            Cursor.visible = !isActive;
             bulleDeText.SetActive(isActive);
         }
         //Mission2:--------------------------------------------------------------------
@@ -563,7 +564,7 @@ public class Cochon : MonoBehaviour, IInteract
         }
         //---------------------------------------------------------------------------------------------------------------------------------
 
-        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 4 && CountENDC1 == 8)
+        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 5 && CountENDC1 == 8)
         {
             AneBigDChoix1AA1A.SetActive(true);
             AneBigDChoix2BB2B.SetActive(false);
@@ -577,7 +578,7 @@ public class Cochon : MonoBehaviour, IInteract
             return;
         }
 
-        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 4 && CountENDC1 == 9)
+        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 5 && CountENDC1 == 9)
         {
             AneBigDChoix1AA1A.SetActive(false);
             AneBigDChoix2BB2B.SetActive(false);

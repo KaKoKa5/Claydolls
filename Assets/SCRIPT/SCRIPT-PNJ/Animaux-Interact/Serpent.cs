@@ -189,14 +189,15 @@ public class Serpent : MonoBehaviour, IInteract
 
 
         isTalking = true;
+        
         isActive = !isActive;
 
         //mission1-----------------------------------------
         TableauMemoire.talkSerpent = true;
         if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == false && TableauMemoire.talkFirst == true && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
-
             CountText = 3;
+            Cursor.visible = !isActive;
             bulleDeText.SetActive(isActive);
         }
 
