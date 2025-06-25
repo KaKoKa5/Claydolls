@@ -581,8 +581,8 @@ public class Brebis : MonoBehaviour ,IInteract
             RevelSNAKEchoix3m.SetActive(false);
             RevelSNAKEchoix1p.SetActive(false);
             RevelSNAKEAnge.SetActive(true);
-            Counte = 0;
-            CountC1Chap10 = 0;
+            Counte = 3;
+            CountC1Chap10 = 2;
         }
 
     }
