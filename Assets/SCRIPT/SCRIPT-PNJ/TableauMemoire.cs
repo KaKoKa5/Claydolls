@@ -33,11 +33,11 @@ public class TableauMemoire : MonoBehaviour
   public static bool MLionFound = false;
 
   //Mission que fait le cochon ?
-  public static bool Partie2 = true;
+  public static bool Partie2 = false;
   public static bool CochonHagrad = false;
   public static bool RevelSNAKE = false;
   public static bool HibouxFound = false;
-  public static bool StoryCorbeau = true;
+  public static bool StoryCorbeau = false;
   public static bool UnVUnCochon = false;
 
   // FIN
