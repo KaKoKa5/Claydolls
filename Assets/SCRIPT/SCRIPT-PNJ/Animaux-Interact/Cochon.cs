@@ -578,7 +578,7 @@ public class Cochon : MonoBehaviour, IInteract
             return;
         }
 
-        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 5 && CountENDC1 == 9)
+        if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == true && TableauMemoire.StoryCorbeau == true && SuiteBig == 4 && CountENDC1 == 9)
         {
             AneBigDChoix1AA1A.SetActive(false);
             AneBigDChoix2BB2B.SetActive(false);
