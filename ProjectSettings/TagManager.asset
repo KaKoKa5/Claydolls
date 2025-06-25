@@ -14,6 +14,7 @@ TagManager:
   - Hiboux
   - StoneZone
   - PNJ
+  - DialogueUI
   layers:
   - Default
   - TransparentFX

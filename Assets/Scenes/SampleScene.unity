@@ -1522,7 +1522,7 @@ GameObject:
   - component: {fileID: 20290203}
   m_Layer: 5
   m_Name: AneCerf (2)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1948,7 +1948,7 @@ GameObject:
   - component: {fileID: 23273954}
   m_Layer: 5
   m_Name: SerpentTextPartie3
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3057,7 +3057,7 @@ GameObject:
   - component: {fileID: 44456439}
   m_Layer: 5
   m_Name: AneBrebis1Chapitre5 (2)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3196,7 +3196,7 @@ GameObject:
   - component: {fileID: 44510451}
   m_Layer: 5
   m_Name: CochonTextPartie3
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4601,7 +4601,7 @@ GameObject:
   - component: {fileID: 62068036}
   m_Layer: 5
   m_Name: CorbeauTextPARTIE2
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5512,7 +5512,7 @@ GameObject:
   - component: {fileID: 81416324}
   m_Layer: 5
   m_Name: CerfTextPartie6
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6532,7 +6532,7 @@ GameObject:
   - component: {fileID: 91407383}
   m_Layer: 5
   m_Name: Corbeau END
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7277,7 +7277,7 @@ GameObject:
   - component: {fileID: 99340876}
   m_Layer: 5
   m_Name: STARTChat (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9155,7 +9155,7 @@ GameObject:
   - component: {fileID: 120399875}
   m_Layer: 5
   m_Name: AneSerpentChap8
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9548,7 +9548,7 @@ GameObject:
   - component: {fileID: 125668360}
   m_Layer: 5
   m_Name: ChatCave (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9696,7 +9696,7 @@ GameObject:
   - component: {fileID: 126958805}
   m_Layer: 5
   m_Name: CochonBigDiscutionchoix1 (2)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11059,7 +11059,7 @@ GameObject:
   - component: {fileID: 147840542}
   m_Layer: 5
   m_Name: AneCochonBD3 (4)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11333,7 +11333,7 @@ GameObject:
   - component: {fileID: 150379886}
   m_Layer: 5
   m_Name: AneCochonChap5-1
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11970,7 +11970,7 @@ GameObject:
   - component: {fileID: 156944275}
   m_Layer: 5
   m_Name: BrebisChoix1Partie3
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12241,7 +12241,7 @@ GameObject:
   - component: {fileID: 158967421}
   m_Layer: 5
   m_Name: CochonBigDiscutionchoix2
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13253,7 +13253,7 @@ GameObject:
   - component: {fileID: 177224955}
   m_Layer: 5
   m_Name: BREBISrevelSNAKEAnge
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13391,7 +13391,7 @@ GameObject:
   - component: {fileID: 178280175}
   m_Layer: 5
   m_Name: AneChatChap8-2
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13837,7 +13837,7 @@ GameObject:
   - component: {fileID: 180272619}
   m_Layer: 5
   m_Name: STARTSerpent (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14003,7 +14003,7 @@ GameObject:
   - component: {fileID: 183268363}
   m_Layer: 5
   m_Name: ChienText Partie6
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15259,7 +15259,7 @@ GameObject:
   - component: {fileID: 192187479}
   m_Layer: 5
   m_Name: AneCochon1
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16811,7 +16811,7 @@ GameObject:
   - component: {fileID: 214897933}
   m_Layer: 5
   m_Name: SerpentTextPartie4
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18154,7 +18154,7 @@ GameObject:
   - component: {fileID: 241307275}
   m_Layer: 5
   m_Name: BrebisChoix3Partie5
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18292,7 +18292,7 @@ GameObject:
   - component: {fileID: 241491201}
   m_Layer: 5
   m_Name: CorbeauTextPARTIE2 (2)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19089,7 +19089,7 @@ GameObject:
   - component: {fileID: 250120602}
   m_Layer: 5
   m_Name: ChienCave (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19470,7 +19470,7 @@ GameObject:
   - component: {fileID: 258763325}
   m_Layer: 5
   m_Name: AneBrebis1
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21063,7 +21063,7 @@ GameObject:
   - component: {fileID: 283184457}
   m_Layer: 5
   m_Name: ENDserpent
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23019,7 +23019,7 @@ GameObject:
   - component: {fileID: 313348657}
   m_Layer: 5
   m_Name: ChienChoix3Partie2 (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24533,9 +24533,9 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.01
+  near clip plane: 0.1
   far clip plane: 5000
-  field of view: 50.4
+  field of view: 60
   orthographic: 0
   orthographic size: 10
   m_Depth: -1
@@ -24561,7 +24561,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.052470714, y: -0.39548624, z: 0.022637308, w: 0.91669244}
+  m_LocalRotation: {x: 0.052470703, y: -0.39548624, z: 0.022637302, w: 0.91669244}
   m_LocalPosition: {x: 113.079636, y: 2.954, z: 68.96467}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -24620,7 +24620,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93262db6806b0c04ebecc53b1d5f4136, type: 3}
   m_Name: 
@@ -24659,7 +24659,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
   m_Name: 
@@ -26096,7 +26096,7 @@ GameObject:
   - component: {fileID: 350000818}
   m_Layer: 5
   m_Name: AneBrebisChapitre4 (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27190,7 +27190,7 @@ GameObject:
   - component: {fileID: 362014304}
   m_Layer: 5
   m_Name: CerfTextPARTIE2 (2)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27491,7 +27491,7 @@ GameObject:
   - component: {fileID: 367839115}
   m_Layer: 5
   m_Name: CochonBigDiscutionchoix2 (2)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27629,7 +27629,7 @@ GameObject:
   - component: {fileID: 371053111}
   m_Layer: 5
   m_Name: SerpentTextPartie6
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28401,7 +28401,7 @@ GameObject:
   - component: {fileID: 383684187}
   m_Layer: 5
   m_Name: BreibisCave
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29287,7 +29287,7 @@ GameObject:
   - component: {fileID: 396032621}
   m_Layer: 5
   m_Name: CerfChoix2Text
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29428,7 +29428,7 @@ GameObject:
   - component: {fileID: 396602580}
   m_Layer: 5
   m_Name: AneBrebisChap10-D
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29997,7 +29997,7 @@ GameObject:
   - component: {fileID: 407394538}
   m_Layer: 5
   m_Name: STARTCorbeau (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30643,7 +30643,7 @@ GameObject:
   - component: {fileID: 416127755}
   m_Layer: 5
   m_Name: CochonCave (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31868,7 +31868,7 @@ GameObject:
   - component: {fileID: 434801784}
   m_Layer: 5
   m_Name: AneBrebisChap10-3 (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32368,7 +32368,7 @@ GameObject:
   - component: {fileID: 436967979}
   m_Layer: 5
   m_Name: BrebisChoix1Partie2
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32992,7 +32992,7 @@ GameObject:
   - component: {fileID: 444204477}
   m_Layer: 5
   m_Name: ChatTextPartie6
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34702,7 +34702,7 @@ GameObject:
   - component: {fileID: 457526896}
   m_Layer: 5
   m_Name: SerpentTextPartie4 (2)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35466,7 +35466,7 @@ GameObject:
   - component: {fileID: 464045963}
   m_Layer: 5
   m_Name: AneChien3
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35604,7 +35604,7 @@ GameObject:
   - component: {fileID: 466287676}
   m_Layer: 5
   m_Name: AneChienChap5-3
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38369,7 +38369,7 @@ GameObject:
   - component: {fileID: 508696226}
   m_Layer: 5
   m_Name: ButtonStay
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38501,7 +38501,7 @@ GameObject:
   - component: {fileID: 513661376}
   m_Layer: 5
   m_Name: CorbeauTextPartie4-2
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39551,7 +39551,7 @@ GameObject:
   - component: {fileID: 518230428}
   m_Layer: 5
   m_Name: AneCorbeau3
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40342,7 +40342,7 @@ GameObject:
   - component: {fileID: 528862032}
   m_Layer: 5
   m_Name: ENDbrebis
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40653,7 +40653,7 @@ GameObject:
   - component: {fileID: 533415696}
   m_Layer: 5
   m_Name: AneChienChap5-1
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41365,7 +41365,7 @@ GameObject:
   - component: {fileID: 540643411}
   m_Layer: 5
   m_Name: AneCochonBD3
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42137,7 +42137,7 @@ GameObject:
   - component: {fileID: 545821367}
   m_Layer: 5
   m_Name: AneCochonChap5
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43205,7 +43205,7 @@ GameObject:
   - component: {fileID: 561983406}
   m_Layer: 5
   m_Name: AneBrebisChap10-3
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44538,7 +44538,7 @@ GameObject:
   - component: {fileID: 578439108}
   m_Layer: 5
   m_Name: ChienTextPARTIE2 (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44812,7 +44812,7 @@ GameObject:
   - component: {fileID: 580141080}
   m_Layer: 5
   m_Name: AneBrebis2
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45030,7 +45030,7 @@ GameObject:
   - component: {fileID: 584640751}
   m_Layer: 5
   m_Name: ChienChoix1TextPartie3ML
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45301,7 +45301,7 @@ GameObject:
   - component: {fileID: 586221013}
   m_Layer: 5
   m_Name: HibouxLoup (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45439,7 +45439,7 @@ GameObject:
   - component: {fileID: 587087984}
   m_Layer: 5
   m_Name: Corbeau Final
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45826,7 +45826,7 @@ GameObject:
   - component: {fileID: 594688852}
   m_Layer: 5
   m_Name: AneCochonBD1 (4)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46046,7 +46046,7 @@ GameObject:
   - component: {fileID: 596301223}
   m_Layer: 5
   m_Name: SerpentTextPartie3_2
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47627,7 +47627,7 @@ GameObject:
   - component: {fileID: 615412300}
   m_Layer: 5
   m_Name: ChatChoix2Partie6 (2)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47928,7 +47928,7 @@ GameObject:
   - component: {fileID: 616164283}
   m_Layer: 5
   m_Name: ChienText Partie3MA
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48223,7 +48223,7 @@ GameObject:
   - component: {fileID: 617770065}
   m_Layer: 5
   m_Name: AneSerpent
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49019,7 +49019,7 @@ GameObject:
   - component: {fileID: 626003876}
   m_Layer: 5
   m_Name: BrebisText
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49886,7 +49886,7 @@ GameObject:
   - component: {fileID: 630364116}
   m_Layer: 5
   m_Name: BREBISrevelSNAKEDevil2
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50898,7 +50898,7 @@ GameObject:
   - component: {fileID: 637684258}
   m_Layer: 5
   m_Name: AneBrebisChapitre5 (2)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52932,7 +52932,7 @@ GameObject:
   - component: {fileID: 660530449}
   m_Layer: 5
   m_Name: STARTCochon
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54216,7 +54216,7 @@ GameObject:
   - component: {fileID: 671507734}
   m_Layer: 5
   m_Name: ButtonExit
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54348,7 +54348,7 @@ GameObject:
   - component: {fileID: 671653326}
   m_Layer: 5
   m_Name: AneCochonBD1 (3)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54485,7 +54485,7 @@ GameObject:
   - component: {fileID: 673319799}
   m_Layer: 5
   m_Name: ChienChoix3TextPartie3ML
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56501,7 +56501,7 @@ GameObject:
   - component: {fileID: 700917220}
   m_Layer: 5
   m_Name: BrebisTextPartie2
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57017,7 +57017,7 @@ GameObject:
   - component: {fileID: 705459855}
   m_Layer: 5
   m_Name: AneBrebisChap10-1
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57155,7 +57155,7 @@ GameObject:
   - component: {fileID: 706336538}
   m_Layer: 5
   m_Name: SerpentTextRevelCochon (2)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59490,7 +59490,7 @@ GameObject:
   - component: {fileID: 729362603}
   m_Layer: 5
   m_Name: BrebisChoix2Text
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60322,7 +60322,7 @@ GameObject:
   - component: {fileID: 734852155}
   m_Layer: 5
   m_Name: SerpentTextRevelCochon (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61408,7 +61408,7 @@ GameObject:
   - component: {fileID: 747296526}
   m_Layer: 5
   m_Name: SerpentRespectText (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61546,7 +61546,7 @@ GameObject:
   - component: {fileID: 748280358}
   m_Layer: 5
   m_Name: BrebisTextPARTIE2
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63134,7 +63134,7 @@ GameObject:
   - component: {fileID: 767120804}
   m_Layer: 5
   m_Name: Corbeau END
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64390,7 +64390,7 @@ GameObject:
   - component: {fileID: 779703053}
   m_Layer: 5
   m_Name: SerpentTextPartie4 (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65323,7 +65323,7 @@ GameObject:
   - component: {fileID: 794389590}
   m_Layer: 5
   m_Name: CorbeauRevelH2
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66987,7 +66987,7 @@ GameObject:
   - component: {fileID: 811251177}
   m_Layer: 5
   m_Name: STARTCorbeau
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67114,7 +67114,7 @@ GameObject:
   - component: {fileID: 813443858}
   m_Layer: 5
   m_Name: AneCerf
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68466,7 +68466,7 @@ GameObject:
   - component: {fileID: 828288807}
   m_Layer: 5
   m_Name: CerfTextPartie6 (2)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69203,7 +69203,7 @@ GameObject:
   - component: {fileID: 834914654}
   m_Layer: 5
   m_Name: CorbeauText
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69474,7 +69474,7 @@ GameObject:
   - component: {fileID: 837505527}
   m_Layer: 5
   m_Name: CerfTextEnd
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73330,7 +73330,7 @@ GameObject:
   - component: {fileID: 886415418}
   m_Layer: 5
   m_Name: STARTBrebis
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74243,7 +74243,7 @@ GameObject:
   - component: {fileID: 896100173}
   m_Layer: 5
   m_Name: CerfTextPARTIE2
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74914,7 +74914,7 @@ GameObject:
   - component: {fileID: 903794717}
   m_Layer: 5
   m_Name: CochonText
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76727,7 +76727,7 @@ GameObject:
   - component: {fileID: 920727327}
   m_Layer: 5
   m_Name: SerpentTextRevelCochon
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77322,7 +77322,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930246409}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.031000933, y: -0.3959077, z: 0.013374656, w: 0.9176694}
+  m_LocalRotation: {x: 0.03100087, y: -0.3959077, z: 0.013374625, w: 0.9176694}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -78125,7 +78125,7 @@ GameObject:
   - component: {fileID: 939853568}
   m_Layer: 5
   m_Name: ChienChoix2TextPartie3ML
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78887,7 +78887,7 @@ GameObject:
   - component: {fileID: 952154276}
   m_Layer: 5
   m_Name: AneCorbeauEND
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79730,7 +79730,7 @@ GameObject:
   - component: {fileID: 960463901}
   m_Layer: 5
   m_Name: CorbeauRevelH1
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79868,7 +79868,7 @@ GameObject:
   - component: {fileID: 963130177}
   m_Layer: 5
   m_Name: CochonTextPARTIE2 (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80730,7 +80730,7 @@ GameObject:
   - component: {fileID: 970126041}
   m_Layer: 5
   m_Name: HibouxLoup
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81371,7 +81371,7 @@ GameObject:
   - component: {fileID: 979652665}
   m_Layer: 5
   m_Name: ENDchat
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81508,7 +81508,7 @@ GameObject:
   - component: {fileID: 981073516}
   m_Layer: 5
   m_Name: STARTCochon (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82468,7 +82468,7 @@ GameObject:
   - component: {fileID: 994251836}
   m_Layer: 5
   m_Name: CochonBigDiscutionchoix3
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83248,7 +83248,7 @@ GameObject:
   - component: {fileID: 1002724546}
   m_Layer: 5
   m_Name: AneHibouxAneLoup
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84554,7 +84554,7 @@ GameObject:
   - component: {fileID: 1013086252}
   m_Layer: 5
   m_Name: Corbeaufinal1
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85186,7 +85186,7 @@ GameObject:
   - component: {fileID: 1017628288}
   m_Layer: 5
   m_Name: CorbeauChoix2Text
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85399,7 +85399,7 @@ GameObject:
   - component: {fileID: 1021439655}
   m_Layer: 5
   m_Name: BrebisTextAmiChienPartie3 (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85691,7 +85691,7 @@ GameObject:
   - component: {fileID: 1023137543}
   m_Layer: 5
   m_Name: STARTChat
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87460,7 +87460,7 @@ GameObject:
   - component: {fileID: 1054902829}
   m_Layer: 5
   m_Name: ChatText
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88270,7 +88270,7 @@ GameObject:
   - component: {fileID: 1059030044}
   m_Layer: 5
   m_Name: AneChienChap5-2
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88809,7 +88809,7 @@ GameObject:
   - component: {fileID: 1061404710}
   m_Layer: 5
   m_Name: AneCorbeauEND2
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89034,7 +89034,7 @@ GameObject:
   - component: {fileID: 1065464789}
   m_Layer: 5
   m_Name: ChienText Partie3ML
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89172,7 +89172,7 @@ GameObject:
   - component: {fileID: 1071030183}
   m_Layer: 5
   m_Name: CerfTextPartie1
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90533,7 +90533,7 @@ GameObject:
   - component: {fileID: 1085103073}
   m_Layer: 5
   m_Name: BrebisTextPartie3
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92115,7 +92115,7 @@ GameObject:
   - component: {fileID: 1104485300}
   m_Layer: 5
   m_Name: 'SerpentTextPartie2 '
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94465,7 +94465,7 @@ GameObject:
   - component: {fileID: 1128827096}
   m_Layer: 5
   m_Name: ChienTextPARTIE2
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94603,7 +94603,7 @@ GameObject:
   - component: {fileID: 1131424397}
   m_Layer: 5
   m_Name: BrebisChoix2Partie5
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94958,7 +94958,7 @@ GameObject:
   - component: {fileID: 1134264995}
   m_Layer: 5
   m_Name: HibouxLion
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95096,7 +95096,7 @@ GameObject:
   - component: {fileID: 1136313718}
   m_Layer: 5
   m_Name: CorbeauTextPartie3
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95816,7 +95816,7 @@ GameObject:
   - component: {fileID: 1145101521}
   m_Layer: 5
   m_Name: ENDcochon
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96296,7 +96296,7 @@ GameObject:
   - component: {fileID: 1151248649}
   m_Layer: 5
   m_Name: BREBISrevelSNAKEchoix2
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97209,7 +97209,7 @@ GameObject:
   - component: {fileID: 1155443234}
   m_Layer: 5
   m_Name: AneBrebis2Chapitre8
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97609,7 +97609,7 @@ GameObject:
   - component: {fileID: 1158115291}
   m_Layer: 5
   m_Name: ChienTextPartie2 (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99211,7 +99211,7 @@ GameObject:
   - component: {fileID: 1173303422}
   m_Layer: 5
   m_Name: AneBrebis3Chapitre8
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99690,7 +99690,7 @@ GameObject:
   - component: {fileID: 1177439317}
   m_Layer: 5
   m_Name: Corbeau END
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100238,7 +100238,7 @@ GameObject:
   - component: {fileID: 1181467816}
   m_Layer: 5
   m_Name: BrebisChoix1Text
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101061,7 +101061,7 @@ GameObject:
   - component: {fileID: 1187674397}
   m_Layer: 5
   m_Name: STARTChien
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102965,7 +102965,7 @@ GameObject:
   - component: {fileID: 1205211820}
   m_Layer: 5
   m_Name: AneCochonBD2 (3)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104320,7 +104320,7 @@ GameObject:
   - component: {fileID: 1226669208}
   m_Layer: 5
   m_Name: AneCochonBD1 (2)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104860,7 +104860,7 @@ GameObject:
   - component: {fileID: 1232512362}
   m_Layer: 5
   m_Name: ChienChoix2Partie2 (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105217,7 +105217,7 @@ GameObject:
   - component: {fileID: 1235349668}
   m_Layer: 5
   m_Name: CorbeauRevelH3
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106599,7 +106599,7 @@ GameObject:
   - component: {fileID: 1251182993}
   m_Layer: 5
   m_Name: AneBrebis
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107947,7 +107947,7 @@ GameObject:
   - component: {fileID: 1266715475}
   m_Layer: 5
   m_Name: BrebisChoix2Partie2
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109300,6 +109300,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1280064445}
   - component: {fileID: 1280064444}
+  - component: {fileID: 1280064446}
   m_Layer: 0
   m_Name: CameraManager
   m_TagString: Untagged
@@ -109339,6 +109340,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1280064446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280064443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c11291eb4e217a042ac59598b5c74a37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueTag: DialogueUI
 --- !u!1 &1281327964
 GameObject:
   m_ObjectHideFlags: 0
@@ -109640,7 +109654,7 @@ GameObject:
   - component: {fileID: 1282213531}
   m_Layer: 5
   m_Name: BrebisTextPARTIE2 (2)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113932,7 +113946,7 @@ GameObject:
   - component: {fileID: 1335337380}
   m_Layer: 5
   m_Name: CochonBigDiscutionchoix2 (3)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114070,7 +114084,7 @@ GameObject:
   - component: {fileID: 1335939418}
   m_Layer: 5
   m_Name: AneChatChap8-1
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114208,7 +114222,7 @@ GameObject:
   - component: {fileID: 1336094043}
   m_Layer: 5
   m_Name: SerpentCave (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115201,7 +115215,7 @@ GameObject:
   - component: {fileID: 1340305735}
   m_Layer: 5
   m_Name: BrebisChoix2Partie3
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115716,7 +115730,7 @@ GameObject:
   - component: {fileID: 1347128927}
   m_Layer: 5
   m_Name: ENDchien
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117119,7 +117133,7 @@ GameObject:
   - component: {fileID: 1370869798}
   m_Layer: 5
   m_Name: CorbeauTextPartie4
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117976,7 +117990,7 @@ GameObject:
   - component: {fileID: 1382178794}
   m_Layer: 5
   m_Name: STARTBrebis (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -118023,7 +118037,7 @@ GameObject:
   - component: {fileID: 1382644152}
   m_Layer: 5
   m_Name: AneCochonBD2 (2)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119080,7 +119094,7 @@ GameObject:
   - component: {fileID: 1389454145}
   m_Layer: 5
   m_Name: CerfTextPARTIE2 (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122000,7 +122014,7 @@ GameObject:
   - component: {fileID: 1421670715}
   m_Layer: 5
   m_Name: AneCorbeau1
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122444,7 +122458,7 @@ GameObject:
   - component: {fileID: 1423531908}
   m_Layer: 5
   m_Name: ChienChoix1Partie2 (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122582,7 +122596,7 @@ GameObject:
   - component: {fileID: 1424521841}
   m_Layer: 5
   m_Name: ChienRespectText
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123391,7 +123405,7 @@ GameObject:
   - component: {fileID: 1443947263}
   m_Layer: 5
   m_Name: AneCerf (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124647,7 +124661,7 @@ GameObject:
   - component: {fileID: 1457064498}
   m_Layer: 5
   m_Name: CerfChoix3Text
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124942,7 +124956,7 @@ GameObject:
   - component: {fileID: 1464427816}
   m_Layer: 5
   m_Name: AneCochonBD2 (4)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125792,7 +125806,7 @@ GameObject:
   - component: {fileID: 1477963395}
   m_Layer: 5
   m_Name: BREBISrevelSNAKEchoix1p
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128229,7 +128243,7 @@ GameObject:
   - component: {fileID: 1496521279}
   m_Layer: 5
   m_Name: BrebisTextPARTIE2 (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128914,7 +128928,7 @@ GameObject:
   - component: {fileID: 1497717780}
   m_Layer: 5
   m_Name: 'ChienText '
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129052,7 +129066,7 @@ GameObject:
   - component: {fileID: 1498366119}
   m_Layer: 5
   m_Name: AneChien1
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129490,7 +129504,7 @@ GameObject:
   - component: {fileID: 1504116934}
   m_Layer: 5
   m_Name: AneBrebisChap10-2
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131146,7 +131160,7 @@ GameObject:
   - component: {fileID: 1523015772}
   m_Layer: 5
   m_Name: CerfCave (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133612,7 +133626,7 @@ GameObject:
   - component: {fileID: 1543497626}
   m_Layer: 5
   m_Name: CorbeauTextPartie2
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133750,7 +133764,7 @@ GameObject:
   - component: {fileID: 1544454300}
   m_Layer: 5
   m_Name: Corbeau END
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134522,7 +134536,7 @@ GameObject:
   - component: {fileID: 1556893803}
   m_Layer: 5
   m_Name: BrebisChoix3Text
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134660,7 +134674,7 @@ GameObject:
   - component: {fileID: 1562065806}
   m_Layer: 5
   m_Name: AneCochonBD3 (2)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134798,7 +134812,7 @@ GameObject:
   - component: {fileID: 1562640748}
   m_Layer: 5
   m_Name: AneChien2
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134937,7 +134951,7 @@ GameObject:
   - component: {fileID: 1563022102}
   m_Layer: 5
   m_Name: CochonBigDiscutionchoix2 (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135151,7 +135165,7 @@ GameObject:
   - component: {fileID: 1565721973}
   m_Layer: 5
   m_Name: CochonChoix1Text
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136720,7 +136734,7 @@ GameObject:
   - component: {fileID: 1578782462}
   m_Layer: 5
   m_Name: BREBISrevelSNAKEchoix3
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -138130,7 +138144,7 @@ GameObject:
   - component: {fileID: 1586748053}
   m_Layer: 5
   m_Name: HibouxAne
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -138803,7 +138817,7 @@ GameObject:
   - component: {fileID: 1592602106}
   m_Layer: 5
   m_Name: CorbeauTextPartie4-1
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -139229,7 +139243,7 @@ GameObject:
   - component: {fileID: 1594435346}
   m_Layer: 5
   m_Name: CochonBigDiscution
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -139624,7 +139638,7 @@ GameObject:
   - component: {fileID: 1600499982}
   m_Layer: 5
   m_Name: ChatChoix3Partie6 (3)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -140027,7 +140041,7 @@ GameObject:
   - component: {fileID: 1605713476}
   m_Layer: 5
   m_Name: STARTChien (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -140601,7 +140615,7 @@ GameObject:
   - component: {fileID: 1612581365}
   m_Layer: 5
   m_Name: dCochonBigDiscutionchoix3 (5)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -140815,7 +140829,7 @@ GameObject:
   - component: {fileID: 1613256256}
   m_Layer: 5
   m_Name: CochonBigDiscutionchoix1 (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -141644,7 +141658,7 @@ GameObject:
   - component: {fileID: 1618109771}
   m_Layer: 5
   m_Name: AneBrebisChap10-A
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -141916,7 +141930,7 @@ GameObject:
   - component: {fileID: 1621528931}
   m_Layer: 5
   m_Name: CochonChoix2Partie3
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145972,7 +145986,7 @@ GameObject:
   - component: {fileID: 1654844026}
   m_Layer: 5
   m_Name: CochonTextPARTIE2 (2)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146843,7 +146857,7 @@ GameObject:
   - component: {fileID: 1662582615}
   m_Layer: 5
   m_Name: CochonTextPARTIE2
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -148366,7 +148380,7 @@ GameObject:
   - component: {fileID: 1685655946}
   m_Layer: 5
   m_Name: CochonBigDiscutionchoix2 (4)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149669,7 +149683,7 @@ GameObject:
   - component: {fileID: 1697939096}
   m_Layer: 5
   m_Name: CorbeauRevelH
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149940,7 +149954,7 @@ GameObject:
   - component: {fileID: 1699214441}
   m_Layer: 5
   m_Name: AneCochonBD1 (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -150078,7 +150092,7 @@ GameObject:
   - component: {fileID: 1700401328}
   m_Layer: 5
   m_Name: CerfChoix1Text
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -150218,7 +150232,7 @@ GameObject:
   - component: {fileID: 1702088864}
   m_Layer: 5
   m_Name: STARTSerpent
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -150418,7 +150432,7 @@ GameObject:
   - component: {fileID: 1704545180}
   m_Layer: 5
   m_Name: AneCochonBD2 (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151963,7 +151977,7 @@ GameObject:
   - component: {fileID: 1733277949}
   m_Layer: 5
   m_Name: CorbeauCave (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -153810,7 +153824,7 @@ GameObject:
   - component: {fileID: 1758989104}
   m_Layer: 5
   m_Name: AneCochonBD3 (3)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -154001,7 +154015,7 @@ GameObject:
   - component: {fileID: 1761941380}
   m_Layer: 5
   m_Name: ChatChoix1Partie6 (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -155094,7 +155108,7 @@ GameObject:
   - component: {fileID: 1772079872}
   m_Layer: 5
   m_Name: BREBISrevelSNAKEchoix3m
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161406,7 +161420,7 @@ GameObject:
   - component: {fileID: 1776853189}
   m_Layer: 5
   m_Name: Corbeau END
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -162485,7 +162499,7 @@ GameObject:
   - component: {fileID: 1787397081}
   m_Layer: 5
   m_Name: CorbeauTextPARTIE2 (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -162994,7 +163008,7 @@ GameObject:
   - component: {fileID: 1792818653}
   m_Layer: 5
   m_Name: CochonChoix2Text
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -163484,7 +163498,7 @@ GameObject:
   - component: {fileID: 1802343241}
   m_Layer: 5
   m_Name: AneCochon2
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -164263,7 +164277,7 @@ GameObject:
   - component: {fileID: 1807621160}
   m_Layer: 5
   m_Name: CerfTextAmiDuChien
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -164630,7 +164644,7 @@ GameObject:
   - component: {fileID: 1814318584}
   m_Layer: 5
   m_Name: CerfTextPartie3
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -165208,7 +165222,7 @@ GameObject:
   - component: {fileID: 1828080653}
   m_Layer: 5
   m_Name: Corbeau END
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166366,7 +166380,7 @@ GameObject:
   - component: {fileID: 1839920918}
   m_Layer: 5
   m_Name: AneCochonBD3 (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166505,7 +166519,7 @@ GameObject:
   - component: {fileID: 1840933557}
   m_Layer: 5
   m_Name: AneBrebis1Chapitre4 (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -168680,7 +168694,7 @@ GameObject:
   - component: {fileID: 1869604752}
   m_Layer: 5
   m_Name: CerfTextPartie6 (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -169693,7 +169707,7 @@ GameObject:
   - component: {fileID: 1881036787}
   m_Layer: 5
   m_Name: CorbeauChoix3Text
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -169906,7 +169920,7 @@ GameObject:
   - component: {fileID: 1884095669}
   m_Layer: 5
   m_Name: CochonBigDiscutionchoix3 (2)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -170272,7 +170286,7 @@ GameObject:
   - component: {fileID: 1884895547}
   m_Layer: 5
   m_Name: CerfTextEndPartie1
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -172410,7 +172424,7 @@ GameObject:
   - component: {fileID: 1905106652}
   m_Layer: 5
   m_Name: CochonBigDiscutionchoix3 (3)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -172788,7 +172802,7 @@ GameObject:
   - component: {fileID: 1908404568}
   m_Layer: 5
   m_Name: CochonBigDiscutionchoix3 (4)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -173001,7 +173015,7 @@ GameObject:
   - component: {fileID: 1909315425}
   m_Layer: 5
   m_Name: ENDcerf
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -175699,7 +175713,7 @@ GameObject:
   - component: {fileID: 1938678210}
   m_Layer: 5
   m_Name: AneCochonBD1
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -175975,7 +175989,7 @@ GameObject:
   - component: {fileID: 1943761782}
   m_Layer: 5
   m_Name: CorbeauTextPartie6
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -176483,7 +176497,7 @@ GameObject:
   - component: {fileID: 1947272772}
   m_Layer: 5
   m_Name: CochonBigDiscutionchoix1
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -177268,7 +177282,7 @@ GameObject:
   - component: {fileID: 1950700551}
   m_Layer: 5
   m_Name: 'CochonChoix3Text '
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -177887,7 +177901,7 @@ GameObject:
   - component: {fileID: 1955943839}
   m_Layer: 5
   m_Name: CochonTextPartie2
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -178482,7 +178496,7 @@ GameObject:
   - component: {fileID: 1961190124}
   m_Layer: 5
   m_Name: CochonTextPartie6
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -179545,7 +179559,7 @@ GameObject:
   - component: {fileID: 1971261625}
   m_Layer: 5
   m_Name: CochonChoix1Partie3
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -180107,7 +180121,7 @@ GameObject:
   - component: {fileID: 1974127537}
   m_Layer: 5
   m_Name: AneCochon
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -180626,7 +180640,7 @@ GameObject:
   - component: {fileID: 1982086088}
   m_Layer: 5
   m_Name: AneChatChap8-3
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -182020,7 +182034,7 @@ GameObject:
   - component: {fileID: 2001868058}
   m_Layer: 5
   m_Name: BrebisTextPartie5
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -183086,7 +183100,7 @@ GameObject:
   - component: {fileID: 2013528847}
   m_Layer: 5
   m_Name: CochonBigDiscutionchoix1 (4)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -184059,7 +184073,7 @@ GameObject:
   - component: {fileID: 2023167162}
   m_Layer: 5
   m_Name: BREBISrevelSNAKE
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -184197,7 +184211,7 @@ GameObject:
   - component: {fileID: 2023236528}
   m_Layer: 5
   m_Name: CochonBigDiscutionchoix3 (1)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -184487,7 +184501,7 @@ GameObject:
   - component: {fileID: 2026461775}
   m_Layer: 5
   m_Name: BREBISrevelSNAKEDevil
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -184811,7 +184825,7 @@ GameObject:
   - component: {fileID: 2031786675}
   m_Layer: 5
   m_Name: BREBISrevelSNAKEchoix1
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -185240,7 +185254,7 @@ GameObject:
   - component: {fileID: 2039013225}
   m_Layer: 5
   m_Name: AneCochonBD2
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -185378,7 +185392,7 @@ GameObject:
   - component: {fileID: 2039259705}
   m_Layer: 5
   m_Name: BrebisChoix1Partie5
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -186692,7 +186706,7 @@ GameObject:
   - component: {fileID: 2055959843}
   m_Layer: 5
   m_Name: AneCorbeau2
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -188169,7 +188183,7 @@ GameObject:
   - component: {fileID: 2077549330}
   m_Layer: 5
   m_Name: AneChapitre3Cerf
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -189093,7 +189107,7 @@ GameObject:
   - component: {fileID: 2089407634}
   m_Layer: 5
   m_Name: AneBrebis1Chapitre8
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -189368,7 +189382,7 @@ GameObject:
   - component: {fileID: 2090530340}
   m_Layer: 5
   m_Name: CorbeauChoix1Text
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -189579,7 +189593,7 @@ GameObject:
   - component: {fileID: 2091595221}
   m_Layer: 5
   m_Name: Corbeau END
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -189929,7 +189943,7 @@ GameObject:
   - component: {fileID: 2101591924}
   m_Layer: 5
   m_Name: Cerf (3)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -193417,7 +193431,7 @@ GameObject:
   - component: {fileID: 2133471498}
   m_Layer: 5
   m_Name: AneHibouxAne
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -193918,7 +193932,7 @@ GameObject:
   - component: {fileID: 2138125558}
   m_Layer: 5
   m_Name: ChienTextPARTIE2 (2)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -194303,7 +194317,7 @@ GameObject:
   - component: {fileID: 2143894111}
   m_Layer: 5
   m_Name: CochonBigDiscutionchoix1 (3)
-  m_TagString: Untagged
+  m_TagString: DialogueUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
