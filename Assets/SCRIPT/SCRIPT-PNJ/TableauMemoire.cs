@@ -1,5 +1,5 @@
   using UnityEngine;
-
+using System.Reflection;
 public class TableauMemoire : MonoBehaviour
 {
   //Identification de qu'elle masque on a. Relier à MaskCyclerUI.cs
@@ -59,7 +59,18 @@ public class TableauMemoire : MonoBehaviour
   public static bool ICONPhenix = false;
   public static bool ICONHiboux = false;
 
-  
+   static void ResetAllBooleans()
+    {
+        // Récupère tous les champs publics static de type bool
+        var flags  = BindingFlags.Public | BindingFlags.Static;
+        var fields = typeof(TableauMemoire).GetFields(flags);
+
+        foreach (var f in fields)
+        {
+            if (f.FieldType == typeof(bool))
+                f.SetValue(null, false);
+        }
+    }
     
 
 }
