@@ -283,12 +283,11 @@ public class Corbeaux : MonoBehaviour , IInteract
         }
         if (TableauMemoire.masque == 1 && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
-            isActive = !isActive;
-            TextPartie3.SetActive(!isActive);
+            TextPartie3.SetActive(isActive);
         }
 
         //Mission 4-------------------------------------------------
-        if (TableauMemoire.masque == 0 && TableauMemoire.AmiChien == true && stepTalk == 4 && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
+        if (TableauMemoire.masque == 0 && TableauMemoire.AmiChien == true && stepTalk == 4 && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false && TableauMemoire.Portail==false)
         {
             isActive = !isActive;
             TableauMemoire.ICONCorbeau = false;
@@ -346,7 +345,6 @@ public class Corbeaux : MonoBehaviour , IInteract
         if (TableauMemoire.masque == 2 && TableauMemoire.Partie2 == false && TableauMemoire.UnVUnCochon == false)
         {
             TableauMemoire.MLionFound = true;
-            isActive = !isActive;
             TextPartie5.SetActive(!isActive);
         }
 

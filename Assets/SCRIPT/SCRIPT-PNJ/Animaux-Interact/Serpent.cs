@@ -250,7 +250,7 @@ public class Serpent : MonoBehaviour, IInteract
         }
 
         //Mission 4-----------------------------------------------------------
-        if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 2 && passTalking == true && TableauMemoire.UnVUnCochon == false)
+        if (TableauMemoire.masque == 0 && TableauMemoire.SecretSurCerf == true && stepTalke == 2 && passTalking == true && TableauMemoire.UnVUnCochon == false && TableauMemoire.Portail==false)
         {
             TableauMemoire.ICONSerpent = false;
             FindObjectOfType<CharaterMoovement>().controlsEnabled = false;
